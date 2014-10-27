@@ -1,0 +1,14 @@
+<h1>Portfolio</h1>
+
+<ul>
+	<li ng-repeat="project in projects">
+		<a ui-sref="{{project.url}}">{{project.name}}</a>
+		<ul>
+			<li ng-repeat="role in project.roles">
+				{{role}}
+			</li>
+		</ul>
+		<p>{{project.desc}}</p>
+		<hr />
+	</li>
+</ul>
