@@ -1,0 +1,267 @@
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic,900,900italic);
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  background: transparent; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.v-align:after {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+  content: ''; }
+
+.v-align > .v-aligned {
+  display: inline-block;
+  vertical-align: middle; }
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+html {
+  font-family: roboto;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAQACAIAAAAP+8yGAAAE9UlEQVR4Ae3dYY7dRgwD4CXwgN6lh+n9b8P+DFJg667HerXnff4ZBBmIFCVKM5t9/fHnX1+T3+s//S0HOMABDgiItj8gnwBRVg7IQ0hWi3AwgFOnS0XogNB++OnJR0R1uqPlg0gOoTG/+sGpT5rSQWSRA26aplHsdLTbp6mFlCzqlUXvtbgmRTKI8vXKAUJLeZu19T6SzclIHjggZxT/+sp1HIQvuukBGRcaDkw4OFit1Z0mOZty0OkI8kCh9ZjkNfuQS0kOd81dv5nkH2Vep69Ywpsuf52OIDt70/Cm5gMzmhltCSJ7Uxx420IHOPiR+eWLLMf5ovWjOq2D8KZ80cQBwQFfNAvRgKvAAV8kTTudpnkUB0aoTkOUvayjNO10msaUyV0bQAwg5oPbZpErlk5DlMsg6nQWZXNfFNt3gziI1g9w1RhZZD4wZd7L2RnEvRSURcp1PlhoVgkeboDogULTcMwHdNBpDuIG5MN6sgnHKgFEerLdtRsQl0SmTFMmiOYj6PQvPcobIeo0yfny9GRzJXc6TaPYHX4gOkjMrkbQg8TMKgdR7PSDg8ybiSAGkKuLXafH2IxD1Ol+ENsWCynGyw1Islp+coKD3A4iP83lmgtE1vv5bKFlAZjhYpdP/Z+Kw/yqpsfSeOplaTbPosEN/CveeJmTQSSLcvTHG2RRjoPnKma+eKX2jiwCUW7bMrVMEMVrzd9ReGXHYqcfxHJcFl3y5f9uOPEEy+8/ANFbD8gbIcqc8eKuQQQivmgDknNhHe03HFxGRbZc50SpUCq0zBVHRwd0wDr6vbG5DKIgeZ5k2xYNB0RIRnJHJuQBDroIkWrKVXAVB3rPegTRMidJpgPF7kDcOcdBf3bMgqugA/siE44JR0/udAS5B8l9C8k5A/oAyWG8NBwczECE5PTDOOh0BFGLRIDkQ8HNOzsczB/A2eGgAzs7JIvgOAQcFMmEZtL/5rZq8dz+A6LL5Za903T9zE6XiuzaDzJNcteZ7nQ/iH7w5AhykDQza80YxHeLIOcuS9PzWZLVCPoEDhYaviuWTEdQHDwoTT2Dk6b9eaZmGqK+HaLsnaZdgWY6gv7ggFDyOZLjBuS+Qst0BH0TRNmO5PyCcPgBUy6OgNA8e+il4u3ifFCD+E5puuAxOk1yFtJUNX1ksTsiOgvm6TU6fUSabpKmIJKmlEzJIPIUcVeIlGsQ7a+DTEfQjyO5dMDZcXacHWcHool+oFyD6MQHIk2/IJJFIDq+QpuFqG+HSBYp15mGqHe0LTZePUtypiOoKfMx7rrddsLJNAd9TMMxBFpIbQCRZQiSP8BV9I0QdRqizByAZO76AT0ZRHoyoenJhDYP0aGnyfSc3CeV6x7gM7B9L6Fp+nyRjjYHUVhHtWh0Oe6SKNMQVbnmi275cCPetijXW0GU6Qh611qU4+jXbmN79yzSMkF0+1Lh4YY0NYg/px/gAETSNLsPgXSAg99QyjQHxcGH6gAHOMABDsYWdpm+R+u9ObBKwIFiVyQTmisWHFzOQSYfFbtq9CrBAYZAPRnJOMDBJiTjIMvucIGD/lqN9YM5+Bfz3qvStJM0q6ZDEfT+HJw4lLsu4/U9JnxRmV8Q0UFtvI5JlqaUbE4+9+9nGqLuVK4pGURcRaYjKFdBaOaDwTQ1H/ziPtPGq3SgVLgJVIsIjZKVCiTf7oAO/Jz1328hSdeuDSPrAAAAAElFTkSuQmCC"); }
+
+.view-container {
+  background: #fff;
+  padding: 2rem 1rem;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 70%;
+  border-radius: 9px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  height: 80vh;
+  overflow-y: scroll; }
+
+nav ul li {
+  display: inline;
+  list-style-type: none; }
+  nav ul li a {
+    color: #fff;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+    nav ul li a.active {
+      color: orange; }
+
+aside {
+  width: 7rem;
+  background: orange;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0; }
+
+/*# sourceMappingURL=main.css.map */

@@ -44,9 +44,13 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
-      compass: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+      //compass: {
+        //files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+        //tasks: ['compass:server', 'autoprefixer']
+      //},
+      styles: {
+        files: ['<%= yeoman.app %>/sass/{,*/}*.scss'],
+        tasks: ['sass', 'newer:copy:styles', 'autoprefixer']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -173,7 +177,7 @@ module.exports = function (grunt) {
     },
 
     // Compiles Sass to CSS and generates necessary files if requested
-    compass: {
+    /*compass: {
       options: {
         sassDir: '<%= yeoman.app %>/styles',
         cssDir: '.tmp/styles',
@@ -197,6 +201,25 @@ module.exports = function (grunt) {
       server: {
         options: {
           debugInfo: true
+        }
+      }
+    },*/
+
+    sass: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/sass',
+          src: ['*.scss'],
+          dest: '<%= yeoman.app %>/styles',
+          ext: '.css'
+        }],
+
+        options: {
+          loadPath: [
+            'bower_components/bourbon/dist',
+            'bower_components/neat/app/assets/stylesheets'
+          ]
         }
       }
     },
@@ -361,15 +384,15 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
-        'compass:server'
+          'copy:styles'
       ],
       test: [
-        'compass'
+          'copy:styles'
       ],
       dist: [
-        'compass:dist',
-        'imagemin',
-        'svgmin'
+          'copy:styles',
+          'imagemin',
+          'svgmin'
       ]
     },
 
@@ -425,7 +448,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'sass'
   ]);
 
   grunt.registerTask('default', [
