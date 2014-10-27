@@ -1,0 +1,15 @@
+nav {
+  ul {
+    li {
+      display:inline;
+      list-style-type:none;
+      a {
+        color:#fff;
+        @include transition(all 0.2s);
+        &.active {
+          color:orange;
+        }
+      }
+    }
+  }
+}

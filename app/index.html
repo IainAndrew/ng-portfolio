@@ -8,6 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -27,9 +28,7 @@
       
       <header ng-include="'views/nav.html'"></header>
 
-      <div class="view-container">
-        <main ui-view ng-animate="'view'" ng-class="$state.current.name"></main>
-      </div>
+      <main ui-view ng-animate="'view'" ng-class="$state.current.name"></main>
 
       <footer ng-include="'views/footer.html'"></footer>
 
