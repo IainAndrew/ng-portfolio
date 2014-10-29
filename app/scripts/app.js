@@ -20,7 +20,8 @@ angular
       .state('about', {
         url: '/',
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'AboutCtrl',
+        class:'about'
       })
       .state('about-more', {
         url: '/about-more',
@@ -30,7 +31,8 @@ angular
       .state('portfolio', {
         url: '/portfolio',
         templateUrl: 'views/portfolio.html',
-        controller: 'PortfolioCtrl'
+        controller: 'PortfolioCtrl',
+        class:'portfolio'
       })
       .state('plugmedia', {
         url: '/plugmedia',
@@ -40,7 +42,8 @@ angular
       .state('plugmedia.overview', {
         url: '/',
         templateUrl: 'views/plugmedia/overview.html',
-        controller: 'ProjectCtrl'
+        controller: 'ProjectCtrl',
+        class:'plugmedia-overview'
       })
       .state('plugmedia.webdesign', {
         url: '/webdesign',
