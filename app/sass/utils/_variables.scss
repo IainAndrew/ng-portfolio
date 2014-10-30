@@ -1,10 +1,42 @@
-$body-color:#444;
+/*
+	Typography
+*/
 
-$header-bubble-font: 'bubblegumregular';
+// Base
+$base-text-color:#444;
 
-$heading-font: 'proxima_nova_rgbold';
-$heading-font-light: 'proxima_nova_ltlight';
-$body-font: Libre Baskerville;
-$sub-heading-font: Libre Baskerville;
+$base-font-family:Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-font-size:13px;
+$base-font-weight:400;
+$base-line-height:24px;
+$base-letter-spacing:0px;
 
-$lineheight: 1.7em;
+// Display
+$display-font-size:56px;
+$display-font-weight:100;
+$display-line-height:60px;
+
+// Headline
+$headline-font-size:24px;
+$headline-line-height:32px;
+
+// Subhead
+$subhead-font-size:15px;
+$subhead-line-height:24px;
+
+// Sidebar menu
+$menu-font-size:13px;
+$menu-font-weight:500;
+
+// Button
+$btn-font-size:14px;
+$btn-font-weight:500;
+
+// Main nav
+$nav-font-size:18px;
+$nav-font-weight:500;
+
+// Links
+$link-color: #d54aaf;
+$link-hover-color: saturate(#d54aaf, 20%);
+$link-visited-color: purple;
