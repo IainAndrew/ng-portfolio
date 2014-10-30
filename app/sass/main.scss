@@ -43,11 +43,16 @@ main {
   width:60%;
   border-radius:9px;
   box-shadow:0 0 20px rgba(#000, 0.2);
-  height:80vh;
+  height:70vh;
   overflow-y:scroll;
-  @include transition(width 0.3s cubic-bezier(1,0,.19,1.44));
+  @include transition(width 0.3s cubic-bezier(1,0,.19,1.44), height 0.3s cubic-bezier(1,0,.19,1.44));
   &.portfolio {
-    width:75%;
+    width:70%;
+    height:80vh;
+  }
+  &.plugmedia, &.plugmedia-overview, &.plugmedia-webdesign {
+    width:98%;
+    height:80vh;
   }
 }
 

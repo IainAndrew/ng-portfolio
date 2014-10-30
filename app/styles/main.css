@@ -262,12 +262,16 @@ html {
   width: 60%;
   border-radius: 9px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  height: 80vh;
+  height: 70vh;
   overflow-y: scroll;
-  -webkit-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
+  -webkit-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+  -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+  transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
   .view-container.portfolio {
-    width: 75%; }
+    width: 70%;
+    height: 80vh; }
+  .view-container.plugmedia, .view-container.plugmedia-overview, .view-container.plugmedia-webdesign {
+    width: 98%;
+    height: 80vh; }
 
 /*# sourceMappingURL=main.css.map */
