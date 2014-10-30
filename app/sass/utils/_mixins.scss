@@ -1,3 +1,27 @@
-@mixin bradius {
-  border-radius:3px;
+@mixin display-text {
+	font-size:$display-font-size;
+	font-weight:$display-font-weight;
+	line-height:$display-line-height;
+}
+@mixin headline-text {
+	font-size:$headline-font-size;
+	line-height:$headline-line-height;
+	font-weight:$headline-font-weight;
+}
+@mixin subhead-text {
+	font-size:$subhead-font-size;
+	line-height:$subhead-line-height;
+	font-weight:$subhead-font-weight;
+}
+@mixin menu-text {
+	font-size:$menu-font-size;
+	font-weight:$menu-font-weight;
+}
+@mixin button-text {
+	font-size:$btn-font-size;
+	font-weight:$btn-font-weight;
+}
+@mixin nav-text {
+	font-size:$nav-font-size;
+	font-weight:$nav-font-weight;
 }
