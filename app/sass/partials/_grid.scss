@@ -2,3 +2,12 @@ $mobile: new-breakpoint(min-width 320px);
 $tablet: new-breakpoint(min-width 480px);
 $desktop: new-breakpoint(min-width 768px);
 $widescreen: new-breakpoint(min-width 1281px);
+
+@include media($desktop) {
+	.about-intro, .about-tech {
+		@include span-columns(6);
+	}
+}
+section {
+	@include outer-container;
+}

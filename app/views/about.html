@@ -1,8 +1,22 @@
-<h1>About Me</h1>
-<p>I'm Iain, a front-end developer &amp; designer from Dublin, Ireland. I'm constantly learning, and always motivated to expand my knowledge and improve my skills. I'm really passionate about modern development tools and techniques. Currently, I'm looking for a full time position with a forward-thinking agency.</p>
-<ul>
-	<li ng-repeat="technology in technologies">
-		{{technology}}
-	</li>
-</ul>
-<a ui-sref="about-more">Read More</a>
+<div class="header-block about">
+	<div class="header-block-text">
+		<h1>I'm Iain Andrew</h1>
+		<p>A front-end web developer &amp; designer</p>
+	</div>
+</div>
+
+<section>
+	<div class="about-intro">
+		<p>I'm Iain, a front-end developer &amp; designer from Dublin, Ireland. I'm constantly learning, and always motivated to expand my knowledge and improve my skills. I'm also really passionate about modern development tools and techniques, as well as clean, intuitive design.</p>
+		<p>I'm currently available for a full time position with a forward-thinking agency.</p>
+	</div>
+
+	<div class="about-tech">
+		<ul>
+			<li ng-repeat="technology in technologies">
+				{{technology}}
+			</li>
+		</ul>
+	</div>
+</section>
+

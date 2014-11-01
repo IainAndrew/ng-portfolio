@@ -215,6 +215,23 @@ table {
 /*
 	Colours
 */
+@media screen and (min-width: 768px) {
+  .about-intro, .about-tech {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .about-intro:last-child, .about-tech:last-child {
+      margin-right: 0; } }
+section {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 nav ul li {
   display: inline;
   list-style-type: none; }
@@ -233,6 +250,28 @@ aside {
   position: fixed;
   top: 0;
   right: 0; }
+
+.header-block {
+  height: 6rem;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0; }
+  .header-block .header-block-text {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .header-block .header-block-text h1 {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 400; }
+    .header-block .header-block-text p {
+      text-transform: uppercase;
+      color: #bdbdbd; }
 
 .browsehappy {
   margin: 0.2em 0;
@@ -253,7 +292,6 @@ body {
 
 .view-container {
   background: #fff;
-  padding: 2rem 1rem;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -275,5 +313,12 @@ body {
   .view-container.plugmedia, .view-container.plugmedia-overview, .view-container.plugmedia-webdesign {
     width: 98%;
     height: 80vh; }
+
+section {
+  padding: 2rem;
+  background: #f5f5f5; }
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0; }
 
 /*# sourceMappingURL=main.css.map */

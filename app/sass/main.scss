@@ -17,7 +17,7 @@
 @import "partials/sidebar";
 
 //Components
-
+@import "components/header-block";
 // Pages
 
 
@@ -43,7 +43,6 @@ body {
 
 .view-container {
   background:#fff;
-  padding:2rem 1rem;
   position:relative;
   left:50%;
   @include transform(translateX(-50%));
@@ -63,3 +62,11 @@ body {
   }
 }
 
+section {
+  padding:2rem;
+  background:$grey-100;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+  margin:0;
+}
