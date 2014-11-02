@@ -18,7 +18,9 @@
 
 //Components
 @import "components/header-block";
+
 // Pages
+@import "pages/about";
 
 
 .browsehappy {
@@ -84,7 +86,6 @@ body {
     height:6rem;
   }
 }
-
 
 main {
   height:100%;

@@ -232,19 +232,38 @@ section {
     display: table;
     clear: both; }
 
+@-webkit-keyframes popup {
+  from {
+    top: 4rem; }
+  to {
+    top: 0; } }
+@-moz-keyframes popup {
+  from {
+    top: 4rem; }
+  to {
+    top: 0; } }
+@keyframes popup {
+  from {
+    top: 4rem; }
+  to {
+    top: 0; } }
 nav {
-  background: rgba(255, 255, 255, 0.2);
   width: 40%;
   height: 4rem;
   position: relative;
   left: 50%;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  top: 4rem;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  -webkit-animation: popup 1s ease forwards;
+  -moz-animation: popup 1s ease forwards;
+  animation: popup 1s ease forwards;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s; }
   nav ul {
     width: 100%;
     display: -webkit-box;
@@ -262,14 +281,25 @@ nav {
       text-align: center;
       line-height: 4rem;
       vertical-align: middle; }
+      nav ul li:first-child a {
+        border-top-left-radius: 7px; }
+      nav ul li:last-child a {
+        border-top-right-radius: 7px; }
       nav ul li a {
         color: #fff;
         text-decoration: none;
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s; }
+        display: block;
+        background: rgba(255, 255, 255, 0.2);
+        -webkit-transition: color 0.2s, background 0.2s ease;
+        -moz-transition: color 0.2s, background 0.2s ease;
+        transition: color 0.2s, background 0.2s ease; }
         nav ul li a.active {
-          color: orange; }
+          color: #e91e63;
+          background: rgba(255, 255, 255, 0.95); }
+        .no-touch nav ul li a:hover {
+          background: rgba(255, 255, 255, 0.25); }
+          .no-touch nav ul li a:hover.active {
+            background: #fff; }
 
 aside {
   width: 7rem;
@@ -305,6 +335,13 @@ aside {
     .header-block .header-block-text p {
       text-transform: uppercase;
       color: #bdbdbd; }
+
+.about-tech ul li {
+  list-style-type: none;
+  display: inline-block;
+  border: 1px solid #bdbdbd;
+  margin: 0.3em;
+  padding: 0.2em 0.7em; }
 
 .browsehappy {
   margin: 0.2em 0;

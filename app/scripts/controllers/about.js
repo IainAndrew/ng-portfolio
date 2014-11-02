@@ -12,7 +12,7 @@ angular.module('app')
       'Zurb Foundation',
       'Wordpress',
       'Joomla',
-      'SASS',
+      'Sass',
       'LESS',
       'Grunt',
       'Bower',
