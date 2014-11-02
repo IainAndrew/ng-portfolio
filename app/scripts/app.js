@@ -9,7 +9,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'app.directives.sidebar'
+    'app.directives.sidebar',
+    'app.directives.headerBlock'
   ])
   .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider
