@@ -1,14 +1,15 @@
 <header-block></header-block>
 
-<ul>
-	<li ng-repeat="project in projects">
-		<a ui-sref="{{project.url}}">{{project.name}}</a>
-		<ul>
-			<li ng-repeat="role in project.roles">
-				{{role}}
-			</li>
-		</ul>
-		<p>{{project.desc}}</p>
-		<hr />
-	</li>
-</ul>
+<section class="portfolio">
+	<ul>
+		<li ng-repeat="project in projects" class="project project-{{project.url}}">
+			<a ui-sref="{{project.url}}">{{project.name}}</a>
+			<ul>
+				<li ng-repeat="role in project.roles">
+					{{role}}
+				</li>
+			</ul>
+			<p>{{project.desc}}</p>
+		</li>
+	</ul>
+</section>

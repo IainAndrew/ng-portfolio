@@ -48,14 +48,11 @@ nav {
         @include transition(color 0.2s, background 0.2s ease);
         &.active {
           color:$pink-500;
-          background:rgba(#fff, 0.95);
+          background:rgba(#fff, 1);
         }
         .no-touch & {
-          &:hover {
+          &:hover:not(.active) {
             background:rgba(#fff, 0.25);
-            &.active {
-              background:#fff;
-            }
           }
         }
       }

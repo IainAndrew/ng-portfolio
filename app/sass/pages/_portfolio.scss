@@ -1,0 +1,8 @@
+li.project {
+	height:11rem;
+	width:100%;
+	border-bottom:1px solid #444;
+	&:last-child {
+		border-bottom-width:0;
+	}
+}
