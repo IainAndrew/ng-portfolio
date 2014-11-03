@@ -3,13 +3,16 @@
 <section class="portfolio">
 	<ul>
 		<li ng-repeat="project in projects" class="project project-{{project.url}}">
-			<a ui-sref="{{project.url}}">{{project.name}}</a>
-			<ul>
-				<li ng-repeat="role in project.roles">
-					{{role}}
-				</li>
-			</ul>
-			<p>{{project.desc}}</p>
+			<div class="project-overlay">
+				<h2>{{project.name}}</h2>
+				<ul>
+					<li ng-repeat="role in project.roles">
+						{{role}}
+					</li>
+				</ul>
+				<p>{{project.desc}}</p>
+			</div>
+			<a ui-sref="{{project.url}}" class="project-link">&gt;</a>
 		</li>
 	</ul>
 </section>

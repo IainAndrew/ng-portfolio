@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Neat 1.7.0
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
@@ -306,9 +307,10 @@ aside {
   border-bottom: 1px solid #e0e0e0;
   -webkit-transition: height 0.5s cubic-bezier(1, 0, 0.19, 1.44);
   -moz-transition: height 0.5s cubic-bezier(1, 0, 0.19, 1.44);
-  transition: height 0.5s cubic-bezier(1, 0, 0.19, 1.44); }
-  .header-block:hover {
-    height: 100%; }
+  transition: height 0.5s cubic-bezier(1, 0, 0.19, 1.44);
+  /*&:hover {
+  	height:100%;
+  }*/ }
   .header-block .header-block-text {
     position: relative;
     top: 50%;
@@ -329,7 +331,6 @@ section.about {
   padding: 2rem; }
 
 .about-tech ul li {
-  list-style-type: none;
   display: inline-block;
   border: 1px solid #bdbdbd;
   margin: 0.3em;
@@ -339,9 +340,62 @@ section.about {
 li.project {
   height: 11rem;
   width: 100%;
-  border-bottom: 1px solid #444; }
+  border-bottom: 1px solid #444;
+  position: relative;
+  padding: 1rem; }
+  li.project.project-plugmedia {
+    background-image: url("http://ns4lib.com/wp-content/uploads/2013/07/feature.jpg");
+    background-size: cover; }
+  li.project.project-peter-ashmore {
+    background-image: url("http://media.al.com/live/photo/gulf-shores-website-screenshot-1c58200629ad5efb.jpg");
+    background-size: cover; }
   li.project:last-child {
     border-bottom-width: 0; }
+  li.project .project-overlay {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 9rem;
+    background: #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+    @media screen and (min-width: 768px) {
+      li.project .project-overlay {
+        width: 20rem; } }
+    li.project .project-overlay h2 {
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 400;
+      font-weight: 500; }
+    li.project .project-overlay ul li {
+      display: inline-block;
+      margin-right: 0.2em;
+      font-style: italic; }
+      li.project .project-overlay ul li:not(:last-child):after {
+        content: "∙"; }
+  li.project a.project-link {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 4rem;
+    background: #e91e63;
+    border-radius: 50%;
+    font-size: 3em;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
 
 .browsehappy {
   margin: 0.2em 0;
@@ -448,5 +502,12 @@ section {
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 /*# sourceMappingURL=main.css.map */

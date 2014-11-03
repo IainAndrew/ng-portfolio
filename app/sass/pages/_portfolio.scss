@@ -2,7 +2,63 @@ li.project {
 	height:11rem;
 	width:100%;
 	border-bottom:1px solid #444;
+	position:relative;
+	padding:1rem;
+	&.project-plugmedia {
+		background-image:url('http://ns4lib.com/wp-content/uploads/2013/07/feature.jpg');
+		background-size:cover;
+	}
+	&.project-peter-ashmore {
+		background-image:url('http://media.al.com/live/photo/gulf-shores-website-screenshot-1c58200629ad5efb.jpg');
+		background-size:cover;
+	}
 	&:last-child {
 		border-bottom-width:0;
+	}
+
+	.project-overlay {
+		position:relative;
+		top:50%;
+		@include transform(translateY(-50%));
+		height:9rem;
+		@include media($desktop) {
+			width:20rem;
+		}
+		//margin-left:1rem;
+		background:#fff;
+		border-radius:5px;
+		padding:0.5rem;
+		text-align:center;
+		box-shadow:0 0 20px rgba(#000, 0.2);
+		h2 {
+			@include subhead-text;
+			font-weight:500;
+		}
+		ul {
+			li {
+				display:inline-block;
+				margin-right:0.2em;
+				font-style:italic;
+				&:not(:last-child) {
+					&:after {
+						content:'\2219'
+					}
+				}
+			}
+		}
+	}
+	a.project-link {
+		position:absolute;
+		top:50%;
+		right:1rem;
+		@include transform(translateY(-50%));
+		width:4rem;
+		height:4rem;
+		background:$pink-500;
+		border-radius:50%;
+		font-size:3em;
+		text-align:center;
+		padding:1rem;
+		box-shadow:0 0 20px rgba(#000, 0.2);
 	}
 }
