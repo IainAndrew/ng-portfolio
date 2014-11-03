@@ -17,7 +17,7 @@ nav {
   //border-top-left-radius:7px;
   //border-top-right-radius:7px;
   @include transform(translateX(-50%));
-  @include animation(popup 1s ease forwards);
+  @include animation(popup 0.5s $cubic forwards);
   @include animation-delay(1s);
   ul {
     width:100%;
