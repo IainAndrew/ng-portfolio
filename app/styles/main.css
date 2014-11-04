@@ -340,12 +340,18 @@ section.about {
   margin-left: 0.2em;
   padding: 0.2em 0.7em; }
 
+.about-more-link {
+  color: #e91e63; }
+
 li.project {
   height: 12rem;
   width: 100%;
   border-bottom: 1px solid #444;
   position: relative;
-  padding: 1rem; }
+  padding: 1rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   li.project.project-plugmedia {
     background-image: url("http://ns4lib.com/wp-content/uploads/2013/07/feature.jpg");
     background-size: cover; }
@@ -354,6 +360,8 @@ li.project {
     background-size: cover; }
   li.project:last-child {
     border-bottom-width: 0; }
+  li.project:hover {
+    background-position: 0,0; }
   li.project .project-overlay {
     position: relative;
     top: 50%;
