@@ -1,5 +1,5 @@
 li.project {
-	height:11rem;
+	height:12rem;
 	width:100%;
 	border-bottom:1px solid #444;
 	position:relative;
@@ -27,23 +27,37 @@ li.project {
 		//margin-left:1rem;
 		background:#fff;
 		border-radius:5px;
-		padding:0.5rem;
+		//padding:0.5rem;
 		text-align:center;
 		box-shadow:0 0 20px rgba(#000, 0.2);
-		h2 {
-			@include subhead-text;
-			font-weight:500;
-		}
-		ul {
-			li {
-				display:inline-block;
-				margin-right:0.2em;
-				font-style:italic;
-				&:not(:last-child) {
-					&:after {
-						content:'\2219'
+		.project-overlay-header {
+			background:$grey-200;
+			padding:0.5rem;
+			border-top-right-radius:5px;
+			border-top-left-radius:5px;
+			border-bottom:1px solid $grey-300;
+			h2 {
+				@include subhead-text;
+				font-weight:500;
+			}
+			ul {
+				li {
+					display:inline-block;
+					margin-right:0.2em;
+					font-style:italic;
+					font-size:0.9em;
+					&:not(:last-child) {
+						&:after {
+							content:'\2219'
+						}
 					}
 				}
+			}
+		}
+		.project-overlay-main {
+			padding:0.5rem;
+			p {
+				text-align:left;
 			}
 		}
 	}
@@ -55,6 +69,7 @@ li.project {
 		width:4rem;
 		height:4rem;
 		background:$pink-500;
+		color:#fff;
 		border-radius:50%;
 		font-size:3em;
 		text-align:center;

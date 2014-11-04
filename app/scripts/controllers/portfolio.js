@@ -6,7 +6,7 @@ angular.module('app')
       {
       	'name':'Plugmedia', 
       	'roles':['Web Design', 'Web Development', 'Logo Design', 'Branding'], 
-      	'desc':'A website for a Dublin based digital media company',
+      	'desc':'A website for a Dublin based digital media company Lorem ipsum dolor sit amet, consectetur adipisicing.',
       	'url':'plugmedia'
       },
       {

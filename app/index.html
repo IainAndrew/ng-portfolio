@@ -29,7 +29,7 @@
       <nav ng-include="'views/nav.html'"></nav>
 
       <div class="view-container" ng-class="$state.current.name.replace('.','-')">
-        <main ui-view ng-animate="'view'"></main>
+        <main ui-view ng-animate="'view'" autoscroll="true"></main>
       </div>
 
       <!--<footer ng-include="'views/footer.html'"></footer>-->

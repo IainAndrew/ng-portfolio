@@ -240,7 +240,7 @@ table {
   to {
     top: 0; } }
 nav {
-  width: 40%;
+  width: 90%;
   height: 4rem;
   position: relative;
   left: 50%;
@@ -256,6 +256,9 @@ nav {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   animation-delay: 1s; }
+  @media screen and (min-width: 768px) {
+    nav {
+      width: 40%; } }
   nav ul {
     width: 100%;
     display: -webkit-box;
@@ -338,7 +341,7 @@ section.about {
   padding: 0.2em 0.7em; }
 
 li.project {
-  height: 11rem;
+  height: 12rem;
   width: 100%;
   border-bottom: 1px solid #444;
   position: relative;
@@ -362,23 +365,33 @@ li.project {
     height: 9rem;
     background: #fff;
     border-radius: 5px;
-    padding: 0.5rem;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
     @media screen and (min-width: 768px) {
       li.project .project-overlay {
         width: 20rem; } }
-    li.project .project-overlay h2 {
-      font-size: 15px;
-      line-height: 24px;
-      font-weight: 400;
-      font-weight: 500; }
-    li.project .project-overlay ul li {
-      display: inline-block;
-      margin-right: 0.2em;
-      font-style: italic; }
-      li.project .project-overlay ul li:not(:last-child):after {
-        content: "∙"; }
+    li.project .project-overlay .project-overlay-header {
+      background: #eeeeee;
+      padding: 0.5rem;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom: 1px solid #e0e0e0; }
+      li.project .project-overlay .project-overlay-header h2 {
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        font-weight: 500; }
+      li.project .project-overlay .project-overlay-header ul li {
+        display: inline-block;
+        margin-right: 0.2em;
+        font-style: italic;
+        font-size: 0.9em; }
+        li.project .project-overlay .project-overlay-header ul li:not(:last-child):after {
+          content: "∙"; }
+    li.project .project-overlay .project-overlay-main {
+      padding: 0.5rem; }
+      li.project .project-overlay .project-overlay-main p {
+        text-align: left; }
   li.project a.project-link {
     position: absolute;
     top: 50%;
@@ -391,6 +404,7 @@ li.project {
     width: 4rem;
     height: 4rem;
     background: #e91e63;
+    color: #fff;
     border-radius: 50%;
     font-size: 3em;
     text-align: center;
@@ -456,19 +470,23 @@ body {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 60%;
+  width: 95%;
   border-radius: 9px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  height: 70vh;
+  height: 85vh;
   overflow-y: scroll;
   -webkit-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
   -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
   transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
-  .view-container.portfolio {
-    width: 70%; }
-  .view-container.plugmedia, .view-container.plugmedia-overview, .view-container.plugmedia-webdesign {
-    width: 98%;
-    height: 80vh; }
+  @media screen and (min-width: 768px) {
+    .view-container {
+      width: 60%;
+      height: 70vh; }
+      .view-container.portfolio {
+        width: 70%; }
+      .view-container.plugmedia, .view-container.plugmedia-overview, .view-container.plugmedia-webdesign {
+        width: 98%;
+        height: 98vh; } }
 
 @-webkit-keyframes header-block {
   0% {

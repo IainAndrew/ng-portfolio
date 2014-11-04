@@ -9,7 +9,10 @@
 
 nav {
   //background:rgba(#fff,0.2);
-  width:40%;
+  width:90%;
+  @include media($desktop) {
+    width:40%;
+  }
   height:4rem;
   position:relative;
   left:50%;
