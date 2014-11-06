@@ -5,8 +5,8 @@ angular.module('app.directives.headerBlock', [])
 		return {
 			restrict: 'E',
 			scope: {
-				projects: '=',
-				filterBy: '='
+				heading: '=',
+				subhead: '='
 			},
 			templateUrl:'views/header-block.html'
 		};

@@ -82,6 +82,8 @@ body {
   height:85vh;
   overflow-y:scroll;
   @include transition(width 0.3s cubic-bezier(1,0,.19,1.44), height 0.3s cubic-bezier(1,0,.19,1.44));
+  @include animation(pageload 1s $cubic);
+  @include animation-delay(1s);
   @include media($desktop) {
     width:60%;
     height:70vh;
@@ -96,7 +98,27 @@ body {
   }
 }
 
-@include keyframes(header-block) {
+@include keyframes(pageload) {
+  from {
+    width:25rem;
+  }
+  to {
+    width:95%;
+  }
+}
+
+@include media($desktop) { 
+  @include keyframes(pageload) {
+    from {
+      width:25rem;
+    }
+    to {
+      width:60%;
+    }
+  }
+}
+
+@include keyframes(header-block-slide) {
   0% {
     height:6rem;
   }

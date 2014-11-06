@@ -485,7 +485,13 @@ body {
   overflow-y: scroll;
   -webkit-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
   -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
+  transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+  -webkit-animation: pageload 1s cubic-bezier(1, 0, 0.19, 1.44);
+  -moz-animation: pageload 1s cubic-bezier(1, 0, 0.19, 1.44);
+  animation: pageload 1s cubic-bezier(1, 0, 0.19, 1.44);
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s; }
   @media screen and (min-width: 768px) {
     .view-container {
       width: 60%;
@@ -496,21 +502,52 @@ body {
         width: 98%;
         height: 98vh; } }
 
-@-webkit-keyframes header-block {
+@-webkit-keyframes pageload {
+  from {
+    width: 25rem; }
+  to {
+    width: 95%; } }
+@-moz-keyframes pageload {
+  from {
+    width: 25rem; }
+  to {
+    width: 95%; } }
+@keyframes pageload {
+  from {
+    width: 25rem; }
+  to {
+    width: 95%; } }
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes pageload {
+    from {
+      width: 25rem; }
+    to {
+      width: 60%; } }
+  @-moz-keyframes pageload {
+    from {
+      width: 25rem; }
+    to {
+      width: 60%; } }
+  @keyframes pageload {
+    from {
+      width: 25rem; }
+    to {
+      width: 60%; } } }
+@-webkit-keyframes header-block-slide {
   0% {
     height: 6rem; }
   50% {
     height: 100%; }
   100% {
     height: 6rem; } }
-@-moz-keyframes header-block {
+@-moz-keyframes header-block-slide {
   0% {
     height: 6rem; }
   50% {
     height: 100%; }
   100% {
     height: 6rem; } }
-@keyframes header-block {
+@keyframes header-block-slide {
   0% {
     height: 6rem; }
   50% {
