@@ -485,54 +485,19 @@ body {
   overflow-y: scroll;
   -webkit-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
   -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  -webkit-animation: pageload 1s cubic-bezier(1, 0, 0.19, 1.44);
-  -moz-animation: pageload 1s cubic-bezier(1, 0, 0.19, 1.44);
-  animation: pageload 1s cubic-bezier(1, 0, 0.19, 1.44);
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s; }
-  @media screen and (min-width: 768px) {
-    .view-container {
-      width: 60%;
-      height: 70vh; }
-      .view-container.portfolio {
-        width: 70%; }
-      .view-container.plugmedia, .view-container.plugmedia-overview, .view-container.plugmedia-webdesign {
-        width: 98%;
-        height: 98vh; } }
+  transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
 
-@-webkit-keyframes pageload {
-  from {
-    width: 25rem; }
-  to {
-    width: 95%; } }
-@-moz-keyframes pageload {
-  from {
-    width: 25rem; }
-  to {
-    width: 95%; } }
-@keyframes pageload {
-  from {
-    width: 25rem; }
-  to {
-    width: 95%; } }
 @media screen and (min-width: 768px) {
-  @-webkit-keyframes pageload {
-    from {
-      width: 25rem; }
-    to {
-      width: 60%; } }
-  @-moz-keyframes pageload {
-    from {
-      width: 25rem; }
-    to {
-      width: 60%; } }
-  @keyframes pageload {
-    from {
-      width: 25rem; }
-    to {
-      width: 60%; } } }
+  .container .view-container {
+    width: 60%;
+    height: 70vh; }
+  .container.portfolio .view-container {
+    width: 70%; }
+  .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-webdesign .view-container {
+    width: 98%;
+    height: 98vh; }
+  .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-webdesign nav {
+    display: none; } }
 @-webkit-keyframes header-block-slide {
   0% {
     height: 6rem; }

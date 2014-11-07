@@ -82,38 +82,27 @@ body {
   height:85vh;
   overflow-y:scroll;
   @include transition(width 0.3s cubic-bezier(1,0,.19,1.44), height 0.3s cubic-bezier(1,0,.19,1.44));
-  @include animation(pageload 1s $cubic);
-  @include animation-delay(1s);
-  @include media($desktop) {
-    width:60%;
-    height:70vh;
+}
+
+@include media($desktop) {
+  .container {
+    .view-container {
+      width:60%;
+      height:70vh;
+    }   
     &.portfolio {
-      width:70%;
-      //height:80vh;
+      .view-container {
+        width:70%;
+      }
     }
     &.plugmedia, &.plugmedia-overview, &.plugmedia-webdesign {
-      width:98%;
-      height:98vh;
-    }
-  }
-}
-
-@include keyframes(pageload) {
-  from {
-    width:25rem;
-  }
-  to {
-    width:95%;
-  }
-}
-
-@include media($desktop) { 
-  @include keyframes(pageload) {
-    from {
-      width:25rem;
-    }
-    to {
-      width:60%;
+      .view-container {
+        width:98%;
+        height:98vh;
+      }
+      nav {
+        display:none;
+      }
     }
   }
 }

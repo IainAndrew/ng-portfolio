@@ -24,11 +24,11 @@
     <!-- Add your site or application content here -->
     
 
-    <div class="container">
+    <div class="container" ng-class="$state.current.name.replace('.','-')">
       
       <nav ng-include="'views/nav.html'"></nav>
 
-      <div class="view-container" ng-class="$state.current.name.replace('.','-')">
+      <div class="view-container">
         <main ui-view ng-animate="'view'" autoscroll="true"></main>
       </div>
 
