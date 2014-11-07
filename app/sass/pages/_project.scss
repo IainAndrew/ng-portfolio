@@ -1,10 +1,25 @@
 section.project-main {
   background:#fff;
-  border-radius:7px;
   position:relative;
   padding:2rem;
   @include media($desktop) {
-  	width:85%;
+  	@include calc(width, '100% - 10rem');
   	float:right;
+  	border-top-left-radius:0;
+  	border-bottom-left-radius:0;
+  	@include animation(project-main-load 0.5s $cubic forwards);
+  	@include animation-delay(0.5s);
   }
+}
+
+@include keyframes(project-main-load) {
+	from {
+		border-top-left-radius:0;
+  	border-bottom-left-radius:0;
+  	@include calc(width, '100% - 10rem');
+	}
+	to {
+		border-radius:7px;
+		@include calc(width, '100% - 10.5rem');
+	}
 }

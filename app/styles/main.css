@@ -309,16 +309,45 @@ nav {
 sidebar {
   position: relative;
   height: 100%;
-  border-radius: 7px;
-  background: pink;
   -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
   -moz-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
   transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
   @media screen and (min-width: 768px) {
     sidebar {
       float: left;
-      width: 15%; } }
+      width: 10rem;
+      background: #fff;
+      -webkit-animation: project-sidebar-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      -moz-animation: project-sidebar-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      animation: project-sidebar-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      -webkit-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s; } }
 
+@-webkit-keyframes project-sidebar-load {
+  from {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #fff; }
+  to {
+    border-radius: 7px;
+    background: pink; } }
+@-moz-keyframes project-sidebar-load {
+  from {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #fff; }
+  to {
+    border-radius: 7px;
+    background: pink; } }
+@keyframes project-sidebar-load {
+  from {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #fff; }
+  to {
+    border-radius: 7px;
+    background: pink; } }
 .header-block {
   height: 6rem;
   background: #fff;
@@ -442,14 +471,52 @@ li.project {
 
 section.project-main {
   background: #fff;
-  border-radius: 7px;
   position: relative;
   padding: 2rem; }
   @media screen and (min-width: 768px) {
     section.project-main {
-      width: 85%;
-      float: right; } }
+      width: -webkit-calc(100% - 10rem);
+      width: calc(100% - 10rem);
+      float: right;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      -webkit-animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      -moz-animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      -webkit-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s; } }
 
+@-webkit-keyframes project-main-load {
+  from {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: -webkit-calc(100% - 10rem);
+    width: calc(100% - 10rem); }
+  to {
+    border-radius: 7px;
+    width: -webkit-calc(100% - 10.5rem);
+    width: calc(100% - 10.5rem); } }
+@-moz-keyframes project-main-load {
+  from {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: -webkit-calc(100% - 10rem);
+    width: calc(100% - 10rem); }
+  to {
+    border-radius: 7px;
+    width: -webkit-calc(100% - 10.5rem);
+    width: calc(100% - 10.5rem); } }
+@keyframes project-main-load {
+  from {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: -webkit-calc(100% - 10rem);
+    width: calc(100% - 10rem); }
+  to {
+    border-radius: 7px;
+    width: -webkit-calc(100% - 10.5rem);
+    width: calc(100% - 10.5rem); } }
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -529,7 +596,7 @@ body {
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-webdesign .view-container {
     width: 98%;
     height: 98vh;
-    background: transparent; }
+    background-color: transparent; }
   .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-webdesign nav {
     display: none; } }
 @-webkit-keyframes header-block-slide {
