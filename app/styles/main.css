@@ -281,26 +281,43 @@ nav {
       nav ul li:last-child a {
         border-top-right-radius: 7px; }
       nav ul li a {
-        color: #fff;
+        color: rgba(255, 255, 255, 0.4);
         text-decoration: none;
         display: block;
         background: rgba(255, 255, 255, 0.2);
+        position: relative;
         -webkit-transition: color 0.2s, background 0.2s ease;
         -moz-transition: color 0.2s, background 0.2s ease;
         transition: color 0.2s, background 0.2s ease; }
         nav ul li a.active {
           color: #e91e63;
-          background: white; }
+          background: white;
+          /*&:after {
+            content:"";
+            width:1rem;
+            height:1rem;
+            background:$grey-500;
+            position:absolute;
+            bottom:-0.5rem;
+            left:50%;
+            margin-left:-0.5rem;
+            @include transform(rotate(45deg));
+          }*/ }
         .no-touch nav ul li a:hover:not(.active) {
           background: rgba(255, 255, 255, 0.25); }
 
-aside {
-  width: 7rem;
-  background: orange;
+sidebar {
+  position: relative;
   height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0; }
+  border-radius: 7px;
+  background: pink;
+  -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+  -moz-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+  transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
+  @media screen and (min-width: 768px) {
+    sidebar {
+      float: left;
+      width: 15%; } }
 
 .header-block {
   height: 6rem;
@@ -362,6 +379,8 @@ li.project {
     border-bottom-width: 0; }
   li.project:hover {
     background-position: 0,0; }
+    li.project:hover a.project-link {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   li.project .project-overlay {
     position: relative;
     top: 50%;
@@ -417,7 +436,19 @@ li.project {
     font-size: 3em;
     text-align: center;
     padding: 1rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+section.project-main {
+  background: #fff;
+  border-radius: 7px;
+  position: relative;
+  padding: 2rem; }
+  @media screen and (min-width: 768px) {
+    section.project-main {
+      width: 85%;
+      float: right; } }
 
 .browsehappy {
   margin: 0.2em 0;
@@ -491,11 +522,14 @@ body {
   .container .view-container {
     width: 60%;
     height: 70vh; }
+  .container.about-more .view-container {
+    width: 42%; }
   .container.portfolio .view-container {
     width: 70%; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-webdesign .view-container {
     width: 98%;
-    height: 98vh; }
+    height: 98vh;
+    background: transparent; }
   .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-webdesign nav {
     display: none; } }
 @-webkit-keyframes header-block-slide {

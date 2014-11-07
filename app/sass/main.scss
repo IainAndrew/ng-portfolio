@@ -22,6 +22,7 @@
 // Pages
 @import "pages/about";
 @import "pages/portfolio";
+@import "pages/project";
 
 .browsehappy {
     margin: 0.2em 0;
@@ -89,7 +90,12 @@ body {
     .view-container {
       width:60%;
       height:70vh;
-    }   
+    }
+    &.about-more {
+      .view-container {
+        width:42%;
+      }
+    } 
     &.portfolio {
       .view-container {
         width:70%;
@@ -99,6 +105,7 @@ body {
       .view-container {
         width:98%;
         height:98vh;
+        background:transparent;
       }
       nav {
         display:none;

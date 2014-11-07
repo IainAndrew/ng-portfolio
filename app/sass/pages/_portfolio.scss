@@ -18,6 +18,9 @@ li.project {
 	}
 	&:hover {
 		background-position:0,0;
+		a.project-link {
+			box-shadow:0 0 10px rgba(#000, 0.5);
+		}
 	}
 
 	.project-overlay {
@@ -78,6 +81,7 @@ li.project {
 		font-size:3em;
 		text-align:center;
 		padding:1rem;
-		box-shadow:0 0 20px rgba(#000, 0.2);
+		//box-shadow:0 0 20px rgba(#000, 0.2);
+		@include transition(all 0.3s ease);
 	}
 }

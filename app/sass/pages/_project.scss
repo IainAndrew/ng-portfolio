@@ -1,0 +1,10 @@
+section.project-main {
+  background:#fff;
+  border-radius:7px;
+  position:relative;
+  padding:2rem;
+  @include media($desktop) {
+  	width:85%;
+  	float:right;
+  }
+}

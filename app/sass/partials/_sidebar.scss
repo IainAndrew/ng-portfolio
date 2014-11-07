@@ -1,8 +1,12 @@
-aside {
-  width:7rem;
-  background:orange;
-  height:100%;
-  position:fixed;
-  top:0;
-  right:0;
+sidebar {
+  position:relative;
+	//min-width:185px;
+	height:100%;
+	border-radius:7px;
+	background:pink;
+	@include transition(all 0.3s cubic-bezier(1,0,.19,1.44));
+	@include media($desktop) {
+		float:left;
+		width:15%;
+	}
 }
