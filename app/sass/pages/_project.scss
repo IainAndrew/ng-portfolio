@@ -2,6 +2,7 @@ section.project-main {
   background:#fff;
   position:relative;
   padding:2rem;
+  height:100%;
   @include media($desktop) {
   	@include calc(width, '100% - 10rem');
   	float:right;

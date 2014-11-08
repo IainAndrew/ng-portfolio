@@ -1,3 +1,15 @@
+@include keyframes(project-sidebar-load) {
+	from {
+		border-top-right-radius:0;
+  	border-bottom-right-radius:0;
+  	background:#fff;
+	}
+	to {
+		border-radius:7px;
+		background:$pink-500;
+	}
+}
+
 sidebar {
   position:relative;
 	height:100%;
@@ -45,17 +57,5 @@ sidebar {
 				}
 			}
 		}
-	}
-}
-
-@include keyframes(project-sidebar-load) {
-	from {
-		border-top-right-radius:0;
-  	border-bottom-right-radius:0;
-  	background:#fff;
-	}
-	to {
-		border-radius:7px;
-		background:$pink-500;
 	}
 }
