@@ -1,6 +1,7 @@
 sidebar {
   position:relative;
 	height:100%;
+	@include menu-text;
 	@include transition(all 0.3s cubic-bezier(1,0,.19,1.44));
 	@include media($desktop) {
 		float:left;
@@ -8,6 +9,26 @@ sidebar {
   	background:#fff;
   	@include animation(project-sidebar-load 0.5s $cubic forwards);
   	@include animation-delay(0.5s);
+	}
+	.sidebar-browse {
+		color:#fff;
+		text-align:center;
+	}
+	.sidebar-menu {
+		background:#fff;
+		ul {
+			li {
+				height:3.5rem;
+				vertical-align:middle;
+				line-height:3.5rem;
+				a {
+					display:block;
+					&.sidebar-active {
+						font-weight:600;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -19,6 +40,6 @@ sidebar {
 	}
 	to {
 		border-radius:7px;
-		background:pink;
+		background:$pink-500;
 	}
 }

@@ -1,8 +1,13 @@
 <aside ng-repeat="project in projects | filter:filterBy">
-	<h2>{{project.name}}</h2>
-	<ul>
-		<li ng-repeat="item in project.items">
-			<a ui-sref="{{item.url}}">{{item.label}}</a>
-		</li>
-	</ul>
+	<div class="sidebar-browse">
+		<p>Browse Projects</p>
+		<p>&lt; x &gt;</p>
+	</div>
+	<div class="sidebar-menu">
+		<ul>
+			<li ng-repeat="item in project.items">
+				<a ui-sref="{{item.url}}" ui-sref-active-eq="sidebar-active">{{item.label}}</a>
+			</li>
+		</ul>
+	</div>
 </aside>
