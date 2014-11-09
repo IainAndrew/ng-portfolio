@@ -21,6 +21,7 @@
 
 // Pages
 @import "pages/about";
+@import "pages/about-more";
 @import "pages/portfolio";
 @import "pages/project";
 
@@ -93,7 +94,7 @@ body {
     }
     &.about-more {
       .view-container {
-        width:42%;
+        width:95%;
       }
     } 
     &.portfolio {

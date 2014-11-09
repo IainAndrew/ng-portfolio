@@ -408,7 +408,9 @@ sidebar {
       color: #bdbdbd; }
 
 section.about {
-  padding: 2rem; }
+  padding: 2rem;
+  height: -webkit-calc(100% - 6rem);
+  height: calc(100% - 6rem); }
 
 .about-tech ul li {
   display: inline-block;
@@ -419,6 +421,11 @@ section.about {
 
 .about-more-link {
   color: #e91e63; }
+
+.container.about-more .view-container {
+  background-image: url("../images/landscape.png");
+  background-size: cover;
+  background-position: center; }
 
 li.project {
   height: 12rem;
@@ -624,7 +631,7 @@ body {
     width: 60%;
     height: 70vh; }
   .container.about-more .view-container {
-    width: 42%; }
+    width: 95%; }
   .container.portfolio .view-container {
     width: 70%; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-webdesign .view-container {

@@ -1,5 +1,6 @@
 section.about {
 	padding:2rem;
+	@include calc(height, '100% - 6rem');
 }
 .about-tech {
 	ul {
