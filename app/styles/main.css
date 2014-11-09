@@ -634,11 +634,11 @@ body {
     width: 95%; }
   .container.portfolio .view-container {
     width: 70%; }
-  .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container {
+  .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
     width: 98%;
     height: 98vh;
     background-color: transparent; }
-  .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-web-design nav, .container.peter-ashmore nav, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design nav {
+  .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-web-design nav, .container.plugmedia-web-development nav, .container.plugmedia-logo-design nav, .container.peter-ashmore nav, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design nav, .container.peter-ashmore-web-development nav, .container.peter-ashmore-graphic-design nav, .container.peter-ashmore-logo-design nav, .container.trunkys nav, .container.trunkys-overview nav, .container.trunkys-graphic-design nav, .container.footerreveal nav, .container.footerreveal-overview nav, .container.footerreveal-web-development nav, .container.simplespin nav, .container.simplespin-overview nav, .container.simplespin-web-development nav {
     display: none; } }
 @-webkit-keyframes header-block-slide {
   0% {

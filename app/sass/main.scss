@@ -105,9 +105,27 @@ body {
     &.plugmedia, 
     &.plugmedia-overview, 
     &.plugmedia-web-design, 
+    &.plugmedia-web-development,
+    &.plugmedia-logo-design,
+
     &.peter-ashmore, 
     &.peter-ashmore-overview,
-    &.peter-ashmore-web-design {
+    &.peter-ashmore-web-design,
+    &.peter-ashmore-web-development,
+    &.peter-ashmore-graphic-design,
+    &.peter-ashmore-logo-design,
+
+    &.trunkys,
+    &.trunkys-overview,
+    &.trunkys-graphic-design,
+
+    &.footerreveal,
+    &.footerreveal-overview,
+    &.footerreveal-web-development,
+
+    &.simplespin,
+    &.simplespin-overview,
+    &.simplespin-web-development {
       .view-container {
         width:98%;
         height:98vh;

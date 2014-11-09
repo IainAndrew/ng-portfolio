@@ -20,6 +20,18 @@ angular.module('app')
       	'roles':['Graphic Design'],
       	'desc':'Illustrations for a stupid app',
       	'url':'trunkys'
+      },
+      {
+        'name':'Footer-reveal.js', 
+        'roles':['Web Development'],
+        'desc':'a jquery plugin',
+        'url':'footerreveal'
+      },
+      {
+        'name':'Simplespin.css', 
+        'roles':['Web Development'],
+        'desc':'a css library',
+        'url':'simplespin'
       }
     ];
   });

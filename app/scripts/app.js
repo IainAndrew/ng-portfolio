@@ -16,6 +16,9 @@ angular
     $urlRouterProvider
       .when('/plugmedia', '/plugmedia/')
       .when('/peter-ashmore', '/peter-ashmore/')
+      .when('/trunkys', '/trunkys/')
+      .when('/footerreveal', '/footerreveal/')
+      .when('/simplespin', '/simplespin/')
       .otherwise('/');
 
     $stateProvider
@@ -78,6 +81,75 @@ angular
       .state('peter-ashmore.web-design', {
         url: '/web-design',
         templateUrl: 'views/peter-ashmore/webdesign.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('peter-ashmore.web-development', {
+        url: '/web-development',
+        templateUrl: 'views/peter-ashmore/webdev.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('peter-ashmore.graphic-design', {
+        url: '/graphic-design',
+        templateUrl: 'views/peter-ashmore/graphicdesign.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('peter-ashmore.logo-design', {
+        url: '/logo-design',
+        templateUrl: 'views/peter-ashmore/logodesign.html',
+        controller: 'ProjectCtrl'
+      })
+
+      // Trunkys
+
+      .state('trunkys', {
+        url: '/trunkys',
+        templateUrl: 'views/trunkys.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('trunkys.overview', {
+        url: '/',
+        templateUrl: 'views/trunkys/overview.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('trunkys.graphic-design', {
+        url: '/graphic-design',
+        templateUrl: 'views/trunkys/graphicdesign.html',
+        controller: 'ProjectCtrl'
+      })
+
+      // Footer-reveal.js
+
+      .state('footerreveal', {
+        url: '/footerreveal',
+        templateUrl: 'views/footerreveal.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('footerreveal.overview', {
+        url: '/',
+        templateUrl: 'views/footerreveal/overview.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('footerreveal.web-development', {
+        url: '/web-development',
+        templateUrl: 'views/footerreveal/webdev.html',
+        controller: 'ProjectCtrl'
+      })
+
+      // Simplespin.css
+
+      .state('simplespin', {
+        url: '/simplespin',
+        templateUrl: 'views/simplespin.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('simplespin.overview', {
+        url: '/',
+        templateUrl: 'views/simplespin/overview.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('simplespin.web-development', {
+        url: '/web-development',
+        templateUrl: 'views/simplespin/webdev.html',
         controller: 'ProjectCtrl'
       })
 
