@@ -12,19 +12,15 @@ angular.module('app')
       		}, 
       		{
       			'label':'Web Design',
-      			'url':'plugmedia.webdesign'
+      			'url':'plugmedia.web-design'
       		},
       		{ 
       			'label':'Web Development',
-      			'url':'plugmedia-overview'
+      			'url':'plugmedia.web-development'
       		},
       		{ 
       			'label':'Logo Design',
-      			'url':'plugmedia-overview'
-      		},
-      		{ 
-      			'label':'Branding',
-      			'url':'plugmedia-overview'
+      			'url':'plugmedia.logo-design'
       		}
             ]
       },
@@ -33,23 +29,23 @@ angular.module('app')
       	'items':[
       		{
       			'label':'Overview',
-      			'url':'peter-ashmore-overview'
+      			'url':'peter-ashmore.overview'
       		}, 
       		{
       			'label':'Web Design',
-      			'url':'peter-ashmore-overview'
+      			'url':'peter-ashmore.web-design'
       		},
       		{ 
       			'label':'Web Development',
-      			'url':'peter-ashmore-overview'
+      			'url':'peter-ashmore.web-development'
       		},
+                  {
+                        'label':'Graphic Design',
+                        'url':'peter-ashmore.graphic-design'
+                  },
       		{ 
       			'label':'Logo Design',
-      			'url':'peter-ashmore-overview'
-      		},
-      		{ 
-      			'label':'Branding',
-      			'url':'peter-ashmore-overview'
+      			'url':'peter-ashmore.logo-design'
       		}
             ]
       },
@@ -58,24 +54,38 @@ angular.module('app')
       	'items':[
       		{
       			'label':'Overview',
-      			'url':'trunkys-overview'
+      			'url':'trunkys.overview'
       		}, 
       		{
-      			'label':'Web Design',
-      			'url':'trunkys-overview'
-      		},
-      		{ 
-      			'label':'Web Development',
-      			'url':'trunkys-overview'
-      		},
-      		{ 
-      			'label':'Logo Design',
-      			'url':'trunkys-overview'
-      		},
-      		{ 
-      			'label':'Branding',
-      			'url':'trunkys-overview'
+      			'label':'Graphic Design',
+      			'url':'trunkys.graphic-design'
       		}
+            ]
+      },
+      {
+            'name':'Simplespin.css', 
+            'items':[
+                  {
+                        'label':'Overview',
+                        'url':'simplespin.overview'
+                  }, 
+                  {
+                        'label':'Web Development',
+                        'url':'simplespin.web-development'
+                  }
+            ]
+      },
+      {
+            'name':'Footer-Reveal.js', 
+            'items':[
+                  {
+                        'label':'Overview',
+                        'url':'footerreveal.overview'
+                  }, 
+                  {
+                        'label':'Web Development',
+                        'url':'footerreveal.web-development'
+                  }
             ]
       }
     ];

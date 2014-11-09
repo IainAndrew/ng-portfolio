@@ -634,11 +634,11 @@ body {
     width: 95%; }
   .container.portfolio .view-container {
     width: 70%; }
-  .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-webdesign .view-container {
+  .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container {
     width: 98%;
     height: 98vh;
     background-color: transparent; }
-  .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-webdesign nav {
+  .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-web-design nav, .container.peter-ashmore nav, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design nav {
     display: none; } }
 @-webkit-keyframes header-block-slide {
   0% {

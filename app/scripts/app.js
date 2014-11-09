@@ -15,6 +15,7 @@ angular
   .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider
       .when('/plugmedia', '/plugmedia/')
+      .when('/peter-ashmore', '/peter-ashmore/')
       .otherwise('/');
 
     $stateProvider
@@ -33,6 +34,9 @@ angular
         templateUrl: 'views/portfolio.html',
         controller: 'PortfolioCtrl'
       })
+
+      // Plugmedia
+
       .state('plugmedia', {
         url: '/plugmedia',
         templateUrl: 'views/plugmedia.html',
@@ -43,16 +47,40 @@ angular
         templateUrl: 'views/plugmedia/overview.html',
         controller: 'ProjectCtrl'
       })
-      .state('plugmedia.webdesign', {
-        url: '/webdesign',
+      .state('plugmedia.web-design', {
+        url: '/web-design',
         templateUrl: 'views/plugmedia/webdesign.html',
         controller: 'ProjectCtrl'
       })
+      .state('plugmedia.web-development', {
+        url: '/web-development',
+        templateUrl: 'views/plugmedia/webdev.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('plugmedia.logo-design', {
+        url: '/logo-design',
+        templateUrl: 'views/plugmedia/logodesign.html',
+        controller: 'ProjectCtrl'
+      })
+
+      // Peter Ashmore
+
       .state('peter-ashmore', {
         url: '/peter-ashmore',
         templateUrl: 'views/peter-ashmore.html',
         controller: 'ProjectCtrl'
       })
+      .state('peter-ashmore.overview', {
+        url: '/',
+        templateUrl: 'views/peter-ashmore/overview.html',
+        controller: 'ProjectCtrl'
+      })
+      .state('peter-ashmore.web-design', {
+        url: '/web-design',
+        templateUrl: 'views/peter-ashmore/webdesign.html',
+        controller: 'ProjectCtrl'
+      })
+
       .state('contact', {
         url: '/contact',
         templateUrl: 'views/contact.html',

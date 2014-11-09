@@ -102,7 +102,12 @@ body {
         width:70%;
       }
     }
-    &.plugmedia, &.plugmedia-overview, &.plugmedia-webdesign {
+    &.plugmedia, 
+    &.plugmedia-overview, 
+    &.plugmedia-web-design, 
+    &.peter-ashmore, 
+    &.peter-ashmore-overview,
+    &.peter-ashmore-web-design {
       .view-container {
         width:98%;
         height:98vh;
