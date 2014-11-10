@@ -25,3 +25,10 @@
 	font-size:$nav-font-size;
 	font-weight:$nav-font-weight;
 }
+
+@mixin box-shadow-big {
+	box-shadow:0 0 20px rgba(#000, 0.2);
+}
+@mixin box-shadow-small {
+	box-shadow:0 0 10px rgba(#000, 0.2);
+}

@@ -1,11 +1,19 @@
+section.portfolio {
+	padding:1rem;
+}
 li.project {
 	height:12rem;
 	width:100%;
-	border-bottom:1px solid #444;
 	position:relative;
-	padding:1rem;
+	//padding:1rem;
+	background:#fff;
+	border-radius:2px;
+	@include box-shadow-small;
+	&:not(:last-child) {
+		margin-bottom:1rem;
+	}
 	@include transition(all 0.3s ease);
-	&.project-plugmedia {
+	/*&.project-plugmedia {
 		background-image:url('http://ns4lib.com/wp-content/uploads/2013/07/feature.jpg');
 		background-size:cover;
 	}
@@ -15,15 +23,49 @@ li.project {
 	}
 	&:last-child {
 		border-bottom-width:0;
-	}
+	}*/
 	&:hover {
-		background-position:0,0;
+		@include box-shadow-small;
 		a.project-link {
 			box-shadow:0 0 10px rgba(#000, 0.5);
 		}
 	}
+	.project-image {
+		border:1px solid $grey-200;
+		height:100%;
+		img {
+			width:100%;
+			height:100%;
+		}
+	}
+	.project-info {
+		.project-info-main {
+			padding:1rem;
+			h2 {
+				@include subhead-text;
+				font-weight:500;
+			}
+			ul {
+				li {
+					display:inline-block;
+					margin-right:0.2em;
+					font-style:italic;
+					font-size:0.9em;
+					&:not(:last-child) {
+						&:after {
+							content:'\2219'
+						}
+					}
+				}
+			}
+		}
+		.project-info-links {
+			padding:1rem;
+			border-top:1px solid $border-grey;
+		}
+	}
 
-	.project-overlay {
+	/*.project-overlay {
 		position:relative;
 		top:50%;
 		@include transform(translateY(-50%));
@@ -67,21 +109,5 @@ li.project {
 				text-align:left;
 			}
 		}
-	}
-	a.project-link {
-		position:absolute;
-		top:50%;
-		right:1rem;
-		@include transform(translateY(-50%));
-		width:4rem;
-		height:4rem;
-		background:$pink-500;
-		color:#fff;
-		border-radius:50%;
-		font-size:3em;
-		text-align:center;
-		padding:1rem;
-		//box-shadow:0 0 20px rgba(#000, 0.2);
-		@include transition(all 0.3s ease);
-	}
+	}*/
 }
