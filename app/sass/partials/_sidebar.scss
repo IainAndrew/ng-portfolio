@@ -42,16 +42,21 @@ sidebar {
 					display:block;
 					position:relative;
 					@include transition(all 0.3s ease);
+					&:after {
+						content:"";
+						position:absolute;
+						right:0;
+						bottom:0;
+						height:0;
+						width:0.2rem;
+						background-color:$pink-500;
+						@include transition(all 0.3s ease);
+					}
 					&.sidebar-active {
 						font-weight:600;
 						&:after {
-							content:"";
-							position:absolute;
-							right:0;
-							top:0;
 							height:100%;
-							width:0.2rem;
-							background-color:$pink-500;
+							top:0;
 						}
 					}
 				}

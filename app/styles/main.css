@@ -368,16 +368,22 @@ sidebar {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         transition: all 0.3s ease; }
+        sidebar .sidebar-menu ul li a:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          height: 0;
+          width: 0.2rem;
+          background-color: #e91e63;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
         sidebar .sidebar-menu ul li a.sidebar-active {
           font-weight: 600; }
           sidebar .sidebar-menu ul li a.sidebar-active:after {
-            content: "";
-            position: absolute;
-            right: 0;
-            top: 0;
             height: 100%;
-            width: 0.2rem;
-            background-color: #e91e63; }
+            top: 0; }
 
 .header-block {
   height: 6rem;
