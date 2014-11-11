@@ -5,7 +5,7 @@ angular.module('app')
     $scope.projects = [
       {
       	'name':'Plugmedia', 
-      	'roles':['Web Design', 'Web Development', 'Logo Design', 'Branding'], 
+      	'roles':['Web Design', 'Web Development', 'Logo Design'], 
       	'desc':'A website for a Dublin based digital media company Lorem ipsum dolor sit amet, consectetur adipisicing.',
       	'url':'plugmedia',
         'liveUrl':'//www.plugmedia.ie',
@@ -13,7 +13,7 @@ angular.module('app')
       },
       {
       	'name':'Peter Ashmore', 
-      	'roles':['Web Design', 'Web Development', 'Logo Design', 'Branding'],
+      	'roles':['Web Design', 'Web Development', 'Logo Design', 'Graphic Design'],
       	'desc':'I designed this website for an audio engineer',
       	'url':'peter-ashmore',
         'liveUrl':'//peterashmore.net',

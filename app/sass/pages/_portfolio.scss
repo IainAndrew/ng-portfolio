@@ -2,17 +2,17 @@ section.portfolio {
 	padding:1rem;
 }
 li.project {
-	height:12rem;
+	height:13rem;
 	width:100%;
 	position:relative;
 	//padding:1rem;
 	background:#fff;
 	border-radius:2px;
-	@include box-shadow-small;
+	@include box-shadow-z1;
 	&:not(:last-child) {
 		margin-bottom:1rem;
 	}
-	@include transition(all 0.3s ease);
+	@include transition(all 0.1s ease);
 	/*&.project-plugmedia {
 		background-image:url('http://ns4lib.com/wp-content/uploads/2013/07/feature.jpg');
 		background-size:cover;
@@ -25,7 +25,8 @@ li.project {
 		border-bottom-width:0;
 	}*/
 	&:hover {
-		@include box-shadow-small;
+		@include box-shadow-z2;
+		@include transform(translateY(-2px));
 		a.project-link {
 			box-shadow:0 0 10px rgba(#000, 0.5);
 		}
@@ -39,6 +40,8 @@ li.project {
 		}
 	}
 	.project-info {
+		position:relative;
+		height:100%;
 		.project-info-main {
 			padding:1rem;
 			h2 {
@@ -59,9 +62,16 @@ li.project {
 					}
 				}
 			}
+			p {
+				max-width:22rem;
+			}
 		}
 		.project-info-links {
 			padding:1rem;
+			position:absolute;
+			bottom:0;
+			left:0;
+			width:100%;
 			border-top:1px solid $border-grey;
 		}
 	}

@@ -453,15 +453,15 @@ section.portfolio {
   padding: 1rem; }
 
 li.project {
-  height: 12rem;
+  height: 13rem;
   width: 100%;
   position: relative;
   background: #fff;
   border-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  transition: all 0.1s ease;
   /*&.project-plugmedia {
   	background-image:url('http://ns4lib.com/wp-content/uploads/2013/07/feature.jpg');
   	background-size:cover;
@@ -521,7 +521,12 @@ li.project {
   li.project:not(:last-child) {
     margin-bottom: 1rem; }
   li.project:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    transform: translateY(-2px); }
     li.project:hover a.project-link {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   li.project .project-image {
@@ -530,24 +535,33 @@ li.project {
     li.project .project-image img {
       width: 100%;
       height: 100%; }
-  li.project .project-info .project-info-main {
-    padding: 1rem; }
-    li.project .project-info .project-info-main h2 {
-      font-size: 15px;
-      line-height: 24px;
-      font-weight: 400;
-      font-weight: 500; }
-    li.project .project-info .project-info-main ul li {
-      display: inline-block;
-      margin-right: 0.2em;
-      font-style: italic;
-      font-size: 0.9em;
-      color: #bdbdbd; }
-      li.project .project-info .project-info-main ul li:not(:last-child):after {
-        content: "∙"; }
-  li.project .project-info .project-info-links {
-    padding: 1rem;
-    border-top: 1px solid #e0e0e0; }
+  li.project .project-info {
+    position: relative;
+    height: 100%; }
+    li.project .project-info .project-info-main {
+      padding: 1rem; }
+      li.project .project-info .project-info-main h2 {
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        font-weight: 500; }
+      li.project .project-info .project-info-main ul li {
+        display: inline-block;
+        margin-right: 0.2em;
+        font-style: italic;
+        font-size: 0.9em;
+        color: #bdbdbd; }
+        li.project .project-info .project-info-main ul li:not(:last-child):after {
+          content: "∙"; }
+      li.project .project-info .project-info-main p {
+        max-width: 22rem; }
+    li.project .project-info .project-info-links {
+      padding: 1rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid #e0e0e0; }
 
 section.project-main {
   background: #fff;
@@ -661,7 +675,7 @@ body {
   transform: translateX(-50%);
   width: 95%;
   border-radius: 9px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   height: 85vh;
   overflow-y: scroll;
   -webkit-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
