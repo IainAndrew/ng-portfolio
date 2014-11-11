@@ -8,27 +8,31 @@ angular.module('app')
       	'roles':['Web Design', 'Web Development', 'Logo Design', 'Branding'], 
       	'desc':'A website for a Dublin based digital media company Lorem ipsum dolor sit amet, consectetur adipisicing.',
       	'url':'plugmedia',
-        'image':'"../../images/landscape.png'
+        'liveUrl':'//www.plugmedia.ie',
+        'image':'../../images/landscape.png'
       },
       {
       	'name':'Peter Ashmore', 
       	'roles':['Web Design', 'Web Development', 'Logo Design', 'Branding'],
       	'desc':'I designed this website for an audio engineer',
       	'url':'peter-ashmore',
-        'image':'"../../images/landscape.png'
+        'liveUrl':'//peterashmore.net',
+        'image':'../../images/landscape.png'
       },
       {
       	'name':'Trunkys', 
       	'roles':['Graphic Design'],
       	'desc':'Illustrations for a stupid app',
       	'url':'trunkys',
-        'image':'"../../images/landscape.png'
+        'liveUrl':'',
+        'image':'../../images/landscape.png'
       },
       {
         'name':'Footer-reveal.js', 
         'roles':['Web Development'],
         'desc':'a jquery plugin',
         'url':'footerreveal',
+        'liveUrl':'//iainandrew.github.io/footer-reveal',
         'image':'../../images/landscape.png'
       },
       {
@@ -36,6 +40,7 @@ angular.module('app')
         'roles':['Web Development'],
         'desc':'a css library',
         'url':'simplespin',
+        'liveUrl':'//iainandrew.github.io/simplespin.css',
         'image':'../../images/landscape.png'
       }
     ];

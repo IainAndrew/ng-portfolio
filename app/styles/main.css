@@ -541,7 +541,8 @@ li.project {
       display: inline-block;
       margin-right: 0.2em;
       font-style: italic;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      color: #bdbdbd; }
       li.project .project-info .project-info-main ul li:not(:last-child):after {
         content: "∙"; }
   li.project .project-info .project-info-links {

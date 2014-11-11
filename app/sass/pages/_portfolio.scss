@@ -51,6 +51,7 @@ li.project {
 					margin-right:0.2em;
 					font-style:italic;
 					font-size:0.9em;
+					color:$grey-400;
 					&:not(:last-child) {
 						&:after {
 							content:'\2219'
