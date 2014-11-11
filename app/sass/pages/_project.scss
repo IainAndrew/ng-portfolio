@@ -3,6 +3,7 @@ section.project-main {
   position:relative;
   padding:2rem;
   height:100%;
+  @include box-shadow-z3;
   @include media($desktop) {
   	@include calc(width, '100% - 10rem');
   	float:right;
