@@ -563,6 +563,11 @@ li.project {
       left: 0;
       width: 100%;
       border-top: 1px solid #e0e0e0; }
+      li.project .project-info .project-info-links a {
+        text-transform: uppercase; }
+        li.project .project-info .project-info-links a:first-child {
+          color: #e91e63;
+          margin-right: 2rem; }
 
 section.project-main {
   background: #fff;

@@ -73,6 +73,13 @@ li.project {
 			left:0;
 			width:100%;
 			border-top:1px solid $border-grey;
+			a {
+				text-transform:uppercase;
+				&:first-child {
+					color:$pink-500;
+					margin-right:2rem;
+				}
+			}
 		}
 	}
 
