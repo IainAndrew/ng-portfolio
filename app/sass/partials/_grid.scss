@@ -21,3 +21,18 @@ section {
 		@include span-columns(7, block-collapse);
 	}
 }
+
+.row {
+	@include row();
+}
+
+.project-overview-intro {
+	@include media($desktop) {
+		@include span-columns(6);
+	}
+}
+.project-overview-image {
+	@include media($desktop) {
+		@include span-columns(6);
+	}
+}
