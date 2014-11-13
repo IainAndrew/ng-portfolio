@@ -597,14 +597,33 @@ section.project-main {
   background: #fff;
   position: relative;
   padding: 2rem;
-  height: 100%; }
-  section.project-main h1 {
+  height: 100%;
+  overflow-y: scroll; }
+  section.project-main .project-overview-intro h1 {
     font-size: 56px;
     font-weight: 100;
     line-height: 60px; }
-  section.project-main img {
+  section.project-main .project-overview-intro p {
+    margin-top: 4rem; }
+  section.project-main .project-overview-intro .project-overview-palette {
+    margin-top: 4rem; }
+    section.project-main .project-overview-intro .project-overview-palette .palette-color {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background: red; }
+      section.project-main .project-overview-intro .project-overview-palette .palette-color:not(:last-child) {
+        margin-right: 4rem; }
+  section.project-main .project-overview-image img {
     height: 500px;
     width: auto; }
+  section.project-main .project-next-section {
+    background: #3f51b5;
+    color: #fff;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 7px; }
   @media screen and (min-width: 768px) {
     section.project-main {
       width: -webkit-calc(100% - 10rem);
@@ -649,6 +668,14 @@ section.project-main {
     border-radius: 7px;
     width: -webkit-calc(100% - 10.5rem);
     width: calc(100% - 10.5rem); } }
+.plugmedia-overview .project-main .project-overview-intro .project-overview-palette .palette-color:first-child {
+  background: #E74C3C; }
+.plugmedia-overview .project-main .project-overview-intro .project-overview-palette .palette-color:nth-child(2) {
+  background: #3498DB; }
+.plugmedia-overview .project-main .project-overview-intro .project-overview-palette .palette-color:nth-child(3) {
+  background: #fff;
+  border: 1px solid #bdbdbd; }
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;

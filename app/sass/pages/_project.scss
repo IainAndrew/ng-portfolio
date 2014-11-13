@@ -3,13 +3,41 @@ section.project-main {
   position:relative;
   padding:2rem;
   height:100%;
+  overflow-y:scroll;
   //@include box-shadow-z3;
-  h1 {
-    @include display-text;
+  .project-overview-intro {
+    h1 {
+      @include display-text;
+    }
+    p {
+      margin-top:4rem;
+    }
+    .project-overview-palette {
+      margin-top:4rem;
+      .palette-color {
+        display:inline-block;
+        width:4rem;
+        height:4rem;
+        border-radius:50%;
+        background:red;
+        &:not(:last-child) {
+          margin-right:4rem;
+        }
+      }
+    }
   }
-  img {
-    height:500px;
-    width:auto;
+  .project-overview-image {
+    img {
+      height:500px;
+      width:auto;
+    }
+  }
+  .project-next-section {
+    background:$indigo-500;
+    color:#fff;
+    width:100%;
+    padding:2rem;
+    border-radius:7px;
   }
   @include media($desktop) {
   	@include calc(width, '100% - 10rem');

@@ -1,0 +1,20 @@
+.plugmedia-overview {
+	.project-main {
+		.project-overview-intro {
+			.project-overview-palette {
+				.palette-color {
+					&:first-child {
+						background:#E74C3C;
+					}
+					&:nth-child(2) {
+						background:#3498DB;
+					}
+					&:nth-child(3) {
+						background:#fff;
+						border:1px solid $grey-400;
+					}
+				}
+			}
+		}
+	}
+}
