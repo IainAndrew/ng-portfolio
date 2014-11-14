@@ -216,6 +216,13 @@ table {
 /*
 	Colours
 */
+.row {
+  display: block; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 @media screen and (min-width: 768px) {
   .about-intro, .about-tech {
     float: left;
@@ -224,6 +231,7 @@ table {
     width: 48.82117%; }
     .about-intro:last-child, .about-tech:last-child {
       margin-right: 0; } }
+
 @media screen and (min-width: 768px) {
   .project-image {
     float: left;
@@ -240,29 +248,13 @@ table {
     .project-info:last-child {
       width: 57.35098%; } }
 
-.row {
-  display: block; }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both; }
-
 @media screen and (min-width: 768px) {
-  .project-overview-intro {
+  .project-overview-intro, .project-overview-image {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    .project-overview-intro:last-child {
-      margin-right: 0; } }
-
-@media screen and (min-width: 768px) {
-  .project-overview-image {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .project-overview-image:last-child {
+    .project-overview-intro:last-child, .project-overview-image:last-child {
       margin-right: 0; } }
 
 @-webkit-keyframes popup {
@@ -614,30 +606,32 @@ section.project-main {
   &.ng-leave-active {
     left:-10rem;
   }*/ }
-  section.project-main .project-overview-intro h1 {
+  section.project-main h1 {
     font-size: 56px;
     font-weight: 100;
     line-height: 60px; }
-  section.project-main .project-overview-intro p.project-subhead {
+  section.project-main p.project-subhead {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     color: #9e9e9e;
     margin-top: 0.5rem;
     margin-bottom: 4rem; }
-  section.project-main .project-overview-intro .project-palette {
+  section.project-main .project-palette {
     margin-top: 4rem; }
-    section.project-main .project-overview-intro .project-palette .palette-color {
+    section.project-main .project-palette .palette-color {
       display: inline-block;
       width: 4rem;
       height: 4rem;
       border-radius: 50%;
       background: red; }
-      section.project-main .project-overview-intro .project-palette .palette-color:not(:last-child) {
+      section.project-main .project-palette .palette-color:not(:last-child) {
         margin-right: 3rem; }
   section.project-main .project-overview-image img {
     height: 500px;
     width: auto; }
+  section.project-main .project-webdesign-intro {
+    max-width: 40rem; }
   section.project-main .project-next-section {
     background: #3f51b5;
     color: #fff;

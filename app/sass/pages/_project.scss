@@ -18,27 +18,25 @@ section.project-main {
     left:-10rem;
   }*/
   //@include box-shadow-z3;
-  .project-overview-intro {
-    h1 {
-      @include display-text;
-    }
-    p.project-subhead {
-      @include subhead-text;
-      color:$grey-500;
-      margin-top:0.5rem;
-      margin-bottom:4rem;
-    }
-    .project-palette {
-      margin-top:4rem;
-      .palette-color {
-        display:inline-block;
-        width:4rem;
-        height:4rem;
-        border-radius:50%;
-        background:red;
-        &:not(:last-child) {
-          margin-right:3rem;
-        }
+  h1 {
+    @include display-text;
+  }
+  p.project-subhead {
+    @include subhead-text;
+    color:$grey-500;
+    margin-top:0.5rem;
+    margin-bottom:4rem;
+  }
+  .project-palette {
+    margin-top:4rem;
+    .palette-color {
+      display:inline-block;
+      width:4rem;
+      height:4rem;
+      border-radius:50%;
+      background:red;
+      &:not(:last-child) {
+        margin-right:3rem;
       }
     }
   }
@@ -47,6 +45,9 @@ section.project-main {
       height:500px;
       width:auto;
     }
+  }
+  .project-webdesign-intro {
+    max-width:40rem;
   }
   .project-next-section {
     background:$indigo-500;

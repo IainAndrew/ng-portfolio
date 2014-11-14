@@ -3,8 +3,11 @@ $tablet: new-breakpoint(min-width 480px);
 $desktop: new-breakpoint(min-width 768px);
 $widescreen: new-breakpoint(min-width 1281px);
 
-@include media($desktop) {
-	.about-intro, .about-tech {
+.row {
+	@include row();
+}
+.about-intro, .about-tech {
+	@include media($desktop) {
 		@include span-columns(6);
 	}
 }
@@ -22,16 +25,7 @@ section {
 	}
 }
 
-.row {
-	@include row();
-}
-
-.project-overview-intro {
-	@include media($desktop) {
-		@include span-columns(6);
-	}
-}
-.project-overview-image {
+.project-overview-intro, .project-overview-image {
 	@include media($desktop) {
 		@include span-columns(6);
 	}
