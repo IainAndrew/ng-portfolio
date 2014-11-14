@@ -4,15 +4,31 @@ section.project-main {
   padding:2rem;
   height:100%;
   overflow-y:scroll;
+  @include transition(all 0.5s);
+  /*&.ng-enter {
+    left:10rem;
+  }
+  &.ng-enter-active {
+    left:0;
+  }
+  &.ng-leave {
+    left:0;
+  }
+  &.ng-leave-active {
+    left:-10rem;
+  }*/
   //@include box-shadow-z3;
   .project-overview-intro {
     h1 {
       @include display-text;
     }
-    p {
-      margin-top:4rem;
+    p.project-subhead {
+      @include subhead-text;
+      color:$grey-500;
+      margin-top:0.5rem;
+      margin-bottom:4rem;
     }
-    .project-overview-palette {
+    .project-palette {
       margin-top:4rem;
       .palette-color {
         display:inline-block;
@@ -21,7 +37,7 @@ section.project-main {
         border-radius:50%;
         background:red;
         &:not(:last-child) {
-          margin-right:4rem;
+          margin-right:3rem;
         }
       }
     }
