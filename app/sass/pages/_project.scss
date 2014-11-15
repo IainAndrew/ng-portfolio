@@ -18,6 +18,9 @@ section.project-main {
     left:-10rem;
   }*/
   //@include box-shadow-z3;
+  .row {
+    margin-bottom:4rem;
+  }
   h1 {
     @include display-text;
   }
@@ -46,8 +49,17 @@ section.project-main {
       width:auto;
     }
   }
-  .project-webdesign-intro {
+  .project-intro {
     max-width:40rem;
+    h1 {
+      margin-bottom:4rem;
+    }
+  }
+  .project-image {
+    img {
+      max-width:100%;
+      height:auto;
+    }
   }
   .project-next-section {
     background:$indigo-500;
@@ -55,6 +67,7 @@ section.project-main {
     width:100%;
     padding:2rem;
     border-radius:7px;
+    margin:0;
   }
   @include media($desktop) {
   	@include calc(width, '100% - 10rem');

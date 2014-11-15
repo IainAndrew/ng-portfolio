@@ -14,12 +14,12 @@ $widescreen: new-breakpoint(min-width 1281px);
 section {
 	//@include outer-container;
 }
-.project-image {
+.portfolio-image {
 	@include media($desktop) {
 		@include span-columns(5, block-collapse);
 	}
 }
-.project-info {
+.portfolio-info {
 	@include media($desktop) {
 		@include span-columns(7, block-collapse);
 	}
@@ -28,5 +28,15 @@ section {
 .project-overview-intro, .project-overview-image {
 	@include media($desktop) {
 		@include span-columns(6);
+	}
+}
+.project-paragraph {
+	@include media($desktop) {
+		@include span-columns(5);
+	}
+}
+.project-image {
+	@include media($desktop) {
+		@include span-columns(7);
 	}
 }

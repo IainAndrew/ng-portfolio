@@ -3,7 +3,7 @@
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
  * MIT License */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,100,100italic,300,300italic,500,400italic,500italic,700,700italic,900,900italic);
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -233,19 +233,19 @@ table {
       margin-right: 0; } }
 
 @media screen and (min-width: 768px) {
-  .project-image {
+  .portfolio-image {
     float: left;
     display: block;
     width: 42.64902%; }
-    .project-image:last-child {
+    .portfolio-image:last-child {
       width: 40.29137%; } }
 
 @media screen and (min-width: 768px) {
-  .project-info {
+  .portfolio-info {
     float: left;
     display: block;
     width: 59.70863%; }
-    .project-info:last-child {
+    .portfolio-info:last-child {
       width: 57.35098%; } }
 
 @media screen and (min-width: 768px) {
@@ -255,6 +255,24 @@ table {
     margin-right: 2.35765%;
     width: 48.82117%; }
     .project-overview-intro:last-child, .project-overview-image:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 768px) {
+  .project-paragraph {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .project-paragraph:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 768px) {
+  .project-image {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    .project-image:last-child {
       margin-right: 0; } }
 
 @-webkit-keyframes popup {
@@ -544,44 +562,42 @@ li.project {
     -ms-transform: translateY(-2px);
     -o-transform: translateY(-2px);
     transform: translateY(-2px); }
-    li.project:hover a.project-link {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-  li.project .project-image {
+  li.project .portfolio-image {
     border: 1px solid #eeeeee;
     height: 100%; }
-    li.project .project-image img {
+    li.project .portfolio-image img {
       width: 100%;
       height: 100%; }
-  li.project .project-info {
+  li.project .portfolio-info {
     position: relative;
     height: 100%; }
-    li.project .project-info .project-info-main {
+    li.project .portfolio-info .portfolio-info-main {
       padding: 1rem; }
-      li.project .project-info .project-info-main h2 {
+      li.project .portfolio-info .portfolio-info-main h2 {
         font-size: 15px;
         line-height: 24px;
         font-weight: 400;
         font-weight: 500; }
-      li.project .project-info .project-info-main ul li {
+      li.project .portfolio-info .portfolio-info-main ul li {
         display: inline-block;
         margin-right: 0.2em;
         font-style: italic;
         font-size: 0.9em;
         color: #bdbdbd; }
-        li.project .project-info .project-info-main ul li:not(:last-child):after {
+        li.project .portfolio-info .portfolio-info-main ul li:not(:last-child):after {
           content: "∙"; }
-      li.project .project-info .project-info-main p {
+      li.project .portfolio-info .portfolio-info-main p {
         max-width: 22rem; }
-    li.project .project-info .project-info-links {
+    li.project .portfolio-info .portfolio-info-links {
       padding: 1rem;
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
       border-top: 1px solid #e0e0e0; }
-      li.project .project-info .project-info-links a {
+      li.project .portfolio-info .portfolio-info-links a {
         text-transform: uppercase; }
-        li.project .project-info .project-info-links a:first-child {
+        li.project .portfolio-info .portfolio-info-links a:first-child {
           color: #e91e63;
           margin-right: 2rem; }
 
@@ -606,6 +622,8 @@ section.project-main {
   &.ng-leave-active {
     left:-10rem;
   }*/ }
+  section.project-main .row {
+    margin-bottom: 4rem; }
   section.project-main h1 {
     font-size: 56px;
     font-weight: 100;
@@ -630,14 +648,20 @@ section.project-main {
   section.project-main .project-overview-image img {
     height: 500px;
     width: auto; }
-  section.project-main .project-webdesign-intro {
+  section.project-main .project-intro {
     max-width: 40rem; }
+    section.project-main .project-intro h1 {
+      margin-bottom: 4rem; }
+  section.project-main .project-image img {
+    max-width: 100%;
+    height: auto; }
   section.project-main .project-next-section {
     background: #3f51b5;
     color: #fff;
     width: 100%;
     padding: 2rem;
-    border-radius: 7px; }
+    border-radius: 7px;
+    margin: 0; }
   @media screen and (min-width: 768px) {
     section.project-main {
       width: -webkit-calc(100% - 10rem);
@@ -700,7 +724,7 @@ body, html {
   height: 100%; }
 
 body {
-  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: RobotoDraft, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;

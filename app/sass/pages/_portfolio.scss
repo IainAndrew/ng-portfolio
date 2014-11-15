@@ -27,11 +27,8 @@ li.project {
 	&:hover {
 		@include box-shadow-z2;
 		@include transform(translateY(-2px));
-		a.project-link {
-			box-shadow:0 0 10px rgba(#000, 0.5);
-		}
 	}
-	.project-image {
+	.portfolio-image {
 		border:1px solid $grey-200;
 		height:100%;
 		img {
@@ -39,10 +36,10 @@ li.project {
 			height:100%;
 		}
 	}
-	.project-info {
+	.portfolio-info {
 		position:relative;
 		height:100%;
-		.project-info-main {
+		.portfolio-info-main {
 			padding:1rem;
 			h2 {
 				@include subhead-text;
@@ -66,7 +63,7 @@ li.project {
 				max-width:22rem;
 			}
 		}
-		.project-info-links {
+		.portfolio-info-links {
 			padding:1rem;
 			position:absolute;
 			bottom:0;
