@@ -655,7 +655,7 @@ section.project-main {
   section.project-main .project-image img {
     max-width: 100%;
     height: auto; }
-  section.project-main .project-next-section {
+  section.project-main .project-next-section, section.project-main .project-next-project {
     background: #3f51b5;
     color: #fff;
     width: 100%;

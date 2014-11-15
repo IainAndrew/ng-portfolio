@@ -69,6 +69,9 @@ section.project-main {
     border-radius:7px;
     margin:0;
   }
+  .project-next-project {
+    @extend .project-next-section;
+  }
   @include media($desktop) {
   	@include calc(width, '100% - 10rem');
   	float:right;
