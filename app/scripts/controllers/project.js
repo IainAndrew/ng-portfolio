@@ -59,7 +59,11 @@ angular.module('app')
       		{
       			'label':'Graphic Design',
       			'url':'trunkys.graphic-design'
-      		}
+      		},
+                  {
+                        'label':'UI Design',
+                        'url':'trunkys.ui-design'
+                  }
             ]
       },
       {

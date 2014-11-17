@@ -116,6 +116,11 @@ angular
         templateUrl: 'views/trunkys/graphicdesign.html',
         controller: 'ProjectCtrl'
       })
+      .state('trunkys.ui-design', {
+        url: '/ui-design',
+        templateUrl: 'views/trunkys/uidesign.html',
+        controller: 'ProjectCtrl'
+      })
 
       // Footer-reveal.js
 
