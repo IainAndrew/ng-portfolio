@@ -22,7 +22,4 @@ angular.module('app')
 			'Adobe Illustrator',
 			'Adobe Photoshop'
 		];
-		/*$('.about-more-link').hover(function() {
-			alert('hey');
-		});*/
 	});

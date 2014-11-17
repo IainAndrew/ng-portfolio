@@ -26,7 +26,10 @@ sidebar {
 	.sidebar-browse {
 		color:#fff;
 		text-align:center;
-		padding:2rem;
+		padding:2rem 1rem;
+		a {
+			font-size:2em;
+		}
 	}
 	.sidebar-menu {
 		background:#fff;

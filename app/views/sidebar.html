@@ -1,7 +1,15 @@
 <aside ng-repeat="project in projects | filter:filterBy">
 	<div class="sidebar-browse">
 		<p>Browse Projects</p>
-		<p>&lt; <a ui-sref="portfolio">x</a> &gt;</p>
+		<a href="#">
+			<i class="icon-arrow-back"></i>
+		</a>
+		<a ui-sref="portfolio">
+			<i class="icon-close"></i>
+		</a>
+		<a href="#">
+			<i class="icon-arrow-forward"></i>
+		</a>
 	</div>
 	<div class="sidebar-menu">
 		<ul>
