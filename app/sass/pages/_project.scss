@@ -5,6 +5,14 @@ section.project-main {
   height:100%;
   overflow-y:scroll;
   @include transition(all 0.5s);
+  @include media($desktop) {
+    @include calc(width, '100% - 10rem');
+    float:right;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    @include animation(project-main-load 0.5s $cubic forwards);
+    @include animation-delay(0.5s);
+  }
   /*&.ng-enter {
     left:2rem;
   }
@@ -71,14 +79,6 @@ section.project-main {
   }
   .project-next-project {
     @extend .project-next-section;
-  }
-  @include media($desktop) {
-  	@include calc(width, '100% - 10rem');
-  	float:right;
-  	border-top-left-radius:0;
-  	border-bottom-left-radius:0;
-  	@include animation(project-main-load 0.5s $cubic forwards);
-  	@include animation-delay(0.5s);
   }
 }
 

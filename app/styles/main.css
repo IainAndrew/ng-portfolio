@@ -459,7 +459,8 @@ nav {
     background: #e91e63; } }
 sidebar {
   position: relative;
-  height: 100%;
+  background: #e91e63;
+  display: block;
   font-size: 13px;
   font-weight: 400;
   -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
@@ -467,6 +468,7 @@ sidebar {
   transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
   @media screen and (min-width: 768px) {
     sidebar {
+      height: 100%;
       float: left;
       width: 10rem;
       background: #fff;
@@ -491,6 +493,8 @@ sidebar {
         opacity: 0.3; }
   sidebar .sidebar-menu {
     background: #fff; }
+    sidebar .sidebar-menu a.menu-toggle i {
+      font-size: 2em; }
     @media screen and (min-width: 768px) {
       sidebar .sidebar-menu a.menu-toggle {
         display: none; } }
@@ -720,6 +724,19 @@ section.project-main {
   &.ng-leave-active {
     left:-2rem;
   }*/ }
+  @media screen and (min-width: 768px) {
+    section.project-main {
+      width: -webkit-calc(100% - 10rem);
+      width: calc(100% - 10rem);
+      float: right;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      -webkit-animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      -moz-animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+      -webkit-animation-delay: 0.5s;
+      -moz-animation-delay: 0.5s;
+      animation-delay: 0.5s; } }
   section.project-main .row {
     margin-bottom: 4rem; }
   section.project-main h1 {
@@ -760,19 +777,6 @@ section.project-main {
     padding: 2rem;
     border-radius: 7px;
     margin: 0; }
-  @media screen and (min-width: 768px) {
-    section.project-main {
-      width: -webkit-calc(100% - 10rem);
-      width: calc(100% - 10rem);
-      float: right;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      -webkit-animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
-      -moz-animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
-      animation: project-main-load 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
-      -webkit-animation-delay: 0.5s;
-      -moz-animation-delay: 0.5s;
-      animation-delay: 0.5s; } }
 
 @-webkit-keyframes project-main-load {
   from {
@@ -865,7 +869,6 @@ body {
   transform: translateY(-50%); }
 
 .view-container {
-  background: #fff;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);

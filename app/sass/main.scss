@@ -76,7 +76,7 @@ body {
 }
 
 .view-container {
-  background:#fff;
+  //background:#fff;
   position:relative;
   left:50%;
   @include transform(translateX(-50%));

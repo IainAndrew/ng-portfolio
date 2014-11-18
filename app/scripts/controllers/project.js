@@ -70,21 +70,6 @@ angular.module('app')
                   }
             ],
             'prev':'#/peter-ashmore',
-            'next':'#/simplespin'
-      },
-      {
-            'name':'Simplespin.css', 
-            'items':[
-                  {
-                        'label':'Overview',
-                        'url':'simplespin.overview'
-                  }, 
-                  {
-                        'label':'Web Development',
-                        'url':'simplespin.web-development'
-                  }
-            ],
-            'prev':'#/trunkys',
             'next':'#/footerreveal'
       },
       {
@@ -99,7 +84,22 @@ angular.module('app')
                         'url':'footerreveal.web-development'
                   }
             ],
-            'prev':'#/simplespin',
+            'prev':'#/trunkys',
+            'next':'#/simplespin'
+      },
+      {
+            'name':'Simplespin.css', 
+            'items':[
+                  {
+                        'label':'Overview',
+                        'url':'simplespin.overview'
+                  }, 
+                  {
+                        'label':'Web Development',
+                        'url':'simplespin.web-development'
+                  }
+            ],
+            'prev':'#/footerreveal',
             'next':''
       }
     ];
