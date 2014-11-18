@@ -487,37 +487,52 @@ sidebar {
       transition: all 0.2s ease; }
       sidebar .sidebar-browse a:hover {
         color: #f8bbd0; }
+      sidebar .sidebar-browse a[ng-href=""] {
+        opacity: 0.3; }
   sidebar .sidebar-menu {
     background: #fff; }
-    sidebar .sidebar-menu ul li {
-      height: 3.5rem;
-      vertical-align: middle;
-      line-height: 3.5rem;
-      text-indent: 1rem; }
-      sidebar .sidebar-menu ul li:not(:last-child) {
-        border-bottom: 1px solid #e0e0e0; }
-      sidebar .sidebar-menu ul li a {
-        display: block;
-        position: relative;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
-        sidebar .sidebar-menu ul li a:after {
-          content: "";
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          height: 0;
-          width: 0.2rem;
-          background-color: #e91e63;
+    @media screen and (min-width: 768px) {
+      sidebar .sidebar-menu a.menu-toggle {
+        display: none; } }
+    sidebar .sidebar-menu ul {
+      max-height: 0;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      sidebar .sidebar-menu ul.menu-show {
+        max-height: 350px; }
+      @media screen and (min-width: 768px) {
+        sidebar .sidebar-menu ul {
+          max-height: 1000px; } }
+      sidebar .sidebar-menu ul li {
+        height: 3.5rem;
+        vertical-align: middle;
+        line-height: 3.5rem;
+        text-indent: 1rem; }
+        sidebar .sidebar-menu ul li:not(:last-child) {
+          border-bottom: 1px solid #e0e0e0; }
+        sidebar .sidebar-menu ul li a {
+          display: block;
+          position: relative;
           -webkit-transition: all 0.3s ease;
           -moz-transition: all 0.3s ease;
           transition: all 0.3s ease; }
-        sidebar .sidebar-menu ul li a.sidebar-active {
-          font-weight: 600; }
-          sidebar .sidebar-menu ul li a.sidebar-active:after {
-            height: 100%;
-            top: 0; }
+          sidebar .sidebar-menu ul li a:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 0;
+            width: 0.2rem;
+            background-color: #e91e63;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
+          sidebar .sidebar-menu ul li a.sidebar-active {
+            font-weight: 600; }
+            sidebar .sidebar-menu ul li a.sidebar-active:after {
+              height: 100%;
+              top: 0; }
 
 .header-block {
   height: 6rem;

@@ -25,7 +25,7 @@
     
 
     <div class="container" ng-class="$state.current.name.replace('.','-')">
-      
+
       <nav ng-include="'views/nav.html'"></nav>
 
       <div class="view-container">
@@ -57,6 +57,7 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -76,6 +77,7 @@
         <script src="scripts/controllers/contact.js"></script>
         <script src="scripts/directives/sidebar.js"></script>
         <script src="scripts/directives/headerBlock.js"></script>
+        <script src="scripts/directives/dropdown.js"></script>
         <!-- endbuild -->
 </body>
 </html>
