@@ -22,7 +22,9 @@ angular.module('app')
       			'label':'Logo Design',
       			'url':'plugmedia.logo-design'
       		}
-            ]
+            ],
+            'prev':'',
+            'next':'#/peter-ashmore'
       },
       {
       	'name':'Peter Ashmore', 
@@ -47,7 +49,9 @@ angular.module('app')
       			'label':'Logo Design',
       			'url':'peter-ashmore.logo-design'
       		}
-            ]
+            ],
+            'prev':'#/plugmedia',
+            'next':'#/trunkys'
       },
       {
       	'name':'Trunkys', 
@@ -64,7 +68,9 @@ angular.module('app')
                         'label':'UI Design',
                         'url':'trunkys.ui-design'
                   }
-            ]
+            ],
+            'prev':'#/peter-ashmore',
+            'next':'#/simplespin'
       },
       {
             'name':'Simplespin.css', 
@@ -77,7 +83,9 @@ angular.module('app')
                         'label':'Web Development',
                         'url':'simplespin.web-development'
                   }
-            ]
+            ],
+            'prev':'#/trunkys',
+            'next':'#/footerreveal'
       },
       {
             'name':'Footer-Reveal.js', 
@@ -90,7 +98,9 @@ angular.module('app')
                         'label':'Web Development',
                         'url':'footerreveal.web-development'
                   }
-            ]
+            ],
+            'prev':'#/simplespin',
+            'next':''
       }
     ];
   });

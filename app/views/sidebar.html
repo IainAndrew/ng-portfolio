@@ -1,13 +1,13 @@
-<aside ng-repeat="project in projects | filter:filterBy">
+<aside ng-repeat="project in projects | filter:{name:filterBy}">
 	<div class="sidebar-browse">
 		<p>Browse Projects</p>
-		<a href="#">
+		<a ng-href="{{project.prev}}">
 			<i class="icon-arrow-back"></i>
 		</a>
 		<a ui-sref="portfolio">
 			<i class="icon-close"></i>
 		</a>
-		<a href="#">
+		<a ng-href="{{project.next}}">
 			<i class="icon-arrow-forward"></i>
 		</a>
 	</div>

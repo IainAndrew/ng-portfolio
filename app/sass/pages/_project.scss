@@ -6,7 +6,7 @@ section.project-main {
   overflow-y:scroll;
   @include transition(all 0.5s);
   /*&.ng-enter {
-    left:10rem;
+    left:2rem;
   }
   &.ng-enter-active {
     left:0;
@@ -15,7 +15,7 @@ section.project-main {
     left:0;
   }
   &.ng-leave-active {
-    left:-10rem;
+    left:-2rem;
   }*/
   //@include box-shadow-z3;
   .row {
