@@ -21,14 +21,19 @@ sidebar {
 		height:100%;
 		float:left;
 		width:10rem;
-  	background:#fff;
-  	@include animation(project-sidebar-load 0.5s $cubic forwards);
-  	@include animation-delay(0.5s);
+	  	background:#fff;
+	  	@include animation(project-sidebar-load 0.5s $cubic forwards);
+	  	@include animation-delay(0.5s);
 	}
 	.sidebar-browse {
 		color:#fff;
 		text-align:center;
-		padding:2rem 1rem;
+		padding:1rem;
+		font-size:1.2em;
+		@include media($desktop) {
+			padding:2rem 1rem;
+			font-size:1em;
+		}
 		a {
 			font-size:2em;
 			@include transition(all 0.2s ease);

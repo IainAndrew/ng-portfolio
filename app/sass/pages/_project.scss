@@ -2,10 +2,11 @@ section.project-main {
   background:#fff;
   position:relative;
   padding:2rem;
-  height:100%;
+  height:auto;
   overflow-y:scroll;
   @include transition(all 0.5s);
   @include media($desktop) {
+    height:100%;
     @include calc(width, '100% - 10rem');
     float:right;
     border-top-left-radius:0;
