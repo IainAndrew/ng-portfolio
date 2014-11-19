@@ -87,7 +87,43 @@ body {
   overflow-y:scroll;
   @include transition(width 0.3s cubic-bezier(1,0,.19,1.44), height 0.3s cubic-bezier(1,0,.19,1.44));
 }
+.container {
+  &.plugmedia, 
+    &.plugmedia-overview, 
+    &.plugmedia-web-design, 
+    &.plugmedia-web-development,
+    &.plugmedia-logo-design,
 
+    &.peter-ashmore, 
+    &.peter-ashmore-overview,
+    &.peter-ashmore-web-design,
+    &.peter-ashmore-web-development,
+    &.peter-ashmore-graphic-design,
+    &.peter-ashmore-logo-design,
+
+    &.trunkys,
+    &.trunkys-overview,
+    &.trunkys-graphic-design,
+    &.trunkys-ui-design,
+
+    &.footerreveal,
+    &.footerreveal-overview,
+    &.footerreveal-web-development,
+
+    &.simplespin,
+    &.simplespin-overview,
+    &.simplespin-web-development {
+      .view-container {
+        width:95%;
+        height:95vh;
+        background-color:transparent;
+        box-shadow:none;
+      }
+      nav {
+        display:none;
+      }
+    }
+}
 @include media($desktop) {
   .container {
     .view-container {
@@ -134,9 +170,6 @@ body {
         height:98vh;
         background-color:transparent;
         box-shadow:none;
-      }
-      nav {
-        display:none;
       }
     }
   }

@@ -487,7 +487,7 @@ sidebar {
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       transition: all 0.2s ease; }
-      sidebar .sidebar-browse a:hover {
+      .no-touch sidebar .sidebar-browse a:hover {
         color: #f8bbd0; }
       sidebar .sidebar-browse a[ng-href=""] {
         opacity: 0.3; }
@@ -880,6 +880,14 @@ body {
   -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
   transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
 
+.container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
+  width: 95%;
+  height: 95vh;
+  background-color: transparent;
+  box-shadow: none; }
+.container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-web-design nav, .container.plugmedia-web-development nav, .container.plugmedia-logo-design nav, .container.peter-ashmore nav, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design nav, .container.peter-ashmore-web-development nav, .container.peter-ashmore-graphic-design nav, .container.peter-ashmore-logo-design nav, .container.trunkys nav, .container.trunkys-overview nav, .container.trunkys-graphic-design nav, .container.trunkys-ui-design nav, .container.footerreveal nav, .container.footerreveal-overview nav, .container.footerreveal-web-development nav, .container.simplespin nav, .container.simplespin-overview nav, .container.simplespin-web-development nav {
+  display: none; }
+
 @media screen and (min-width: 768px) {
   .container .view-container {
     width: 60%;
@@ -892,9 +900,7 @@ body {
     width: 98%;
     height: 98vh;
     background-color: transparent;
-    box-shadow: none; }
-  .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-web-design nav, .container.plugmedia-web-development nav, .container.plugmedia-logo-design nav, .container.peter-ashmore nav, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design nav, .container.peter-ashmore-web-development nav, .container.peter-ashmore-graphic-design nav, .container.peter-ashmore-logo-design nav, .container.trunkys nav, .container.trunkys-overview nav, .container.trunkys-graphic-design nav, .container.trunkys-ui-design nav, .container.footerreveal nav, .container.footerreveal-overview nav, .container.footerreveal-web-development nav, .container.simplespin nav, .container.simplespin-overview nav, .container.simplespin-web-development nav {
-    display: none; } }
+    box-shadow: none; } }
 @-webkit-keyframes header-block-slide {
   0% {
     height: 6rem; }

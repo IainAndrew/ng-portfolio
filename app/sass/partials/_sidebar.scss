@@ -32,8 +32,10 @@ sidebar {
 		a {
 			font-size:2em;
 			@include transition(all 0.2s ease);
-			&:hover {
-				color:$pink-100;
+			.no-touch & {
+				&:hover {
+					color:$pink-100;
+				}
 			}
 			&[ng-href=""] {
 				opacity:0.3;
