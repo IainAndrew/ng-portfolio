@@ -590,7 +590,6 @@ section.portfolio {
   padding: 1rem; }
 
 li.project {
-  height: 13rem;
   width: 100%;
   position: relative;
   background: #fff;
@@ -599,17 +598,6 @@ li.project {
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  /*&.project-plugmedia {
-  	background-image:url('http://ns4lib.com/wp-content/uploads/2013/07/feature.jpg');
-  	background-size:cover;
-  }
-  &.project-peter-ashmore {
-  	background-image:url('http://media.al.com/live/photo/gulf-shores-website-screenshot-1c58200629ad5efb.jpg');
-  	background-size:cover;
-  }
-  &:last-child {
-  	border-bottom-width:0;
-  }*/
   /*.project-overlay {
   	position:relative;
   	top:50%;
@@ -657,7 +645,10 @@ li.project {
   }*/ }
   li.project:not(:last-child) {
     margin-bottom: 1rem; }
-  li.project:hover {
+  @media screen and (min-width: 768px) {
+    li.project {
+      height: 13rem; } }
+  .no-touch li.project:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -webkit-transform: translateY(-2px);
     -moz-transform: translateY(-2px);
@@ -665,8 +656,10 @@ li.project {
     -o-transform: translateY(-2px);
     transform: translateY(-2px); }
   li.project .portfolio-image {
-    border: 1px solid #eeeeee;
-    height: 100%; }
+    height: 12rem; }
+    @media screen and (min-width: 768px) {
+      li.project .portfolio-image {
+        height: 100%; } }
     li.project .portfolio-image img {
       width: 100%;
       height: 100%; }
@@ -692,11 +685,13 @@ li.project {
         max-width: 22rem; }
     li.project .portfolio-info .portfolio-info-links {
       padding: 1rem;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       width: 100%;
       border-top: 1px solid #e0e0e0; }
+      @media screen and (min-width: 768px) {
+        li.project .portfolio-info .portfolio-info-links {
+          position: absolute;
+          bottom: 0;
+          left: 0; } }
       li.project .portfolio-info .portfolio-info-links a {
         text-transform: uppercase; }
         li.project .portfolio-info .portfolio-info-links a:first-child {

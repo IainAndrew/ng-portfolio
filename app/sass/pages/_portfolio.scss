@@ -2,7 +2,6 @@ section.portfolio {
 	padding:1rem;
 }
 li.project {
-	height:13rem;
 	width:100%;
 	position:relative;
 	//padding:1rem;
@@ -13,24 +12,20 @@ li.project {
 		margin-bottom:1rem;
 	}
 	@include transition(all 0.1s ease);
-	/*&.project-plugmedia {
-		background-image:url('http://ns4lib.com/wp-content/uploads/2013/07/feature.jpg');
-		background-size:cover;
+	@include media($desktop) {
+		height:13rem;
 	}
-	&.project-peter-ashmore {
-		background-image:url('http://media.al.com/live/photo/gulf-shores-website-screenshot-1c58200629ad5efb.jpg');
-		background-size:cover;
-	}
-	&:last-child {
-		border-bottom-width:0;
-	}*/
-	&:hover {
-		@include box-shadow-z2;
-		@include transform(translateY(-2px));
+	.no-touch & {
+		&:hover {
+			@include box-shadow-z2;
+			@include transform(translateY(-2px));
+		}
 	}
 	.portfolio-image {
-		border:1px solid $grey-200;
-		height:100%;
+		height:12rem;
+		@include media($desktop) {
+			height:100%;
+		}
 		img {
 			width:100%;
 			height:100%;
@@ -65,11 +60,13 @@ li.project {
 		}
 		.portfolio-info-links {
 			padding:1rem;
-			position:absolute;
-			bottom:0;
-			left:0;
 			width:100%;
 			border-top:1px solid $border-grey;
+			@include media($desktop) {
+				position:absolute;
+				bottom:0;
+				left:0;
+			}
 			a {
 				text-transform:uppercase;
 				&:first-child {
