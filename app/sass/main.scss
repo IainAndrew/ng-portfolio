@@ -24,6 +24,7 @@
 @import "pages/about";
 @import "pages/about-more";
 @import "pages/portfolio";
+@import "pages/contact";
 @import "pages/project";
 @import "pages/plugmedia";
 
@@ -189,6 +190,7 @@ body {
 
 main {
   height:100%;
+  position:relative;
 }
 
 section {

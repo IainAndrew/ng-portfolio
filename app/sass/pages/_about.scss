@@ -1,6 +1,12 @@
+.container.about {
+	.view-container {
+		background:$grey-100;
+	}
+}
 section.about {
 	padding:2rem;
-	@include calc(height, '100% - 6rem');
+	//@include calc(height, '100% - 6rem');
+	height:auto;
 }
 .about-tech {
 	ul {

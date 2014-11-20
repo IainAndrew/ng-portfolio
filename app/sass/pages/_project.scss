@@ -54,8 +54,8 @@ section.project-main {
   }
   .project-overview-image {
     img {
-      height:500px;
-      width:auto;
+      max-width:100%;
+      height:auto;
     }
   }
   .project-intro {

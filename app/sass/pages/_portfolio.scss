@@ -69,9 +69,23 @@ li.project {
 			}
 			a {
 				text-transform:uppercase;
+				@include transition(all 0.2s ease);
+				&[ng-href=""] {
+					display:none;
+				}
 				&:first-child {
 					color:$pink-500;
 					margin-right:2rem;
+				}
+				.no-touch & {
+					&:hover {
+						&:first-child {
+							color:$pink-300;
+						}
+						&:nth-child(2) {
+							color:$grey-500;
+						}
+					}
 				}
 			}
 		}

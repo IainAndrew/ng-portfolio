@@ -50,22 +50,27 @@ sidebar {
 	.sidebar-menu {
 		background:#fff;
 		a.menu-toggle {
+			display:inline-block;
+			padding:0.2rem;
 			i {
-				font-size:2em;
+				display:block;
+				font-size:2.5em;
 			}
 			@include media($desktop) {
-	    	display:none;
-	    }
+		    	display:none;
+		    }
 		}
 		ul {
 			max-height:0;
+			border-bottom:1px solid $grey-300;
 			@include transition(all 0.3s ease);
+			@include box-shadow-z3;
 			&.menu-show {
-	      max-height:350px;
-	    }
-	    @include media($desktop) {
-	    	max-height:1000px;
-	    }
+				max-height:350px;
+		    }
+		    @include media($desktop) {
+		    	max-height:1000px;
+		    }
 			li {
 				height:3.5rem;
 				vertical-align:middle;
