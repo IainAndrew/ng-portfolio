@@ -18,3 +18,42 @@
 		}
 	}
 }
+.peter-ashmore-overview {
+	.project-main {
+		.project-overview-intro {
+			.project-palette {
+				.palette-color {
+					&:first-child {
+						background:#56A9D8;
+					}
+					&:nth-child(2) {
+						background:#306177;
+					}
+					&:nth-child(3) {
+						background:#FF775C;
+					}
+				}
+			}
+		}
+	}
+}
+.trunkys-overview {
+	.project-main {
+		.project-overview-intro {
+			.project-palette {
+				.palette-color {
+					&:first-child {
+						background:#F05B5C;
+					}
+					&:nth-child(2) {
+						background:#204055;
+					}
+					&:nth-child(3) {
+						background:#fff;
+						border:1px solid $grey-400;
+					}
+				}
+			}
+		}
+	}
+}

@@ -837,6 +837,21 @@ section.project-main {
   background: #fff;
   border: 1px solid #bdbdbd; }
 
+.peter-ashmore-overview .project-main .project-overview-intro .project-palette .palette-color:first-child {
+  background: #56A9D8; }
+.peter-ashmore-overview .project-main .project-overview-intro .project-palette .palette-color:nth-child(2) {
+  background: #306177; }
+.peter-ashmore-overview .project-main .project-overview-intro .project-palette .palette-color:nth-child(3) {
+  background: #FF775C; }
+
+.trunkys-overview .project-main .project-overview-intro .project-palette .palette-color:first-child {
+  background: #F05B5C; }
+.trunkys-overview .project-main .project-overview-intro .project-palette .palette-color:nth-child(2) {
+  background: #204055; }
+.trunkys-overview .project-main .project-overview-intro .project-palette .palette-color:nth-child(3) {
+  background: #fff;
+  border: 1px solid #bdbdbd; }
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
