@@ -784,10 +784,8 @@ section.project-main {
   section.project-main .project-overview-image img {
     max-width: 100%;
     height: auto; }
-  section.project-main .project-intro {
-    max-width: 40rem; }
-    section.project-main .project-intro h1 {
-      margin-bottom: 4rem; }
+  section.project-main .project-intro p {
+    margin-bottom: 24px; }
   section.project-main .project-image img {
     max-width: 100%;
     height: auto; }
@@ -988,5 +986,7 @@ li {
 a {
   text-decoration: none;
   color: inherit; }
+  a:focus {
+    outline: 0; }
 
 /*# sourceMappingURL=main.css.map */
