@@ -85,7 +85,7 @@ body {
   @include transform(translateX(-50%));
   width:95%;
   border-radius:9px;
-  @include box-shadow-z3;
+  //@include box-shadow-z3;
   height:85vh;
   overflow-y:scroll;
   @include transition(width 0.3s cubic-bezier(1,0,.19,1.44), height 0.3s cubic-bezier(1,0,.19,1.44));
