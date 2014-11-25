@@ -593,6 +593,13 @@ sidebar {
 section.about {
   padding: 2rem;
   height: auto; }
+  section.about h2 {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem; }
 
 .about-tech ul li {
   display: inline-block;

@@ -7,6 +7,12 @@ section.about {
 	padding:2rem;
 	//@include calc(height, '100% - 6rem');
 	height:auto;
+	h2 {
+		@include subhead-text;
+		font-weight:500;
+		text-transform:uppercase;
+		margin-bottom:0.5rem;
+	}
 }
 .about-tech {
 	ul {
