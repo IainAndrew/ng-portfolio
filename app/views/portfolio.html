@@ -3,8 +3,8 @@
 <section class="portfolio">
 	<ul>
 		<li ng-repeat="project in projects" class="project project-{{project.url}}">
-			<div class="portfolio-image">
-				<img ng-src="{{project.image}}" alt="">
+			<div class="portfolio-image" ng-style="{'background-image': 'url({{project.image}})'}">
+				<!--<img ng-src="{{project.image}}" alt="">-->
 			</div>
 			<div class="portfolio-info">
 				<div class="portfolio-info-main">

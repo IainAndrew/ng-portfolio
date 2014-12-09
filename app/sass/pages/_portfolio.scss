@@ -23,6 +23,8 @@ li.project {
 	}
 	.portfolio-image {
 		height:12rem;
+		background-size:cover;
+		background-position:center;
 		@include media($desktop) {
 			height:100%;
 		}

@@ -651,7 +651,9 @@ li.project {
     -o-transform: translateY(-2px);
     transform: translateY(-2px); }
   li.project .portfolio-image {
-    height: 12rem; }
+    height: 12rem;
+    background-size: cover;
+    background-position: center; }
     @media screen and (min-width: 768px) {
       li.project .portfolio-image {
         height: 100%; } }
