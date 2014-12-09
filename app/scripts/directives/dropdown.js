@@ -10,9 +10,12 @@ angular.module('app.directives.dropdown', [])
 				});
 				element.find('ul').click(function() {
 					setTimeout(function() {
-						element.find('ul').toggleClass('menu-show');
+						element.find('ul').removeClass('menu-show');
 					}, 500);
 				});
+				/*element.siblings().click(function() {
+					element.find('ul').removeClass('menu-show');
+				});*/
 			}
 		};
 	});

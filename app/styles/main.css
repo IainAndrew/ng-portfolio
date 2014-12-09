@@ -600,6 +600,16 @@ section.about {
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 0.5rem; }
+  section.about hr {
+    width: 100%;
+    height: 0;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 2rem 0; }
+    @media screen and (min-width: 768px) {
+      section.about hr {
+        display: none; } }
 
 .about-tech ul li {
   display: inline-block;
