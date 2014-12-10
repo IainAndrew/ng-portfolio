@@ -51,6 +51,21 @@ angular.module('app')
 					}
 				],
 				'prev':'#/plugmedia',
+				'next':'#/footerreveal'
+			},
+			{
+				'name':'Footer-Reveal.js', 
+				'items':[
+					{
+						'label':'Overview',
+						'url':'footerreveal.overview'
+					}, 
+					{
+						'label':'Web Development',
+						'url':'footerreveal.web-development'
+					}
+				],
+				'prev':'#/peter-ashmore',
 				'next':'#/trunkys'
 			},
 			{
@@ -69,22 +84,7 @@ angular.module('app')
 						'url':'trunkys.ui-design'
 					}
 				],
-				'prev':'#/peter-ashmore',
-				'next':'#/footerreveal'
-			},
-			{
-				'name':'Footer-Reveal.js', 
-				'items':[
-					{
-						'label':'Overview',
-						'url':'footerreveal.overview'
-					}, 
-					{
-						'label':'Web Development',
-						'url':'footerreveal.web-development'
-					}
-				],
-				'prev':'#/trunkys',
+				'prev':'#/footerreveal',
 				'next':'#/simplespin'
 			},
 			{
@@ -99,7 +99,7 @@ angular.module('app')
 						'url':'simplespin.web-development'
 					}
 				],
-				'prev':'#/footerreveal',
+				'prev':'#/trunkys',
 				'next':''
 			}
     ];

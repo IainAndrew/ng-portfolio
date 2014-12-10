@@ -20,19 +20,19 @@ angular.module('app')
         'image':'../../images/landscape.png'
       },
       {
-      	'name':'Trunkys', 
-      	'roles':['Graphic Design'],
-      	'desc':'Illustrations for a stupid app',
-      	'url':'trunkys',
-        'liveUrl':'',
-        'image':'../../images/landscape.png'
-      },
-      {
         'name':'Footer-reveal.js', 
         'roles':['Web Development'],
         'desc':'a jquery plugin',
         'url':'footerreveal',
         'liveUrl':'//iainandrew.github.io/footer-reveal',
+        'image':'../../images/landscape.png'
+      },
+      {
+      	'name':'Trunkys', 
+      	'roles':['Graphic Design'],
+      	'desc':'Illustrations for a stupid app',
+      	'url':'trunkys',
+        'liveUrl':'',
         'image':'../../images/landscape.png'
       },
       {
