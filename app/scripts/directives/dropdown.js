@@ -5,12 +5,17 @@ angular.module('app.directives.dropdown', [])
 		return {
 			restrict: 'A',
 			link: function(scope, element) {
-				element.find('#menu-toggle').click(function() {
-					element.find('ul').toggleClass('menu-show');
+				var toggle = element.find('#menu-toggle'),
+					menu = element.find('ul');
+
+				toggle.click(function() {
+					menu.toggleClass('menu-show');
+					toggle.find('i').toggleClass('icon-menu icon-close');
 				});
-				element.find('ul').click(function() {
+				menu.click(function() {
 					setTimeout(function() {
-						element.find('ul').removeClass('menu-show');
+						menu.removeClass('menu-show');
+						toggle.find('i').toggleClass('icon-menu icon-close');
 					}, 500);
 				});
 				/*element.siblings().click(function() {
