@@ -973,4 +973,20 @@ a {
   a:focus {
     outline: 0; }
 
+noscript {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff; }
+  noscript p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
 /*# sourceMappingURL=main.css.map */

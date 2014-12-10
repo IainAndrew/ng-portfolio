@@ -216,3 +216,16 @@ a {
     outline:0;
   }
 }
+noscript {
+  position:fixed;
+  height:100%;
+  width:100%;
+  background:#fff;
+  p {
+    position:absolute;
+    width:100%;
+    top:50%;
+    text-align:center;
+    @include transform(translateY(-50%));
+  }
+}
