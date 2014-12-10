@@ -18,6 +18,9 @@ angular.module('app.directives.dropdown', [])
 						toggle.find('i').toggleClass('icon-menu icon-close');
 					}, 500);
 				});
+				$('.sidebar-browse a i.icon-arrow-forward').hover(function() {
+					$('.sidebar-browse').toggleClass('sidebar-browse-bg-next');
+				});
 				/*element.siblings().click(function() {
 					element.find('ul').removeClass('menu-show');
 				});*/

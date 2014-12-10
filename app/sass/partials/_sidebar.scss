@@ -30,6 +30,7 @@ sidebar {
 		text-align:center;
 		padding:1rem;
 		font-size:1.2em;
+		@include transition(all 0.5s ease);
 		@include media($desktop) {
 			padding:2rem 1rem;
 			font-size:1em;
@@ -44,6 +45,9 @@ sidebar {
 			}
 			&[ng-href=""] {
 				opacity:0.3;
+				&:hover {
+					color:#fff;
+				}
 			}
 		}
 	}
@@ -110,5 +114,14 @@ sidebar {
 				}
 			}
 		}
+	}
+}
+.sidebar-browse-bg-next {
+	.peter-ashmore-overview &, 
+	.peter-ashmore-web-design &, 
+	.peter-ashmore-web-development &,
+	.peter-ashmore-graphic-design &,
+	.peter-ashmore-logo-design & {
+		background:yellow;
 	}
 }

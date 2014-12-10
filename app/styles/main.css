@@ -492,7 +492,10 @@ sidebar {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
     @media screen and (min-width: 768px) {
       sidebar .sidebar-browse {
         padding: 2rem 1rem;
@@ -506,6 +509,8 @@ sidebar {
         color: #f8bbd0; }
       sidebar .sidebar-browse a[ng-href=""] {
         opacity: 0.3; }
+        sidebar .sidebar-browse a[ng-href=""]:hover {
+          color: #fff; }
   sidebar .sidebar-menu {
     background: #fff; }
     sidebar .sidebar-menu a.menu-toggle {
@@ -564,6 +569,9 @@ sidebar {
             sidebar .sidebar-menu ul li a.sidebar-active:after {
               height: 100%;
               top: 0; }
+
+.peter-ashmore-overview .sidebar-browse-bg-next, .peter-ashmore-web-design .sidebar-browse-bg-next, .peter-ashmore-web-development .sidebar-browse-bg-next, .peter-ashmore-graphic-design .sidebar-browse-bg-next, .peter-ashmore-logo-design .sidebar-browse-bg-next {
+  background: yellow; }
 
 .header-block {
   height: 6rem;
