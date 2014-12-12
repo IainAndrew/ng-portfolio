@@ -212,8 +212,8 @@ table {
 
 @font-face {
   font-family: 'fontello';
-  src: url("../../styles/fonts/fontello.eot?87360599");
-  src: url("../../styles/fonts/fontello.eot?87360599#iefix") format("embedded-opentype"), url("../../styles/fonts/fontello.woff?87360599") format("woff"), url("../../styles/fonts/fontello.ttf?87360599") format("truetype"), url("../../styles/fonts/fontello.svg?87360599#fontello") format("svg");
+  src: url("../../styles/fonts/fontello.eot?76194935");
+  src: url("../../styles/fonts/fontello.eot?76194935#iefix") format("embedded-opentype"), url("../../styles/fonts/fontello.woff?76194935") format("woff"), url("../../styles/fonts/fontello.ttf?76194935") format("truetype"), url("../../styles/fonts/fontello.svg?76194935#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
@@ -222,7 +222,7 @@ table {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?87360599#fontello') format('svg');
+    src: url('../font/fontello.svg?76194935#fontello') format('svg');
   }
 }
 */
@@ -286,6 +286,34 @@ table {
   content: '\e808'; }
 
 /* '' */
+.icon-person:before {
+  content: '\e809'; }
+
+/* '' */
+.icon-send:before {
+  content: '\e80a'; }
+
+/* '' */
+.icon-eye:before {
+  content: '\e80b'; }
+
+/* '' */
+.icon-info:before {
+  content: '\e80c'; }
+
+/* '' */
+.icon-info-outline:before {
+  content: '\e80d'; }
+
+/* '' */
+.icon-screen:before {
+  content: '\e80e'; }
+
+/* '' */
+.icon-email:before {
+  content: '\e80f'; }
+
+/* '' */
 /*
 	Typography
 */
@@ -353,24 +381,24 @@ table {
 
 @-webkit-keyframes popup {
   from {
-    top: 4rem; }
+    top: 6rem; }
   to {
     top: 0; } }
 @-moz-keyframes popup {
   from {
-    top: 4rem; }
+    top: 6rem; }
   to {
     top: 0; } }
 @keyframes popup {
   from {
-    top: 4rem; }
+    top: 6rem; }
   to {
     top: 0; } }
 nav {
   width: 90%;
   position: relative;
   left: 50%;
-  top: 4rem;
+  top: 6rem;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -404,8 +432,17 @@ nav {
       vertical-align: middle; }
       nav ul li:first-child a {
         border-top-left-radius: 7px; }
+        @media screen and (min-width: 768px) {
+          nav ul li:first-child a:before {
+            content: "\e809"; } }
+      @media screen and (min-width: 768px) {
+        nav ul li:nth-child(2) a:before {
+          content: "\e80b"; } }
       nav ul li:last-child a {
         border-top-right-radius: 7px; }
+        @media screen and (min-width: 768px) {
+          nav ul li:last-child a:before {
+            content: "\e80f"; } }
       nav ul li a {
         color: rgba(255, 255, 255, 0.4);
         text-decoration: none;
@@ -419,23 +456,24 @@ nav {
           nav ul li a {
             padding-top: 1rem; }
             nav ul li a:before {
-              content: "\e800";
               font-family: 'fontello';
-              font-size: 1.5em;
+              font-size: 1.2em;
               width: 2.5rem;
               line-height: 2.5rem;
               height: 2.5rem;
               margin-bottom: -1rem;
               display: block;
               border-radius: 50%;
-              background: lightgrey;
               position: relative;
               left: 50%;
               -webkit-transform: translateX(-50%);
               -moz-transform: translateX(-50%);
               -ms-transform: translateX(-50%);
               -o-transform: translateX(-50%);
-              transform: translateX(-50%); } }
+              transform: translateX(-50%);
+              -webkit-transition: box-shadow 0.3s ease;
+              -moz-transition: box-shadow 0.3s ease;
+              transition: box-shadow 0.3s ease; } }
         nav ul li a:after {
           content: "";
           position: absolute;
@@ -449,6 +487,8 @@ nav {
           background: white; }
           nav ul li a.active:after {
             background: white; }
+          nav ul li a.active:before {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
         .no-touch nav ul li a:hover:not(.active) {
           background: rgba(255, 255, 255, 0.25); }
 

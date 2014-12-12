@@ -1,6 +1,6 @@
 @include keyframes(popup) {
   from {
-    top:4rem;
+    top:6rem;
   }
   to {
     top:0;
@@ -15,7 +15,7 @@ nav {
   //height:4rem;
   position:relative;
   left:50%;
-  top:4rem;
+  top:6rem;
   @include transform(translateX(-50%));
   @include animation(popup 0.5s $cubic forwards);
   @include animation-delay(0.7s);
@@ -33,11 +33,30 @@ nav {
       &:first-child {
         a {
           border-top-left-radius:7px;
+          @include media($desktop) {
+            &:before {
+              content:"\e809";
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        a {
+          @include media($desktop) {
+            &:before {
+              content:"\e80b";
+            }
+          }
         }
       }
       &:last-child {
         a {
           border-top-right-radius:7px;
+          @include media($desktop) {
+            &:before {
+              content:"\e80f";
+            }
+          }
         }
       }
       a {
@@ -50,19 +69,18 @@ nav {
         @include media($desktop) {
           padding-top:1rem;
           &:before {
-            content: "\e800";
             font-family: 'fontello';
-            font-size: 1.5em;
+            font-size: 1.2em;
             width: 2.5rem;
             line-height: 2.5rem;
             height: 2.5rem;
             margin-bottom: -1rem;
             display: block;
             border-radius: 50%;
-            background: lightgrey;
             position:relative;
             left:50%;
             @include transform(translateX(-50%));
+            @include transition(box-shadow 0.3s ease);
           }
         }
         &:after {
@@ -79,6 +97,9 @@ nav {
           background:rgba(#fff, 1);
           &:after {
             background:rgba(#fff,1);
+          }
+          &:before {
+            @include box-shadow-z1;
           }
         }
         .no-touch & {
