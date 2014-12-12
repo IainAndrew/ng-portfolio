@@ -8,17 +8,14 @@
 }
 
 nav {
-  //background:rgba(#fff,0.2);
   width:90%;
   @include media($desktop) {
     width:40%;
   }
-  height:4rem;
+  //height:4rem;
   position:relative;
   left:50%;
   top:4rem;
-  //border-top-left-radius:7px;
-  //border-top-right-radius:7px;
   @include transform(translateX(-50%));
   @include animation(popup 0.5s $cubic forwards);
   @include animation-delay(0.7s);
@@ -50,6 +47,24 @@ nav {
         background:rgba(#fff,0.2);
         position:relative;
         @include transition(color 0.2s, background 0.2s ease);
+        @include media($desktop) {
+          padding-top:1rem;
+          &:before {
+            content: "\e800";
+            font-family: 'fontello';
+            font-size: 1.5em;
+            width: 2.5rem;
+            line-height: 2.5rem;
+            height: 2.5rem;
+            margin-bottom: -1rem;
+            display: block;
+            border-radius: 50%;
+            background: lightgrey;
+            position:relative;
+            left:50%;
+            @include transform(translateX(-50%));
+          }
+        }
         &:after {
           content:"";
           position:absolute;
@@ -65,17 +80,6 @@ nav {
           &:after {
             background:rgba(#fff,1);
           }
-          /*&:after {
-            content:"";
-            width:1rem;
-            height:1rem;
-            background:$grey-500;
-            position:absolute;
-            bottom:-0.5rem;
-            left:50%;
-            margin-left:-0.5rem;
-            @include transform(rotate(45deg));
-          }*/
         }
         .no-touch & {
           &:hover:not(.active) {
