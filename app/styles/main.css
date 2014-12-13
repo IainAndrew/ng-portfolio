@@ -413,6 +413,14 @@ nav {
   @media screen and (min-width: 768px) {
     nav {
       width: 40%; } }
+  nav:after {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    width: 100%;
+    left: 0;
+    bottom: -1rem;
+    background: rgba(255, 255, 255, 0.2); }
   nav ul {
     width: 100%;
     display: -webkit-box;
@@ -471,22 +479,11 @@ nav {
               -ms-transform: translateX(-50%) scale(0.8);
               -o-transform: translateX(-50%) scale(0.8);
               transform: translateX(-50%) scale(0.8);
-              -webkit-transition: all 0.3s ease;
-              -moz-transition: all 0.3s ease;
-              transition: all 0.3s ease; } }
-        nav ul li a:after {
-          content: "";
-          position: absolute;
-          height: 1rem;
-          width: 100%;
-          left: 0;
-          bottom: -1rem;
-          background: rgba(255, 255, 255, 0.2); }
+              -webkit-transition: all 0.4s cubic-bezier(0.8, -0.65, 0.31, 1.84);
+              -moz-transition: all 0.4s cubic-bezier(0.8, -0.65, 0.31, 1.84);
+              transition: all 0.4s cubic-bezier(0.8, -0.65, 0.31, 1.84); } }
         nav ul li a.active {
-          color: #fff;
-          background: rgba(255, 255, 255, 0.25); }
-          nav ul li a.active:after {
-            background: rgba(255, 255, 255, 0.25); }
+          color: #fff; }
           nav ul li a.active:before {
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             background: #fff;
@@ -496,6 +493,20 @@ nav {
             -ms-transform: translateX(-50%) scale(1);
             -o-transform: translateX(-50%) scale(1);
             transform: translateX(-50%) scale(1); }
+          nav ul li a.active:after {
+            content: "";
+            width: 0.8rem;
+            height: 0.8rem;
+            background: #fff;
+            position: absolute;
+            left: 50%;
+            margin-left: -0.4rem;
+            bottom: -0.4rem;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg); }
         .no-touch nav ul li a:hover:not(.active) {
           background: rgba(255, 255, 255, 0.25); }
 
