@@ -17,8 +17,8 @@ li.project {
 	}
 	.no-touch & {
 		&:hover {
-			@include box-shadow-z2;
-			@include transform(translateY(-2px));
+			//@include box-shadow-z2;
+			//@include transform(translateY(-2px));
 		}
 	}
 	.portfolio-image {

@@ -70,7 +70,7 @@ nav {
           padding-top:1rem;
           &:before {
             font-family: 'fontello';
-            font-size: 1.2em;
+            font-size: 1.3em;
             width: 2.5rem;
             line-height: 2.5rem;
             height: 2.5rem;
@@ -79,8 +79,8 @@ nav {
             border-radius: 50%;
             position:relative;
             left:50%;
-            @include transform(translateX(-50%));
-            @include transition(box-shadow 0.3s ease);
+            @include transform(translateX(-50%) scale(0.8));
+            @include transition(all 0.3s ease);
           }
         }
         &:after {
@@ -93,13 +93,17 @@ nav {
           background:rgba(#fff,0.2);
         }
         &.active {
-          color:$pink-500;
-          background:rgba(#fff, 1);
+          color:#fff;
+          background:rgba(#fff,0.25);
+          //background:rgba(#fff, 1);
           &:after {
-            background:rgba(#fff,1);
+            background:rgba(#fff,0.25);
           }
           &:before {
             @include box-shadow-z1;
+            background:#fff;
+            color:$pink-500;
+            @include transform(translateX(-50%) scale(1));
           }
         }
         .no-touch & {

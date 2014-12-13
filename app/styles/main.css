@@ -457,7 +457,7 @@ nav {
             padding-top: 1rem; }
             nav ul li a:before {
               font-family: 'fontello';
-              font-size: 1.2em;
+              font-size: 1.3em;
               width: 2.5rem;
               line-height: 2.5rem;
               height: 2.5rem;
@@ -466,14 +466,14 @@ nav {
               border-radius: 50%;
               position: relative;
               left: 50%;
-              -webkit-transform: translateX(-50%);
-              -moz-transform: translateX(-50%);
-              -ms-transform: translateX(-50%);
-              -o-transform: translateX(-50%);
-              transform: translateX(-50%);
-              -webkit-transition: box-shadow 0.3s ease;
-              -moz-transition: box-shadow 0.3s ease;
-              transition: box-shadow 0.3s ease; } }
+              -webkit-transform: translateX(-50%) scale(0.8);
+              -moz-transform: translateX(-50%) scale(0.8);
+              -ms-transform: translateX(-50%) scale(0.8);
+              -o-transform: translateX(-50%) scale(0.8);
+              transform: translateX(-50%) scale(0.8);
+              -webkit-transition: all 0.3s ease;
+              -moz-transition: all 0.3s ease;
+              transition: all 0.3s ease; } }
         nav ul li a:after {
           content: "";
           position: absolute;
@@ -483,12 +483,19 @@ nav {
           bottom: -1rem;
           background: rgba(255, 255, 255, 0.2); }
         nav ul li a.active {
-          color: #e91e63;
-          background: white; }
+          color: #fff;
+          background: rgba(255, 255, 255, 0.25); }
           nav ul li a.active:after {
-            background: white; }
+            background: rgba(255, 255, 255, 0.25); }
           nav ul li a.active:before {
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            background: #fff;
+            color: #e91e63;
+            -webkit-transform: translateX(-50%) scale(1);
+            -moz-transform: translateX(-50%) scale(1);
+            -ms-transform: translateX(-50%) scale(1);
+            -o-transform: translateX(-50%) scale(1);
+            transform: translateX(-50%) scale(1); }
         .no-touch nav ul li a:hover:not(.active) {
           background: rgba(255, 255, 255, 0.25); }
 
@@ -709,13 +716,6 @@ li.project {
   @media screen and (min-width: 768px) {
     li.project {
       height: 13rem; } }
-  .no-touch li.project:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    -webkit-transform: translateY(-2px);
-    -moz-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
-    -o-transform: translateY(-2px);
-    transform: translateY(-2px); }
   li.project .portfolio-image {
     height: 12rem;
     background-size: cover;
