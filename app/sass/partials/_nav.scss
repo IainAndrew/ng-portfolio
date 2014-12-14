@@ -91,6 +91,19 @@ nav {
             @include transform(translateX(-50%) scale(0.8));
             @include transition(all 0.4s cubic-bezier(.8,-0.65,.31,1.84));
           }
+          &:after {
+            content:"";
+            width:0.8rem;
+            height:0.8rem;
+            background:#fff;
+            position:absolute;
+            left:50%;
+            margin-left:-0.4rem;
+            bottom:-1rem;
+            opacity:0;
+            @include transform(rotate(45deg));
+            @include transition(all 0.3s $cubic);
+          }
         }
         &.active {
           color:#fff;
@@ -101,15 +114,8 @@ nav {
             @include transform(translateX(-50%) scale(1));
           }
           &:after {
-            content:"";
-            width:0.8rem;
-            height:0.8rem;
-            background:#fff;
-            position:absolute;
-            left:50%;
-            margin-left:-0.4rem;
-            bottom:-0.4rem;
-            @include transform(rotate(45deg));
+            bottom:-0.5rem;
+            opacity:1;
           }
         }
         .no-touch & {
