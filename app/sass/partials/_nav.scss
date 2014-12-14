@@ -39,33 +39,19 @@ nav {
       text-align:center;
       line-height:4rem;
       vertical-align:middle;
+      position:relative;
       &:first-child {
         a {
           border-top-left-radius:7px;
-          @include media($desktop) {
-            &:before {
-              content:"\e809";
-            }
-          }
         }
       }
       &:nth-child(2) {
         a {
-          @include media($desktop) {
-            &:before {
-              content:"\e80b";
-            }
-          }
         }
       }
       &:last-child {
         a {
           border-top-right-radius:7px;
-          @include media($desktop) {
-            &:before {
-              content:"\e80f";
-            }
-          }
         }
       }
       a {
@@ -74,11 +60,13 @@ nav {
         display:block;
         background:rgba(#fff,0.2);
         position:relative;
+        i {
+          display:none;
+        }
         @include transition(color 0.2s, background 0.2s ease);
         @include media($desktop) {
           padding-top:1rem;
-          &:before {
-            font-family: 'fontello';
+          i {
             font-size: 1.3em;
             width: 2.5rem;
             line-height: 2.5rem;
@@ -91,23 +79,23 @@ nav {
             @include transform(translateX(-50%) scale(0.8));
             @include transition(all 0.4s cubic-bezier(.8,-0.65,.31,1.84));
           }
-          &:after {
-            content:"";
-            width:0.8rem;
-            height:0.8rem;
-            background:#fff;
-            position:absolute;
-            left:50%;
-            margin-left:-0.4rem;
-            bottom:-1rem;
-            opacity:0;
-            @include transform(rotate(45deg));
-            @include transition(all 0.3s $cubic);
-          }
+        }
+        &:after {
+          content:"";
+          width:0.8rem;
+          height:0.8rem;
+          background:#fff;
+          position:absolute;
+          left:50%;
+          margin-left:-0.4rem;
+          bottom:-1rem;
+          opacity:0;
+          @include transform(rotate(45deg));
+          @include transition(all 0.3s $cubic);
         }
         &.active {
           color:#fff;
-          &:before {
+          i {
             @include box-shadow-z1;
             background:#fff;
             color:$pink-500;

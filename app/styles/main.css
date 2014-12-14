@@ -437,20 +437,12 @@ nav {
       font-weight: 300;
       text-align: center;
       line-height: 4rem;
-      vertical-align: middle; }
+      vertical-align: middle;
+      position: relative; }
       nav ul li:first-child a {
         border-top-left-radius: 7px; }
-        @media screen and (min-width: 768px) {
-          nav ul li:first-child a:before {
-            content: "\e809"; } }
-      @media screen and (min-width: 768px) {
-        nav ul li:nth-child(2) a:before {
-          content: "\e80b"; } }
       nav ul li:last-child a {
         border-top-right-radius: 7px; }
-        @media screen and (min-width: 768px) {
-          nav ul li:last-child a:before {
-            content: "\e80f"; } }
       nav ul li a {
         color: rgba(255, 255, 255, 0.4);
         text-decoration: none;
@@ -460,11 +452,12 @@ nav {
         -webkit-transition: color 0.2s, background 0.2s ease;
         -moz-transition: color 0.2s, background 0.2s ease;
         transition: color 0.2s, background 0.2s ease; }
+        nav ul li a i {
+          display: none; }
         @media screen and (min-width: 768px) {
           nav ul li a {
             padding-top: 1rem; }
-            nav ul li a:before {
-              font-family: 'fontello';
+            nav ul li a i {
               font-size: 1.3em;
               width: 2.5rem;
               line-height: 2.5rem;
@@ -481,28 +474,28 @@ nav {
               transform: translateX(-50%) scale(0.8);
               -webkit-transition: all 0.4s cubic-bezier(0.8, -0.65, 0.31, 1.84);
               -moz-transition: all 0.4s cubic-bezier(0.8, -0.65, 0.31, 1.84);
-              transition: all 0.4s cubic-bezier(0.8, -0.65, 0.31, 1.84); }
-            nav ul li a:after {
-              content: "";
-              width: 0.8rem;
-              height: 0.8rem;
-              background: #fff;
-              position: absolute;
-              left: 50%;
-              margin-left: -0.4rem;
-              bottom: -1rem;
-              opacity: 0;
-              -webkit-transform: rotate(45deg);
-              -moz-transform: rotate(45deg);
-              -ms-transform: rotate(45deg);
-              -o-transform: rotate(45deg);
-              transform: rotate(45deg);
-              -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-              -moz-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-              transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44); } }
+              transition: all 0.4s cubic-bezier(0.8, -0.65, 0.31, 1.84); } }
+        nav ul li a:after {
+          content: "";
+          width: 0.8rem;
+          height: 0.8rem;
+          background: #fff;
+          position: absolute;
+          left: 50%;
+          margin-left: -0.4rem;
+          bottom: -1rem;
+          opacity: 0;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+          -moz-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+          transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
         nav ul li a.active {
           color: #fff; }
-          nav ul li a.active:before {
+          nav ul li a.active i {
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             background: #fff;
             color: #e91e63;
