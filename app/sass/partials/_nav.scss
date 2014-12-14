@@ -66,6 +66,7 @@ nav {
         @include transition(color 0.2s, background 0.2s ease);
         @include media($desktop) {
           padding-top:1rem;
+          overflow:hidden;
           i {
             font-size: 1.3em;
             width: 2.5rem;
@@ -78,6 +79,20 @@ nav {
             left:50%;
             @include transform(translateX(-50%) scale(0.8));
             @include transition(all 0.4s cubic-bezier(.8,-0.65,.31,1.84));
+            &:after {
+              content:"";
+              width:1rem;
+              height:1rem;
+              background:rgba(#fff,0.1);
+              z-index:-1;
+              border-radius:50%;
+              position:absolute;
+              top:50%;
+              left:50%;
+              opacity:0;
+              @include transform(translate(-50%, -50%) scale(1));
+              @include transition(all 1s $cubic, opacity 0.1s ease);
+            }
           }
         }
         &:after {
@@ -92,14 +107,25 @@ nav {
           opacity:0;
           @include transform(rotate(45deg));
           @include transition(all 0.3s $cubic);
+          @include media($desktop) {
+            @include transition(all 1.2s $cubic);
+          }
         }
         &.active {
           color:#fff;
+          background:rgba(#fff, 0.25);
+          @include media($desktop) {
+            background:rgba(#fff,0.2);
+          }
           i {
             @include box-shadow-z1;
             background:#fff;
             color:$pink-500;
             @include transform(translateX(-50%) scale(1));
+            &:after {
+              opacity:1;
+              @include transform(translate(-50%, -50%) scale(14));
+            }
           }
           &:after {
             bottom:-0.5rem;
