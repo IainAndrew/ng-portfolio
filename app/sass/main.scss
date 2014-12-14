@@ -132,6 +132,7 @@ body {
     .view-container {
       width:60%;
       height:70vh;
+      max-height:420px;
     }
     &.about-more {
       .view-container {
@@ -173,6 +174,7 @@ body {
         height:98vh;
         background-color:transparent;
         box-shadow:none;
+        max-height:5000px;
       }
     }
   }

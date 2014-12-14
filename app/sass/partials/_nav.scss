@@ -1,6 +1,6 @@
 @include keyframes(popup) {
   from {
-    top:6rem;
+    top:7rem;
   }
   to {
     top:0;
@@ -9,13 +9,15 @@
 
 nav {
   width:90%;
+  max-width:520px;
   @include media($desktop) {
     width:40%;
   }
   //height:4rem;
   position:relative;
   left:50%;
-  top:6rem;
+  top:7rem;
+  max-height:105px;
   @include transform(translateX(-50%));
   @include animation(popup 0.5s $cubic forwards);
   @include animation-delay(0.7s);

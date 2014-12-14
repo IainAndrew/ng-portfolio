@@ -381,24 +381,26 @@ table {
 
 @-webkit-keyframes popup {
   from {
-    top: 6rem; }
+    top: 7rem; }
   to {
     top: 0; } }
 @-moz-keyframes popup {
   from {
-    top: 6rem; }
+    top: 7rem; }
   to {
     top: 0; } }
 @keyframes popup {
   from {
-    top: 6rem; }
+    top: 7rem; }
   to {
     top: 0; } }
 nav {
   width: 90%;
+  max-width: 520px;
   position: relative;
   left: 50%;
-  top: 6rem;
+  top: 7rem;
+  max-height: 105px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1027,7 +1029,8 @@ body {
 @media screen and (min-width: 768px) {
   .container .view-container {
     width: 60%;
-    height: 70vh; }
+    height: 70vh;
+    max-height: 420px; }
   .container.about-more .view-container {
     width: 95%; }
   .container.portfolio .view-container {
@@ -1036,7 +1039,8 @@ body {
     width: 98%;
     height: 98vh;
     background-color: transparent;
-    box-shadow: none; } }
+    box-shadow: none;
+    max-height: 5000px; } }
 @-webkit-keyframes header-block-slide {
   0% {
     height: 6rem; }
