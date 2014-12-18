@@ -17,7 +17,7 @@ angular.module('app')
       	'desc':'I designed this website for an audio engineer',
       	'url':'peter-ashmore',
         'liveUrl':'//peterashmore.net',
-        'image':'../../images/landscape.png'
+        'image':'../../images/peter-ashmore/thumb.png'
       },
       {
         'name':'Footer-reveal.js', 
@@ -33,7 +33,7 @@ angular.module('app')
       	'desc':'Illustrations for a stupid app',
       	'url':'trunkys',
         'liveUrl':'',
-        'image':'../../images/landscape.png'
+        'image':'../../images/trunkys/thumb.png'
       },
       {
         'name':'Simplespin.css', 
