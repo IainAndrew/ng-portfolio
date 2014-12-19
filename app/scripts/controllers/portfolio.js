@@ -9,7 +9,7 @@ angular.module('app')
       	'desc':'A website for a Dublin based digital media company Lorem ipsum dolor sit amet, consectetur adipisicing.',
       	'url':'plugmedia',
         'liveUrl':'//www.plugmedia.ie',
-        'image':'../../images/landscape.png'
+        'image':'../../images/plugmedia/thumb.png'
       },
       {
       	'name':'Peter Ashmore', 
