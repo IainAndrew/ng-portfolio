@@ -41,7 +41,7 @@ angular.module('app')
         'desc':'a css library',
         'url':'simplespin',
         'liveUrl':'//iainandrew.github.io/simplespin.css',
-        'image':'../../images/landscape.png'
+        'image':'../../images/simplespin/thumb.gif'
       }
     ];
   });
