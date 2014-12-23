@@ -1040,7 +1040,8 @@ body {
     height: 98vh;
     background-color: transparent;
     box-shadow: none;
-    max-height: 5000px; } }
+    max-height: 600px;
+    max-width: 1300px; } }
 @-webkit-keyframes header-block-slide {
   0% {
     height: 6rem; }
