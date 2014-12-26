@@ -677,10 +677,6 @@ sidebar {
               height: 100%;
               top: 0; }
 
-.peter-ashmore-overview .sidebar-browse-bg-next, .peter-ashmore-web-design .sidebar-browse-bg-next, .peter-ashmore-web-development .sidebar-browse-bg-next, .peter-ashmore-graphic-design .sidebar-browse-bg-next, .peter-ashmore-logo-design .sidebar-browse-bg-next {
-  background-image: url("../../images/landscape.png");
-  background-size: cover; }
-
 .header-block {
   height: 6rem;
   background: #fff;
@@ -825,7 +821,6 @@ li.project {
 section.project-main {
   background: #fff;
   position: relative;
-  padding: 2rem;
   height: auto;
   overflow-y: scroll;
   -webkit-transition: all 0.5s;
@@ -891,10 +886,21 @@ section.project-main {
   section.project-main .project-next-section, section.project-main .project-next-project {
     background: #3f51b5;
     color: #fff;
-    width: 100%;
+    width: 50%;
+    float: right;
     padding: 2rem;
-    border-radius: 7px;
-    margin: 0; }
+    margin: 0;
+    text-align: right; }
+    section.project-main .project-next-section a, section.project-main .project-next-project a {
+      display: block; }
+    section.project-main .project-next-section p:first-child, section.project-main .project-next-project p:first-child {
+      color: #7986cb;
+      padding-right: 30px; }
+    section.project-main .project-next-section p:nth-child(2), section.project-main .project-next-project p:nth-child(2) {
+      font-size: 1.5em;
+      display: inline-block; }
+    section.project-main .project-next-section i, section.project-main .project-next-project i {
+      font-size: 1.5em; }
 
 @-webkit-keyframes project-main-load {
   from {

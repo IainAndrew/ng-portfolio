@@ -1,7 +1,7 @@
 section.project-main {
   background:#fff;
   position:relative;
-  padding:2rem;
+  //padding:2rem;
   height:auto;
   overflow-y:scroll;
   @include transition(all 0.5s);
@@ -73,10 +73,27 @@ section.project-main {
   .project-next-section {
     background:$indigo-500;
     color:#fff;
-    width:100%;
+    width:50%;
+    float:right;
     padding:2rem;
-    border-radius:7px;
     margin:0;
+    text-align:right;
+    a {
+      display:block;
+    }
+    p {
+      &:first-child {
+        color:$indigo-300;
+        padding-right:30px;
+      }
+      &:nth-child(2) {
+        font-size:1.5em;
+        display:inline-block;
+      }
+    }
+    i {
+      font-size:1.5em;
+    }
   }
   .project-next-project {
     @extend .project-next-section;
