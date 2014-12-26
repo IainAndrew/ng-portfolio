@@ -6,7 +6,9 @@ angular.module('app.directives.sectionNavigation', [])
 			restrict: 'E',
 			scope: {
 				next: '=',
-				previous: '='
+				nextUrl: '=',
+				prev: '=',
+				prevUrl: '='
 			},
 			templateUrl:'views/section-navigation.html'
 		};

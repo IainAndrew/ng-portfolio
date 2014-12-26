@@ -883,24 +883,28 @@ section.project-main {
   section.project-main .project-image img {
     max-width: 100%;
     height: auto; }
-  section.project-main .project-next-section, section.project-main .project-next-project {
+  section.project-main .section-navigation {
+    margin: 0; }
+  section.project-main .project-next-section, section.project-main .project-prev-section, section.project-main .project-next-project {
     background: #3f51b5;
     color: #fff;
     width: 50%;
     float: right;
     padding: 2rem;
-    margin: 0;
     text-align: right; }
-    section.project-main .project-next-section a, section.project-main .project-next-project a {
+    section.project-main .project-next-section a, section.project-main .project-prev-section a, section.project-main .project-next-project a {
       display: block; }
-    section.project-main .project-next-section p:first-child, section.project-main .project-next-project p:first-child {
+    section.project-main .project-next-section p:first-child, section.project-main .project-prev-section p:first-child, section.project-main .project-next-project p:first-child {
       color: #7986cb;
       padding-right: 30px; }
-    section.project-main .project-next-section p:nth-child(2), section.project-main .project-next-project p:nth-child(2) {
+    section.project-main .project-next-section p:nth-child(2), section.project-main .project-prev-section p:nth-child(2), section.project-main .project-next-project p:nth-child(2) {
       font-size: 1.5em;
       display: inline-block; }
-    section.project-main .project-next-section i, section.project-main .project-next-project i {
+    section.project-main .project-next-section i, section.project-main .project-prev-section i, section.project-main .project-next-project i {
       font-size: 1.5em; }
+  section.project-main .project-prev-section {
+    float: left;
+    text-align: left; }
 
 @-webkit-keyframes project-main-load {
   from {

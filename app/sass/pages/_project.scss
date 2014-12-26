@@ -70,13 +70,15 @@ section.project-main {
       height:auto;
     }
   }
+  .section-navigation {
+    margin:0;
+  }
   .project-next-section {
     background:$indigo-500;
     color:#fff;
     width:50%;
     float:right;
     padding:2rem;
-    margin:0;
     text-align:right;
     a {
       display:block;
@@ -94,6 +96,11 @@ section.project-main {
     i {
       font-size:1.5em;
     }
+  }
+  .project-prev-section {
+    @extend .project-next-section;
+    float:left;
+    text-align:left;
   }
   .project-next-project {
     @extend .project-next-section;
