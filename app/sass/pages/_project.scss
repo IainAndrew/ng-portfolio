@@ -45,15 +45,17 @@ section.project-main {
     margin-bottom:4rem;
   }
   .project-palette {
-    margin-top:4rem;
+    margin-top:2rem;
+    width:100%;
+    text-align:center;
     .palette-color {
       display:inline-block;
-      width:4rem;
-      height:4rem;
+      width:3rem;
+      height:3rem;
       border-radius:50%;
       background:red;
       &:not(:last-child) {
-        margin-right:3rem;
+        margin-right:2.5rem;
       }
     }
   }
@@ -73,6 +75,32 @@ section.project-main {
     img {
       max-width:100%;
       height:auto;
+    }
+  }
+  .back-to-top {
+    width:2.5rem;
+    height:2.5rem;
+    border-radius:50%;
+    background:$amber-500;
+    font-size:2em;
+    text-align:center;
+    position:absolute;
+    right:1rem;
+    @include transform(translateY(-50%));
+    @include transition(all 0.2s $cubic);
+    &:hover {
+      @include transform(translateY(-50%) scale(1.1));
+    }
+    a {
+      display:block;
+      height:100%;
+      width:100%;
+    }
+    i {
+      position:absolute;
+      top:50%;
+      left:50%;
+      @include transform(translate(-50%, -50%));
     }
   }
   .section-navigation {
