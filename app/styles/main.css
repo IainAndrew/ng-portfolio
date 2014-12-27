@@ -905,6 +905,8 @@ section.project-main {
   section.project-main .project-prev-section {
     float: left;
     text-align: left; }
+    section.project-main .project-prev-section a[ui-sref=""] {
+      opacity: 0; }
 
 @-webkit-keyframes project-main-load {
   from {

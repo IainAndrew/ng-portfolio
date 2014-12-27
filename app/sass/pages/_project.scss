@@ -101,6 +101,9 @@ section.project-main {
     @extend .project-next-section;
     float:left;
     text-align:left;
+    a[ui-sref=""] {
+      opacity:0;
+    }
   }
   .project-next-project {
     @extend .project-next-section;
