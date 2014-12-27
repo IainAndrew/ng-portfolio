@@ -27,8 +27,13 @@ section.project-main {
     left:-2rem;
   }*/
   //@include box-shadow-z3;
+  .project-container {
+    padding:2rem;
+  }
   .row {
-    margin-bottom:4rem;
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
   }
   h1 {
     @include display-text;
@@ -80,15 +85,18 @@ section.project-main {
     float:right;
     padding:2rem;
     text-align:right;
+    &.full {
+      width:100%;
+    }
     a {
       display:block;
     }
     p {
-      &:first-child {
+      &:first-of-type {
         color:$indigo-300;
         padding-right:30px;
       }
-      &:nth-child(2) {
+      &:nth-of-type(2) {
         font-size:1.5em;
         display:inline-block;
       }
@@ -101,8 +109,11 @@ section.project-main {
     @extend .project-next-section;
     float:left;
     text-align:left;
-    a[ui-sref=""] {
-      opacity:0;
+    p {
+      &:first-of-type {
+        padding-left:30px;
+        padding-right:0;
+      }
     }
   }
   .project-next-project {
