@@ -890,10 +890,13 @@ section.project-main {
   section.project-main .project-next-section, section.project-main .project-prev-section, section.project-main .project-next-project {
     background: #3f51b5;
     color: #fff;
-    width: 50%;
+    width: 100%;
     float: right;
     padding: 2rem;
     text-align: right; }
+    @media screen and (min-width: 680px) {
+      section.project-main .project-next-section, section.project-main .project-prev-section, section.project-main .project-next-project {
+        width: 50%; } }
     section.project-main .project-next-section.full, section.project-main .full.project-prev-section, section.project-main .full.project-next-project {
       width: 100%; }
     section.project-main .project-next-section a, section.project-main .project-prev-section a, section.project-main .project-next-project a {

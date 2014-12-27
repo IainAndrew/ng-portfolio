@@ -81,10 +81,13 @@ section.project-main {
   .project-next-section {
     background:$indigo-500;
     color:#fff;
-    width:50%;
+    width:100%;
     float:right;
     padding:2rem;
     text-align:right;
+    @include media(new-breakpoint(min-width 680px)) {
+      width:50%;
+    }
     &.full {
       width:100%;
     }
