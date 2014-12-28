@@ -163,3 +163,8 @@ section.project-main {
 		@include calc(width, '100% - 10.5rem');
 	}
 }
+
+.mono {
+  font-family:monospace;
+  font-size:1.1em;
+}

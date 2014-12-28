@@ -368,7 +368,15 @@ table {
     margin-right: 2.35765%;
     width: 40.29137%; }
     .project-paragraph:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+    .project-paragraph.full {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      .project-paragraph.full:last-child {
+        margin-right: 0; } }
 
 @media screen and (min-width: 768px) {
   .project-image {
@@ -984,6 +992,10 @@ section.project-main {
     border-radius: 7px;
     width: -webkit-calc(100% - 10.5rem);
     width: calc(100% - 10.5rem); } }
+.mono {
+  font-family: monospace;
+  font-size: 1.1em; }
+
 .plugmedia-overview .project-main .project-overview-intro .project-palette .palette-color:first-child {
   background: #E74C3C; }
 .plugmedia-overview .project-main .project-overview-intro .project-palette .palette-color:nth-child(2) {
