@@ -11,7 +11,8 @@ angular
     'ui.router',
     'app.directives.sidebar',
     'app.directives.headerBlock',
-    'app.directives.dropdown'
+    'app.directives.dropdown',
+    'app.directives.backToTop'
   ])
   .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider
