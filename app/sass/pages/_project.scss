@@ -42,12 +42,10 @@ section.project-main {
     @include subhead-text;
     color:$grey-500;
     margin-top:0.5rem;
-    margin-bottom:4rem;
+    //margin-bottom:4rem;
   }
   .project-palette {
-    margin-top:2rem;
     width:100%;
-    text-align:center;
     .palette-color {
       display:inline-block;
       width:3rem;
@@ -59,10 +57,25 @@ section.project-main {
       }
     }
   }
+  .project-intro {
+    p {
+      &:not(:last-child) {
+        margin-bottom:1em;
+      }
+    }
+  }
   .project-overview-image {
     img {
       max-width:100%;
       height:auto;
+    }
+  }
+  .project-technologies {
+    border-left:5px solid $indigo-200;
+    padding-left:2em;
+    h2 {
+      @include subhead-text;
+      font-weight:500;
     }
   }
   .project-paragraph {
