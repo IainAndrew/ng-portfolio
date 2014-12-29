@@ -34,8 +34,8 @@ section {
 	@include media($desktop) {
 		@include span-columns(5);
 		&.full {
-			@include span-columns(6);
-			@include shift($n-columns: 3)
+			@include span-columns(7);
+			//@include shift($n-columns: 3)
 		}
 	}
 }

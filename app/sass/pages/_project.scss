@@ -65,10 +65,11 @@ section.project-main {
       height:auto;
     }
   }
-  .project-intro {
-    //max-width:40rem;
+  .project-paragraph {
     p {
-      margin-bottom:24px;
+      &:not(:last-child) {
+        margin-bottom:1em;
+      }
     }
   }
   .project-image {
@@ -87,7 +88,7 @@ section.project-main {
     position:absolute;
     right:1rem;
     @include transform(translateY(-50%));
-    @include transition(all 0.2s $cubic);
+    @include transition(all 0.2s ease);
     &:hover {
       @include transform(translateY(-50%) scale(1.1));
     }
