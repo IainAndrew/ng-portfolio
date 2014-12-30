@@ -18,12 +18,9 @@ angular.module('app.directives.dropdown', [])
 						toggle.find('i').toggleClass('icon-menu icon-close');
 					}, 500);
 				});
-				/*$('.project-next-project a').hover(function() {
-					$('.project-next-project').toggleClass('next-project-bg');
-				});*/
-				/*element.siblings().click(function() {
-					element.find('ul').removeClass('menu-show');
-				});*/
+				$('.palette-color').hover(function() {
+					
+				});
 			}
 		};
 	});
