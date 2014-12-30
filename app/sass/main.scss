@@ -56,6 +56,8 @@ body {
   //background-size:auto 200%;
   //background-position:100% 0;
   //@include animation(gradient 1s linear infinite);
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-perspective: 1000;
 }
 
 @include keyframes(gradient) {
