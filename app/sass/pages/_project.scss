@@ -186,6 +186,7 @@ section.project-main {
 .palette-color:hover {
   .tooltip {
     opacity:1;
+    @include box-shadow-z1;
     .tooltip-inner {
       @include transform(scale3d(1,1,1));
       .tooltip-text {
@@ -202,16 +203,16 @@ section.project-main {
   left:50%;
   opacity:0;
   @include transform(translateX(-50%));
-  @include transition(all 0.3s ease);
+  @include transition(opacity 0.3s ease, box-shadow 0.3s ease 0.5s);
   &:after {
     content:"";
-    width:1rem;
-    height:1rem;
+    width:0.5rem;
+    height:0.5rem;
     background:$indigo-500;
     position:absolute;
-    bottom:-0.5rem;
+    bottom:-0.25rem;
     left:50%;
-    margin-left:-0.5rem;
+    margin-left:-0.25rem;
     z-index:-1;
     @include transform(rotate(45deg));
   }
@@ -221,14 +222,15 @@ section.project-main {
     border-bottom:5px solid $indigo-500;
     overflow:hidden;
     @include transform(scale3d(0,1,1));
-    @include transition(all 0.3s ease);
+    @include transition(all 0.5s $cubic);
     .tooltip-text {
-      background:$amber-500;
+      background:#fff;
       padding:0.5rem 1rem;
-      border-radius:2px;
+      border-top-left-radius:2px;
+      border-top-right-radius:2px;
       text-align:center;
       @include transform(translateY(100%));
-      @include transition(all 0.3s ease 0.3s);
+      @include transition(all 0.3s ease 0.5s);
     }
   }
 }
