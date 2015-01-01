@@ -12,7 +12,8 @@ angular
     'app.directives.sidebar',
     'app.directives.headerBlock',
     'app.directives.dropdown',
-    'app.directives.backToTop'
+    'app.directives.backToTop',
+    'app.directives.tooltip'
   ])
   .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider

@@ -18,9 +18,6 @@ angular.module('app.directives.dropdown', [])
 						toggle.find('i').toggleClass('icon-menu icon-close');
 					}, 500);
 				});
-				$('.palette-color').hover(function() {
-					
-				});
 			}
 		};
 	});
