@@ -22,7 +22,7 @@ angular.module('app')
       {
         'name':'Footer-reveal.js', 
         'roles':['Web Development'],
-        'desc':'a jquery plugin',
+        'desc':'A jQuery plugin for quick implementation of a revealing footer effect.',
         'url':'footerreveal',
         'liveUrl':'//iainandrew.github.io/footer-reveal',
         'image':'../../images/landscape.png'
