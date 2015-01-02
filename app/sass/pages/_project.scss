@@ -190,7 +190,7 @@ section.project-main {
   opacity:1;
   @include box-shadow-z1;
   .tooltip-inner {
-    @include transform(scale3d(1,1,1));
+    @include transform(scale(1,1));
     .tooltip-text {
       @include transform(translateY(0));
     }
@@ -220,7 +220,7 @@ section.project-main {
     height:100%;
     border-bottom:5px solid $indigo-500;
     overflow:hidden;
-    @include transform(scale3d(0,1,1));
+    @include transform(scale(0,1));
     @include transition(all 0.4s $cubic);
     .tooltip-text {
       background:#fff;
