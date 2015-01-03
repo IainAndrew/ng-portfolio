@@ -10,20 +10,32 @@
 	}
 }
 
+.project-load {
+	sidebar {
+		border-radius:7px;
+		background:$pink-500;
+	}
+	.project-main {
+	    border-radius:7px;
+		@include calc(width, '100% - 10.5rem');
+	}
+}
+
 sidebar {
 	position:relative;
 	background:$pink-500;
 	display:block;
+	border-top-right-radius:0;
+  	border-bottom-right-radius:0;
+  	background:#fff;
 	//@include box-shadow-z3;
 	@include menu-text;
-	@include transition(all 0.3s cubic-bezier(1,0,.19,1.44));
+	@include transition(all 0.3s cubic-bezier(1,0,.19,1.44) 0.5s);
 	@include media($desktop) {
 		height:100%;
 		float:left;
 		width:10rem;
 	  	background:#fff;
-	  	@include animation(project-sidebar-load 0.5s $cubic forwards);
-	  	@include animation-delay(0.5s);
 	}
 	.sidebar-browse {
 		color:#fff;
@@ -75,7 +87,8 @@ sidebar {
 		}
 		ul {
 			max-height:0;
-			border-bottom:1px solid $grey-300;
+			border-bottom:1px solid $grey-500;
+			margin-bottom:-1px;
 			@include transition(all 0.3s ease);
 			@include box-shadow-z3;
 			&.menu-show {
