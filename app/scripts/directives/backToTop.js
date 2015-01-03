@@ -10,7 +10,7 @@ angular.module('app.directives.backToTop', [])
 			templateUrl:'views/back-to-top.html',
 			link: function(scope, element, attributes) {
 				var $win = $('.project-main');
-				element.on('click', function() {
+				element.on('click', function(event) {
 					$win.animate({scrollTop: $win.offset().top + scope.offset}, 'slow');
 					event.preventDefault();
 				});

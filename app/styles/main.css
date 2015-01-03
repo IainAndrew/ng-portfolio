@@ -421,7 +421,8 @@ nav {
   animation-delay: 0.7s; }
   @media screen and (min-width: 768px) {
     nav {
-      width: 40%; } }
+      width: 40%;
+      min-width: 450px; } }
   nav:after {
     content: "";
     position: absolute;
@@ -570,9 +571,6 @@ sidebar {
   position: relative;
   background: #e91e63;
   display: block;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  background: #fff;
   font-size: 13px;
   font-weight: 400;
   -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
@@ -583,7 +581,9 @@ sidebar {
       height: 100%;
       float: left;
       width: 10rem;
-      background: #fff; }
+      background: #fff;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
       .project-load sidebar {
         border-radius: 7px;
         background: #e91e63; } }
@@ -1140,7 +1140,7 @@ body {
     height: 70vh;
     max-height: 420px; }
   .container.about-more .view-container {
-    width: 95%; }
+    width: 40%; }
   .container.portfolio .view-container {
     width: 70%; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {

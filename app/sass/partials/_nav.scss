@@ -12,6 +12,7 @@ nav {
   max-width:520px;
   @include media($desktop) {
     width:40%;
+    min-width:450px;
   }
   //height:4rem;
   position:relative;
@@ -45,10 +46,6 @@ nav {
       &:first-child {
         a {
           border-top-left-radius:7px;
-        }
-      }
-      &:nth-child(2) {
-        a {
         }
       }
       &:last-child {
