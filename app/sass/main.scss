@@ -139,6 +139,7 @@ body {
     &.about-more {
       .view-container {
         width:40%;
+        min-width:500px;
       }
     } 
     &.portfolio {

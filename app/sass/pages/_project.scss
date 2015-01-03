@@ -175,6 +175,7 @@ section.project-main {
 
 .tooltip.tooltip-show {
   opacity:1;
+  width:auto;
   @include box-shadow-z1;
   .tooltip-inner {
     @include transform(scale(1,1));
@@ -188,8 +189,9 @@ section.project-main {
   bottom:100%;
   left:50%;
   opacity:0;
+  width:0;
   @include transform(translateX(-50%));
-  @include transition(opacity 0.3s ease, box-shadow 0.3s ease 0.5s);
+  @include transition(opacity 0.2s ease, box-shadow 0.3s ease 0.5s);
   &:after {
     content:"";
     width:0.5rem;

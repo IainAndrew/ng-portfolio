@@ -958,6 +958,7 @@ section.project-main {
 
 .tooltip.tooltip-show {
   opacity: 1;
+  width: auto;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .tooltip.tooltip-show .tooltip-inner {
     -webkit-transform: scale(1, 1);
@@ -977,14 +978,15 @@ section.project-main {
   bottom: 100%;
   left: 50%;
   opacity: 0;
+  width: 0;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-transition: opacity 0.3s ease, box-shadow 0.3s ease 0.5s;
-  -moz-transition: opacity 0.3s ease, box-shadow 0.3s ease 0.5s;
-  transition: opacity 0.3s ease, box-shadow 0.3s ease 0.5s; }
+  -webkit-transition: opacity 0.2s ease, box-shadow 0.3s ease 0.5s;
+  -moz-transition: opacity 0.2s ease, box-shadow 0.3s ease 0.5s;
+  transition: opacity 0.2s ease, box-shadow 0.3s ease 0.5s; }
   .tooltip:after {
     content: "";
     width: 0.5rem;
@@ -1140,7 +1142,8 @@ body {
     height: 70vh;
     max-height: 420px; }
   .container.about-more .view-container {
-    width: 40%; }
+    width: 40%;
+    min-width: 500px; }
   .container.portfolio .view-container {
     width: 70%; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
