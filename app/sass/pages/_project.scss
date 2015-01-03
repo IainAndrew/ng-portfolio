@@ -7,27 +7,13 @@ section.project-main {
   @include transition(all 0.5s $cubic 0.5s);
   @include media($desktop) {
     height:100%;
-    @include calc(width, '100% - 10rem');
     float:right;
-    border-top-left-radius:0;
-    border-bottom-left-radius:0;
-    border-top-left-radius:0;
-    border-bottom-left-radius:0;
     @include calc(width, '100% - 10rem');
+    .project-load & {
+        border-radius:7px;
+        @include calc(width, '100% - 10.5rem');
+    }
   }
-  /*&.ng-enter {
-    left:2rem;
-  }
-  &.ng-enter-active {
-    left:0;
-  }
-  &.ng-leave {
-    left:0;
-  }
-  &.ng-leave-active {
-    left:-2rem;
-  }*/
-  //@include box-shadow-z3;
   .project-container {
     padding:2rem;
   }
@@ -170,7 +156,7 @@ section.project-main {
   }
 }
 
-@include keyframes(project-main-load) {
+/*@include keyframes(project-main-load) {
 	from {
 		border-top-left-radius:0;
   	border-bottom-left-radius:0;
@@ -180,7 +166,7 @@ section.project-main {
 		border-radius:7px;
 		@include calc(width, '100% - 10.5rem');
 	}
-}
+}*/
 
 .mono {
   font-family:monospace;

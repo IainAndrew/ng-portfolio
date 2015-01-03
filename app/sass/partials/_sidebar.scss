@@ -1,4 +1,4 @@
-@include keyframes(project-sidebar-load) {
+/*@include keyframes(project-sidebar-load) {
 	from {
 		border-top-right-radius:0;
   	border-bottom-right-radius:0;
@@ -8,18 +8,7 @@
 		border-radius:7px;
 		background:$pink-500;
 	}
-}
-
-.project-load {
-	sidebar {
-		border-radius:7px;
-		background:$pink-500;
-	}
-	.project-main {
-	    border-radius:7px;
-		@include calc(width, '100% - 10.5rem');
-	}
-}
+}*/
 
 sidebar {
 	position:relative;
@@ -30,12 +19,16 @@ sidebar {
   	background:#fff;
 	//@include box-shadow-z3;
 	@include menu-text;
-	@include transition(all 0.3s cubic-bezier(1,0,.19,1.44) 0.5s);
+	@include transition(all 0.3s $cubic 0.5s);
 	@include media($desktop) {
 		height:100%;
 		float:left;
 		width:10rem;
 	  	background:#fff;
+	  	.project-load & {
+	  		border-radius:7px;
+			background:$pink-500;
+	  	}
 	}
 	.sidebar-browse {
 		color:#fff;
