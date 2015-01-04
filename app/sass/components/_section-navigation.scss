@@ -1,0 +1,47 @@
+.section-navigation {
+  margin:0;
+}
+.project-next-section {
+  background:$indigo-500;
+  color:#fff;
+  width:100%;
+  float:right;
+  padding:2rem;
+  text-align:right;
+  @include media(new-breakpoint(min-width 680px)) {
+    width:50%;
+  }
+  &.full {
+    width:100%;
+  }
+  a {
+    display:block;
+  }
+  p {
+    &:first-of-type {
+      color:$indigo-300;
+      padding-right:30px;
+    }
+    &:nth-of-type(2) {
+      font-size:1.5em;
+      display:inline-block;
+    }
+  }
+  i {
+    font-size:1.5em;
+  }
+}
+.project-prev-section {
+  @extend .project-next-section;
+  float:left;
+  text-align:left;
+  p {
+    &:first-of-type {
+      padding-left:30px;
+      padding-right:0;
+    }
+  }
+}
+.project-next-project {
+  @extend .project-next-section;
+}
