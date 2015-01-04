@@ -782,11 +782,12 @@ sidebar {
   color: #fff;
   width: 100%;
   float: right;
-  padding: 2rem;
+  padding: 1rem;
   text-align: right; }
   @media screen and (min-width: 680px) {
     .project-next-section, .project-prev-section, .project-next-project {
-      width: 50%; } }
+      width: 50%;
+      padding: 2rem; } }
   .project-next-section.full, .full.project-prev-section, .full.project-next-project {
     width: 100%; }
   .project-next-section a, .project-prev-section a, .project-next-project a {
@@ -879,9 +880,8 @@ section.about {
   color: #e91e63; }
 
 .container.about-more .view-container {
-  background-image: url("../images/landscape.png");
-  background-size: cover;
-  background-position: center; }
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 section.portfolio {
   padding: 1rem; }
@@ -980,9 +980,13 @@ section.project-main {
   section.project-main .row:not(:last-child) {
     margin-bottom: 4rem; }
   section.project-main h1 {
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 100;
-    line-height: 60px; }
+    line-height: 45px; }
+    @media screen and (min-width: 768px) {
+      section.project-main h1 {
+        font-size: 56px;
+        line-height: 60px; } }
   section.project-main p.project-subhead {
     font-size: 15px;
     line-height: 24px;
@@ -1146,8 +1150,11 @@ body {
     height: 70vh;
     max-height: 420px; }
   .container.about-more .view-container {
-    width: 40%;
-    min-width: 500px; }
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%; }
+  .container.about-more nav {
+    display: none; }
   .container.portfolio .view-container {
     width: 70%; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {

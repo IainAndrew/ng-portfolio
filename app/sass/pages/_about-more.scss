@@ -1,7 +1,6 @@
 .container.about-more {
 	.view-container {
-		background-image:url('../images/landscape.png');
-		background-size:cover;
-		background-position:center;
+		background:#fff;
+		@include box-shadow-z2;
 	}
 }

@@ -2,6 +2,10 @@
 	font-size:$display-font-size;
 	font-weight:$display-font-weight;
 	line-height:$display-line-height;
+	@include media($desktop) {
+		font-size:$display-font-size-desktop;
+		line-height:$display-line-height-desktop;
+	}
 }
 @mixin headline-text {
 	font-size:$headline-font-size;
@@ -49,4 +53,9 @@
     border-top: 1px solid $border-grey;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin:2rem 0;
+}
+@mixin card {
+	background:#fff;
+	border-radius:2px;
+	@include box-shadow-z1;
 }
