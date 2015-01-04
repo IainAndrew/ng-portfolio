@@ -36,6 +36,7 @@ sidebar {
 		font-size:1.2em;
 		border-top-left-radius:7px;
 		border-top-right-radius:7px;
+		overflow:hidden;
 		@include transition(all 0.5s ease);
 		@include media($desktop) {
 			padding:2rem 1rem;
@@ -43,7 +44,38 @@ sidebar {
 		}
 		a {
 			font-size:2em;
+			position:relative;
 			@include transition(all 0.2s ease);
+			&:after {
+              content:"";
+              width:1rem;
+              height:1rem;
+              background:rgba(#fff,0.3);
+              border-radius:50%;
+              position:absolute;
+              top:50%;
+              left:50%;
+              opacity:0;
+              @include transform(translate(-70%, -50%) scale(1));
+              @include transition(all 0.5s $cubic, opacity 0.1s ease);
+            }
+            &:active {
+            	&:after {
+		            @include keyframes(sidebar-browse-active) {
+		            	0% {
+							opacity:1;
+		            	}
+		            	50% {
+							@include transform(translate(-70%, -50%) scale(25));
+		            	}
+		            	100% {
+							@include transform(translate(-70%, -50%) scale(1));
+							opacity:0;
+		            	}
+		            }
+          			@include animation(sidebar-browse-active 1s);
+				}
+            }
 			.no-touch & {
 				&:hover {
 					color:$pink-100;

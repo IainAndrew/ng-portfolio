@@ -594,6 +594,7 @@ sidebar {
     font-size: 1.2em;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    overflow: hidden;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease; }
@@ -603,9 +604,64 @@ sidebar {
         font-size: 1em; } }
     sidebar .sidebar-browse a {
       font-size: 2em;
+      position: relative;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       transition: all 0.2s ease; }
+      sidebar .sidebar-browse a:after {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        -webkit-transform: translate(-70%, -50%) scale(1);
+        -moz-transform: translate(-70%, -50%) scale(1);
+        -ms-transform: translate(-70%, -50%) scale(1);
+        -o-transform: translate(-70%, -50%) scale(1);
+        transform: translate(-70%, -50%) scale(1);
+        -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.1s ease;
+        -moz-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.1s ease;
+        transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.1s ease; }
+      sidebar .sidebar-browse a:active:after {
+        -webkit-animation: sidebar-browse-active 1s;
+        -moz-animation: sidebar-browse-active 1s;
+        animation: sidebar-browse-active 1s; }
+@-webkit-keyframes sidebar-browse-active {
+  0% {
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(-70%, -50%) scale(25); }
+  100% {
+    -webkit-transform: translate(-70%, -50%) scale(1);
+    opacity: 0; } }
+@-moz-keyframes sidebar-browse-active {
+  0% {
+    opacity: 1; }
+  50% {
+    -moz-transform: translate(-70%, -50%) scale(25); }
+  100% {
+    -moz-transform: translate(-70%, -50%) scale(1);
+    opacity: 0; } }
+@keyframes sidebar-browse-active {
+  0% {
+    opacity: 1; }
+  50% {
+    -webkit-transform: translate(-70%, -50%) scale(25);
+    -moz-transform: translate(-70%, -50%) scale(25);
+    -ms-transform: translate(-70%, -50%) scale(25);
+    -o-transform: translate(-70%, -50%) scale(25);
+    transform: translate(-70%, -50%) scale(25); }
+  100% {
+    -webkit-transform: translate(-70%, -50%) scale(1);
+    -moz-transform: translate(-70%, -50%) scale(1);
+    -ms-transform: translate(-70%, -50%) scale(1);
+    -o-transform: translate(-70%, -50%) scale(1);
+    transform: translate(-70%, -50%) scale(1);
+    opacity: 0; } }
       .no-touch sidebar .sidebar-browse a:hover {
         color: #f8bbd0; }
       sidebar .sidebar-browse a[ng-href=""] {
