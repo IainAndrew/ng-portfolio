@@ -924,6 +924,19 @@ section.about {
     @media screen and (min-width: 768px) {
       section.about hr {
         display: none; } }
+  section.about .about-links {
+    margin-top: 1rem; }
+    section.about .about-links a {
+      display: inline-block;
+      color: #e91e63;
+      text-transform: uppercase;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      section.about .about-links a:hover {
+        color: #f06292; }
+      section.about .about-links a:first-child {
+        margin-right: 2rem; }
 
 .about-tech ul li {
   display: inline-block;
@@ -932,12 +945,116 @@ section.about {
   margin-left: 0.2em;
   padding: 0.2em 0.7em; }
 
-.about-more-link {
-  color: #e91e63; }
-
 .container.about-more .view-container {
   background: #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  overflow: visible;
+  box-shadow: none;
+  -webkit-animation: view-container-hide 0s 0.5s forwards;
+  -moz-animation: view-container-hide 0s 0.5s forwards;
+  animation: view-container-hide 0s 0.5s forwards; }
+@-webkit-keyframes view-container-hide {
+  from {
+    background: #fff; }
+  to {
+    background: transparent; } }
+@-moz-keyframes view-container-hide {
+  from {
+    background: #fff; }
+  to {
+    background: transparent; } }
+@keyframes view-container-hide {
+  from {
+    background: #fff; }
+  to {
+    background: transparent; } }
+  .container.about-more .view-container header-block {
+    display: none; }
+
+.circle {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
+@-webkit-keyframes circle-show {
+  from {
+    opacity: 0;
+    left: 55%; }
+  to {
+    opacity: 1;
+    left: 50%; } }
+@-moz-keyframes circle-show {
+  from {
+    opacity: 0;
+    left: 55%; }
+  to {
+    opacity: 1;
+    left: 50%; } }
+@keyframes circle-show {
+  from {
+    opacity: 0;
+    left: 55%; }
+  to {
+    opacity: 1;
+    left: 50%; } }
+@-webkit-keyframes circle-z {
+  0% {
+    z-index: -1;
+    margin-left: -2rem; }
+  50% {
+    margin-left: -30rem; }
+  100% {
+    z-index: 1;
+    margin-left: 0; } }
+@-moz-keyframes circle-z {
+  0% {
+    z-index: -1;
+    margin-left: -2rem; }
+  50% {
+    margin-left: -30rem; }
+  100% {
+    z-index: 1;
+    margin-left: 0; } }
+@keyframes circle-z {
+  0% {
+    z-index: -1;
+    margin-left: -2rem; }
+  50% {
+    margin-left: -30rem; }
+  100% {
+    z-index: 1;
+    margin-left: 0; } }
+  .circle.circle-one {
+    -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+    -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards; }
+  .circle.circle-two {
+    margin-left: -2rem;
+    z-index: -1;
+    -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards;
+    -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards;
+    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards; }
+    .circle.circle-two.zip {
+      -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 1s ease forwards;
+      -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 1s ease forwards;
+      animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 1s ease forwards; }
+  .circle.circle-three {
+    margin-left: -4rem;
+    z-index: -2;
+    -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards;
+    -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards;
+    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards; }
 
 section.portfolio {
   padding: 1rem; }
@@ -1205,10 +1322,6 @@ body {
     width: 60%;
     height: 70vh;
     max-height: 420px; }
-  .container.about-more .view-container {
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%; }
   .container.about-more nav {
     display: none; }
   .container.portfolio .view-container {

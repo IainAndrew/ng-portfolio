@@ -19,6 +19,21 @@ section.about {
 			display:none;
 		}
 	}
+	.about-links {
+		margin-top:1rem;
+		a {
+			display:inline-block;
+			color:$pink-500;
+			text-transform:uppercase;
+			@include transition(all 0.3s ease);
+			&:hover {
+				color:$pink-300;
+			}
+			&:first-child {
+				margin-right:2rem;
+			}
+		}
+	}
 }
 .about-tech {
 	ul {
@@ -29,11 +44,5 @@ section.about {
 			margin-left:0.2em;
 			padding:0.2em 0.7em;
 		}
-	}
-}
-.about-more-link {
-	color:$pink-500;
-	&:hover {
-
 	}
 }
