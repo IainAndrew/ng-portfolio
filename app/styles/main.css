@@ -789,19 +789,18 @@ sidebar {
   transition: opacity 0.2s ease, box-shadow 0.3s ease 0.5s; }
   .tooltip:after {
     content: "";
-    width: 0.5rem;
-    height: 0.5rem;
-    background: #3f51b5;
-    position: absolute;
-    bottom: -0.25rem;
+    bottom: -0.9rem;
     left: 50%;
-    margin-left: -0.25rem;
-    z-index: -1;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: solid transparent;
+    position: absolute;
+    border-color: transparent;
+    border-top-color: #3f51b5;
+    border-width: 0.5rem; }
   .tooltip .tooltip-inner {
     width: 100%;
     height: 100%;
@@ -914,6 +913,8 @@ section.about {
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 0.5rem; }
+  section.about span {
+    position: relative; }
   section.about hr {
     width: 100%;
     height: 0;
@@ -1035,6 +1036,49 @@ section.about {
   100% {
     z-index: 1;
     margin-left: 0; } }
+@-webkit-keyframes gelatine {
+  from, to {
+    -webkit-transform: translateX(-50%) scale(1, 1); }
+  25% {
+    -webkit-transform: translateX(-50%) scale(0.9, 1.1); }
+  50% {
+    -webkit-transform: translateX(-50%) scale(1.1, 0.9); }
+  75% {
+    -webkit-transform: translateX(-50%) scale(0.95, 1.05); } }
+@-moz-keyframes gelatine {
+  from, to {
+    -moz-transform: translateX(-50%) scale(1, 1); }
+  25% {
+    -moz-transform: translateX(-50%) scale(0.9, 1.1); }
+  50% {
+    -moz-transform: translateX(-50%) scale(1.1, 0.9); }
+  75% {
+    -moz-transform: translateX(-50%) scale(0.95, 1.05); } }
+@keyframes gelatine {
+  from, to {
+    -webkit-transform: translateX(-50%) scale(1, 1);
+    -moz-transform: translateX(-50%) scale(1, 1);
+    -ms-transform: translateX(-50%) scale(1, 1);
+    -o-transform: translateX(-50%) scale(1, 1);
+    transform: translateX(-50%) scale(1, 1); }
+  25% {
+    -webkit-transform: translateX(-50%) scale(0.9, 1.1);
+    -moz-transform: translateX(-50%) scale(0.9, 1.1);
+    -ms-transform: translateX(-50%) scale(0.9, 1.1);
+    -o-transform: translateX(-50%) scale(0.9, 1.1);
+    transform: translateX(-50%) scale(0.9, 1.1); }
+  50% {
+    -webkit-transform: translateX(-50%) scale(1.1, 0.9);
+    -moz-transform: translateX(-50%) scale(1.1, 0.9);
+    -ms-transform: translateX(-50%) scale(1.1, 0.9);
+    -o-transform: translateX(-50%) scale(1.1, 0.9);
+    transform: translateX(-50%) scale(1.1, 0.9); }
+  75% {
+    -webkit-transform: translateX(-50%) scale(0.95, 1.05);
+    -moz-transform: translateX(-50%) scale(0.95, 1.05);
+    -ms-transform: translateX(-50%) scale(0.95, 1.05);
+    -o-transform: translateX(-50%) scale(0.95, 1.05);
+    transform: translateX(-50%) scale(0.95, 1.05); } }
   .circle.circle-one {
     -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
     -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
@@ -1046,9 +1090,9 @@ section.about {
     -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards;
     animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards; }
     .circle.circle-two.zip {
-      -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 1s ease forwards;
-      -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 1s ease forwards;
-      animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 1s ease forwards; }
+      -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 0.8s forwards, gelatine 1.5s;
+      -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 0.8s forwards, gelatine 1.5s;
+      animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards, circle-z 0.8s forwards, gelatine 1.5s; }
   .circle.circle-three {
     margin-left: -4rem;
     z-index: -2;

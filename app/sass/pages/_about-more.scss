@@ -56,6 +56,20 @@
 			margin-left:0;
 		}
 	}
+	@include keyframes (gelatine) {
+	  from, to { 
+	  	@include transform(translateX(-50%) scale(1, 1)); 
+	  }
+	  25% { 
+	  	@include transform(translateX(-50%) scale(0.9, 1.1)); 
+	  }
+	  50% { 
+	  	@include transform(translateX(-50%) scale(1.1, 0.9)); 
+	  }
+	  75% { 
+	  	@include transform(translateX(-50%) scale(0.95, 1.05)); 
+	  }
+	}
 	&.circle-one {
 		@include animation(circle-show 0.5s $cubic forwards);
 	}
@@ -64,7 +78,7 @@
 		z-index:-1;
 		@include animation(circle-show 0.5s $cubic 0.5s forwards);
 		&.zip {
-			@include animation(circle-show 0.5s $cubic 0.5s forwards, circle-z 1s ease forwards);
+			@include animation(circle-show 0.5s $cubic 0.5s forwards, circle-z 0.8s forwards, gelatine 1.5s);
 		}
 	}
 	&.circle-three {

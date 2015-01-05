@@ -10,7 +10,7 @@ angular.module('app.directives.headerBlock', [])
 			},
 			link: function(scope, element, attributes) {
 				$('button').click(function() {
-					$('.circle-two').addClass('zip');
+					$('.circle-two').toggleClass('zip');
 				});
 			},
 			templateUrl:'views/header-block.html'

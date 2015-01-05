@@ -18,16 +18,15 @@
   @include transform(translateX(-50%));
   @include transition(opacity 0.2s ease, box-shadow 0.3s ease 0.5s);
   &:after {
-    content:"";
-    width:0.5rem;
-    height:0.5rem;
-    background:$indigo-500;
-    position:absolute;
-    bottom:-0.25rem;
-    left:50%;
-    margin-left:-0.25rem;
-    z-index:-1;
-    @include transform(rotate(45deg));
+    content: "";
+    bottom: -0.9rem;
+    left: 50%;
+    @include transform(translateX(-50%));
+    border: solid transparent;
+    position: absolute;
+    border-color: transparent;
+    border-top-color:$indigo-500;
+    border-width: 0.5rem;
   }
   .tooltip-inner {
     width:100%;

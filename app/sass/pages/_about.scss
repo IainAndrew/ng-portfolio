@@ -13,6 +13,9 @@ section.about {
 		text-transform:uppercase;
 		margin-bottom:0.5rem;
 	}
+	span {
+		position:relative;
+	}
 	hr {
 		@include rule-full;
 		@include media($desktop) {
