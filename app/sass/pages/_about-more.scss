@@ -22,7 +22,57 @@
         }
 	}
 }
-
+.circles {
+	position:relative;
+	.button {
+		float:right;
+		width:3rem;
+		height:3rem;
+		position:relative;
+		background:$pink-500;
+		color:#fff;
+		text-align:center;
+		line-height:3rem;
+		border-radius:50%;
+		cursor:pointer;
+		z-index:10;
+	}
+	&.move-one {
+		.circle-three {
+			@include animation(circle-show 0.5s $cubic 1s forwards, circle-front 1s ease forwards, elastic 1.5s);
+		}
+		.circle-one {
+			left:-2rem;
+		}
+		.circle-two {
+			left:-4rem;
+		}
+	}
+	&.move-two {
+		.circle-two {
+			@include animation(circle-show 0.5s $cubic 1s forwards, circle-front 1s ease forwards, elastic 1.5s);
+		}
+		.circle-three {
+			left:-2rem;
+			z-index:1;
+		}
+		.circle-one {
+			left:-4rem;
+		}
+	}
+	&.move-three {
+		.circle-one {
+			@include animation(circle-show 0.5s $cubic 1s forwards, circle-front 1s ease forwards, elastic 1.5s);
+		}
+		.circle-three {
+			left:-4rem;
+			z-index:0;
+		}
+		.circle-two {
+			left:-2rem;
+		}
+	}
+}
 .circle {
 	width:25rem;
 	height:25rem;
@@ -31,59 +81,61 @@
 	opacity:0;
 	@include box-shadow-z2;
 	position:absolute;
-	left:50%;
-	@include transform(translateX(-50%));
-	@include keyframes (circle-show) {
-		from {
-			opacity:0;
-			left:55%
-		}
-		to {
-			opacity:1;
-			left:50%;
-		}
-	}
-	@include keyframes (circle-z) {
-		0% {
-			z-index:-1;
-			margin-left:-2rem;
-		}
-		50% {
-			margin-left:-30rem;
-		}
-		100% {
-			z-index:1;
-			margin-left:0;
-		}
-	}
-	@include keyframes (gelatine) {
-	  from, to { 
-	  	@include transform(translateX(-50%) scale(1, 1)); 
-	  }
-	  25% { 
-	  	@include transform(translateX(-50%) scale(0.9, 1.1)); 
-	  }
-	  50% { 
-	  	@include transform(translateX(-50%) scale(1.1, 0.9)); 
-	  }
-	  75% { 
-	  	@include transform(translateX(-50%) scale(0.95, 1.05)); 
-	  }
-	}
+	margin:0 auto;
+	overflow:hidden;
+	padding:5rem;
+	@include transition(all 0.5s $cubic);
 	&.circle-one {
+		background:#fff;
+		left:0;
 		@include animation(circle-show 0.5s $cubic forwards);
 	}
 	&.circle-two {
-		margin-left:-2rem;
-		z-index:-1;
+		background:$indigo-500;
+		left:-2rem;
 		@include animation(circle-show 0.5s $cubic 0.5s forwards);
-		&.zip {
-			@include animation(circle-show 0.5s $cubic 0.5s forwards, circle-z 0.8s forwards, gelatine 1.5s);
-		}
 	}
 	&.circle-three {
-		margin-left:-4rem;
-		z-index:-2;
+		background:$amber-500;
+		left:-4rem;
 		@include animation(circle-show 0.5s $cubic 1s forwards);
+	}
+}
+@include keyframes (circle-show) {
+	from {
+		opacity:0;
+		//left:55%;
+		@include transform(scale(0.6));
+	}
+	to {
+		opacity:1;
+		//left:50%;
+		@include transform(scale(1));
+	}
+}
+@include keyframes (circle-front) {
+	0% {
+		left:-4rem;
+	}
+	50% {
+		left:-30rem;
+	}
+	100% {
+		z-index:1;
+		left:0;
+	}
+}
+@include keyframes (elastic) {
+	from, to { 
+		@include transform(scale(1, 1)); 
+	}
+	25% { 
+		@include transform(scale(0.9, 1.1)); 
+	}
+	50% { 
+		@include transform(scale(1.1, 0.9)); 
+	}
+	75% { 
+		@include transform(scale(0.95, 1.05)); 
 	}
 }

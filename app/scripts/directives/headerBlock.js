@@ -9,8 +9,20 @@ angular.module('app.directives.headerBlock', [])
 				subhead: '='
 			},
 			link: function(scope, element, attributes) {
-				$('button').click(function() {
-					$('.circle-two').toggleClass('zip');
+				var $cont = $('.circles'),
+					$btn = $cont.find('.button');
+
+				$btn.click(function() {
+					if (!$cont.is('.move-one, .move-two, .move-three')) {
+						$cont.addClass('move-one');
+					} else if ($cont.is('.move-one')) {
+						$cont.addClass('move-two').removeClass('move-one');
+					} else if ($cont.is('.move-two')) {
+						$cont.addClass('move-three').removeClass('move-two');
+						setTimeout(function() {
+							$cont.removeClass('move-three');
+						}, 1000);
+					}
 				});
 			},
 			templateUrl:'views/header-block.html'
