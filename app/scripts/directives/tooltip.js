@@ -5,7 +5,7 @@ angular.module('app.directives.tooltip', [])
 		return {
 			restrict: 'A',
 			link: function(scope, element, attributes) {
-				element.append('<div class="tooltip"><div class="tooltip-inner"><div class="tooltip-text"><p>'+ element.attr('tooltip') +'</p></div></div></div>');
+				element.append('<div class="tooltip"><div class="tooltip-inner"><div class="tooltip-text">'+ element.attr('tooltip') +'</div></div></div>');
 				if ( Modernizr.touch ) {
 					element.click(function() {
 						element.find('.tooltip').toggleClass('tooltip-show');
