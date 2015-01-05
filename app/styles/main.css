@@ -507,27 +507,27 @@ nav {
                 transition: all 1s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.1s ease; } }
         nav ul li a:after {
           content: "";
-          width: 0.8rem;
-          height: 0.8rem;
-          background: #fff;
-          position: absolute;
+          bottom: -0.5rem;
           left: 50%;
-          margin-left: -0.4rem;
-          bottom: -1rem;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+          border: solid transparent;
+          position: absolute;
+          border-color: transparent;
+          border-bottom-color: #fff;
+          border-width: 0.5rem;
           opacity: 0;
-          -webkit-transform: rotate(45deg);
-          -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-          -o-transform: rotate(45deg);
-          transform: rotate(45deg);
           -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
           -moz-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
           transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
           @media screen and (min-width: 768px) {
             nav ul li a:after {
-              -webkit-transition: all 1.2s cubic-bezier(1, 0, 0.19, 1.44);
-              -moz-transition: all 1.2s cubic-bezier(1, 0, 0.19, 1.44);
-              transition: all 1.2s cubic-bezier(1, 0, 0.19, 1.44); } }
+              -webkit-transition: all 0.7s cubic-bezier(1, 0, 0.19, 1.44);
+              -moz-transition: all 0.7s cubic-bezier(1, 0, 0.19, 1.44);
+              transition: all 0.7s cubic-bezier(1, 0, 0.19, 1.44); } }
         nav ul li a.active {
           color: #fff;
           background: rgba(255, 255, 255, 0.25); }
@@ -551,7 +551,7 @@ nav {
               -o-transform: translate(-50%, -50%) scale(14);
               transform: translate(-50%, -50%) scale(14); }
           nav ul li a.active:after {
-            bottom: -0.5rem;
+            bottom: -0.1rem;
             opacity: 1; }
         .no-touch nav ul li a:hover:not(.active) {
           background: rgba(255, 255, 255, 0.25); }

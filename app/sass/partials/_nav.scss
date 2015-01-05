@@ -95,19 +95,19 @@ nav {
           }
         }
         &:after {
-          content:"";
-          width:0.8rem;
-          height:0.8rem;
-          background:#fff;
-          position:absolute;
-          left:50%;
-          margin-left:-0.4rem;
-          bottom:-1rem;
+          content: "";
+          bottom:-0.5rem;
+          left: 50%;
+          @include transform(translateX(-50%));
+          border: solid transparent;
+          position: absolute;
+          border-color: transparent;
+          border-bottom-color:#fff;
+          border-width: 0.5rem;
           opacity:0;
-          @include transform(rotate(45deg));
           @include transition(all 0.3s $cubic);
           @include media($desktop) {
-            @include transition(all 1.2s $cubic);
+            @include transition(all 0.7s $cubic);
           }
         }
         &.active {
@@ -127,7 +127,7 @@ nav {
             }
           }
           &:after {
-            bottom:-0.5rem;
+            bottom:-0.1rem;
             opacity:1;
           }
         }
