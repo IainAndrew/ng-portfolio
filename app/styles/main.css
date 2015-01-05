@@ -914,7 +914,38 @@ section.about {
     text-transform: uppercase;
     margin-bottom: 0.5rem; }
   section.about span {
-    position: relative; }
+    position: relative;
+    color: #3f51b5;
+    cursor: default; }
+    section.about span .tooltip-show .map-marker {
+      position: absolute;
+      top: -100%;
+      left: 47px;
+      opacity: 0;
+      -webkit-animation: marker 0.7s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.7s;
+      -moz-animation: marker 0.7s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.7s;
+      animation: marker 0.7s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.7s; }
+@-webkit-keyframes marker {
+  from {
+    top: -100%;
+    opacity: 0; }
+  to {
+    top: 25px;
+    opacity: 1; } }
+@-moz-keyframes marker {
+  from {
+    top: -100%;
+    opacity: 0; }
+  to {
+    top: 25px;
+    opacity: 1; } }
+@keyframes marker {
+  from {
+    top: -100%;
+    opacity: 0; }
+  to {
+    top: 25px;
+    opacity: 1; } }
   section.about hr {
     width: 100%;
     height: 0;

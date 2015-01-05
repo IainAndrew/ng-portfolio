@@ -15,6 +15,27 @@ section.about {
 	}
 	span {
 		position:relative;
+		color:$indigo-500;
+		cursor:default;
+		.tooltip-show {
+			.map-marker {
+				position:absolute;
+				top:-100%;
+				left:47px;
+				opacity:0;
+				@include keyframes (marker) {
+					from {
+						top:-100%;
+						opacity:0;
+					}
+					to {
+						top:25px;
+						opacity:1;
+					}
+				}
+				@include animation(marker 0.7s $cubic forwards 0.7s)
+			}
+		}
 	}
 	hr {
 		@include rule-full;
