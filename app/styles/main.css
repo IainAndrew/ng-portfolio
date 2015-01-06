@@ -1380,27 +1380,6 @@ body {
   background-size: cover;
   background-position: center; }
 
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 100% 0; }
-  50% {
-    background-position: 0 0; }
-  100% {
-    background-position: 100% 0; } }
-@-moz-keyframes gradient {
-  0% {
-    background-position: 100% 0; }
-  50% {
-    background-position: 0 0; }
-  100% {
-    background-position: 100% 0; } }
-@keyframes gradient {
-  0% {
-    background-position: 100% 0; }
-  50% {
-    background-position: 0 0; }
-  100% {
-    background-position: 100% 0; } }
 .container {
   position: absolute;
   width: 100%;
@@ -1453,27 +1432,6 @@ body {
     box-shadow: none;
     max-height: 600px;
     max-width: 1300px; } }
-@-webkit-keyframes header-block-slide {
-  0% {
-    height: 6rem; }
-  50% {
-    height: 100%; }
-  100% {
-    height: 6rem; } }
-@-moz-keyframes header-block-slide {
-  0% {
-    height: 6rem; }
-  50% {
-    height: 100%; }
-  100% {
-    height: 6rem; } }
-@keyframes header-block-slide {
-  0% {
-    height: 6rem; }
-  50% {
-    height: 100%; }
-  100% {
-    height: 6rem; } }
 main {
   height: 100%;
   position: relative; }
