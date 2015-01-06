@@ -43,9 +43,11 @@
 		}
 		.circle-one {
 			left:-2rem;
+			z-index:-1;
 		}
 		.circle-two {
 			left:-4rem;
+			z-index:-2;
 		}
 	}
 	&.move-two {
@@ -54,10 +56,11 @@
 		}
 		.circle-three {
 			left:-2rem;
-			z-index:1;
+			z-index:-1;
 		}
 		.circle-one {
 			left:-4rem;
+			z-index:-2;
 		}
 	}
 	&.move-three {
@@ -66,10 +69,11 @@
 		}
 		.circle-three {
 			left:-4rem;
-			z-index:0;
+			z-index:-1;
 		}
 		.circle-two {
 			left:-2rem;
+			z-index:-2;
 		}
 	}
 }
@@ -89,16 +93,19 @@
 		background:#fff;
 		left:0;
 		@include animation(circle-show 0.5s $cubic forwards);
+		z-index:0;
 	}
 	&.circle-two {
 		background:$indigo-500;
 		left:-2rem;
 		@include animation(circle-show 0.5s $cubic 0.5s forwards);
+		z-index:-1;
 	}
 	&.circle-three {
 		background:$amber-500;
 		left:-4rem;
 		@include animation(circle-show 0.5s $cubic 1s forwards);
+		z-index:-2;
 	}
 }
 @include keyframes (circle-show) {
@@ -121,7 +128,7 @@
 		left:-30rem;
 	}
 	100% {
-		z-index:1;
+		z-index:0;
 		left:0;
 	}
 }

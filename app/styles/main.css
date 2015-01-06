@@ -1024,27 +1024,31 @@ section.about {
     -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards, circle-front 1s ease forwards, elastic 1.5s;
     animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards, circle-front 1s ease forwards, elastic 1.5s; }
   .circles.move-one .circle-one {
-    left: -2rem; }
+    left: -2rem;
+    z-index: -1; }
   .circles.move-one .circle-two {
-    left: -4rem; }
+    left: -4rem;
+    z-index: -2; }
   .circles.move-two .circle-two {
     -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards, circle-front 1s ease forwards, elastic 1.5s;
     -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards, circle-front 1s ease forwards, elastic 1.5s;
     animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards, circle-front 1s ease forwards, elastic 1.5s; }
   .circles.move-two .circle-three {
     left: -2rem;
-    z-index: 1; }
+    z-index: -1; }
   .circles.move-two .circle-one {
-    left: -4rem; }
+    left: -4rem;
+    z-index: -2; }
   .circles.move-three .circle-one {
     -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards, circle-front 1s ease forwards, elastic 1.5s;
     -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards, circle-front 1s ease forwards, elastic 1.5s;
     animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards, circle-front 1s ease forwards, elastic 1.5s; }
   .circles.move-three .circle-three {
     left: -4rem;
-    z-index: 0; }
+    z-index: -1; }
   .circles.move-three .circle-two {
-    left: -2rem; }
+    left: -2rem;
+    z-index: -2; }
 
 .circle {
   width: 25rem;
@@ -1065,19 +1069,22 @@ section.about {
     left: 0;
     -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
     -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
-    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards; }
+    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards;
+    z-index: 0; }
   .circle.circle-two {
     background: #3f51b5;
     left: -2rem;
     -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards;
     -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards;
-    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards; }
+    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s forwards;
+    z-index: -1; }
   .circle.circle-three {
     background: #FFC107;
     left: -4rem;
     -webkit-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards;
     -moz-animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards;
-    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards; }
+    animation: circle-show 0.5s cubic-bezier(1, 0, 0.19, 1.44) 1s forwards;
+    z-index: -2; }
 
 @-webkit-keyframes circle-show {
   from {
@@ -1114,7 +1121,7 @@ section.about {
   50% {
     left: -30rem; }
   100% {
-    z-index: 1;
+    z-index: 0;
     left: 0; } }
 @-moz-keyframes circle-front {
   0% {
@@ -1122,7 +1129,7 @@ section.about {
   50% {
     left: -30rem; }
   100% {
-    z-index: 1;
+    z-index: 0;
     left: 0; } }
 @keyframes circle-front {
   0% {
@@ -1130,7 +1137,7 @@ section.about {
   50% {
     left: -30rem; }
   100% {
-    z-index: 1;
+    z-index: 0;
     left: 0; } }
 @-webkit-keyframes elastic {
   from, to {
@@ -1371,13 +1378,7 @@ body {
   color: #444;
   background-image: url("http://th03.deviantart.net/fs71/PRE/i/2014/019/2/3/autumn_blur___free_texture___background_by_supersweetstock-d72t65j.jpg");
   background-size: cover;
-  background-position: center;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000; }
+  background-position: center; }
 
 @-webkit-keyframes gradient {
   0% {
