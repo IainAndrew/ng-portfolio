@@ -6,7 +6,7 @@ angular.module('app')
       {
       	'name':'Plugmedia', 
       	'roles':['Web Design', 'Web Development', 'Logo Design'], 
-      	'desc':'A website for a Dublin based digital media company Lorem ipsum dolor sit amet, consectetur adipisicing.',
+      	'desc':'A website and logo design for a Dublin based digital media agency.',
       	'url':'plugmedia',
         'liveUrl':'//www.plugmedia.ie',
         'image':'../../images/plugmedia/thumb.png'
@@ -14,7 +14,7 @@ angular.module('app')
       {
       	'name':'Peter Ashmore', 
       	'roles':['Web Design', 'Web Development', 'Logo Design', 'Graphic Design'],
-      	'desc':'I designed this website for an audio engineer',
+      	'desc':'A single page website for a talented audio engineer & producer.',
       	'url':'peter-ashmore',
         'liveUrl':'//peterashmore.net',
         'image':'../../images/peter-ashmore/thumb.png'
@@ -30,7 +30,7 @@ angular.module('app')
       {
       	'name':'Trunkys', 
       	'roles':['Graphic Design'],
-      	'desc':'Illustrations for a stupid app',
+      	'desc':'Illustrations for a travel based mobile app concept.',
       	'url':'trunkys',
         'liveUrl':'',
         'image':'../../images/trunkys/thumb.png'
@@ -38,7 +38,7 @@ angular.module('app')
       {
         'name':'Simplespin.css', 
         'roles':['Web Development'],
-        'desc':'a css library',
+        'desc':'A CSS library for basic spinning animations, built with LESS.',
         'url':'simplespin',
         'liveUrl':'//iainandrew.github.io/simplespin.css',
         'image':'../../images/simplespin/thumb.gif'
