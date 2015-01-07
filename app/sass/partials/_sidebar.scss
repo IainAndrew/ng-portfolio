@@ -18,6 +18,7 @@ sidebar {
 	@include menu-text;
 	@include transition(all 0.3s $cubic 0.5s);
 	@include media($desktop) {
+		position:fixed;
 		height:100%;
 		float:left;
 		width:10rem;

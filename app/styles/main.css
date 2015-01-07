@@ -578,6 +578,7 @@ sidebar {
   transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44) 0.5s; }
   @media screen and (min-width: 768px) {
     sidebar {
+      position: fixed;
       height: 100%;
       float: left;
       width: 10rem;
