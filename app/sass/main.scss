@@ -132,6 +132,12 @@ body {
       height:70vh;
       max-height:420px;
     }
+    &.about, &.contact {
+      .view-container {
+        width:60%;
+        max-width:770px;
+      }
+    }
     &.about-more {
       .view-container {
         //width:25rem;
@@ -146,6 +152,7 @@ body {
     &.portfolio {
       .view-container {
         width:70%;
+        max-width:1000px;
       }
     }
     &.plugmedia, 

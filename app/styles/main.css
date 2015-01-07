@@ -1460,10 +1460,14 @@ body {
     width: 60%;
     height: 70vh;
     max-height: 420px; }
+  .container.about .view-container, .container.contact .view-container {
+    width: 60%;
+    max-width: 770px; }
   .container.about-more nav {
     display: none; }
   .container.portfolio .view-container {
-    width: 70%; }
+    width: 70%;
+    max-width: 1000px; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
     width: 98%;
     height: 98vh;
