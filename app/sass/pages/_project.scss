@@ -50,8 +50,20 @@ section.project-main {
         margin-bottom:1em;
       }
     }
+    a {
+      color:$pink-500;
+      text-transform:uppercase;
+      .no-touch & {
+        &:hover {
+          color:$pink-300;
+        }
+      }
+    }
   }
   .project-overview-image {
+    margin-top:5rem;
+    opacity:0;
+    @include animation(image-popup 0.5s $cubic forwards 0.5s);
     img {
       max-width:100%;
       height:auto;
@@ -80,6 +92,17 @@ section.project-main {
       max-width:100%;
       height:auto;
     }
+  }
+}
+
+@include keyframes(image-popup) {
+  from {
+    margin-top:5rem;
+    opacity:0;
+  }
+  to {
+    margin-top:0;
+    opacity:1;
   }
 }
 

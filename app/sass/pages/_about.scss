@@ -50,8 +50,10 @@ section.about {
 			color:$pink-500;
 			text-transform:uppercase;
 			@include transition(all 0.3s ease);
-			&:hover {
-				color:$pink-300;
+			.no-touch & {
+				&:hover {
+					color:$pink-300;
+				}
 			}
 			&:first-child {
 				margin-right:2rem;
