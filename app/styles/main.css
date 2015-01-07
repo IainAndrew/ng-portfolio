@@ -1260,8 +1260,8 @@ li.project {
 section.project-main {
   background: #fff;
   position: relative;
-  height: auto;
-  overflow-y: scroll;
+  height: 100%;
+  overflow-y: auto;
   -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
   -moz-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
   transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s; }

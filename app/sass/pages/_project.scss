@@ -2,8 +2,8 @@ section.project-main {
   background:#fff;
   position:relative;
   //padding:2rem;
-  height:auto;
-  overflow-y:scroll;
+  height:100%;
+  overflow-y:auto;
   @include transition(all 0.5s $cubic 0.5s);
   @include media($desktop) {
     height:100%;
