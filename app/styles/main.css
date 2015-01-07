@@ -1413,6 +1413,12 @@ body {
   background-size: cover;
   background-position: center; }
 
+::selection {
+  background-color: #FFECB3; }
+
+::-moz-selection {
+  background-color: #FFECB3; }
+
 .container {
   position: absolute;
   width: 100%;

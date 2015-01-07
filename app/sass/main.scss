@@ -61,6 +61,13 @@ body {
   //@include animation(gradient 1s linear infinite);
 }
 
+::selection {
+  background-color:$amber-100;
+}
+::-moz-selection {
+  background-color:$amber-100;
+}
+
 .container {
   position:absolute;
   width:100%;
