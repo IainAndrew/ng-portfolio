@@ -1278,7 +1278,7 @@ section.project-main {
   section.project-main .project-container {
     padding: 2rem; }
   section.project-main .row:not(:last-child) {
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem; }
   section.project-main h1 {
     font-size: 40px;
     font-weight: 100;
