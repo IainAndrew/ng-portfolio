@@ -30,7 +30,7 @@ angular.module('app')
       {
       	'name':'Trunkys', 
       	'roles':['Graphic Design'],
-      	'desc':'Illustrations for a travel based mobile app concept.',
+      	'desc':'Illustrations and UI design for a mobile app concept.',
       	'url':'trunkys',
         'liveUrl':'',
         'image':'../../images/trunkys/thumb.png'
