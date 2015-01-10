@@ -405,13 +405,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Project configuration.
-    //var pkg = require('./package.json');
-
-    //grunt.initConfig({
-
-      // Various Grunt tasks...
-
     buildcontrol: {
       options: {
         dir: 'dist',
@@ -432,7 +425,7 @@ module.exports = function (grunt) {
         }
       }
     }
-    //});
+    
   });
 
 
