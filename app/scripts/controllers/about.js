@@ -15,6 +15,7 @@ angular.module('app')
 			'Grunt',
 			'Bower',
 			'Yeoman',
+			'Git/Github',
 			'Twitter Bootstrap',
 			'Zurb Foundation',
 			'Wordpress',

@@ -583,6 +583,8 @@ sidebar {
       float: left;
       width: 10rem;
       background: #fff;
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
       .project-load sidebar {
