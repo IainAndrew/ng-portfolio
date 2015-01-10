@@ -63,6 +63,7 @@ section.project-main {
   .project-overview-image {
     margin-top:5rem;
     opacity:0;
+    float:right;
     @include animation(image-popup 0.5s $cubic forwards 0.5s);
     img {
       max-width:100%;

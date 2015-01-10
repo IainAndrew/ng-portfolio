@@ -1315,6 +1315,7 @@ section.project-main {
   section.project-main .project-overview-image {
     margin-top: 5rem;
     opacity: 0;
+    float: right;
     -webkit-animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s;
     -moz-animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s;
     animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s; }
