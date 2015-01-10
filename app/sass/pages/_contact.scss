@@ -3,3 +3,13 @@
 		background:$grey-100;
 	}
 }
+section.contact {
+	padding:2rem;
+	height:auto;
+	h2 {
+		@include subhead-text;
+		font-weight:500;
+		text-transform:uppercase;
+		margin-bottom:0.5rem;
+	}
+}
