@@ -405,6 +405,23 @@ module.exports = function (grunt) {
       }
     },
 
+    // Generates a custom Modernizr build that includes only the tests you
+    // reference in your app
+    modernizr: {
+        dist: {
+            devFile: '<%= yeoman %>/bower_components/modernizr/modernizr.js',
+            outputFile: '<%= yeoman.dist %>/scripts/vendor/modernizr.js',
+            files: {
+                src: [
+                    '<%= yeoman.dist %>/scripts/{,*/}*.js',
+                    '<%= yeoman.dist %>/styles/{,*/}*.css',
+                    '!<%= yeoman.dist %>/scripts/vendor/*'
+                ]
+            },
+            uglify: true
+        }
+    },
+
     buildcontrol: {
       options: {
         dir: 'dist',
