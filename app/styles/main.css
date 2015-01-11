@@ -997,7 +997,9 @@ section.about {
 
 .about-tech ul li {
   display: inline-block;
-  border: 1px solid #bdbdbd;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin: 0.3em;
   margin-left: 0.2em;
   padding: 0.2em 0.7em; }
