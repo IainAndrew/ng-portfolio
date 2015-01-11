@@ -7,6 +7,11 @@ section.about {
 	padding:2rem;
 	//@include calc(height, '100% - 6rem');
 	height:auto;
+	p {
+      &:not(:last-child) {
+        margin-bottom:1em;
+      }
+    }
 	h2 {
 		@include subhead-text;
 		font-weight:500;
@@ -46,15 +51,8 @@ section.about {
 	.about-links {
 		margin-top:1rem;
 		a {
-			display:inline-block;
-			color:$pink-500;
+			@include text-link;
 			text-transform:uppercase;
-			@include transition(all 0.3s ease);
-			.no-touch & {
-				&:hover {
-					color:$pink-300;
-				}
-			}
 			&:first-child {
 				margin-right:2rem;
 			}

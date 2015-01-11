@@ -12,4 +12,38 @@ section.contact {
 		text-transform:uppercase;
 		margin-bottom:0.5rem;
 	}
+	hr {
+		@include rule-full;
+		&:nth-of-type(2) {
+			@include media($desktop) {
+				display:none;
+			}
+		}
+	}
+	i {
+		font-size:1.3em;
+		color:$base-text-color;
+		margin-right:0.5em;
+	}
+	.contact-intro {
+		a {
+			@include text-link;
+		}
+	}
+	.contact-mail {
+		a {
+			@include text-link;
+			line-height:40px;
+		}
+	}
+	.contact-links {
+		ul {
+			li {
+				line-height:40px;
+				a {
+					@include text-link;
+				}
+			}
+		}
+	}
 }

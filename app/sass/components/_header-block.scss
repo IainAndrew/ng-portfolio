@@ -17,7 +17,8 @@
 			@include headline-text;
 		}
 		p {
-			//@include subhead-text;
+			@include subhead-text;
+			font-size:0.9em;
 			text-transform:uppercase;
 			color:$grey-400;
 		}

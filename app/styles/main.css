@@ -212,8 +212,8 @@ table {
 
 @font-face {
   font-family: 'fontello';
-  src: url("../../styles/fonts/fontello.eot?76194935");
-  src: url("../../styles/fonts/fontello.eot?76194935#iefix") format("embedded-opentype"), url("../../styles/fonts/fontello.woff?76194935") format("woff"), url("../../styles/fonts/fontello.ttf?76194935") format("truetype"), url("../../styles/fonts/fontello.svg?76194935#fontello") format("svg");
+  src: url("../../styles/fonts/fontello.eot?84416802");
+  src: url("../../styles/fonts/fontello.eot?84416802#iefix") format("embedded-opentype"), url("../../styles/fonts/fontello.woff?84416802") format("woff"), url("../../styles/fonts/fontello.ttf?84416802") format("truetype"), url("../../styles/fonts/fontello.svg?84416802#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
@@ -222,7 +222,7 @@ table {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?76194935#fontello') format('svg');
+    src: url('../font/fontello.svg?84416802#fontello') format('svg');
   }
 }
 */
@@ -314,6 +314,22 @@ table {
   content: '\e80f'; }
 
 /* '' */
+.icon-github:before {
+  content: '\e810'; }
+
+/* '' */
+.icon-doc-text:before {
+  content: '\e811'; }
+
+/* '' */
+.icon-linkedin-circled:before {
+  content: '\e812'; }
+
+/* '' */
+.icon-doc:before {
+  content: '\e813'; }
+
+/* '' */
 /*
 	Typography
 */
@@ -328,12 +344,12 @@ table {
     clear: both; }
 
 @media screen and (min-width: 768px) {
-  .about-intro, .about-tech {
+  .about-intro, .about-tech, .contact-links, .contact-mail {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%; }
-    .about-intro:last-child, .about-tech:last-child {
+    .about-intro:last-child, .about-tech:last-child, .contact-links:last-child, .contact-mail:last-child {
       margin-right: 0; } }
 
 @media screen and (min-width: 768px) {
@@ -756,6 +772,10 @@ sidebar {
       line-height: 32px;
       font-weight: 400; }
     .header-block .header-block-text p {
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 400;
+      font-size: 0.9em;
       text-transform: uppercase;
       color: #bdbdbd; }
 
@@ -909,6 +929,8 @@ sidebar {
 section.about {
   padding: 2rem;
   height: auto; }
+  section.about p:not(:last-child) {
+    margin-bottom: 1em; }
   section.about h2 {
     font-size: 15px;
     line-height: 24px;
@@ -964,10 +986,10 @@ section.about {
     section.about .about-links a {
       display: inline-block;
       color: #e91e63;
-      text-transform: uppercase;
       -webkit-transition: all 0.3s ease;
       -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      text-transform: uppercase; }
       .no-touch section.about .about-links a:hover {
         color: #f06292; }
       section.about .about-links a:first-child {
@@ -1269,6 +1291,47 @@ section.contact {
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 0.5rem; }
+  section.contact hr {
+    width: 100%;
+    height: 0;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 2rem 0; }
+    @media screen and (min-width: 768px) {
+      section.contact hr:nth-of-type(2) {
+        display: none; } }
+  section.contact i {
+    font-size: 1.3em;
+    color: #444;
+    margin-right: 0.5em; }
+  section.contact .contact-intro a {
+    display: inline-block;
+    color: #e91e63;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .no-touch section.contact .contact-intro a:hover {
+      color: #f06292; }
+  section.contact .contact-mail a {
+    display: inline-block;
+    color: #e91e63;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    line-height: 40px; }
+    .no-touch section.contact .contact-mail a:hover {
+      color: #f06292; }
+  section.contact .contact-links ul li {
+    line-height: 40px; }
+    section.contact .contact-links ul li a {
+      display: inline-block;
+      color: #e91e63;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .no-touch section.contact .contact-links ul li a:hover {
+        color: #f06292; }
 
 section.project-main {
   background: #fff;

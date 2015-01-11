@@ -59,3 +59,13 @@
 	border-radius:2px;
 	@include box-shadow-z1;
 }
+@mixin text-link {
+	display:inline-block;
+	color:$pink-500;
+	@include transition(all 0.3s ease);
+	.no-touch & {
+		&:hover {
+			color:$pink-300;
+		}
+	}
+}

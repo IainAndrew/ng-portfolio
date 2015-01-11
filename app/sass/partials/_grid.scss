@@ -6,7 +6,7 @@ $widescreen: new-breakpoint(min-width 1281px);
 .row {
 	@include row();
 }
-.about-intro, .about-tech {
+.about-intro, .about-tech, .contact-links, .contact-mail {
 	@include media($desktop) {
 		@include span-columns(6);
 	}
