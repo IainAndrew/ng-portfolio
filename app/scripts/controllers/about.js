@@ -20,7 +20,6 @@ angular.module('app')
 			'Zurb Foundation',
 			'Wordpress',
 			'Joomla',
-			'Adobe Illustrator',
-			'Adobe Photoshop'
+			'Adobe Illustrator'
 		];
 	});

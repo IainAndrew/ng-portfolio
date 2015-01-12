@@ -8,7 +8,7 @@ angular.module('app.directives.headerBlock', [])
 				heading: '=',
 				subhead: '='
 			},
-			link: function(scope, element, attributes) {
+			/*link: function(scope, element, attributes) {
 				var $cont = $('.circles'),
 					$btn = $cont.find('.button');
 
@@ -24,7 +24,7 @@ angular.module('app.directives.headerBlock', [])
 						}, 1000);
 					}
 				});
-			},
+			},*/
 			templateUrl:'views/header-block.html'
 		};
 	});
