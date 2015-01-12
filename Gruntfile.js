@@ -447,12 +447,6 @@ module.exports = function (grunt) {
           remote: 'git@github.com:IainAndrew/ng-portfolio.git',
           branch: 'gh-pages'
         }
-      },
-      local: {
-        options: {
-          remote: '../',
-          branch: 'build'
-        }
       }
     }
     
