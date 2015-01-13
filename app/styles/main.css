@@ -1390,11 +1390,15 @@ section.project-main {
       color: #f06292; }
   section.project-main .project-overview-image {
     margin-top: 5rem;
+    padding-top: 2rem;
     opacity: 0;
-    float: right;
+    text-align: center;
     -webkit-animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s;
     -moz-animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s;
     animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s; }
+    @media screen and (min-width: 768px) {
+      section.project-main .project-overview-image {
+        float: right; } }
     section.project-main .project-overview-image img {
       max-width: 100%;
       height: auto; }
@@ -1488,9 +1492,15 @@ body {
   line-height: 24px;
   letter-spacing: 0px;
   color: #444;
-  background-image: url("../images/blurred-background.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-image: url("../images/blurred-background-mobile.jpg"); }
+  @media screen and (min-width: 768px) {
+    body {
+      background-image: url("../images/blurred-background-desktop.jpg"); } }
+  @media screen and (min-width: 1281px) {
+    body {
+      background-image: url("../images/blurred-background-widescreen.jpg"); } }
 
 ::selection {
   background-color: #FFECB3; }
@@ -1537,19 +1547,27 @@ body {
 @media screen and (min-width: 768px) {
   .container .view-container {
     width: 60%;
-    height: 70vh;
+    height: 70vh; }
+  .container.about .view-container {
+    width: 60%;
+    min-width: 500px;
     max-height: 420px; }
-  .container.about .view-container, .container.contact .view-container {
-    width: 60%; }
+  .container.contact .view-container {
+    width: 50%;
+    min-width: 500px;
+    max-height: 420px; }
   .container.about-more nav {
     display: none; }
   .container.portfolio .view-container {
-    width: 70%; }
+    width: 70%;
+    max-height: 420px; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
     width: 98%;
     height: 98vh;
     background-color: transparent;
-    box-shadow: none;
+    box-shadow: none; } }
+@media screen and (min-width: 1281px) {
+  .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
     max-height: 600px;
     max-width: 1300px; } }
 main {

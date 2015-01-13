@@ -28,6 +28,7 @@ section {
 .project-overview-intro, .project-overview-image {
 	@include media($desktop) {
 		@include span-columns(6);
+		@include omega;
 	}
 }
 .project-paragraph {

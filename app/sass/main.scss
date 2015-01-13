@@ -51,14 +51,15 @@ body {
   line-height:$base-line-height;
   letter-spacing:$base-letter-spacing;
   color:$base-text-color;
-  background-image:url('../images/blurred-background.jpg');  
   background-size:cover;
   background-position:center;
-  //background:#C44524;
-  //@include linear-gradient(#C44524, darken(#C44524, 20%));
-  //background-size:auto 200%;
-  //background-position:100% 0;
-  //@include animation(gradient 1s linear infinite);
+  background-image:url('../images/blurred-background-mobile.jpg');
+  @include media($desktop) {
+    background-image:url('../images/blurred-background-desktop.jpg');
+  }
+  @include media($widescreen) {
+    background-image:url('../images/blurred-background-widescreen.jpg');
+  }
 }
 
 ::selection {
@@ -130,12 +131,20 @@ body {
     .view-container {
       width:60%;
       height:70vh;
-      max-height:420px;
     }
-    &.about, &.contact {
+    &.about {
       .view-container {
         width:60%;
+        min-width:500px;
         //max-width:770px;
+        max-height:420px;
+      }
+    }
+    &.contact {
+      .view-container {
+        width:50%;
+        min-width:500px;
+        max-height:420px;
       }
     }
     &.about-more {
@@ -152,6 +161,7 @@ body {
     &.portfolio {
       .view-container {
         width:70%;
+        max-height:420px;
         //max-width:1000px;
       }
     }
@@ -185,6 +195,38 @@ body {
         height:98vh;
         background-color:transparent;
         box-shadow:none;
+      }
+    }
+  }
+}
+@include media($widescreen) {
+  .container {
+    &.plugmedia, 
+    &.plugmedia-overview, 
+    &.plugmedia-web-design, 
+    &.plugmedia-web-development,
+    &.plugmedia-logo-design,
+
+    &.peter-ashmore, 
+    &.peter-ashmore-overview,
+    &.peter-ashmore-web-design,
+    &.peter-ashmore-web-development,
+    &.peter-ashmore-graphic-design,
+    &.peter-ashmore-logo-design,
+
+    &.trunkys,
+    &.trunkys-overview,
+    &.trunkys-graphic-design,
+    &.trunkys-ui-design,
+
+    &.footerreveal,
+    &.footerreveal-overview,
+    &.footerreveal-web-development,
+
+    &.simplespin,
+    &.simplespin-overview,
+    &.simplespin-web-development {
+      .view-container {
         max-height:600px;
         max-width:1300px;
       }
