@@ -590,9 +590,9 @@ sidebar {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
-  -moz-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
-  transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44) 0.5s; }
+  -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
+  -moz-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
+  transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s; }
   @media screen and (min-width: 768px) {
     sidebar {
       position: fixed;
@@ -1322,11 +1322,11 @@ section.contact {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    line-height: 40px; }
+    line-height: 35px; }
     .no-touch section.contact .contact-mail a:hover {
       color: #f06292; }
   section.contact .contact-links ul li {
-    line-height: 40px; }
+    line-height: 35px; }
     section.contact .contact-links ul li a {
       display: inline-block;
       color: #e91e63;

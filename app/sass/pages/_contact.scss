@@ -33,13 +33,13 @@ section.contact {
 	.contact-mail {
 		a {
 			@include text-link;
-			line-height:40px;
+			line-height:35px;
 		}
 	}
 	.contact-links {
 		ul {
 			li {
-				line-height:40px;
+				line-height:35px;
 				a {
 					@include text-link;
 				}
