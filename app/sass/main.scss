@@ -53,12 +53,12 @@ body {
   color:$base-text-color;
   background-size:cover;
   background-position:center;
-  background-image:url('../images/blurred-background-mobile.jpg');
+  background-image:url('../images/background-mobile.jpg');
   @include media($desktop) {
-    background-image:url('../images/blurred-background-desktop.jpg');
+    background-image:url('../images/background-desktop.jpg');
   }
   @include media($widescreen) {
-    background-image:url('../images/blurred-background-widescreen.jpg');
+    background-image:url('../images/background-widescreen.jpg');
   }
 }
 

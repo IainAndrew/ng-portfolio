@@ -373,7 +373,8 @@ table {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
+    width: 48.82117%;
+    margin-right: 0; }
     .project-overview-intro:last-child, .project-overview-image:last-child {
       margin-right: 0; } }
 
@@ -1494,13 +1495,13 @@ body {
   color: #444;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/blurred-background-mobile.jpg"); }
+  background-image: url("../images/background-mobile.jpg"); }
   @media screen and (min-width: 768px) {
     body {
-      background-image: url("../images/blurred-background-desktop.jpg"); } }
+      background-image: url("../images/background-desktop.jpg"); } }
   @media screen and (min-width: 1281px) {
     body {
-      background-image: url("../images/blurred-background-widescreen.jpg"); } }
+      background-image: url("../images/background-widescreen.jpg"); } }
 
 ::selection {
   background-color: #FFECB3; }
