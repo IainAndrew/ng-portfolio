@@ -2,25 +2,37 @@
 	<div class="row">
 		<div class="project-intro">
 			<h1>Web Development</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, necessitatibus. Consequuntur eligendi aperiam impedit, repellendus nostrum fugiat recusandae amet. Officiis quasi debitis dicta dignissimos voluptatibus accusamus alias commodi unde veritatis, natus incidunt deserunt magnam delectus eum minima distinctio, doloremque! Eum.</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="project-paragraph">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab facere, labore blanditiis, voluptates et optio illum ducimus aperiam doloremque quae voluptatum odit dignissimos consectetur praesentium accusantium beatae cum, impedit sunt.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga rem, corrupti voluptatem, repudiandae laudantium ducimus nostrum dolores optio doloremque esse. Tempore facilis eum fugit natus omnis maxime, provident cumque tempora temporibus incidunt quo nemo velit quos aperiam corporis modi reprehenderit doloribus mollitia optio aliquam! Quis et, quasi perferendis suscipit dolores optio molestias ipsum temporibus iure!</p>
-		</div>
-		<div class="project-image">
-			<img src="../../images/plug.gif" alt="">
-		</div>
+		<p>One feature I was excited to implement on this site was the animated tape machine. As the user scrolls, the reels of the tape machine rotate. This was achieved with a few lines of jQuery. I used a <span class="mono">$(window).scroll()</span> event to trigger CSS transforms on each reel, based on how far the user has scrolled from the top of the window. The function also adds a class to a coloured div behind the tape machine's VU meters, which makes them appear to light up. This class is removed when the user stops scrolling.</p>
+		<figure>
+			<figcaption>The scrolling tape machine effect.</figcaption>
+		</figure>
 	</div>
 	<div class="row">
-		<div class="project-paragraph">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga rem, corrupti voluptatem, repudiandae laudantium ducimus nostrum dolores optio doloremque esse. Tempore facilis eum fugit natus omnis maxime, provident cumque tempora temporibus incidunt quo nemo velit quos aperiam corporis modi reprehenderit doloribus mollitia optio aliquam! Quis et, quasi perferendis suscipit dolores optio molestias ipsum temporibus iure!</p>
-		</div>
-		<div class="project-image">
-			<img src="../../images/scroll.gif" alt="">
-		</div>
+		<p>Peter wanted the site to have a loading animation, so I decided to use the spinning tape reel as a loader. I implemented this by adding a <span class="mono">'loading'</span> class to body, then removing the class on <span class="mono">$(window).load()</span>.</p>
+		<figure>
+			<figcaption>loader gif</figcaption>
+		</figure>
+	</div>
+	<div class="row">
+		<p>For the studio photos, I originally tried a parallax scrolling effect using <a href="http://prinzhorn.github.io/skrollr/">Skrollr</a>, but the client found it a little distracting, so we settled on simply using <span class="mono">background-attachment: fixed</span>.</p>
+	</div>
+	<div class="row">
+		<p>Peter is an audio engineer, so an audio player was a must to showcase his work. The player is a feed from his Soundcloud account, handled by <a href="https://www.toneden.io/player">Toneden.js</a>. This was super easy to implement, but required some styling to fit in with the rest of the page. I removed a lot of the player's features (album cover, follow button, statistics etc) with CSS to leave a nice minimal interface. This player features an awesome animated SVG waveform for which I can't take credit!</p>
+		<figure>
+			<figcaption>audio player gif</figcaption>
+		</figure>
+	</div>
+	<div class="row">
+		<p>As I was using a static host for Peter's website, a server side form submission wasn't an option, so I decided to use <a href="http://formspree.io/">Brace.io Forms (now Formspree)</a> to handle the form submission.
+	</div>
+	<div class="row">
+		<p>For the Instagram feed, I used <a href="http://instafeedjs.com/">Instafeed.js</a>, a Javascript plugin which pulls data from the Instagram API via a user ID and oAuth token. This plugin allowed me to write a custom template to display the images in the way that I wanted, including an overlay which appears on hover, displaying the number of likes and comments that photo has.</p>
+		<figure>
+			<figcaption>instagram feed</figcaption>
+		</figure>
 	</div>
 </div>
 <div class="section-navigation">

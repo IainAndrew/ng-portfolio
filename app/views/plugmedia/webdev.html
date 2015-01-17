@@ -9,15 +9,21 @@
 	</div>
 	<div class="row">
 		<p>One of these fun features is a plug that you can click to unplug and 'turn off the lights'. I used jQuery <span class="mono">.addClass()</span> to add CSS filters to the text and SVG icon, and change the background overlay to transparent black. I felt that this play on the brand name is an effective way to capture the user's attention.</p>
-		<figure></figure>
+		<figure>
+			<figcaption>plug glow gif</figcaption>
+		</figure>
 	</div>
 	<div class="row">
 		<p>As you scroll past the header, a large plug descends from the top of the viewport to 'guide' you through the next section. I used <a href="http://imakewebthings.com/waypoints/">Waypoints</a> to detect when the following section is reached, which triggers the plug to animate down into view. I then used <a href="http://prinzhorn.github.io/skrollr/">Skrollr</a> to animate the 'Process' items in from the side as you scroll. I used the <a href="http://imakewebthings.com/waypoints/shortcuts/sticky-elements/">Waypoints 'Sticky' shortcut</a> to 'unfix' the plug element when it reaches the next section, making it appear to 'plug in'. This then triggers a flicker effect on the image, which I created using multiple instances of jQuery <span class="mono">.animate()</span> to change the opacity of the overlaying div.</p>
-		<figure></figure>
+		<figure>
+			<figcaption>scrolling plug gif</figcaption>
+		</figure>
 	</div>
 	<div class="row">
 		For the 'Showcase' section, I implemented a heavily modified version of <a href="">this Codrops demo</a> to display the project content. It uses data attributes to display the project with Javascript. In hindsight, I should have built this functionality myself from scratch, as the Codrops demos are not production-ready, and caused various issues with browser compatibility, which needed to be rectified.
-		<figure></figure>
+		<figure>
+			<figcaption>case study opening gif</figcaption>
+		</figure>
 	</div>
 </div>
 <div class="section-navigation">

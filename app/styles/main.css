@@ -1466,7 +1466,7 @@ section.project-main {
 .mono {
   font-family: monospace;
   font-size: 1.1em;
-  background: #e0e0e0; }
+  background: #eeeeee; }
 
 .plugmedia-overview .project-main .project-overview-intro .project-palette .palette-color:first-child {
   background: #E74C3C; }
