@@ -19,6 +19,15 @@ section.project-main {
       @include text-link;
     }
   }
+  figure {
+    img {
+      @include box-shadow-z3;
+    }
+    figcaption {
+      font-style:italic;
+      color:$grey-500;
+    }
+  }
   .project-container {
     padding:2rem;
   }
