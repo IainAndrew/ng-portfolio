@@ -1518,10 +1518,10 @@ body {
       background-image: url("../images/background-widescreen.jpg"); } }
 
 ::selection {
-  background-color: #FFECB3; }
+  background-color: #f8bbd0; }
 
 ::-moz-selection {
-  background-color: #FFECB3; }
+  background-color: #f8bbd0; }
 
 .container {
   position: absolute;
