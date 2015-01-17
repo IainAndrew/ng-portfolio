@@ -500,6 +500,10 @@ module.exports = function (grunt) {
     'sass'
   ]);
 
+  grunt.registerTask('deploy', [
+    'buildcontrol:pages'
+  ]);
+
   grunt.registerTask('default', [
     'newer:jshint',
     'test',
