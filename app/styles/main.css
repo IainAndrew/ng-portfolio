@@ -1363,6 +1363,8 @@ section.project-main {
     .no-touch section.project-main p a:hover {
       color: #f06292; }
   section.project-main figure img {
+    width: 100%;
+    height: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
   section.project-main figure figcaption {
     font-style: italic;

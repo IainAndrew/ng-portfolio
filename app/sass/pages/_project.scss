@@ -21,6 +21,8 @@ section.project-main {
   }
   figure {
     img {
+      width:100%;
+      height:auto;
       @include box-shadow-z3;
     }
     figcaption {
