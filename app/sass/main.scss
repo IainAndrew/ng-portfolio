@@ -120,6 +120,9 @@ body {
         height:95vh;
         background-color:transparent;
         box-shadow:none;
+        main {
+          height:auto;
+        }
       }
       nav {
         display:none;
@@ -195,6 +198,9 @@ body {
         height:98vh;
         background-color:transparent;
         box-shadow:none;
+        main {
+          height:100%;
+        }
       }
     }
   }
@@ -235,7 +241,7 @@ body {
 }
 
 main {
-  height:100%;
+  //height:100%;
   position:relative;
 }
 

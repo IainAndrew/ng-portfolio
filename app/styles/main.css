@@ -1556,6 +1556,8 @@ body {
   height: 95vh;
   background-color: transparent;
   box-shadow: none; }
+  .container.plugmedia .view-container main, .container.plugmedia-overview .view-container main, .container.plugmedia-web-design .view-container main, .container.plugmedia-web-development .view-container main, .container.plugmedia-logo-design .view-container main, .container.peter-ashmore .view-container main, .container.peter-ashmore-overview .view-container main, .container.peter-ashmore-web-design .view-container main, .container.peter-ashmore-web-development .view-container main, .container.peter-ashmore-graphic-design .view-container main, .container.peter-ashmore-logo-design .view-container main, .container.trunkys .view-container main, .container.trunkys-overview .view-container main, .container.trunkys-graphic-design .view-container main, .container.trunkys-ui-design .view-container main, .container.footerreveal .view-container main, .container.footerreveal-overview .view-container main, .container.footerreveal-web-development .view-container main, .container.simplespin .view-container main, .container.simplespin-overview .view-container main, .container.simplespin-web-development .view-container main {
+    height: auto; }
 .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-web-design nav, .container.plugmedia-web-development nav, .container.plugmedia-logo-design nav, .container.peter-ashmore nav, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design nav, .container.peter-ashmore-web-development nav, .container.peter-ashmore-graphic-design nav, .container.peter-ashmore-logo-design nav, .container.trunkys nav, .container.trunkys-overview nav, .container.trunkys-graphic-design nav, .container.trunkys-ui-design nav, .container.footerreveal nav, .container.footerreveal-overview nav, .container.footerreveal-web-development nav, .container.simplespin nav, .container.simplespin-overview nav, .container.simplespin-web-development nav {
   display: none; }
 
@@ -1580,13 +1582,14 @@ body {
     width: 98%;
     height: 98vh;
     background-color: transparent;
-    box-shadow: none; } }
+    box-shadow: none; }
+    .container.plugmedia .view-container main, .container.plugmedia-overview .view-container main, .container.plugmedia-web-design .view-container main, .container.plugmedia-web-development .view-container main, .container.plugmedia-logo-design .view-container main, .container.peter-ashmore .view-container main, .container.peter-ashmore-overview .view-container main, .container.peter-ashmore-web-design .view-container main, .container.peter-ashmore-web-development .view-container main, .container.peter-ashmore-graphic-design .view-container main, .container.peter-ashmore-logo-design .view-container main, .container.trunkys .view-container main, .container.trunkys-overview .view-container main, .container.trunkys-graphic-design .view-container main, .container.trunkys-ui-design .view-container main, .container.footerreveal .view-container main, .container.footerreveal-overview .view-container main, .container.footerreveal-web-development .view-container main, .container.simplespin .view-container main, .container.simplespin-overview .view-container main, .container.simplespin-web-development .view-container main {
+      height: 100%; } }
 @media screen and (min-width: 1281px) {
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
     max-height: 600px;
     max-width: 1300px; } }
 main {
-  height: 100%;
   position: relative; }
 
 section {
