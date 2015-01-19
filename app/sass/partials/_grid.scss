@@ -12,9 +12,8 @@ $widescreen: new-breakpoint(min-width 1281px);
 		@include span-columns(6);
 	}
 }
-section {
-	//@include outer-container;
-}
+
+// Portfolio view
 .portfolio-image {
 	@include media($desktop) {
 		@include span-columns(5, block-collapse);
@@ -26,23 +25,24 @@ section {
 	}
 }
 
+// Project view
 .project-overview-intro, .project-overview-image {
 	@include media($ninefifty) {
 		@include span-columns(6);
 		@include omega;
 	}
 }
-.project-paragraph {
-	@include media($desktop) {
-		@include span-columns(5);
-		&.full {
-			@include span-columns(7);
-			//@include shift($n-columns: 3)
-		}
-	}
+.project-section {
+  p {
+  	@include media($ninefifty) {
+	  	//@include span-columns(8);
+			//@include shift($n-columns: 3);
+  	}
+  }
 }
-.project-image {
-	@include media($desktop) {
-		@include span-columns(7);
+figure {
+	@include media($ninefifty) {
+		//@include span-columns(10);
+		//@include shift($n-columns: 2);
 	}
 }

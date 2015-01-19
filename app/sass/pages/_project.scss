@@ -20,6 +20,7 @@ section.project-main {
     }
   }
   figure {
+    max-width:850px;
     img {
       max-width:100%;
       height:auto;
@@ -76,13 +77,19 @@ section.project-main {
       }
     }
   }
+  .project-overview-intro {
+    p {
+      max-width:500px;
+    }
+  }
   .project-overview-image {
-    margin-top:5rem;
+    margin-bottom:2rem;
     //padding-top:2rem;
     opacity:0;
     text-align:center;
     @include media($ninefifty) {
       float:right;
+      margin-bottom:0;
     }
     @include animation(image-popup 0.5s $cubic forwards 0.5s);
     img {
@@ -101,17 +108,12 @@ section.project-main {
       padding-left:2em;
     }
   }
-  .project-paragraph {
-    p {
-      &:not(:last-child) {
-        margin-bottom:1em;
-      }
+  .project-section {
+    .row {
+      margin-bottom:3rem;
     }
-  }
-  .project-image {
-    img {
-      max-width:100%;
-      height:auto;
+    p {
+      max-width:600px;
     }
   }
 }
