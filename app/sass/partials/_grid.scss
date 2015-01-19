@@ -1,6 +1,7 @@
 $mobile: new-breakpoint(min-width 320px);
 $tablet: new-breakpoint(min-width 480px);
 $desktop: new-breakpoint(min-width 768px);
+$ninefifty: new-breakpoint(min-width 950px);
 $widescreen: new-breakpoint(min-width 1281px);
 
 .row {
@@ -26,7 +27,7 @@ section {
 }
 
 .project-overview-intro, .project-overview-image {
-	@include media($desktop) {
+	@include media($ninefifty) {
 		@include span-columns(6);
 		@include omega;
 	}

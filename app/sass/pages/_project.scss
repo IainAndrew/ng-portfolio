@@ -81,7 +81,7 @@ section.project-main {
     //padding-top:2rem;
     opacity:0;
     text-align:center;
-    @include media($desktop) {
+    @include media($ninefifty) {
       float:right;
     }
     @include animation(image-popup 0.5s $cubic forwards 0.5s);

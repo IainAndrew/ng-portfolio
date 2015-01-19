@@ -12,7 +12,7 @@ angular.module('app.directives.sidebar', [])
 				var $container = $('.view-container');
 
 				function projectLoad() {
-					if ($('.container').is('.plugmedia-overview, .plugmedia-web-design, .plugmedia-web-development,.plugmedia-logo-design,.peter-ashmore-overview,.peter-ashmore-web-design,.peter-ashmore-web-development,.peter-ashmore-graphic-design,.peter-ashmore-logo-design,.trunkys-overview,.trunkys-graphic-design,.trunkys-ui-design,.footerreveal-overview,.footerreveal-web-development,.simplespin-overview,.simplespin-web-development')) {
+					if ($('.container').is('.plugmedia, .plugmedia-overview, .plugmedia-web-design, .plugmedia-web-development,.plugmedia-logo-design,.peter-ashmore,.peter-ashmore-overview,.peter-ashmore-web-design,.peter-ashmore-web-development,.peter-ashmore-graphic-design,.peter-ashmore-logo-design,.trunkys,.trunkys-overview,.trunkys-graphic-design,.trunkys-ui-design,.footerreveal,.footerreveal-overview,.footerreveal-web-development,.simplespin,.simplespin-overview,.simplespin-web-development')) {
 						$container.addClass('project-load');
 					} else {
 						$container.removeClass('project-load');

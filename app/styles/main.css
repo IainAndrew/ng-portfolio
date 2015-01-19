@@ -368,7 +368,7 @@ table {
     .portfolio-info:last-child {
       width: 57.35098%; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .project-overview-intro, .project-overview-image {
     float: left;
     display: block;
@@ -1411,7 +1411,7 @@ section.project-main {
     -webkit-animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s;
     -moz-animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s;
     animation: image-popup 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 0.5s; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 950px) {
       section.project-main .project-overview-image {
         float: right; } }
     section.project-main .project-overview-image img {
