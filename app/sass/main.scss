@@ -72,9 +72,10 @@ body {
 .container {
   position:absolute;
   width:100%;
-  left:0;
+  left:50%;
   top:50%;
-  @include transform(translateY(-50%));
+  @include transform(translate(-50%, -50%));
+  max-width:2000px;
 }
 
 .view-container {
