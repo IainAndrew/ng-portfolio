@@ -90,6 +90,53 @@ body {
   @include transition(width 0.3s cubic-bezier(1,0,.19,1.44), height 0.3s cubic-bezier(1,0,.19,1.44));
 }
 .container {
+  .view-container {
+    @include media($desktop) {
+      width:60%;
+      height:70vh;
+    }
+  }
+  &.about {
+    .view-container {
+      @include media($desktop) {
+        width:60%;
+        min-width:500px;
+        //max-width:770px;
+        max-height:420px;
+      }
+    }
+  }
+  &.contact {
+    .view-container {
+      @include media($desktop) {
+        width:50%;
+        min-width:500px;
+        max-height:420px;
+      } 
+    }
+  }
+  &.about-more {
+    @include media($desktop) {
+      .view-container {
+        //width:25rem;
+        //height:25rem;
+        //border-radius:50%;
+        //min-width:500px;
+      }
+      nav {
+        display:none;
+      }
+    }
+  } 
+  &.portfolio {
+    .view-container {
+      @include media($desktop) {
+        width:70%;
+        max-height:420px;
+        //max-width:1000px;
+      }
+    }
+  }
   &.plugmedia, 
     &.plugmedia-overview, 
     &.plugmedia-web-design, 
@@ -123,121 +170,24 @@ body {
         main {
           height:auto;
         }
-      }
-      nav {
-        display:none;
-      }
-    }
-}
-@include media($desktop) {
-  .container {
-    .view-container {
-      width:60%;
-      height:70vh;
-    }
-    &.about {
-      .view-container {
-        width:60%;
-        min-width:500px;
-        //max-width:770px;
-        max-height:420px;
-      }
-    }
-    &.contact {
-      .view-container {
-        width:50%;
-        min-width:500px;
-        max-height:420px;
-      }
-    }
-    &.about-more {
-      .view-container {
-        //width:25rem;
-        //height:25rem;
-        //border-radius:50%;
-        //min-width:500px;
-      }
-      nav {
-        display:none;
-      }
-    } 
-    &.portfolio {
-      .view-container {
-        width:70%;
-        max-height:420px;
-        //max-width:1000px;
-      }
-    }
-    &.plugmedia, 
-    &.plugmedia-overview, 
-    &.plugmedia-web-design, 
-    &.plugmedia-web-development,
-    &.plugmedia-logo-design,
-
-    &.peter-ashmore, 
-    &.peter-ashmore-overview,
-    &.peter-ashmore-web-design,
-    &.peter-ashmore-web-development,
-    &.peter-ashmore-graphic-design,
-    &.peter-ashmore-logo-design,
-
-    &.trunkys,
-    &.trunkys-overview,
-    &.trunkys-graphic-design,
-    &.trunkys-ui-design,
-
-    &.footerreveal,
-    &.footerreveal-overview,
-    &.footerreveal-web-development,
-
-    &.simplespin,
-    &.simplespin-overview,
-    &.simplespin-web-development {
-      .view-container {
-        width:98%;
-        height:98vh;
-        background-color:transparent;
-        box-shadow:none;
-        main {
-          height:100%;
+        @include media($desktop) {
+          width:98%;
+          height:98vh;
+          background-color:transparent;
+          box-shadow:none;
+          main {
+            height:100%;
+          }
+        }
+        @include media($widescreen) {
+          max-height:600px;
+          max-width:1300px;
         }
       }
-    }
-  }
-}
-@include media($widescreen) {
-  .container {
-    &.plugmedia, 
-    &.plugmedia-overview, 
-    &.plugmedia-web-design, 
-    &.plugmedia-web-development,
-    &.plugmedia-logo-design,
-
-    &.peter-ashmore, 
-    &.peter-ashmore-overview,
-    &.peter-ashmore-web-design,
-    &.peter-ashmore-web-development,
-    &.peter-ashmore-graphic-design,
-    &.peter-ashmore-logo-design,
-
-    &.trunkys,
-    &.trunkys-overview,
-    &.trunkys-graphic-design,
-    &.trunkys-ui-design,
-
-    &.footerreveal,
-    &.footerreveal-overview,
-    &.footerreveal-web-development,
-
-    &.simplespin,
-    &.simplespin-overview,
-    &.simplespin-web-development {
-      .view-container {
-        max-height:600px;
-        max-width:1300px;
+      nav {
+        display:none;
       }
     }
-  }
 }
 
 main {

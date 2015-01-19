@@ -378,6 +378,16 @@ table {
     .project-overview-intro:last-child, .project-overview-image:last-child {
       margin-right: 0; } }
 
+@media screen and (min-width: 950px) {
+  .project-section .half {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0; }
+    .project-section .half:last-child {
+      margin-right: 0; } }
+
 @-webkit-keyframes popup {
   from {
     top: 7rem; }
@@ -1531,6 +1541,27 @@ body {
   -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
   transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
 
+@media screen and (min-width: 768px) {
+  .container .view-container {
+    width: 60%;
+    height: 70vh; } }
+@media screen and (min-width: 768px) {
+  .container.about .view-container {
+    width: 60%;
+    min-width: 500px;
+    max-height: 420px; } }
+@media screen and (min-width: 768px) {
+  .container.contact .view-container {
+    width: 50%;
+    min-width: 500px;
+    max-height: 420px; } }
+@media screen and (min-width: 768px) {
+  .container.about-more nav {
+    display: none; } }
+@media screen and (min-width: 768px) {
+  .container.portfolio .view-container {
+    width: 70%;
+    max-height: 420px; } }
 .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
   width: 95%;
   height: 95vh;
@@ -1538,37 +1569,21 @@ body {
   box-shadow: none; }
   .container.plugmedia .view-container main, .container.plugmedia-overview .view-container main, .container.plugmedia-web-design .view-container main, .container.plugmedia-web-development .view-container main, .container.plugmedia-logo-design .view-container main, .container.peter-ashmore .view-container main, .container.peter-ashmore-overview .view-container main, .container.peter-ashmore-web-design .view-container main, .container.peter-ashmore-web-development .view-container main, .container.peter-ashmore-graphic-design .view-container main, .container.peter-ashmore-logo-design .view-container main, .container.trunkys .view-container main, .container.trunkys-overview .view-container main, .container.trunkys-graphic-design .view-container main, .container.trunkys-ui-design .view-container main, .container.footerreveal .view-container main, .container.footerreveal-overview .view-container main, .container.footerreveal-web-development .view-container main, .container.simplespin .view-container main, .container.simplespin-overview .view-container main, .container.simplespin-web-development .view-container main {
     height: auto; }
+  @media screen and (min-width: 768px) {
+    .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
+      width: 98%;
+      height: 98vh;
+      background-color: transparent;
+      box-shadow: none; }
+      .container.plugmedia .view-container main, .container.plugmedia-overview .view-container main, .container.plugmedia-web-design .view-container main, .container.plugmedia-web-development .view-container main, .container.plugmedia-logo-design .view-container main, .container.peter-ashmore .view-container main, .container.peter-ashmore-overview .view-container main, .container.peter-ashmore-web-design .view-container main, .container.peter-ashmore-web-development .view-container main, .container.peter-ashmore-graphic-design .view-container main, .container.peter-ashmore-logo-design .view-container main, .container.trunkys .view-container main, .container.trunkys-overview .view-container main, .container.trunkys-graphic-design .view-container main, .container.trunkys-ui-design .view-container main, .container.footerreveal .view-container main, .container.footerreveal-overview .view-container main, .container.footerreveal-web-development .view-container main, .container.simplespin .view-container main, .container.simplespin-overview .view-container main, .container.simplespin-web-development .view-container main {
+        height: 100%; } }
+  @media screen and (min-width: 1281px) {
+    .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
+      max-height: 600px;
+      max-width: 1300px; } }
 .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-web-design nav, .container.plugmedia-web-development nav, .container.plugmedia-logo-design nav, .container.peter-ashmore nav, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design nav, .container.peter-ashmore-web-development nav, .container.peter-ashmore-graphic-design nav, .container.peter-ashmore-logo-design nav, .container.trunkys nav, .container.trunkys-overview nav, .container.trunkys-graphic-design nav, .container.trunkys-ui-design nav, .container.footerreveal nav, .container.footerreveal-overview nav, .container.footerreveal-web-development nav, .container.simplespin nav, .container.simplespin-overview nav, .container.simplespin-web-development nav {
   display: none; }
 
-@media screen and (min-width: 768px) {
-  .container .view-container {
-    width: 60%;
-    height: 70vh; }
-  .container.about .view-container {
-    width: 60%;
-    min-width: 500px;
-    max-height: 420px; }
-  .container.contact .view-container {
-    width: 50%;
-    min-width: 500px;
-    max-height: 420px; }
-  .container.about-more nav {
-    display: none; }
-  .container.portfolio .view-container {
-    width: 70%;
-    max-height: 420px; }
-  .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
-    width: 98%;
-    height: 98vh;
-    background-color: transparent;
-    box-shadow: none; }
-    .container.plugmedia .view-container main, .container.plugmedia-overview .view-container main, .container.plugmedia-web-design .view-container main, .container.plugmedia-web-development .view-container main, .container.plugmedia-logo-design .view-container main, .container.peter-ashmore .view-container main, .container.peter-ashmore-overview .view-container main, .container.peter-ashmore-web-design .view-container main, .container.peter-ashmore-web-development .view-container main, .container.peter-ashmore-graphic-design .view-container main, .container.peter-ashmore-logo-design .view-container main, .container.trunkys .view-container main, .container.trunkys-overview .view-container main, .container.trunkys-graphic-design .view-container main, .container.trunkys-ui-design .view-container main, .container.footerreveal .view-container main, .container.footerreveal-overview .view-container main, .container.footerreveal-web-development .view-container main, .container.simplespin .view-container main, .container.simplespin-overview .view-container main, .container.simplespin-web-development .view-container main {
-      height: 100%; } }
-@media screen and (min-width: 1281px) {
-  .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
-    max-height: 600px;
-    max-width: 1300px; } }
 main {
   position: relative; }
 

@@ -1,14 +1,14 @@
-<div class="project-container">
+<div class="project-container project-section">
 	<div class="row">
-		<div class="project-intro">
-			<h1>Web Development</h1>
-		</div>
+		<h1>Web Development</h1>
 	</div>
 	<div class="row">
 		<p>This project was a huge learning experience for me in terms of development. I used a lot of cool development tools (<a href="http://yeoman.io/">Yeoman</a>, <a href="http://gruntjs.com/">Grunt</a> and <a href="http://bower.io/">Bower</a>), and had a chance to get creative with my code. I had a lot of creative freedom with the website, and I had a few fun ideas for features I wanted to implement.</p>
 	</div>
 	<div class="row">
 		<p>One of these fun features is a plug that you can click to unplug and 'turn off the lights', leaving the logo glowing like a neon sign. I used jQuery <span class="mono">.addClass()</span> to add CSS filters to the text and SVG icon, and change the background overlay to transparent black. I felt that this play on the brand name is an effective way to capture the user's attention.</p>
+	</div>
+	<div class="row">	
 		<figure>
 			<img src="../../images/plugmedia/plug-glow.gif" height="584" width="1274" alt="">
 			<figcaption>The 'neon sign' effect</figcaption>
@@ -16,13 +16,17 @@
 	</div>
 	<div class="row">
 		<p>As you scroll past the header, a large plug descends from the top of the viewport to 'guide' you through the next section. I used <a href="http://imakewebthings.com/waypoints/">Waypoints</a> to detect when the following section is reached, which triggers the plug to animate down into view. I then used <a href="http://prinzhorn.github.io/skrollr/">Skrollr</a> to animate the 'Process' items in from the side as you scroll. I used the <a href="http://imakewebthings.com/waypoints/shortcuts/sticky-elements/">Waypoints 'Sticky' shortcut</a> to 'unfix' the plug element when it reaches the next section, making it appear to 'plug in'. This then triggers a flicker effect on the image, which I created using multiple instances of jQuery <span class="mono">.animate()</span> to change the opacity of the overlaying div.</p>
+	</div>
+	<div class="row">
 		<figure>
 			<img src="../../images/plugmedia/scroll.gif" height="504" width="1087" alt="">
 			<figcaption>Scrolling on the home page</figcaption>
 		</figure>
 	</div>
 	<div class="row">
-		For the 'Showcase' section, I implemented a heavily modified version of <a href="">this Codrops demo</a> to display the project content. It uses data attributes to display the project with Javascript. In hindsight, I should have built this functionality myself from scratch, as the Codrops demos are not production-ready, and caused various issues with browser compatibility, which needed to be rectified.
+		<p>For the 'Showcase' section, I implemented a heavily modified version of <a href="">this Codrops demo</a> to display the project content. It uses data attributes to display the project with Javascript. In hindsight, I should have built this functionality myself from scratch, as the Codrops demos are not production-ready, and caused various issues with browser compatibility, which needed to be rectified.</p>
+	</div>
+	<div class="row">
 		<figure>
 			<img src="../../images/plugmedia/case-study-1.gif" height="588" width="1272" alt="">
 			<figcaption>Opening a case study</figcaption>
