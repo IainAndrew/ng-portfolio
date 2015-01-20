@@ -34,22 +34,10 @@ $super-widescreen: new-breakpoint(min-width 1920px);
 	}
 }
 .project-section {
-  p {
-  	@include media($ninefifty) {
-	  	//@include span-columns(8);
-			//@include shift($n-columns: 3);
-  	}
-  }
   .half {
   	@include media($ninefifty) {
   		@include span-columns(6);
-  		@include omega;
+  		//@include omega;
   	}
   }
-}
-figure {
-	@include media($ninefifty) {
-		//@include span-columns(10);
-		//@include shift($n-columns: 2);
-	}
 }
