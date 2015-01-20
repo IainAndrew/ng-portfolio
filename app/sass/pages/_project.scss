@@ -19,6 +19,9 @@ section.project-main {
       @include text-link;
     }
   }
+  hr {
+    @include rule-full;
+  }
   figure {
     max-width:850px;
     &.no-shadow {
@@ -115,7 +118,9 @@ section.project-main {
   }
   .project-section {
     .row {
-      margin-bottom:3rem;
+      &:not(:first-child) {
+        margin-bottom:3rem;
+      }
     }
     p {
       max-width:600px;
