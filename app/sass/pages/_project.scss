@@ -21,6 +21,11 @@ section.project-main {
   }
   figure {
     max-width:850px;
+    &.no-shadow {
+      img {
+        box-shadow:none;
+      }
+    }
     img {
       max-width:100%;
       height:auto;

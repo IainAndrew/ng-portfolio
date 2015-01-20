@@ -116,6 +116,16 @@ body {
       } 
     }
   }
+  &.portfolio {
+    .view-container {
+      @include media($desktop) {
+        width:70%;
+        max-height:420px;
+        min-width:700px;
+        //max-width:1000px;
+      }
+    }
+  }
   &.about-more {
     @include media($desktop) {
       .view-container {
@@ -126,16 +136,6 @@ body {
       }
       nav {
         display:none;
-      }
-    }
-  } 
-  &.portfolio {
-    .view-container {
-      @include media($desktop) {
-        width:70%;
-        max-height:420px;
-        min-width:700px;
-        //max-width:1000px;
       }
     }
   }
