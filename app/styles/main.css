@@ -377,6 +377,8 @@ table {
     .project-overview-intro:last-child, .project-overview-image:last-child {
       margin-right: 0; } }
 
+.project-section .half:not(:last-child) {
+  margin-bottom: 3rem; }
 @media screen and (min-width: 950px) {
   .project-section .half {
     float: left;
@@ -384,7 +386,9 @@ table {
     margin-right: 2.35765%;
     width: 48.82117%; }
     .project-section .half:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+    .project-section .half:not(:last-child) {
+      margin-bottom: 0; } }
 
 @-webkit-keyframes popup {
   from {

@@ -35,8 +35,14 @@ $super-widescreen: new-breakpoint(min-width 1920px);
 }
 .project-section {
   .half {
+  	&:not(:last-child) {
+		margin-bottom:3rem;
+  	}
   	@include media($ninefifty) {
   		@include span-columns(6);
+	  	&:not(:last-child) {
+			margin-bottom:0;
+	  	}
   		//@include omega;
   	}
   }
