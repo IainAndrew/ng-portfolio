@@ -1252,6 +1252,7 @@ li.project {
           left: 0; } }
       li.project .portfolio-info .portfolio-info-links a {
         text-transform: uppercase;
+        display: inline-block;
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         transition: all 0.2s ease; }
@@ -1397,6 +1398,8 @@ section.project-main {
   section.project-main .project-intro a {
     color: #e91e63;
     text-transform: uppercase; }
+    section.project-main .project-intro a:first-of-type {
+      margin-right: 2rem; }
     .no-touch section.project-main .project-intro a:hover {
       color: #f06292; }
   section.project-main .project-overview-intro p {

@@ -78,6 +78,9 @@ section.project-main {
     a {
       color:$pink-500;
       text-transform:uppercase;
+      &:first-of-type {
+        margin-right:2rem;
+      }
       .no-touch & {
         &:hover {
           color:$pink-300;
