@@ -86,8 +86,10 @@ sidebar {
 			}
 			&[ng-href=""] {
 				opacity:0.3;
-				&:hover {
-					color:#fff;
+				.no-touch & {
+					&:hover {
+						color:#fff;
+					}
 				}
 			}
 		}

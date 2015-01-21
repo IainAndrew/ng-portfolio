@@ -670,7 +670,7 @@ sidebar {
         color: #f8bbd0; }
       sidebar .sidebar-browse a[ng-href=""] {
         opacity: 0.3; }
-        sidebar .sidebar-browse a[ng-href=""]:hover {
+        .no-touch sidebar .sidebar-browse a[ng-href=""]:hover {
           color: #fff; }
   sidebar .sidebar-menu {
     background: #fff; }
