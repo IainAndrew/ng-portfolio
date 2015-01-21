@@ -13,7 +13,7 @@ angular.module('app')
       },
       {
       	'name':'Peter Ashmore', 
-      	'roles':['Web Design', 'Web Development', 'Logo Design', 'Graphic Design'],
+      	'roles':['Web Design', 'Web Development', 'Graphic Design', 'Logo Design'],
       	'desc':'A single page website for a talented audio engineer & producer.',
       	'url':'peter-ashmore',
         'liveUrl':'//peterashmore.net',
@@ -29,7 +29,7 @@ angular.module('app')
       },
       {
       	'name':'Trunkys', 
-      	'roles':['Graphic Design'],
+      	'roles':['Graphic Design', 'UI Design'],
       	'desc':'Illustrations and UI design for a mobile app concept.',
       	'url':'trunkys',
         'liveUrl':'',
