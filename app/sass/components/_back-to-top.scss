@@ -9,8 +9,10 @@
   right:1rem;
   @include transform(translateY(-50%));
   @include transition(all 0.2s ease);
-  &:hover {
-    @include transform(translateY(-50%) scale(1.1));
+  .no-touch & {
+    &:hover {
+      @include transform(translateY(-50%) scale(1.1));
+    }
   }
   a {
     display:block;

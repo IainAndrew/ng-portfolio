@@ -888,7 +888,7 @@ sidebar {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
-  .back-to-top:hover {
+  .no-touch .back-to-top:hover {
     -webkit-transform: translateY(-50%) scale(1.1);
     -moz-transform: translateY(-50%) scale(1.1);
     -ms-transform: translateY(-50%) scale(1.1);
