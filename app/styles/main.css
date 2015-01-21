@@ -1511,7 +1511,7 @@ body {
   background-size: cover;
   background-position: center;
   background-image: url("../images/background-mobile.jpg"); }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 950px) {
     body {
       background-image: url("../images/background-desktop.jpg"); } }
   @media screen and (min-width: 1281px) {

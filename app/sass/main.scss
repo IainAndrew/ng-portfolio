@@ -54,7 +54,7 @@ body {
   background-size:cover;
   background-position:center;
   background-image:url('../images/background-mobile.jpg');
-  @include media($desktop) {
+  @include media($ninefifty) {
     background-image:url('../images/background-desktop.jpg');
   }
   @include media($widescreen) {
