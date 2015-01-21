@@ -259,22 +259,22 @@ module.exports = function (grunt) {
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html', '<%= yeoman.dist %>/views/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
-      js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
+      //js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
       options: {
         dirs: ['<%= yeoman.dist %>'],
-        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images'],
-        patterns: {
-          // FIXME While usemin won't have full support for revved files we have to put all references manually here
-          js: [
-            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JS to reference our revved images']
-          ],
-          css: [
-            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the CSS to reference our revved images']
-          ],
-          html: [
-            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the html to reference our revved images']
-          ]
-        }
+        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
+        // patterns: {
+        //   // FIXME While usemin won't have full support for revved files we have to put all references manually here
+        //   js: [
+        //     [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the JS to reference our revved images']
+        //   ],
+        //   css: [
+        //     [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the CSS to reference our revved images']
+        //   ],
+        //   html: [
+        //     [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update the html to reference our revved images']
+        //   ]
+        // }
       }
     },
 
@@ -373,8 +373,9 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
-            '*.{ico,png,txt}',
+            '*.{ico,png,txt,pdf}',
             '.htaccess',
+            'CNAME',
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
