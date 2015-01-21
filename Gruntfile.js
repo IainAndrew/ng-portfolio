@@ -229,9 +229,9 @@ module.exports = function (grunt) {
       dist: {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
-          '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/styles/fonts/*'
+          '<%= yeoman.dist %>/styles/{,*/}*.css'
+          //'<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          //'<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
     },
@@ -257,11 +257,11 @@ module.exports = function (grunt) {
 
     // Performs rewrites based on filerev and the useminPrepare configuration
     usemin: {
-      html: ['<%= yeoman.dist %>/{,*/}*.html', '<%= yeoman.dist %>/views/{,*/}*.html'],
+      html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       //js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
       options: {
-        dirs: ['<%= yeoman.dist %>'],
+        //dirs: ['<%= yeoman.dist %>'],
         assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
         // patterns: {
         //   // FIXME While usemin won't have full support for revved files we have to put all references manually here
