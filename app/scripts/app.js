@@ -2,12 +2,6 @@
 
 angular
   .module('app', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'ui.router',
     'app.directives.sidebar',
     'app.directives.headerBlock',
