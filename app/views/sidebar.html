@@ -12,7 +12,9 @@
 		</a>
 	</div>
 	<div class="sidebar-menu" dropdown>
-		<a id="menu-toggle" class="menu-toggle" href=""><i class="icon-menu"></i></a>
+		<a id="menu-toggle" class="menu-toggle" href="">
+			<i class="icon-menu"></i>
+		</a>
 		<ul>
 			<li ng-repeat="item in project.items">
 				<a ui-sref="{{item.url}}" ui-sref-active-eq="sidebar-active">{{item.label}}</a>
