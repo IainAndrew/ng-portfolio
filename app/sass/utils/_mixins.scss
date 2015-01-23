@@ -69,3 +69,15 @@
 		}
 	}
 }
+@mixin btn($color) {
+	background:$color;
+	padding:1rem;
+	color:#fff;
+	border-radius:3px;
+	display:inline-block;
+	position:relative;
+	@include box-shadow-z1;
+	i {
+		margin-left:1rem;
+	}
+}
