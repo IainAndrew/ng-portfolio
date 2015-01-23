@@ -1,3 +1,23 @@
+.project-overview-intro, .project-overview-image {
+  @include media($ninefifty) {
+    @include span-columns(6);
+    @include omega;
+  }
+}
+.project-section {
+  .half {
+    &:not(:last-child) {
+    margin-bottom:3rem;
+    }
+    @include media($ninefifty) {
+      @include span-columns(6);
+      &:not(:last-child) {
+      margin-bottom:0;
+      }
+      //@include omega;
+    }
+  }
+}
 section.project-main {
   background:#fff;
   position:relative;

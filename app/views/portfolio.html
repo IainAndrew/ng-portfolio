@@ -7,7 +7,6 @@
 				<!--<img ng-src="{{project.image}}" alt="">-->
 			</div>
 			<div class="portfolio-info">
-				<div class="portfolio-info-main">
 					<h2>{{project.name}}</h2>
 					<ul>
 						<li ng-repeat="role in project.roles">
@@ -15,11 +14,10 @@
 						</li>
 					</ul>
 					<p>{{project.desc}}</p>
-				</div>
-				<div class="portfolio-info-links">
-					<a ui-sref="{{project.url}}">view project</a>
-					<a ng-href="{{project.liveUrl}}">view live site</a>
-				</div>
+			</div>
+			<div class="portfolio-info-links">
+				<a ui-sref="{{project.url}}">view project</a>
+				<a ng-href="{{project.liveUrl}}">view live site</a>
 			</div>
 		</li>
 	</ul>

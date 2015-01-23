@@ -1,6 +1,18 @@
 section.portfolio {
 	padding:1rem;
 }
+
+.portfolio-image {
+	@include media($desktop) {
+		@include span-columns(5, block-collapse);
+	}
+}
+.portfolio-info {
+	@include media($desktop) {
+		@include span-columns(7, block-collapse);
+	}
+}
+
 li.project {
 	width:100%;
 	position:relative;
@@ -34,29 +46,27 @@ li.project {
 	.portfolio-info {
 		position:relative;
 		height:100%;
-		.portfolio-info-main {
-			padding:1rem;
-			h2 {
-				@include subhead-text;
-				font-weight:500;
-			}
-			ul {
-				li {
-					display:inline-block;
-					margin-right:0.2em;
-					font-style:italic;
-					font-size:0.9em;
-					color:$grey-400;
-					&:not(:last-child) {
-						&:after {
-							content:'\2219'
-						}
+		padding:1rem;
+		h2 {
+			@include subhead-text;
+			font-weight:500;
+		}
+		ul {
+			li {
+				display:inline-block;
+				margin-right:0.2em;
+				font-style:italic;
+				font-size:0.9em;
+				color:$grey-400;
+				&:not(:last-child) {
+					&:after {
+						content:'\2219'
 					}
 				}
 			}
-			p {
-				max-width:22rem;
-			}
+		}
+		p {
+			max-width:22rem;
 		}
 		.portfolio-info-links {
 			padding:1rem;
