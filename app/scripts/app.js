@@ -7,7 +7,8 @@ angular
     'app.directives.headerBlock',
     'app.directives.dropdown',
     'app.directives.backToTop',
-    'app.directives.tooltip'
+    'app.directives.tooltip',
+    'app.directives.logo'
   ])
   .config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider

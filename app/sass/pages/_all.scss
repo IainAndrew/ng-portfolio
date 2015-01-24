@@ -152,17 +152,32 @@ noscript {
   }
 }
 
-/*polyline, line {
-  fill-opacity: 0;
-  stroke: #000;
-  stroke-width: 1;
-  stroke-dasharray: 870;
-  stroke-dashoffset: 870;
-  animation: draw 4s linear;
+logo {
+  width:100vw;
+  height:100vh;
+  background:#fff;
+  position:fixed;
+  z-index:1;
+  svg {
+    max-width:100%;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    @include transform(translate(-50%, -50%));
+  }
 }
 
+path {
+  fill-opacity: 0;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-dasharray: 870;
+  stroke-dashoffset: 870;
+  @include animation(draw 2s linear 2s forwards);
+}
 @keyframes draw {
   to {
     stroke-dashoffset: 0;
   }
-}*/
+}
