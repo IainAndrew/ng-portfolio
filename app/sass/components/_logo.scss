@@ -1,6 +1,7 @@
 logo {
-  width:100vw;
-  height:100vh;
+  width:200rem;
+  height:200rem;
+  border-radius:50%;
   background:#fff;
   position:fixed;
   z-index:1;
@@ -10,16 +11,17 @@ logo {
   @include transform(translate(-50%, -50%));
   @include transition(all 2s $cubic);
   &.line-animate {
-    @include animation(logo-scale 0.7s $cubic 2.2s forwards, logo-to-top 0.5s $cubic 3.1s forwards);
+    @include animation(logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s $cubic forwards 3.1s);
     svg path {
-      @include animation(draw 2s linear 0.5s forwards, hide 0.1s ease 1.9s forwards);
+      @include animation(draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s);
     }
     img {
       @include animation(wobble 0.3s $cubic forwards 1.9s);
     }
   }
   svg {
-    max-width:100%;
+    width:100%;
+    max-width:10rem;
     height:auto;
     position:absolute;
     top:50%;
@@ -35,7 +37,8 @@ logo {
   }
   img {
     opacity:0;
-    max-width:100%;
+    width:100%;
+    max-width:10rem;
     height:auto;
     position:absolute;
     top:50%;
@@ -71,9 +74,9 @@ logo {
 }
 @include keyframes(logo-scale) {
   to {
-    width:5rem;
-    height:5rem;
-    border-radius:50%;
+    width:4rem;
+    height:4rem;
+    //border-radius:50%;
   }
 }
 @include keyframes(logo-to-top) {

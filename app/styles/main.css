@@ -863,8 +863,9 @@ sidebar {
     transform: translate(-50%, -50%); }
 
 logo {
-  width: 100vw;
-  height: 100vh;
+  width: 200rem;
+  height: 200rem;
+  border-radius: 50%;
   background: #fff;
   position: fixed;
   z-index: 1;
@@ -880,19 +881,20 @@ logo {
   -moz-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44);
   transition: all 2s cubic-bezier(1, 0, 0.19, 1.44); }
   logo.line-animate {
-    -webkit-animation: logo-scale 0.7s cubic-bezier(1, 0, 0.19, 1.44) 2.2s forwards, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) 3.1s forwards;
-    -moz-animation: logo-scale 0.7s cubic-bezier(1, 0, 0.19, 1.44) 2.2s forwards, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) 3.1s forwards;
-    animation: logo-scale 0.7s cubic-bezier(1, 0, 0.19, 1.44) 2.2s forwards, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) 3.1s forwards; }
+    -webkit-animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s;
+    -moz-animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s;
+    animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s; }
     logo.line-animate svg path {
-      -webkit-animation: draw 2s linear 0.5s forwards, hide 0.1s ease 1.9s forwards;
-      -moz-animation: draw 2s linear 0.5s forwards, hide 0.1s ease 1.9s forwards;
-      animation: draw 2s linear 0.5s forwards, hide 0.1s ease 1.9s forwards; }
+      -webkit-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
+      -moz-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
+      animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s; }
     logo.line-animate img {
       -webkit-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
       -moz-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
       animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s; }
   logo svg {
-    max-width: 100%;
+    width: 100%;
+    max-width: 10rem;
     height: auto;
     position: absolute;
     top: 50%;
@@ -910,7 +912,8 @@ logo {
       stroke-dashoffset: 870; }
   logo img {
     opacity: 0;
-    max-width: 100%;
+    width: 100%;
+    max-width: 10rem;
     height: auto;
     position: absolute;
     top: 50%;
@@ -990,19 +993,16 @@ logo {
     transform: translate(-50%, -50%) scale(0.95, 1.05); } }
 @-webkit-keyframes logo-scale {
   to {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%; } }
+    width: 4rem;
+    height: 4rem; } }
 @-moz-keyframes logo-scale {
   to {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%; } }
+    width: 4rem;
+    height: 4rem; } }
 @keyframes logo-scale {
   to {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%; } }
+    width: 4rem;
+    height: 4rem; } }
 @-webkit-keyframes logo-to-top {
   to {
     top: 1rem;
