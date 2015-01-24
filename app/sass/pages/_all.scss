@@ -93,6 +93,7 @@ section {
     &.simplespin-web-development {
       padding:0;
       max-width:1000rem;
+      width:100%;
       .view-container {
         width:95%;
         height:95vh;
@@ -102,8 +103,8 @@ section {
           height:auto;
         }
         @include media($desktop) {
-          width:98%;
-          height:98vh;
+          width:100%;
+          height:100vh;
           background-color:transparent;
           box-shadow:none;
           main {

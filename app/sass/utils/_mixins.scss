@@ -75,8 +75,10 @@
 	color:#fff;
 	border-radius:3px;
 	display:inline-block;
+	text-transform:uppercase;
 	position:relative;
 	@include box-shadow-z1;
+	@include transition(all 0.2s ease);
 	.no-touch & {
 		&:hover {
 			padding-right:2rem;

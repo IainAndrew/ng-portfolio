@@ -70,8 +70,6 @@ li.project {
 		}
 		a {
 			text-transform:uppercase;
-			display:inline-block;
-			@include transition(all 0.2s ease);
 			&[ng-href=""] {
 				display:none;
 			}
