@@ -1395,14 +1395,17 @@ li.project {
         display: inline-block;
         position: relative;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-        .no-touch li.project .portfolio-info-links a:first-child:hover i {
-          background: #fd3277;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          -webkit-transform: scale(1.2) translateY(-50%);
-          -moz-transform: scale(1.2) translateY(-50%);
-          -ms-transform: scale(1.2) translateY(-50%);
-          -o-transform: scale(1.2) translateY(-50%);
-          transform: scale(1.2) translateY(-50%); }
+        .no-touch li.project .portfolio-info-links a:first-child:hover {
+          padding-right: 2rem; }
+          .no-touch li.project .portfolio-info-links a:first-child:hover i {
+            right: -1rem;
+            background: #fd3277;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            -webkit-transform: scale(1.2) translateY(-50%);
+            -moz-transform: scale(1.2) translateY(-50%);
+            -ms-transform: scale(1.2) translateY(-50%);
+            -o-transform: scale(1.2) translateY(-50%);
+            transform: scale(1.2) translateY(-50%); }
         li.project .portfolio-info-links a:first-child i {
           margin-left: 1rem;
           width: 2rem;
@@ -1437,14 +1440,17 @@ li.project {
         display: inline-block;
         position: relative;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
-        .no-touch li.project .portfolio-info-links a:nth-child(2):hover i {
-          background: #5365c9;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          -webkit-transform: scale(1.2) translateY(-50%);
-          -moz-transform: scale(1.2) translateY(-50%);
-          -ms-transform: scale(1.2) translateY(-50%);
-          -o-transform: scale(1.2) translateY(-50%);
-          transform: scale(1.2) translateY(-50%); }
+        .no-touch li.project .portfolio-info-links a:nth-child(2):hover {
+          padding-right: 2rem; }
+          .no-touch li.project .portfolio-info-links a:nth-child(2):hover i {
+            right: -1rem;
+            background: #5365c9;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            -webkit-transform: scale(1.2) translateY(-50%);
+            -moz-transform: scale(1.2) translateY(-50%);
+            -ms-transform: scale(1.2) translateY(-50%);
+            -o-transform: scale(1.2) translateY(-50%);
+            transform: scale(1.2) translateY(-50%); }
         li.project .portfolio-info-links a:nth-child(2) i {
           margin-left: 1rem;
           width: 2rem;

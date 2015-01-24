@@ -79,7 +79,9 @@
 	@include box-shadow-z1;
 	.no-touch & {
 		&:hover {
+			padding-right:2rem;
 			i {
+				right:-1rem;
 				background:$color + 20;
 				@include box-shadow-z1;
 				@include transform(scale(1.2) translateY(-50%));
