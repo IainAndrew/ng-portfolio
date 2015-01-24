@@ -1,0 +1,85 @@
+logo {
+  width:100vw;
+  height:100vh;
+  background:#fff;
+  position:fixed;
+  z-index:1;
+  top:50%;
+  left:50%;
+  @include box-shadow-z1;
+  @include transform(translate(-50%, -50%));
+  @include transition(all 2s $cubic);
+  &.line-animate {
+    @include animation(logo-scale 0.7s $cubic 2.2s forwards, logo-to-top 0.5s $cubic 3.1s forwards);
+    svg path {
+      @include animation(draw 2s linear 0.5s forwards, hide 0.1s ease 1.9s forwards);
+    }
+    img {
+      @include animation(wobble 0.3s $cubic forwards 1.9s);
+    }
+  }
+  svg {
+    max-width:100%;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    @include transform(translate(-50%, -50%));
+    path {
+      fill-opacity: 0;
+      stroke: #000;
+      stroke-width: 2;
+      stroke-dasharray: 870;
+      stroke-dashoffset: 870;
+    }
+  }
+  img {
+    opacity:0;
+    max-width:100%;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    @include transform(translate(-50%, -50%));
+    @include transition(all 0.5s $cubic, opacity 0.5s ease);
+  }
+}
+@include keyframes (draw) {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@include keyframes(hide) {
+  to {
+    opacity:0;
+  }
+}
+@include keyframes (wobble) {
+  from, to { 
+    @include transform(translate(-50%, -50%) scale(1, 1)); 
+    opacity:1;
+  }
+  25% { 
+    @include transform(translate(-50%, -50%) scale(0.9, 1.1)); 
+  }
+  50% { 
+    @include transform(translate(-50%, -50%) scale(1.1, 0.9)); 
+  }
+  75% { 
+    @include transform(translate(-50%, -50%) scale(0.95, 1.05)); 
+  }
+}
+@include keyframes(logo-scale) {
+  to {
+    width:5rem;
+    height:5rem;
+    border-radius:50%;
+  }
+}
+@include keyframes(logo-to-top) {
+  to {
+    top:1rem;
+    left:1rem;
+    @include transform(translate(0, 0));
+  }
+}

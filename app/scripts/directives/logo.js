@@ -6,7 +6,9 @@ angular.module('app.directives.logo', [])
 			restrict: 'E',
 			templateUrl:'views/logo.html',
 			link: function(element) {
-				
+				var $logo = $('logo'),
+					$svg = $logo.find('svg');
+				$logo.addClass('line-animate');
 			}
 		};
 	});
