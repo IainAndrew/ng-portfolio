@@ -9,7 +9,7 @@ logo {
   left:50%;
   @include box-shadow-z1;
   @include transform(translate(-50%, -50%));
-  @include transition(all 2s $cubic);
+  @include transition(all 2s $cubic, opacity 0.3s ease);
   &.logo-animate {
     @include animation(logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s $cubic forwards 3.1s);
     svg path {
@@ -18,6 +18,9 @@ logo {
     img {
       @include animation(wobble 0.3s $cubic forwards 1.9s);
     }
+  }
+  &.logo-scroll {
+    opacity:0.6;
   }
   svg {
     width:100%;

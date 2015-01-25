@@ -1018,9 +1018,9 @@ logo {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44);
-  -moz-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44);
-  transition: all 2s cubic-bezier(1, 0, 0.19, 1.44); }
+  -webkit-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.3s ease;
+  -moz-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.3s ease;
+  transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.3s ease; }
   logo.logo-animate {
     -webkit-animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s;
     -moz-animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s;
@@ -1033,6 +1033,8 @@ logo {
       -webkit-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
       -moz-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
       animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s; }
+  logo.logo-scroll {
+    opacity: 0.6; }
   logo svg {
     width: 100%;
     max-width: 10rem;
@@ -1945,7 +1947,7 @@ section {
   border-bottom-right-radius: 7px; }
 
 .view-container {
-  margin-top: 10rem;
+  margin-top: 9rem;
   position: relative;
   border-radius: 9px;
   width: 100%;
