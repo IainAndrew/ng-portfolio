@@ -13,16 +13,22 @@ angular.module('app.directives.logo', [])
 					$('nav').addClass('nav-show');
 
 					$logo.addClass('hoverable');
-
-					$logo.mouseenter(function() {
-						$('nav').addClass('nav-show');
-					});
-					$('nav').mouseenter(function() {
-						$('nav').addClass('nav-show');
-					});
-					$('nav').mouseleave(function() {
-						$('nav').removeClass('nav-show');
-					});	
+	
+					if (!Modernizr.touch) {
+						$logo.mouseenter(function() {
+							$('nav').addClass('nav-show');
+						});
+						$('nav').mouseenter(function() {
+							$('nav').addClass('nav-show');
+						});
+						$('nav').mouseleave(function() {
+							$('nav').removeClass('nav-show');
+						});	
+					} else {
+						$logo.click(function() {
+							$('nav').toggleClass('nav-show');
+						});
+					}
 				}, 4500);
 			}
 		};
