@@ -11,13 +11,19 @@ angular.module('app.directives.logo', [])
 				$logo.addClass('logo-animate');
 				setTimeout (function() {
 					$('nav').addClass('nav-show');
-				}, 4200);
-				$logo.find('img').mouseenter(function() {
-					$('nav').addClass('nav-show');
-				});
-				$logo.find('img').mouseleave(function() {
-					$('nav').addClass('nav-hide');
-				});
+
+					$logo.addClass('hoverable');
+
+					$logo.mouseenter(function() {
+						$('nav').addClass('nav-show');
+					});
+					$('nav').mouseenter(function() {
+						$('nav').addClass('nav-show');
+					});
+					$('nav').mouseleave(function() {
+						$('nav').removeClass('nav-show');
+					});	
+				}, 4500);
 			}
 		};
 	});

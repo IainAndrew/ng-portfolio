@@ -9,24 +9,26 @@
 nav {
   position:fixed;
   top:1rem;
-  left:7.5rem;
+  left:1rem;
+  width:12rem;
   display:block;
   z-index:1;
+  height:9rem;
   &.nav-show {
     ul li {
-      @include animation(nav-show 0.8s $cubic forwards);
-    }
-  }
-  &.nav-hide {
-    ul li {
+      //@include animation(nav-show 0.6s $cubic forwards);
+      opacity:1;
       &:first-child {
-        @include transform(translate(-6rem, 1.5rem));
+        top:0;
+        right:2.5rem;
       }
       &:nth-child(2) {
-        @include transform(translate(-6.3rem, -2rem));
+        top:3.5rem;
+        right:2.5rem;
       }
       &:nth-child(3) {
-        @include transform(translate(-3.8rem, -4.7rem));
+        top:6rem;
+        right:5.3rem;
       }
     }
   }
@@ -36,27 +38,50 @@ nav {
       font-size:1.4em;
       opacity:0;
       -webkit-font-smoothing:antialiased;
-      @include transition(all 0.8s $cubic);
+      position:absolute;
+      @include transition(all 0.6s $cubic);
       //@include animation(nav-show 0.8s $cubic forwards 4s);
       &:first-child {
-        @include transform(translate(-6rem, 1.5rem));
+        //@include transform(translate(-6rem, 1.5rem));
+        top:1rem;
+        right:8rem;
+        a {
+          background:$indigo-500;
+        }
       }
       &:nth-child(2) {
-        margin-top:1rem;
-        margin-bottom:1rem;
-        margin-left:0.3rem;
-        @include transform(translate(-6.3rem, -2rem));
+        //margin-top:1rem;
+        //margin-bottom:1rem;
+        //margin-left:0.3rem;
+        //@include transform(translate(-6.3rem, -2rem));
+        top:1rem;
+        right:8rem;
+        a {
+          background:$pink-500;
+        }
       }
       &:nth-child(3) {
-        margin-top:-0.8rem;
-        margin-left:-2.2rem;
-        @include transform(translate(-3.8rem, -4.7rem));
+        //margin-top:-0.8rem;
+        //margin-left:-2.2rem;
+        //@include transform(translate(-3.8rem, -4.7rem));
+        top:1rem;
+        right:8rem;
+        a {
+          background:$amber-500;
+        }
       }
       a {
         display:inline-block;
         padding:0.4rem;
         border:2px solid;
         border-radius:50%;
+        @include box-shadow-z1;
+        @include transition(all 0.2s ease);
+        .no-touch & {
+          &:hover {
+            @include transform(scale(1.1));
+          }
+        }
       }
     }
   }
