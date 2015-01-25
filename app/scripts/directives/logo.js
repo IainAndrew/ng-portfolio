@@ -8,7 +8,16 @@ angular.module('app.directives.logo', [])
 			link: function(element) {
 				var $logo = $('logo'),
 					$svg = $logo.find('svg');
-				$logo.addClass('line-animate');
+				$logo.addClass('logo-animate');
+				setTimeout (function() {
+					$('nav').addClass('nav-show');
+				}, 4200);
+				$logo.find('img').mouseenter(function() {
+					$('nav').addClass('nav-show');
+				});
+				$logo.find('img').mouseleave(function() {
+					$('nav').addClass('nav-hide');
+				});
 			}
 		};
 	});

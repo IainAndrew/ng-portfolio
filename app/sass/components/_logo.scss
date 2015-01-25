@@ -10,7 +10,7 @@ logo {
   @include box-shadow-z1;
   @include transform(translate(-50%, -50%));
   @include transition(all 2s $cubic);
-  &.line-animate {
+  &.logo-animate {
     @include animation(logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s $cubic forwards 3.1s);
     svg path {
       @include animation(draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s);
@@ -23,6 +23,7 @@ logo {
     width:100%;
     max-width:10rem;
     height:auto;
+    max-height:100%;
     position:absolute;
     top:50%;
     left:50%;
