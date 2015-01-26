@@ -9,9 +9,15 @@ logo {
   left:50%;
   @include box-shadow-z1;
   @include transform(translate(-50%, -50%));
-  @include transition(all 2s $cubic, margin-left 0.3s $cubic);
+  @include transition(all 2s $cubic, 
+                      margin-left 0.3s $cubic, 
+                      width 0.5s ease,
+                      height 0.5s ease,
+                      top 0.5s $cubic,
+                      left 0.5s $cubic,
+                      transform 0.5s $cubic);
   &.logo-animate {
-    @include animation(logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s $cubic forwards 3.1s);
+    //@include animation(logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s $cubic forwards 3.1s);
     svg path {
       @include animation(draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s);
     }
@@ -19,9 +25,20 @@ logo {
       @include animation(wobble 0.3s $cubic forwards 1.9s);
     }
   }
+  &.logo-scale {
+    width:5rem;
+    height:5rem;
+  }
+  &.logo-to-top {
+    top:1rem;
+    left:1rem;
+    @include transform(translate(0, 0));
+  }
   &.logo-scroll {
     //opacity:0.6;
     //margin-left:-2.5rem;
+    width:2rem;
+    height:2rem;
   }
   svg {
     width:100%;
@@ -77,17 +94,17 @@ logo {
     @include transform(translate(-50%, -50%) scale(0.95, 1.05)); 
   }
 }
-@include keyframes(logo-scale) {
-  to {
-    width:5rem;
-    height:5rem;
-    //border-radius:50%;
-  }
-}
-@include keyframes(logo-to-top) {
-  to {
-    top:1rem;
-    left:1rem;
-    @include transform(translate(0, 0));
-  }
-}
+// @include keyframes(logo-scale) {
+//   to {
+//     width:5rem;
+//     height:5rem;
+//     //border-radius:50%;
+//   }
+// }
+// @include keyframes(logo-to-top) {
+//   to {
+//     top:1rem;
+//     left:1rem;
+//     @include transform(translate(0, 0));
+//   }
+// }

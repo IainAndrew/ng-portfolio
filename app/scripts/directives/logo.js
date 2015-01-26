@@ -9,8 +9,18 @@ angular.module('app.directives.logo', [])
 				var $logo = $('logo'),
 					$svg = $logo.find('svg');
 				$logo.addClass('logo-animate');
+				console.log('logo-animate');
+				setTimeout (function() {
+					console.log('logo-scale');
+					$logo.addClass('logo-scale');
+				}, 3500);
+				setTimeout (function() {
+					console.log('logo-to-top');
+					$logo.addClass('logo-to-top');
+				}, 4500);
 				setTimeout (function() {
 					$('nav').addClass('nav-show');
+					console.log('nav-show');
 
 					$logo.addClass('hoverable');
 	
@@ -48,7 +58,7 @@ angular.module('app.directives.logo', [])
 							$logo.addClass('logo-scroll');
 						}
 					});
-				}, 4500);
+				}, 5000);
 			}
 		};
 	});

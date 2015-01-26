@@ -367,19 +367,18 @@ nav {
   display: block;
   z-index: 1;
   height: 9rem;
-  opacity: 0;
-  -webkit-animation: show 0.1s ease forwards 4s;
-  -moz-animation: show 0.1s ease forwards 4s;
-  animation: show 0.1s ease forwards 4s; }
-  nav.nav-show ul li:first-child {
-    top: 0;
-    right: 2.5rem; }
-  nav.nav-show ul li:nth-child(2) {
-    top: 3.5rem;
-    right: 2.5rem; }
-  nav.nav-show ul li:nth-child(3) {
-    top: 6rem;
-    right: 5.3rem; }
+  opacity: 0; }
+  nav.nav-show {
+    opacity: 1; }
+    nav.nav-show ul li:first-child {
+      top: 0;
+      right: 2.5rem; }
+    nav.nav-show ul li:nth-child(2) {
+      top: 3.5rem;
+      right: 2.5rem; }
+    nav.nav-show ul li:nth-child(3) {
+      top: 6rem;
+      right: 5.3rem; }
   nav ul li {
     color: #fff;
     font-size: 1.4em;
@@ -1007,8 +1006,8 @@ sidebar {
     transform: translate(-50%, -50%); }
 
 logo {
-  width: 200rem;
-  height: 200rem;
+  width: 100vw;
+  height: 100vw;
   border-radius: 50%;
   background: #fff;
   position: fixed;
@@ -1021,23 +1020,31 @@ logo {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  -moz-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
-  logo.logo-animate {
-    -webkit-animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s;
-    -moz-animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s;
-    animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s; }
-    logo.logo-animate svg path {
-      -webkit-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
-      -moz-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
-      animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s; }
-    logo.logo-animate img {
-      -webkit-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
-      -moz-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
-      animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s; }
+  -webkit-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44), width 0.5s ease, height 0.5s ease, top 0.5s cubic-bezier(1, 0, 0.19, 1.44), left 0.5s cubic-bezier(1, 0, 0.19, 1.44), -webkit-transform 0.5s cubic-bezier(1, 0, 0.19, 1.44);
+  -moz-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44), width 0.5s ease, height 0.5s ease, top 0.5s cubic-bezier(1, 0, 0.19, 1.44), left 0.5s cubic-bezier(1, 0, 0.19, 1.44), -moz-transform 0.5s cubic-bezier(1, 0, 0.19, 1.44);
+  transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44), width 0.5s ease, height 0.5s ease, top 0.5s cubic-bezier(1, 0, 0.19, 1.44), left 0.5s cubic-bezier(1, 0, 0.19, 1.44), transform 0.5s cubic-bezier(1, 0, 0.19, 1.44); }
+  logo.logo-animate svg path {
+    -webkit-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
+    -moz-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
+    animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s; }
+  logo.logo-animate img {
+    -webkit-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
+    -moz-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
+    animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s; }
+  logo.logo-scale {
+    width: 5rem;
+    height: 5rem; }
+  logo.logo-to-top {
+    top: 1rem;
+    left: 1rem;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
   logo.logo-scroll {
-    margin-left: -2.5rem; }
+    width: 2rem;
+    height: 2rem; }
   logo svg {
     width: 100%;
     max-width: 10rem;
@@ -1138,37 +1145,6 @@ logo {
     -ms-transform: translate(-50%, -50%) scale(0.95, 1.05);
     -o-transform: translate(-50%, -50%) scale(0.95, 1.05);
     transform: translate(-50%, -50%) scale(0.95, 1.05); } }
-@-webkit-keyframes logo-scale {
-  to {
-    width: 5rem;
-    height: 5rem; } }
-@-moz-keyframes logo-scale {
-  to {
-    width: 5rem;
-    height: 5rem; } }
-@keyframes logo-scale {
-  to {
-    width: 5rem;
-    height: 5rem; } }
-@-webkit-keyframes logo-to-top {
-  to {
-    top: 1rem;
-    left: 1rem;
-    -webkit-transform: translate(0, 0); } }
-@-moz-keyframes logo-to-top {
-  to {
-    top: 1rem;
-    left: 1rem;
-    -moz-transform: translate(0, 0); } }
-@keyframes logo-to-top {
-  to {
-    top: 1rem;
-    left: 1rem;
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0); } }
 .container.about .view-container {
   background: #f5f5f5; }
 
