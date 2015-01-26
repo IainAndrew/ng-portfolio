@@ -64,7 +64,8 @@ section {
   @include box-shadow-z3;
   left:50%;
   @include transform(translateX(-50%));
-  @include transition(width 0.3s cubic-bezier(1,0,.19,1.44), height 0.3s cubic-bezier(1,0,.19,1.44));
+  @include transition(width 0.3s $cubic, 
+                      height 0.3s $cubic);
 }
 .container {
   &.plugmedia, 

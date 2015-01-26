@@ -6,57 +6,71 @@ angular.module('app.directives.logo', [])
 			restrict: 'E',
 			templateUrl:'views/logo.html',
 			link: function(element) {
-				var $logo = $('logo'),
-					$svg = $logo.find('svg');
+				var $logo = $('logo');
+
 				$logo.addClass('logo-animate');
 				console.log('logo-animate');
+
 				setTimeout (function() {
 					console.log('logo-scale');
 					$logo.addClass('logo-scale');
 				}, 3500);
+
 				setTimeout (function() {
 					console.log('logo-to-top');
 					$logo.addClass('logo-to-top');
 				}, 4500);
+
 				setTimeout (function() {
-					//$('nav').addClass('nav-show');
-					$('nav').css({'opacity': 1}).addClass('nav-show');
+					var $nav = $('nav'),
+						touch = Modernizr.touch;
+
+					$nav.css({'opacity': 1}).addClass('nav-show');
 					console.log('nav-show');
 
 					$logo.addClass('hoverable');
+
+					function navShow() {
+						$nav.addClass('nav-show');
+						$logo.removeClass('logo-scroll');
+					}
+					function navHide() {
+						$nav.removeClass('nav-show');
+						$logo.addClass('logo-scroll');
+					}
 	
-					if (!Modernizr.touch) {
+					if (!touch) { // if not a touch screen
 						$logo.mouseenter(function() {
-							$('nav').addClass('nav-show');
-							$logo.removeClass('logo-scroll');
+							navShow();
 						});
-						$('nav').mouseenter(function() {
-							$('nav').addClass('nav-show');
-							$logo.removeClass('logo-scroll');
+						$nav.mouseenter(function() {
+							navShow();
 						});
-						$('nav').mouseleave(function() {
+						$nav.mouseleave(function() {
 							if ( $(window).scrollTop() <= 50 ) {
-								$('nav').addClass('nav-show');
-								$logo.removeClass('logo-scroll');
+								navShow();
 							} else {
-								$('nav').removeClass('nav-show');
-								$logo.addClass('logo-scroll');
+								navHide();
 							}
 						});	
-					} else {
-						$logo.click(function() {
-							$('nav').toggleClass('nav-show');
-							$logo.removeClass('logo-scroll');
+					} else { // if touch screen
+						$logo.click(function(event) {
+							$nav.toggleClass('nav-show');
+							$logo.toggleClass('logo-scroll');
+							event.stopPropagation();
+						});
+						$('body').click(function() {
+							if ( $(window).scrollTop() > 50 ) {
+								navHide();
+							}
 						});
 					}
 
 					$(window).on('scroll load', function() {
-						if ( $(this).scrollTop() <= 50 ) {
-							$('nav').addClass('nav-show');
-							$logo.removeClass('logo-scroll');
+						if ( $(window).scrollTop() <= 50 ) {
+							navShow();
 						} else {
-							$('nav').removeClass('nav-show');
-							$logo.addClass('logo-scroll');
+							navHide();
 						}
 					});
 				}, 5000);

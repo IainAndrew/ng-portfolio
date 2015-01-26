@@ -5,6 +5,10 @@ logo {
     width:150vw;
     height:150vw;
   }
+  @media (orientation: landscape) {
+      width:150vw;
+    height:150vw;
+    }
   border-radius:50%;
   background:#fff;
   position:fixed;

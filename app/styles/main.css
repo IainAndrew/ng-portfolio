@@ -1018,6 +1018,10 @@ logo {
     logo {
       width: 150vw;
       height: 150vw; } }
+  @media (orientation: landscape) {
+    logo {
+      width: 150vw;
+      height: 150vw; } }
   logo.logo-animate svg path {
     -webkit-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
     -moz-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
