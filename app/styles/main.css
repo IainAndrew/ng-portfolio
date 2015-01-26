@@ -350,6 +350,15 @@ table {
     top: 7rem; }
   to {
     top: 0; } }
+@-webkit-keyframes show {
+  to {
+    opacity: 1; } }
+@-moz-keyframes show {
+  to {
+    opacity: 1; } }
+@keyframes show {
+  to {
+    opacity: 1; } }
 nav {
   position: fixed;
   top: 1rem;
@@ -357,42 +366,36 @@ nav {
   width: 12rem;
   display: block;
   z-index: 1;
-  height: 9rem; }
-  nav.nav-show ul li {
-    opacity: 1; }
-    nav.nav-show ul li:first-child {
-      top: 0;
-      right: 2.5rem; }
-    nav.nav-show ul li:nth-child(2) {
-      top: 3.5rem;
-      right: 2.5rem; }
-    nav.nav-show ul li:nth-child(3) {
-      top: 6rem;
-      right: 5.3rem; }
+  height: 9rem;
+  opacity: 0;
+  -webkit-animation: show 0.1s ease forwards 4s;
+  -moz-animation: show 0.1s ease forwards 4s;
+  animation: show 0.1s ease forwards 4s; }
+  nav.nav-show ul li:first-child {
+    top: 0;
+    right: 2.5rem; }
+  nav.nav-show ul li:nth-child(2) {
+    top: 3.5rem;
+    right: 2.5rem; }
+  nav.nav-show ul li:nth-child(3) {
+    top: 6rem;
+    right: 5.3rem; }
   nav ul li {
     color: #fff;
     font-size: 1.4em;
-    opacity: 0;
     -webkit-font-smoothing: antialiased;
     position: absolute;
+    top: 1rem;
+    right: 8rem;
     -webkit-transition: all 0.6s cubic-bezier(1, 0, 0.19, 1.44);
     -moz-transition: all 0.6s cubic-bezier(1, 0, 0.19, 1.44);
     transition: all 0.6s cubic-bezier(1, 0, 0.19, 1.44); }
-    nav ul li:first-child {
-      top: 1rem;
-      right: 8rem; }
-      nav ul li:first-child a {
-        background: #3f51b5; }
-    nav ul li:nth-child(2) {
-      top: 1rem;
-      right: 8rem; }
-      nav ul li:nth-child(2) a {
-        background: #e91e63; }
-    nav ul li:nth-child(3) {
-      top: 1rem;
-      right: 8rem; }
-      nav ul li:nth-child(3) a {
-        background: #FFC107; }
+    nav ul li:first-child a {
+      background: #3f51b5; }
+    nav ul li:nth-child(2) a {
+      background: #e91e63; }
+    nav ul li:nth-child(3) a {
+      background: #FFC107; }
     nav ul li a {
       display: inline-block;
       padding: 0.4rem;
@@ -1018,9 +1021,9 @@ logo {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.3s ease;
-  -moz-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.3s ease;
-  transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.3s ease; }
+  -webkit-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+  -moz-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+  transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
   logo.logo-animate {
     -webkit-animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s;
     -moz-animation: logo-scale 0.7s ease forwards 2.2s, logo-to-top 0.5s cubic-bezier(1, 0, 0.19, 1.44) forwards 3.1s;
@@ -1034,7 +1037,7 @@ logo {
       -moz-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
       animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s; }
   logo.logo-scroll {
-    opacity: 0.6; }
+    margin-left: -2.5rem; }
   logo svg {
     width: 100%;
     max-width: 10rem;

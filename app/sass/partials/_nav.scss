@@ -6,6 +6,11 @@
     top:0;
   }
 }
+@include keyframes(show) {
+  to {
+    opacity:1;
+  }
+}
 nav {
   position:fixed;
   top:1rem;
@@ -14,10 +19,12 @@ nav {
   display:block;
   z-index:1;
   height:9rem;
+  opacity:0;
+  @include animation(show 0.1s ease forwards 4s);
   &.nav-show {
     ul li {
       //@include animation(nav-show 0.6s $cubic forwards);
-      opacity:1;
+      //opacity:1;
       &:first-child {
         top:0;
         right:2.5rem;
@@ -36,36 +43,24 @@ nav {
     li {
       color:#fff;
       font-size:1.4em;
-      opacity:0;
+      //opacity:0;
       -webkit-font-smoothing:antialiased;
       position:absolute;
+      top:1rem;
+      right:8rem;
       @include transition(all 0.6s $cubic);
       //@include animation(nav-show 0.8s $cubic forwards 4s);
       &:first-child {
-        //@include transform(translate(-6rem, 1.5rem));
-        top:1rem;
-        right:8rem;
         a {
           background:$indigo-500;
         }
       }
       &:nth-child(2) {
-        //margin-top:1rem;
-        //margin-bottom:1rem;
-        //margin-left:0.3rem;
-        //@include transform(translate(-6.3rem, -2rem));
-        top:1rem;
-        right:8rem;
         a {
           background:$pink-500;
         }
       }
       &:nth-child(3) {
-        //margin-top:-0.8rem;
-        //margin-left:-2.2rem;
-        //@include transform(translate(-3.8rem, -4.7rem));
-        top:1rem;
-        right:8rem;
         a {
           background:$amber-500;
         }
