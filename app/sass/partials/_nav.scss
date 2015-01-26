@@ -20,9 +20,9 @@ nav {
   z-index:1;
   height:9rem;
   opacity:0;
-  //@include animation(show 0.1s ease forwards 4s);
+  //@include animation(show 0s ease forwards 4s);
   &.nav-show {
-    opacity:1;
+    //opacity:1;
     ul li {
       //@include animation(nav-show 0.6s $cubic forwards);
       //opacity:1;
@@ -84,7 +84,6 @@ nav {
 }
 @include keyframes (nav-show) {
   to {
-    @include transform(translate(0, 0));
     opacity:1;
   }
 }

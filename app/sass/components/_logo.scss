@@ -1,6 +1,10 @@
 logo {
-  width:200rem;
-  height:200rem;
+  width:150vh;
+  height:150vh;
+  @include media($ninefifty) {
+    width:150vw;
+    height:150vw;
+  }
   border-radius:50%;
   background:#fff;
   position:fixed;
@@ -37,8 +41,8 @@ logo {
   &.logo-scroll {
     //opacity:0.6;
     //margin-left:-2.5rem;
-    width:2rem;
-    height:2rem;
+    @include transform(scale(0.7));
+    left:-2rem;
   }
   svg {
     width:100%;

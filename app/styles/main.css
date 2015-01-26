@@ -368,17 +368,15 @@ nav {
   z-index: 1;
   height: 9rem;
   opacity: 0; }
-  nav.nav-show {
-    opacity: 1; }
-    nav.nav-show ul li:first-child {
-      top: 0;
-      right: 2.5rem; }
-    nav.nav-show ul li:nth-child(2) {
-      top: 3.5rem;
-      right: 2.5rem; }
-    nav.nav-show ul li:nth-child(3) {
-      top: 6rem;
-      right: 5.3rem; }
+  nav.nav-show ul li:first-child {
+    top: 0;
+    right: 2.5rem; }
+  nav.nav-show ul li:nth-child(2) {
+    top: 3.5rem;
+    right: 2.5rem; }
+  nav.nav-show ul li:nth-child(3) {
+    top: 6rem;
+    right: 5.3rem; }
   nav ul li {
     color: #fff;
     font-size: 1.4em;
@@ -413,19 +411,12 @@ nav {
 
 @-webkit-keyframes nav-show {
   to {
-    -webkit-transform: translate(0, 0);
     opacity: 1; } }
 @-moz-keyframes nav-show {
   to {
-    -moz-transform: translate(0, 0);
     opacity: 1; } }
 @keyframes nav-show {
   to {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
     opacity: 1; } }
 /* ROUNDED
 nav {
@@ -1006,8 +997,8 @@ sidebar {
     transform: translate(-50%, -50%); }
 
 logo {
-  width: 100vw;
-  height: 100vw;
+  width: 150vh;
+  height: 150vh;
   border-radius: 50%;
   background: #fff;
   position: fixed;
@@ -1023,6 +1014,10 @@ logo {
   -webkit-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44), width 0.5s ease, height 0.5s ease, top 0.5s cubic-bezier(1, 0, 0.19, 1.44), left 0.5s cubic-bezier(1, 0, 0.19, 1.44), -webkit-transform 0.5s cubic-bezier(1, 0, 0.19, 1.44);
   -moz-transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44), width 0.5s ease, height 0.5s ease, top 0.5s cubic-bezier(1, 0, 0.19, 1.44), left 0.5s cubic-bezier(1, 0, 0.19, 1.44), -moz-transform 0.5s cubic-bezier(1, 0, 0.19, 1.44);
   transition: all 2s cubic-bezier(1, 0, 0.19, 1.44), margin-left 0.3s cubic-bezier(1, 0, 0.19, 1.44), width 0.5s ease, height 0.5s ease, top 0.5s cubic-bezier(1, 0, 0.19, 1.44), left 0.5s cubic-bezier(1, 0, 0.19, 1.44), transform 0.5s cubic-bezier(1, 0, 0.19, 1.44); }
+  @media screen and (min-width: 950px) {
+    logo {
+      width: 150vw;
+      height: 150vw; } }
   logo.logo-animate svg path {
     -webkit-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
     -moz-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
@@ -1043,8 +1038,12 @@ logo {
     -o-transform: translate(0, 0);
     transform: translate(0, 0); }
   logo.logo-scroll {
-    width: 2rem;
-    height: 2rem; }
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+    left: -2rem; }
   logo svg {
     width: 100%;
     max-width: 10rem;

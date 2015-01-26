@@ -19,7 +19,8 @@ angular.module('app.directives.logo', [])
 					$logo.addClass('logo-to-top');
 				}, 4500);
 				setTimeout (function() {
-					$('nav').addClass('nav-show');
+					//$('nav').addClass('nav-show');
+					$('nav').css({'opacity': 1}).addClass('nav-show');
 					console.log('nav-show');
 
 					$logo.addClass('hoverable');
