@@ -362,7 +362,7 @@ table {
 nav {
   position: fixed;
   top: 1rem;
-  left: 1rem;
+  left: 0rem;
   width: 12rem;
   display: block;
   z-index: 1;
@@ -370,13 +370,13 @@ nav {
   opacity: 0; }
   nav.nav-show ul li:first-child {
     top: 0;
-    right: 2.5rem; }
+    right: 1.5rem; }
   nav.nav-show ul li:nth-child(2) {
     top: 3.5rem;
-    right: 2.5rem; }
+    right: 1.5rem; }
   nav.nav-show ul li:nth-child(3) {
     top: 6rem;
-    right: 5.3rem; }
+    right: 4.3rem; }
   nav ul li {
     color: #fff;
     font-size: 1.4em;
@@ -1047,7 +1047,7 @@ logo {
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
     transform: scale(0.7);
-    left: -2rem; }
+    left: 0; }
   logo svg {
     width: 100%;
     max-width: 10rem;

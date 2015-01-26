@@ -6,9 +6,9 @@ logo {
     height:150vw;
   }
   @media (orientation: landscape) {
-      width:150vw;
+    width:150vw;
     height:150vw;
-    }
+  }
   border-radius:50%;
   background:#fff;
   position:fixed;
@@ -46,7 +46,7 @@ logo {
     //opacity:0.6;
     //margin-left:-2.5rem;
     @include transform(scale(0.7));
-    left:-2rem;
+    left:0;
   }
   svg {
     width:100%;

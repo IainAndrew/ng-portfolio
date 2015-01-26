@@ -14,7 +14,7 @@
 nav {
   position:fixed;
   top:1rem;
-  left:1rem;
+  left:0rem;
   width:12rem;
   display:block;
   z-index:1;
@@ -28,15 +28,15 @@ nav {
       //opacity:1;
       &:first-child {
         top:0;
-        right:2.5rem;
+        right:1.5rem;
       }
       &:nth-child(2) {
         top:3.5rem;
-        right:2.5rem;
+        right:1.5rem;
       }
       &:nth-child(3) {
         top:6rem;
-        right:5.3rem;
+        right:4.3rem;
       }
     }
   }
