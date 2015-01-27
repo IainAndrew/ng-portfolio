@@ -34,25 +34,36 @@ section.project-main {
         @include calc(width, '100% - 10.5rem');
     }
   }
+  @include media($widescreen) {
+    @include calc(width, '100% - 20rem');
+    .project-load & {
+        border-radius:7px;
+        @include calc(width, '100% - 20.5rem');
+    }
+  }
   p {
     a {
       @include text-link;
     }
   }
   hr {
-    @include rule-full;
+    @include rule-small;
   }
   figure {
-    max-width:850px;
+    width:100%;
     &.no-shadow {
       img {
         box-shadow:none;
       }
     }
     img {
-      max-width:100%;
+      width:100%;
+      max-width:800px;
       height:auto;
       @include box-shadow-z3;
+      position:relative;
+      left:50%;
+      @include transform(translateX(-50%));
     }
     figcaption {
       font-style:italic;
@@ -140,13 +151,23 @@ section.project-main {
     }
   }
   .project-section {
+    h1 {
+      text-align:center;
+    }
     .row {
       &:not(:first-child) {
         margin-bottom:3rem;
       }
-    }
-    p {
-      max-width:600px;
+      @include media($desktop) {
+        @include span-columns(7);
+        @include shift(2.5);
+        p {
+          max-width:800px;
+          position:relative;
+          left:50%;
+          @include transform(translate(-50%));
+        }
+      }
     }
   }
 }

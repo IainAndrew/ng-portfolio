@@ -367,7 +367,10 @@ nav {
   display: block;
   z-index: 1;
   height: 9rem;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: top 0.7s cubic-bezier(1, 0, 0.19, 1.44);
+  -moz-transition: top 0.7s cubic-bezier(1, 0, 0.19, 1.44);
+  transition: top 0.7s cubic-bezier(1, 0, 0.19, 1.44); }
   nav.nav-show ul li:first-child {
     top: 0;
     right: 1.5rem; }
@@ -383,16 +386,25 @@ nav {
     -webkit-font-smoothing: antialiased;
     position: absolute;
     top: 1rem;
-    right: 8rem;
-    -webkit-transition: all 0.6s cubic-bezier(1, 0, 0.19, 1.44);
-    -moz-transition: all 0.6s cubic-bezier(1, 0, 0.19, 1.44);
-    transition: all 0.6s cubic-bezier(1, 0, 0.19, 1.44); }
-    nav ul li:first-child a {
-      background: #3f51b5; }
-    nav ul li:nth-child(2) a {
-      background: #e91e63; }
-    nav ul li:nth-child(3) a {
-      background: #FFC107; }
+    right: 8rem; }
+    nav ul li:first-child {
+      -webkit-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+      -moz-transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+      transition: all 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
+      nav ul li:first-child a {
+        background: #3f51b5; }
+    nav ul li:nth-child(2) {
+      -webkit-transition: all 0.4s cubic-bezier(1, 0, 0.19, 1.44);
+      -moz-transition: all 0.4s cubic-bezier(1, 0, 0.19, 1.44);
+      transition: all 0.4s cubic-bezier(1, 0, 0.19, 1.44); }
+      nav ul li:nth-child(2) a {
+        background: #e91e63; }
+    nav ul li:nth-child(3) {
+      -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44);
+      -moz-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44);
+      transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44); }
+      nav ul li:nth-child(3) a {
+        background: #FFC107; }
     nav ul li a {
       display: inline-block;
       padding: 0.4rem;
@@ -676,6 +688,10 @@ sidebar {
       .project-load sidebar {
         border-radius: 7px;
         background: #e91e63; } }
+  @media screen and (min-width: 1281px) {
+    sidebar {
+      width: 20rem;
+      font-size: 1.2em; } }
   sidebar .sidebar-browse {
     color: #fff;
     text-align: center;
@@ -788,9 +804,9 @@ sidebar {
         sidebar .sidebar-menu ul {
           max-height: 1000px; } }
       sidebar .sidebar-menu ul li {
-        height: 3.5rem;
+        min-height: 4.5em;
         vertical-align: middle;
-        line-height: 3.5rem;
+        line-height: 4.5em;
         text-indent: 1rem; }
         sidebar .sidebar-menu ul li:not(:last-child) {
           border-bottom: 1px solid #e0e0e0; }
@@ -816,6 +832,62 @@ sidebar {
             sidebar .sidebar-menu ul li a.sidebar-active:after {
               height: 100%;
               top: 0; }
+  sidebar .sidebar-contact {
+    margin-top: 1rem;
+    padding: 1rem;
+    display: none; }
+    @media screen and (min-width: 768px) {
+      sidebar .sidebar-contact {
+        display: block; } }
+    sidebar .sidebar-contact a {
+      background: #e91e63;
+      padding: 0.5rem 3rem 0.5rem 1rem;
+      color: #fff;
+      border-radius: 3px;
+      display: inline-block;
+      text-transform: uppercase;
+      position: relative;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      .no-touch sidebar .sidebar-contact a:hover {
+        padding-right: 2rem; }
+        .no-touch sidebar .sidebar-contact a:hover i {
+          right: -1rem;
+          background: #fd3277;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          -webkit-transform: scale(1.2) translateY(-50%);
+          -moz-transform: scale(1.2) translateY(-50%);
+          -ms-transform: scale(1.2) translateY(-50%);
+          -o-transform: scale(1.2) translateY(-50%);
+          transform: scale(1.2) translateY(-50%); }
+      sidebar .sidebar-contact a i {
+        margin-left: 1rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        sidebar .sidebar-contact a i:before {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .header-block {
   display: block;
@@ -1199,7 +1271,7 @@ section.about {
     border: 0;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 2rem 0; }
+    margin: 2rem auto; }
     @media screen and (min-width: 768px) {
       section.about hr {
         display: none; } }
@@ -1628,7 +1700,7 @@ section.contact {
     border: 0;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 2rem 0; }
+    margin: 2rem auto; }
     @media screen and (min-width: 768px) {
       section.contact hr:nth-of-type(2) {
         display: none; } }
@@ -1705,6 +1777,14 @@ section.project-main {
         border-radius: 7px;
         width: -webkit-calc(100% - 10.5rem);
         width: calc(100% - 10.5rem); } }
+  @media screen and (min-width: 1281px) {
+    section.project-main {
+      width: -webkit-calc(100% - 20rem);
+      width: calc(100% - 20rem); }
+      .project-load section.project-main {
+        border-radius: 7px;
+        width: -webkit-calc(100% - 20.5rem);
+        width: calc(100% - 20.5rem); } }
   section.project-main p a {
     display: inline-block;
     color: #e91e63;
@@ -1719,15 +1799,24 @@ section.project-main {
     border: 0;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin: 2rem 0; }
+    margin: 2rem auto;
+    width: 20%; }
   section.project-main figure {
-    max-width: 850px; }
+    width: 100%; }
     section.project-main figure.no-shadow img {
       box-shadow: none; }
     section.project-main figure img {
-      max-width: 100%;
+      width: 100%;
+      max-width: 800px;
       height: auto;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
     section.project-main figure figcaption {
       font-style: italic;
       color: #9e9e9e; }
@@ -1793,10 +1882,28 @@ section.project-main {
   section.project-main .project-technologies ul {
     border-left: 5px solid #9fa8da;
     padding-left: 2em; }
+  section.project-main .project-section h1 {
+    text-align: center; }
   section.project-main .project-section .row:not(:first-child) {
     margin-bottom: 3rem; }
-  section.project-main .project-section p {
-    max-width: 600px; }
+  @media screen and (min-width: 768px) {
+    section.project-main .project-section .row {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-left: 21.32451%; }
+      section.project-main .project-section .row:last-child {
+        margin-right: 0; }
+      section.project-main .project-section .row p {
+        max-width: 800px;
+        position: relative;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        transform: translate(-50%); } }
 
 @-webkit-keyframes image-popup {
   from {
@@ -1945,11 +2052,14 @@ section {
   padding: 0;
   max-width: 1000rem;
   width: 100%; }
+  .container.plugmedia logo, .container.plugmedia nav, .container.plugmedia-overview logo, .container.plugmedia-overview nav, .container.plugmedia-web-design logo, .container.plugmedia-web-design nav, .container.plugmedia-web-development logo, .container.plugmedia-web-development nav, .container.plugmedia-logo-design logo, .container.plugmedia-logo-design nav, .container.peter-ashmore logo, .container.peter-ashmore nav, .container.peter-ashmore-overview logo, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design logo, .container.peter-ashmore-web-design nav, .container.peter-ashmore-web-development logo, .container.peter-ashmore-web-development nav, .container.peter-ashmore-graphic-design logo, .container.peter-ashmore-graphic-design nav, .container.peter-ashmore-logo-design logo, .container.peter-ashmore-logo-design nav, .container.trunkys logo, .container.trunkys nav, .container.trunkys-overview logo, .container.trunkys-overview nav, .container.trunkys-graphic-design logo, .container.trunkys-graphic-design nav, .container.trunkys-ui-design logo, .container.trunkys-ui-design nav, .container.footerreveal logo, .container.footerreveal nav, .container.footerreveal-overview logo, .container.footerreveal-overview nav, .container.footerreveal-web-development logo, .container.footerreveal-web-development nav, .container.simplespin logo, .container.simplespin nav, .container.simplespin-overview logo, .container.simplespin-overview nav, .container.simplespin-web-development logo, .container.simplespin-web-development nav {
+    top: -100%; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
     width: 95%;
     height: 95vh;
     background-color: transparent;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-top: 0; }
     .container.plugmedia .view-container main, .container.plugmedia-overview .view-container main, .container.plugmedia-web-design .view-container main, .container.plugmedia-web-development .view-container main, .container.plugmedia-logo-design .view-container main, .container.peter-ashmore .view-container main, .container.peter-ashmore-overview .view-container main, .container.peter-ashmore-web-design .view-container main, .container.peter-ashmore-web-development .view-container main, .container.peter-ashmore-graphic-design .view-container main, .container.peter-ashmore-logo-design .view-container main, .container.trunkys .view-container main, .container.trunkys-overview .view-container main, .container.trunkys-graphic-design .view-container main, .container.trunkys-ui-design .view-container main, .container.footerreveal .view-container main, .container.footerreveal-overview .view-container main, .container.footerreveal-web-development .view-container main, .container.simplespin .view-container main, .container.simplespin-overview .view-container main, .container.simplespin-web-development .view-container main {
       height: auto; }
     @media screen and (min-width: 768px) {
@@ -1960,8 +2070,6 @@ section {
         box-shadow: none; }
         .container.plugmedia .view-container main, .container.plugmedia-overview .view-container main, .container.plugmedia-web-design .view-container main, .container.plugmedia-web-development .view-container main, .container.plugmedia-logo-design .view-container main, .container.peter-ashmore .view-container main, .container.peter-ashmore-overview .view-container main, .container.peter-ashmore-web-design .view-container main, .container.peter-ashmore-web-development .view-container main, .container.peter-ashmore-graphic-design .view-container main, .container.peter-ashmore-logo-design .view-container main, .container.trunkys .view-container main, .container.trunkys-overview .view-container main, .container.trunkys-graphic-design .view-container main, .container.trunkys-ui-design .view-container main, .container.footerreveal .view-container main, .container.footerreveal-overview .view-container main, .container.footerreveal-web-development .view-container main, .container.simplespin .view-container main, .container.simplespin-overview .view-container main, .container.simplespin-web-development .view-container main {
           height: 100%; } }
-  .container.plugmedia nav, .container.plugmedia-overview nav, .container.plugmedia-web-design nav, .container.plugmedia-web-development nav, .container.plugmedia-logo-design nav, .container.peter-ashmore nav, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design nav, .container.peter-ashmore-web-development nav, .container.peter-ashmore-graphic-design nav, .container.peter-ashmore-logo-design nav, .container.trunkys nav, .container.trunkys-overview nav, .container.trunkys-graphic-design nav, .container.trunkys-ui-design nav, .container.footerreveal nav, .container.footerreveal-overview nav, .container.footerreveal-web-development nav, .container.simplespin nav, .container.simplespin-overview nav, .container.simplespin-web-development nav {
-    display: none; }
 
 section {
   background: #f5f5f5;
@@ -1986,6 +2094,9 @@ a {
   color: inherit; }
   a:focus {
     outline: 0; }
+
+i {
+  -webkit-font-smoothing: antialiased; }
 
 noscript {
   position: fixed;

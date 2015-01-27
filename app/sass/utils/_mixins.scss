@@ -52,7 +52,11 @@
     border: 0;
     border-top: 1px solid $border-grey;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin:2rem 0;
+    margin:2rem auto;
+}
+@mixin rule-small {
+	@include rule-full;
+	width:20%;
 }
 @mixin card {
 	background:#fff;

@@ -32,6 +32,10 @@ sidebar {
 			background:$pink-500;
 	  	}
 	}
+	@include media($widescreen) {
+		width:20rem;
+		font-size:1.2em;
+	}
 	.sidebar-browse {
 		color:#fff;
 		text-align:center;
@@ -127,9 +131,9 @@ sidebar {
 		    	max-height:1000px;
 		    }
 			li {
-				height:3.5rem;
+				min-height:4.5em;
 				vertical-align:middle;
-				line-height:3.5rem;
+				line-height:4.5em;
 				text-indent:1rem;
 				&:not(:last-child) {
 					border-bottom:1px solid $border-grey;
@@ -157,6 +161,17 @@ sidebar {
 					}
 				}
 			}
+		}
+	}
+	.sidebar-contact {
+		margin-top:1rem;
+		padding:1rem;
+		display:none;
+		@include media($desktop) {
+			display:block;
+		}
+		a {
+			@include btn($pink-500);
 		}
 	}
 }
