@@ -1541,7 +1541,7 @@ section.about {
     -o-transform: scale(0.95, 1.05);
     transform: scale(0.95, 1.05); } }
 section.portfolio {
-  padding: 1rem; }
+  padding: 2rem; }
 
 li.project {
   width: 100%;
@@ -1553,7 +1553,7 @@ li.project {
   -moz-transition: all 0.1s ease;
   transition: all 0.1s ease; }
   li.project:not(:last-child) {
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
   @media screen and (min-width: 768px) {
     li.project {
       height: 13rem; } }
