@@ -2084,8 +2084,15 @@ section {
       height: auto; }
     @media screen and (min-width: 768px) {
       .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
-        width: 100%;
-        height: 100vh;
+        position: absolute;
+        width: 98%;
+        height: 98vh;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         background-color: transparent;
         box-shadow: none; }
         .container.plugmedia .view-container main, .container.plugmedia-overview .view-container main, .container.plugmedia-web-design .view-container main, .container.plugmedia-web-development .view-container main, .container.plugmedia-logo-design .view-container main, .container.peter-ashmore .view-container main, .container.peter-ashmore-overview .view-container main, .container.peter-ashmore-web-design .view-container main, .container.peter-ashmore-web-development .view-container main, .container.peter-ashmore-graphic-design .view-container main, .container.peter-ashmore-logo-design .view-container main, .container.trunkys .view-container main, .container.trunkys-overview .view-container main, .container.trunkys-graphic-design .view-container main, .container.trunkys-ui-design .view-container main, .container.footerreveal .view-container main, .container.footerreveal-overview .view-container main, .container.footerreveal-web-development .view-container main, .container.simplespin .view-container main, .container.simplespin-overview .view-container main, .container.simplespin-web-development .view-container main {
