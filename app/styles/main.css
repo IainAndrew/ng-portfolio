@@ -654,6 +654,14 @@ nav {
   }
 }
 */
+footer {
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  footer section {
+    padding: 2rem;
+    border-radius: 9px; }
+
 /*@include keyframes(project-sidebar-load) {
 	from {
 		border-top-right-radius:0;
@@ -897,8 +905,8 @@ sidebar {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid #e0e0e0;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
   -webkit-transition: height 0.5s cubic-bezier(1, 0, 0.19, 1.44);
   -moz-transition: height 0.5s cubic-bezier(1, 0, 0.19, 1.44);
   transition: height 0.5s cubic-bezier(1, 0, 0.19, 1.44);
@@ -1223,7 +1231,17 @@ logo {
 
 section.about {
   padding: 2rem;
-  height: auto; }
+  height: auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  section.about:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 768px) {
+    section.about {
+      padding: 4rem; } }
   section.about p:not(:last-child) {
     margin-bottom: 1em; }
   section.about h2 {
@@ -1290,6 +1308,24 @@ section.about {
       section.about .about-links a:first-child {
         margin-right: 2rem; }
 
+@media screen and (min-width: 768px) {
+  .about-intro, .about-tech {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0; }
+    .about-intro:last-child, .about-tech:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 768px) {
+  .about-intro {
+    border-right: 1px solid #e0e0e0;
+    padding-right: 4rem; } }
+
+@media screen and (min-width: 768px) {
+  .about-tech {
+    padding-left: 4rem; } }
 .about-tech ul li {
   display: inline-block;
   background: #fff;
@@ -1687,7 +1723,17 @@ li.project {
 
 section.contact {
   padding: 2rem;
-  height: auto; }
+  height: auto;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  section.contact:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 768px) {
+    section.contact {
+      padding: 4rem; } }
   section.contact h2 {
     font-size: 15px;
     line-height: 24px;
@@ -1726,6 +1772,13 @@ section.contact {
     line-height: 35px; }
     .no-touch section.contact .contact-mail a:hover {
       color: #f06292; }
+  @media screen and (min-width: 768px) {
+    section.contact .contact-mail {
+      padding-right: 4rem; } }
+  @media screen and (min-width: 768px) {
+    section.contact .contact-links {
+      padding-left: 4rem;
+      border-left: 1px solid #e0e0e0; } }
   section.contact .contact-links ul li {
     line-height: 35px; }
     section.contact .contact-links ul li a {
@@ -1736,6 +1789,15 @@ section.contact {
       transition: all 0.3s ease; }
       .no-touch section.contact .contact-links ul li a:hover {
         color: #f06292; }
+  @media screen and (min-width: 768px) {
+    section.contact .contact-links, section.contact .contact-mail {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      section.contact .contact-links:last-child, section.contact .contact-mail:last-child {
+        margin-right: 0; } }
 
 @media screen and (min-width: 950px) {
   .project-overview-intro, .project-overview-image {
@@ -2020,15 +2082,6 @@ body {
     display: table;
     clear: both; }
 
-@media screen and (min-width: 768px) {
-  .about-intro, .about-tech, .contact-links, .contact-mail {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .about-intro:last-child, .about-tech:last-child, .contact-links:last-child, .contact-mail:last-child {
-      margin-right: 0; } }
-
 ::selection {
   background-color: #f06292;
   color: #fff; }
@@ -2055,8 +2108,8 @@ section {
 .view-container {
   margin-top: 9rem;
   position: relative;
-  border-radius: 9px;
   width: 100%;
+  border-radius: 9px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2074,6 +2127,8 @@ section {
   width: 100%; }
   .container.plugmedia logo, .container.plugmedia nav, .container.plugmedia-overview logo, .container.plugmedia-overview nav, .container.plugmedia-web-design logo, .container.plugmedia-web-design nav, .container.plugmedia-web-development logo, .container.plugmedia-web-development nav, .container.plugmedia-logo-design logo, .container.plugmedia-logo-design nav, .container.peter-ashmore logo, .container.peter-ashmore nav, .container.peter-ashmore-overview logo, .container.peter-ashmore-overview nav, .container.peter-ashmore-web-design logo, .container.peter-ashmore-web-design nav, .container.peter-ashmore-web-development logo, .container.peter-ashmore-web-development nav, .container.peter-ashmore-graphic-design logo, .container.peter-ashmore-graphic-design nav, .container.peter-ashmore-logo-design logo, .container.peter-ashmore-logo-design nav, .container.trunkys logo, .container.trunkys nav, .container.trunkys-overview logo, .container.trunkys-overview nav, .container.trunkys-graphic-design logo, .container.trunkys-graphic-design nav, .container.trunkys-ui-design logo, .container.trunkys-ui-design nav, .container.footerreveal logo, .container.footerreveal nav, .container.footerreveal-overview logo, .container.footerreveal-overview nav, .container.footerreveal-web-development logo, .container.footerreveal-web-development nav, .container.simplespin logo, .container.simplespin nav, .container.simplespin-overview logo, .container.simplespin-overview nav, .container.simplespin-web-development logo, .container.simplespin-web-development nav {
     top: -100%; }
+  .container.plugmedia footer, .container.plugmedia-overview footer, .container.plugmedia-web-design footer, .container.plugmedia-web-development footer, .container.plugmedia-logo-design footer, .container.peter-ashmore footer, .container.peter-ashmore-overview footer, .container.peter-ashmore-web-design footer, .container.peter-ashmore-web-development footer, .container.peter-ashmore-graphic-design footer, .container.peter-ashmore-logo-design footer, .container.trunkys footer, .container.trunkys-overview footer, .container.trunkys-graphic-design footer, .container.trunkys-ui-design footer, .container.footerreveal footer, .container.footerreveal-overview footer, .container.footerreveal-web-development footer, .container.simplespin footer, .container.simplespin-overview footer, .container.simplespin-web-development footer {
+    display: none; }
   .container.plugmedia .view-container, .container.plugmedia-overview .view-container, .container.plugmedia-web-design .view-container, .container.plugmedia-web-development .view-container, .container.plugmedia-logo-design .view-container, .container.peter-ashmore .view-container, .container.peter-ashmore-overview .view-container, .container.peter-ashmore-web-design .view-container, .container.peter-ashmore-web-development .view-container, .container.peter-ashmore-graphic-design .view-container, .container.peter-ashmore-logo-design .view-container, .container.trunkys .view-container, .container.trunkys-overview .view-container, .container.trunkys-graphic-design .view-container, .container.trunkys-ui-design .view-container, .container.footerreveal .view-container, .container.footerreveal-overview .view-container, .container.footerreveal-web-development .view-container, .container.simplespin .view-container, .container.simplespin-overview .view-container, .container.simplespin-web-development .view-container {
     width: 95%;
     height: 95vh;

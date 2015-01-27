@@ -5,8 +5,8 @@
 	width:100%;
 	text-align:center;
 	border-bottom:1px solid $grey-300;
-	border-top-left-radius:7px;
-	border-top-right-radius:7px;
+	border-top-left-radius:9px;
+	border-top-right-radius:9px;
 	@include transition(height 0.5s $cubic);
 	//@include animation(header-block-slide 1s $cubic);
 	/*&:hover {

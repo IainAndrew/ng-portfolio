@@ -1,0 +1,9 @@
+footer {
+  width:100%;
+  margin-top:2rem;
+  @include box-shadow-z3;
+  section {
+  	padding:2rem;
+    border-radius:9px;
+  }
+}

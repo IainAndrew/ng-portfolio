@@ -7,6 +7,10 @@ section.about {
 	padding:2rem;
 	//@include calc(height, '100% - 6rem');
 	height:auto;
+	@include outer-container(1000px);
+	@include media($desktop) {
+		padding:4rem;
+	}
 	p {
       &:not(:last-child) {
         margin-bottom:1em;
@@ -59,7 +63,22 @@ section.about {
 		}
 	}
 }
+.about-intro, .about-tech {
+  @include media($desktop) {
+    @include span-columns(6);
+    @include omega();
+  }
+}
+.about-intro {
+	@include media($desktop) {
+		border-right:1px solid $border-grey;
+		padding-right:4rem;
+	}
+}
 .about-tech {
+	@include media($desktop) {
+		padding-left:4rem;
+	}
 	ul {
 		li {
 			display:inline-block;

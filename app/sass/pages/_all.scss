@@ -30,11 +30,6 @@ body {
 .row {
   @include row();
 }
-.about-intro, .about-tech, .contact-links, .contact-mail {
-  @include media($desktop) {
-    @include span-columns(6);
-  }
-}
 
 ::selection {
   background-color:$pink-300;
@@ -59,8 +54,8 @@ section {
 .view-container {
   margin-top:9rem;
   position:relative;
-  border-radius:9px;
   width:100%;
+  border-radius:9px;
   @include box-shadow-z3;
   left:50%;
   @include transform(translateX(-50%));
@@ -98,6 +93,9 @@ section {
       width:100%;
       logo, nav {
         top:-100%;
+      }
+      footer {
+        display:none;
       }
       .view-container {
         width:95%;

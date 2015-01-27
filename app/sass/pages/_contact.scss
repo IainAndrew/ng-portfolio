@@ -6,6 +6,10 @@
 section.contact {
 	padding:2rem;
 	height:auto;
+	@include outer-container(1000px);
+	@include media($desktop) {
+		padding:4rem;
+	}
 	h2 {
 		@include subhead-text;
 		font-weight:500;
@@ -35,8 +39,15 @@ section.contact {
 			@include text-link;
 			line-height:35px;
 		}
+		@include media($desktop) {
+			padding-right:4rem;
+		}
 	}
 	.contact-links {
+		@include media($desktop) {
+			padding-left:4rem;
+			border-left:1px solid $border-grey;
+		}
 		ul {
 			li {
 				line-height:35px;
@@ -45,5 +56,11 @@ section.contact {
 				}
 			}
 		}
+	}
+	.contact-links, .contact-mail {
+		@include media($desktop) {
+		    @include span-columns(6);
+		    @include omega();
+		  }
 	}
 }
