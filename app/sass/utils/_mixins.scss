@@ -57,6 +57,7 @@
 @mixin rule-small {
 	@include rule-full;
 	width:20%;
+	min-width:150px;
 }
 @mixin card {
 	background:#fff;

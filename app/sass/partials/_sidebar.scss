@@ -167,6 +167,7 @@ sidebar {
 		margin-top:1rem;
 		padding:1rem;
 		display:none;
+		text-align:center;
 		@include media($desktop) {
 			display:block;
 		}
