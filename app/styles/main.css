@@ -1022,14 +1022,14 @@ logo {
     logo {
       width: 150vw;
       height: 150vw; } }
-  logo.logo-animate svg path {
-    -webkit-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
-    -moz-animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s;
-    animation: draw 2s linear forwards 0.5s, hide 0.1s ease forwards 1.9s; }
-  logo.logo-animate img {
-    -webkit-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
-    -moz-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s;
-    animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44) forwards 1.9s; }
+  logo.line-animate svg path {
+    -webkit-animation: draw 2s linear forwards 1s;
+    -moz-animation: draw 2s linear forwards 1s;
+    animation: draw 2s linear forwards 1s; }
+  logo.logo-wobble img {
+    -webkit-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+    -moz-animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44);
+    animation: wobble 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
   logo.logo-scale {
     width: 5rem;
     height: 5rem; }
@@ -1048,6 +1048,22 @@ logo {
     -o-transform: scale(0.7);
     transform: scale(0.7);
     left: 0; }
+  logo img {
+    opacity: 0;
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.5s ease;
+    -moz-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.5s ease;
+    transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.5s ease; }
   logo svg {
     width: 100%;
     max-width: 10rem;
@@ -1065,24 +1081,8 @@ logo {
       fill-opacity: 0;
       stroke: #000;
       stroke-width: 2;
-      stroke-dasharray: 870;
-      stroke-dashoffset: 870; }
-  logo img {
-    opacity: 0;
-    width: 100%;
-    max-width: 10rem;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.5s ease;
-    -moz-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.5s ease;
-    transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44), opacity 0.5s ease; }
+      stroke-dasharray: 796;
+      stroke-dashoffset: 796; }
 
 @-webkit-keyframes draw {
   to {
@@ -1104,8 +1104,7 @@ logo {
     opacity: 0; } }
 @-webkit-keyframes wobble {
   from, to {
-    -webkit-transform: translate(-50%, -50%) scale(1, 1);
-    opacity: 1; }
+    -webkit-transform: translate(-50%, -50%) scale(1, 1); }
   25% {
     -webkit-transform: translate(-50%, -50%) scale(0.9, 1.1); }
   50% {
@@ -1114,8 +1113,7 @@ logo {
     -webkit-transform: translate(-50%, -50%) scale(0.95, 1.05); } }
 @-moz-keyframes wobble {
   from, to {
-    -moz-transform: translate(-50%, -50%) scale(1, 1);
-    opacity: 1; }
+    -moz-transform: translate(-50%, -50%) scale(1, 1); }
   25% {
     -moz-transform: translate(-50%, -50%) scale(0.9, 1.1); }
   50% {
@@ -1128,8 +1126,7 @@ logo {
     -moz-transform: translate(-50%, -50%) scale(1, 1);
     -ms-transform: translate(-50%, -50%) scale(1, 1);
     -o-transform: translate(-50%, -50%) scale(1, 1);
-    transform: translate(-50%, -50%) scale(1, 1);
-    opacity: 1; }
+    transform: translate(-50%, -50%) scale(1, 1); }
   25% {
     -webkit-transform: translate(-50%, -50%) scale(0.9, 1.1);
     -moz-transform: translate(-50%, -50%) scale(0.9, 1.1);

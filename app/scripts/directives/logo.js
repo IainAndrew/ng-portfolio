@@ -8,8 +8,19 @@ angular.module('app.directives.logo', [])
 			link: function(element) {
 				var $logo = $('logo');
 
-				$logo.addClass('logo-animate');
-				console.log('logo-animate');
+				$logo.addClass('line-animate');
+				console.log('line-animate');
+
+				setTimeout (function() {
+					console.log('line-hide');
+					$logo.find('svg').hide();
+				}, 2500);
+
+				setTimeout (function() {
+					console.log('logo-wobble');
+					$logo.find('img').css({'opacity': 1});
+					$logo.addClass('logo-wobble');
+				}, 2500);
 
 				setTimeout (function() {
 					console.log('logo-scale');
