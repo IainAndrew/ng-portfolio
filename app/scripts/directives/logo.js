@@ -8,31 +8,28 @@ angular.module('app.directives.logo', [])
 			link: function(element) {
 				var $logo = $('logo');
 
-				$logo.addClass('line-animate');
-				console.log('line-animate');
-
-				setTimeout (function() {
+				function lineDraw() {
+					$logo.addClass('line-animate');
+					console.log('line-animate');
+				}
+				function lineHide() {
 					console.log('line-hide');
 					$logo.find('svg').hide();
-				}, 2500);
-
-				setTimeout (function() {
+				}
+				function wobble() {
 					console.log('logo-wobble');
 					$logo.find('img').css({'opacity': 1});
 					$logo.addClass('logo-wobble');
-				}, 2500);
-
-				setTimeout (function() {
+				}
+				function scale() {
 					console.log('logo-scale');
 					$logo.addClass('logo-scale');
-				}, 3500);
-
-				setTimeout (function() {
+				}
+				function toTop() {
 					console.log('logo-to-top');
 					$logo.addClass('logo-to-top');
-				}, 4500);
-
-				setTimeout (function() {
+				}
+				function nav() {
 					var $nav = $('nav'),
 						touch = Modernizr.touch;
 
@@ -49,7 +46,7 @@ angular.module('app.directives.logo', [])
 						$nav.removeClass('nav-show');
 						$logo.addClass('logo-scroll');
 					}
-	
+					
 					if (!touch) { // if not a touch screen
 						$logo.mouseenter(function() {
 							navShow();
@@ -84,7 +81,13 @@ angular.module('app.directives.logo', [])
 							navHide();
 						}
 					});
-				}, 5000);
+				}
+				lineDraw();
+				setTimeout (function() { lineHide(); }, 2500);
+				setTimeout (function() { wobble(); }, 2500);
+				setTimeout (function() { scale(); }, 3500);
+				setTimeout (function() { toTop(); }, 4500);
+				setTimeout (function() { nav(); }, 5000);
 			}
 		};
 	});
