@@ -1815,8 +1815,11 @@ section.project-main .project-container {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (min-width: 768px) {
+    section.project-main .project-container {
+      padding: 4rem; } }
 section.project-main .row:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem; }
 section.project-main h1 {
   font-size: 40px;
   font-weight: 100;
@@ -1845,12 +1848,58 @@ section.project-main .project-overview-intro p {
   max-width: 500px; }
 section.project-main .project-overview-intro .project-intro p:not(:last-child) {
   margin-bottom: 1em; }
-section.project-main .project-overview-intro .project-intro a {
-  color: #e91e63;
-  text-transform: uppercase; }
-  section.project-main .project-overview-intro .project-intro a:first-of-type {
+section.project-main .project-overview-intro .project-overview-links a {
+  background: #3f51b5;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .no-touch section.project-main .project-overview-intro .project-overview-links a:hover {
+    padding-right: 2rem; }
+    .no-touch section.project-main .project-overview-intro .project-overview-links a:hover i {
+      right: -1rem;
+      background: #5365c9;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      -webkit-transform: scale(1.2) translateY(-50%);
+      -moz-transform: scale(1.2) translateY(-50%);
+      -ms-transform: scale(1.2) translateY(-50%);
+      -o-transform: scale(1.2) translateY(-50%);
+      transform: scale(1.2) translateY(-50%); }
+  section.project-main .project-overview-intro .project-overview-links a i {
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    section.project-main .project-overview-intro .project-overview-links a i:before {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  section.project-main .project-overview-intro .project-overview-links a:first-of-type {
     margin-right: 2rem; }
-  .no-touch section.project-main .project-overview-intro .project-intro a:hover {
+  .no-touch section.project-main .project-overview-intro .project-overview-links a:hover {
     color: #f06292; }
 section.project-main .project-overview-image {
   margin-bottom: 2rem;
@@ -1918,7 +1967,8 @@ section.project-main {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin: 2rem auto;
     width: 20%;
-    min-width: 150px; }
+    min-width: 150px;
+    margin: 4rem auto; }
   section.project-main figure {
     width: 100%; }
     section.project-main figure.no-shadow img {
@@ -1939,11 +1989,12 @@ section.project-main {
       transform: translateX(-50%); }
     section.project-main figure figcaption {
       font-style: italic;
-      color: #9e9e9e; }
+      color: #9e9e9e;
+      text-align: center; }
   section.project-main .project-section h1 {
     text-align: center; }
   section.project-main .project-section .row:not(:first-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 4rem; }
   @media screen and (min-width: 768px) {
     section.project-main .project-section .row {
       float: left;

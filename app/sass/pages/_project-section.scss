@@ -28,6 +28,7 @@ section.project-main {
   }
   hr {
     @include rule-small;
+    margin:4rem auto;
   }
   figure {
     width:100%;
@@ -53,6 +54,7 @@ section.project-main {
     figcaption {
       font-style:italic;
       color:$grey-500;
+      text-align:center;
     }
   }
   .project-section {
@@ -61,7 +63,7 @@ section.project-main {
     }
     .row {
       &:not(:first-child) {
-        margin-bottom:3rem;
+        margin-bottom:4rem;
       }
       @include media($desktop) {
         @include span-columns(9);

@@ -8,10 +8,13 @@ section.project-main {
 	.project-container {
 	  padding:2rem;
 	  @include outer-container(1200px);
+	  @include media($desktop) {
+	  	padding:4rem;
+	  }
 	}
 	.row {
 	  &:not(:last-child) {
-	    margin-bottom:2rem;
+	    margin-bottom:4rem;
 	  }
 	}
 	h1 {
@@ -46,9 +49,12 @@ section.project-main {
 	        margin-bottom:1em;
 	      }
 	    }
-	    a {
-	      color:$pink-500;
-	      text-transform:uppercase;
+	  }
+	  .project-overview-links {
+	  	a {
+	      //color:$pink-500;
+	      //text-transform:uppercase;
+	      @include btn($indigo-500);
 	      &:first-of-type {
 	        margin-right:2rem;
 	      }
