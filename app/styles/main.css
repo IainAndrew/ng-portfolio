@@ -1346,24 +1346,25 @@ section.about {
       section.about .about-links a:first-child {
         margin-right: 2rem; }
 
-@media screen and (min-width: 768px) {
-  .about-intro, .about-tech {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-right: 0; }
-    .about-intro:last-child, .about-tech:last-child {
-      margin-right: 0; } }
+.about-intro, .about-tech {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 1rem; }
+  @media screen and (min-width: 768px) {
+    .about-intro, .about-tech {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      .about-intro:last-child, .about-tech:last-child {
+        margin-right: 0; } }
 
 @media screen and (min-width: 768px) {
   .about-intro {
-    border-right: 1px solid #e0e0e0;
-    padding-right: 4rem; } }
+    border-right: 1px solid #e0e0e0; } }
 
-@media screen and (min-width: 768px) {
-  .about-tech {
-    padding-left: 4rem; } }
 .about-tech ul li {
   display: inline-block;
   margin: 0.3em;
@@ -1584,6 +1585,9 @@ li.project {
   background: #fff;
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /*@include media($widescreen) {
+  	@include span-columns(6);
+  }*/
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   transition: all 0.1s ease; }

@@ -68,16 +68,18 @@ section.about {
     @include span-columns(6);
     @include omega();
   }
+  @include card;
+  padding:1rem;
 }
 .about-intro {
 	@include media($desktop) {
 		border-right:1px solid $border-grey;
-		padding-right:4rem;
+		//padding-right:4rem;
 	}
 }
 .about-tech {
 	@include media($desktop) {
-		padding-left:4rem;
+		//padding-left:4rem;
 	}
 	ul {
 		li {
