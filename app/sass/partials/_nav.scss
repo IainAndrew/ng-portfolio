@@ -51,23 +51,50 @@ nav {
       right:8rem;
       //@include transition(all 0.6s $cubic);
       //@include animation(nav-show 0.8s $cubic forwards 4s);
+      .no-touch & {
+        &:hover {
+          i {
+            @include transform(scale(1.1));
+          }
+          span {
+            opacity:1;
+          }
+        }
+      }
       &:first-child {
-        @include transition(all 0.3s $cubic);
+        @include transition(all 0.3s $cubic, margin 0.2s ease);
         i {
           background:$indigo-500;
-          
+        }
+        .no-touch & {
+          &:hover {
+            margin-top:-0.1rem;
+            margin-right:-0.3rem;
+          }
         }
       }
       &:nth-child(2) {
-        @include transition(all 0.4s $cubic);
+        @include transition(all 0.4s $cubic, margin 0.2s ease);
         i {
           background:$pink-500;
         }
+        .no-touch & {
+          &:hover {
+            margin-top:0.1rem;
+            margin-right:-0.3rem;
+          }
+        }
       }
       &:nth-child(3) {
-        @include transition(all 0.5s $cubic);
+        @include transition(all 0.5s $cubic, margin 0.2s ease);
         i {
           background:$amber-500;
+        }
+        .no-touch & {
+          &:hover {
+            margin-top:0.2rem;
+            margin-right:-0.3rem;
+          }
         }
       }
       a {
@@ -79,16 +106,6 @@ nav {
           border-radius:50%;
           @include box-shadow-z1;
           @include transition(all 0.2s ease);
-        }
-        .no-touch & {
-          &:hover {
-            i {
-              @include transform(scale(1.1));
-            }
-            &+ span {
-              opacity:1;
-            }
-          }
         }
         &.active {
           i {
