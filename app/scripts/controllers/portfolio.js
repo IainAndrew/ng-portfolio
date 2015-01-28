@@ -25,7 +25,7 @@ angular.module('app')
         'desc':'A jQuery plugin for quick implementation of a revealing footer effect.',
         'url':'footerreveal',
         'liveUrl':'//iainandrew.github.io/footer-reveal',
-        'image':'../../images/footer-reveal/thumb.gif'
+        'image':'../../images/footer-reveal/thumb.png'
       },
       {
       	'name':'Trunkys', 

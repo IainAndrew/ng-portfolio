@@ -120,7 +120,6 @@ nav {
         left: 100%;
         margin-left:1rem;
         @include nav-text;
-        font-size:0.8em;
         opacity:0;
         @include transition(all 0.2s ease);
         cursor:default;
