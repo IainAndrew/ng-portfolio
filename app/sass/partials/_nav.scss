@@ -53,35 +53,60 @@ nav {
       //@include animation(nav-show 0.8s $cubic forwards 4s);
       &:first-child {
         @include transition(all 0.3s $cubic);
-        a {
+        i {
           background:$indigo-500;
           
         }
       }
       &:nth-child(2) {
         @include transition(all 0.4s $cubic);
-        a {
+        i {
           background:$pink-500;
         }
       }
       &:nth-child(3) {
         @include transition(all 0.5s $cubic);
-        a {
+        i {
           background:$amber-500;
         }
       }
       a {
         display:inline-block;
-        padding:0.4rem;
-        border:2px solid;
-        border-radius:50%;
-        @include box-shadow-z1;
-        @include transition(all 0.2s ease);
+        i {
+          display:inline-block;
+          padding:0.4rem;
+          border:2px solid;
+          border-radius:50%;
+          @include box-shadow-z1;
+          @include transition(all 0.2s ease);
+        }
         .no-touch & {
           &:hover {
+            i {
+              @include transform(scale(1.1));
+            }
+            &+ span {
+              opacity:1;
+            }
+          }
+        }
+        &.active {
+          i {
             @include transform(scale(1.1));
           }
         }
+      }
+      span {
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-40%));
+        left: 100%;
+        margin-left:1rem;
+        @include nav-text;
+        font-size:0.8em;
+        opacity:0;
+        @include transition(all 0.2s ease);
+        cursor:default;
       }
     }
   }
@@ -90,6 +115,9 @@ nav {
   to {
     opacity:1;
   }
+}
+@include keyframes (nav-active) {
+  //something cool here
 }
 /* ROUNDED
 nav {

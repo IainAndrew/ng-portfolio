@@ -41,6 +41,7 @@ body {
 }
 
 .container {
+  //position:relative;
   width:95%;
   @include outer-container(1600px);
   padding:2rem 0;
