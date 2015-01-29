@@ -2014,7 +2014,7 @@ section {
   border-bottom-right-radius: 7px; }
 
 .view-container {
-  margin-top: 9rem;
+  margin-top: 1rem;
   position: relative;
   width: 100%;
   border-radius: 9px;
@@ -2025,9 +2025,11 @@ section {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44);
-  transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44); }
+  -webkit-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44), margin 0.5s cubic-bezier(1, 0, 0.19, 1.44);
+  -moz-transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44), margin 0.5s cubic-bezier(1, 0, 0.19, 1.44);
+  transition: width 0.3s cubic-bezier(1, 0, 0.19, 1.44), height 0.3s cubic-bezier(1, 0, 0.19, 1.44), margin 0.5s cubic-bezier(1, 0, 0.19, 1.44); }
+  .view-container.on-load {
+    margin-top: 9rem; }
 
 .container.plugmedia, .container.plugmedia-overview, .container.plugmedia-web-design, .container.plugmedia-web-development, .container.plugmedia-logo-design, .container.peter-ashmore, .container.peter-ashmore-overview, .container.peter-ashmore-web-design, .container.peter-ashmore-web-development, .container.peter-ashmore-graphic-design, .container.peter-ashmore-logo-design, .container.trunkys, .container.trunkys-overview, .container.trunkys-graphic-design, .container.trunkys-ui-design, .container.footerreveal, .container.footerreveal-overview, .container.footerreveal-web-development, .container.simplespin, .container.simplespin-overview, .container.simplespin-web-development {
   padding: 0;

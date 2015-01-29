@@ -37,6 +37,7 @@ angular.module('app.directives.logo', [])
 					console.log('nav-show');
 
 					$logo.addClass('hoverable');
+					$('.view-container').addClass('on-load');
 
 					function navShow() {
 						$nav.addClass('nav-show');
@@ -83,8 +84,8 @@ angular.module('app.directives.logo', [])
 					});
 				}
 				lineDraw();
-				setTimeout (function() { lineHide(); }, 2500);
-				setTimeout (function() { wobble(); }, 2500);
+				setTimeout (function() { lineHide(); }, 2900);
+				setTimeout (function() { wobble(); }, 2900);
 				setTimeout (function() { scale(); }, 3500);
 				setTimeout (function() { toTop(); }, 4500);
 				setTimeout (function() { nav(); }, 5000);
