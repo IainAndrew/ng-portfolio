@@ -172,7 +172,8 @@ sidebar {
 			display:block;
 		}
 		a {
-			@include btn($pink-500);
+			@include btn(#fff);
+			color:#444;
 		}
 	}
 }

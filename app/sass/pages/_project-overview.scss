@@ -58,11 +58,6 @@ section.project-main {
 	      &:first-of-type {
 	        margin-right:2rem;
 	      }
-	      .no-touch & {
-	        &:hover {
-	          color:$pink-300;
-	        }
-	      }
 	    }
 	  }
 	}

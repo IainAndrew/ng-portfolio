@@ -67,7 +67,7 @@ section.about {
 .about-intro, .about-tech {
   @include media($desktop) {
     @include span-columns(6);
-    @include omega();
+    //@include omega();
   }
   @include card;
   padding:1rem;
