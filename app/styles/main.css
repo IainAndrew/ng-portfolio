@@ -719,7 +719,20 @@ sidebar {
   font-weight: 400;
   -webkit-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
   -moz-transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
-  transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s; }
+  transition: all 0.5s cubic-bezier(1, 0, 0.19, 1.44) 0.5s;
+  /*.sidebar-contact {
+  	margin-top:1rem;
+  	padding:1rem;
+  	display:none;
+  	text-align:center;
+  	@include media($desktop) {
+  		display:block;
+  	}
+  	a {
+  		color:#fff;
+  		text-transform:uppercase;
+  	}
+  }*/ }
   @media screen and (min-width: 768px) {
     sidebar {
       position: fixed;
@@ -878,24 +891,6 @@ sidebar {
             sidebar .sidebar-menu ul li a.sidebar-active:after {
               height: 100%;
               top: 0; }
-  sidebar .sidebar-contact {
-    margin-top: 1rem;
-    padding: 1rem;
-    display: none;
-    text-align: center; }
-    @media screen and (min-width: 768px) {
-      sidebar .sidebar-contact {
-        display: block; } }
-    sidebar .sidebar-contact a {
-      background: #fff;
-      padding: 0.5rem 1rem;
-      color: #fff;
-      border-radius: 2px;
-      display: inline-block;
-      text-transform: uppercase;
-      position: relative;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      color: #444; }
 
 .header-block {
   display: block;
@@ -1321,10 +1316,6 @@ section.about {
       width: 48.82117%; }
       .about-intro:last-child, .about-tech:last-child {
         margin-right: 0; } }
-
-@media screen and (min-width: 768px) {
-  .about-intro {
-    border-right: 1px solid #e0e0e0; } }
 
 .about-tech ul li {
   display: inline-block;

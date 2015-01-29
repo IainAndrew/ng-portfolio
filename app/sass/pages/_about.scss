@@ -74,7 +74,7 @@ section.about {
 }
 .about-intro {
 	@include media($desktop) {
-		border-right:1px solid $border-grey;
+		//border-right:1px solid $border-grey;
 		//padding-right:4rem;
 	}
 }

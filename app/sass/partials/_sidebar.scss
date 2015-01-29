@@ -163,7 +163,7 @@ sidebar {
 			}
 		}
 	}
-	.sidebar-contact {
+	/*.sidebar-contact {
 		margin-top:1rem;
 		padding:1rem;
 		display:none;
@@ -172,8 +172,8 @@ sidebar {
 			display:block;
 		}
 		a {
-			@include btn(#fff);
-			color:#444;
+			color:#fff;
+			text-transform:uppercase;
 		}
-	}
+	}*/
 }
