@@ -96,8 +96,11 @@ section {
       padding:0;
       max-width:1000rem;
       width:100%;
-      logo, nav {
+      logo.logo-to-top {
         top:-100%;
+        &+ nav {
+          top:-100%;
+        }
       }
       footer {
         display:none;
@@ -113,7 +116,7 @@ section {
         margin-top:0;
         @include media($desktop) {
           position:absolute;
-          width:98%;
+          width:99%;
           height:98vh;
           top:50%;
           @include transform(translate(-50%, -50%));

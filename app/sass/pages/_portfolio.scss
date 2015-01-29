@@ -87,17 +87,26 @@ li.project {
 			&[ng-href=""] {
 				display:none;
 			}
+			i {
+				@include transition(all 0.1s ease);
+			}
 			&:first-child {
-				color:$pink-500;
+				color:$indigo-500;
 				margin-right:2rem;
+			}
+			&:nth-child(2) {
+				color:$pink-500;
 			}
 			.no-touch & {
 				&:hover {
 					&:first-child {
-						color:$pink-300;
+						color:$indigo-300;
 					}
 					&:nth-child(2) {
-						color:$grey-500;
+						color:$pink-300;
+						i {
+							margin-left:0.2rem;
+						}
 					}
 				}
 			}

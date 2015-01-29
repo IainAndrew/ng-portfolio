@@ -105,6 +105,7 @@ nav {
       a {
         display:inline-block;
         i {
+          position:relative;
           display:inline-block;
           padding:0.4rem;
           border:2px solid;
@@ -114,7 +115,7 @@ nav {
         }
         &.active {
           i {
-            @include transform(scale(1.1));
+            
           }
         }
       }
