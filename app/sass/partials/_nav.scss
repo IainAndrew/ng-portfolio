@@ -40,6 +40,11 @@ nav {
       }
     }
   }
+  &.dark-labels {
+    ul li span {
+      color:#444;
+    }
+  }
   ul {
     li {
       color:#fff;

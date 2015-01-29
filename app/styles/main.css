@@ -380,6 +380,8 @@ nav {
   nav.nav-show ul li:nth-child(3) {
     top: 6rem;
     right: 4.3rem; }
+  nav.dark-labels ul li span {
+    color: #444; }
   nav ul li {
     color: #fff;
     font-size: 1.4em;

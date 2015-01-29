@@ -56,7 +56,7 @@ angular.module('app.directives.logo', [])
 							navShow();
 						});
 						$nav.mouseleave(function() {
-							if ( $(window).scrollTop() <= 50 ) {
+							if ( $(window).scrollTop() <= 30 ) {
 								navShow();
 							} else {
 								navHide();
@@ -69,17 +69,19 @@ angular.module('app.directives.logo', [])
 							event.stopPropagation();
 						});
 						$('body').click(function() {
-							if ( $(window).scrollTop() > 50 ) {
+							if ( $(window).scrollTop() > 30 ) {
 								navHide();
 							}
 						});
 					}
 
 					$(window).on('scroll load', function() {
-						if ( $(window).scrollTop() <= 50 ) {
+						if ( $(window).scrollTop() <= 30 ) {
 							navShow();
+							$nav.removeClass('dark-labels');
 						} else {
 							navHide();
+							$nav.addClass('dark-labels');
 						}
 					});
 				}
