@@ -21,6 +21,13 @@ li.project {
 	@include media($desktop) {
 		height:13rem;
 	}
+	@include media($widescreen) {
+		@include span-columns(6);
+		@include omega;
+		&:first-child, &:nth-child(3) {
+			margin-right:1rem;
+		}
+	}
 	.no-touch & {
 		&:hover {
 			//@include box-shadow-z2;

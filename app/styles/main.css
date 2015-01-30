@@ -1222,13 +1222,6 @@ logo {
   background: #f5f5f5; }
 
 section.about {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
   padding: 2rem;
   height: auto;
   max-width: 1000px;
@@ -1240,7 +1233,14 @@ section.about {
     clear: both; }
   @media screen and (min-width: 768px) {
     section.about {
-      padding: 4rem; } }
+      padding: 4rem;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex; } }
   section.about p:not(:last-child) {
     margin-bottom: 1em; }
   section.about h2 {
@@ -1572,6 +1572,17 @@ li.project {
   @media screen and (min-width: 768px) {
     li.project {
       height: 13rem; } }
+  @media screen and (min-width: 1281px) {
+    li.project {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      li.project:last-child {
+        margin-right: 0; }
+      li.project:first-child, li.project:nth-child(3) {
+        margin-right: 1rem; } }
   li.project a.portfolio-image {
     display: block;
     position: relative;

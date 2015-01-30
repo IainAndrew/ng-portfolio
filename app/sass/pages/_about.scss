@@ -4,13 +4,13 @@
 	}
 }
 section.about {
-	@include display(flex);
 	padding:2rem;
 	//@include calc(height, '100% - 6rem');
 	height:auto;
 	@include outer-container(1000px);
 	@include media($desktop) {
 		padding:4rem;
+		@include display(flex);
 	}
 	p {
       &:not(:last-child) {
