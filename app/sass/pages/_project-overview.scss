@@ -7,6 +7,7 @@
 section.project-main {
 	.project-container {
 	  padding:2rem;
+	  @include calc(min-height, "100% - 7rem");
 	  @include outer-container(1200px);
 	  @include media($desktop) {
 	  	padding:4rem;
@@ -14,7 +15,7 @@ section.project-main {
 	}
 	.row {
 	  &:not(:last-child) {
-	    margin-bottom:4rem;
+	    margin-bottom:2rem;
 	  }
 	}
 	h1 {

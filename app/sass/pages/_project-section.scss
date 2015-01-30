@@ -28,7 +28,10 @@ section.project-main {
   }
   hr {
     @include rule-small;
-    margin:4rem auto;
+    margin:2rem auto;
+    @include media($desktop) {
+      margin:2rem auto 4rem auto;
+    }
   }
   figure {
     width:100%;
@@ -62,10 +65,16 @@ section.project-main {
       text-align:center;
     }
     .row {
-      &:not(:first-child) {
-        margin-bottom:4rem;
+      &:not(:last-child) {
+        margin-bottom:2rem;
       }
       @include media($desktop) {
+        &:not(:last-child) {
+          margin-bottom:4rem;
+        }
+        &:first-child {
+          margin-bottom:2rem;
+        }
         @include span-columns(9);
         @include shift(1.5);
         p {
