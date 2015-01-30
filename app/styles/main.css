@@ -696,6 +696,17 @@ footer {
   footer section {
     padding: 2rem;
     border-radius: 9px; }
+    footer section a {
+      display: inline-block;
+      color: #e91e63;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .no-touch footer section a:hover {
+        color: #f06292; }
+      footer section a i {
+        color: #444;
+        font-size: 1.3em; }
 
 /*@include keyframes(project-sidebar-load) {
 	from {
@@ -1568,10 +1579,13 @@ li.project {
   li.project:not(:last-child) {
     margin-bottom: 1rem; }
   li.project:nth-child(2) a.portfolio-image, li.project:last-child a.portfolio-image {
-    border-right: 1px solid #e0e0e0; }
+    border-bottom: 1px solid #e0e0e0; }
   @media screen and (min-width: 768px) {
     li.project {
-      height: 13rem; } }
+      height: 13rem; }
+      li.project:nth-child(2) a.portfolio-image, li.project:last-child a.portfolio-image {
+        border-bottom: 0;
+        border-right: 1px solid #e0e0e0; } }
   @media screen and (min-width: 1281px) {
     li.project {
       float: left;
@@ -1765,6 +1779,9 @@ section.project-main .project-container {
       padding: 4rem; } }
 section.project-main .row:not(:last-child) {
   margin-bottom: 2rem; }
+  @media screen and (min-width: 768px) {
+    section.project-main .row:not(:last-child) {
+      margin-bottom: 4rem; } }
 section.project-main h1 {
   font-size: 40px;
   font-weight: 100;

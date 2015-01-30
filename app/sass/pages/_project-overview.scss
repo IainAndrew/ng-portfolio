@@ -16,6 +16,9 @@ section.project-main {
 	.row {
 	  &:not(:last-child) {
 	    margin-bottom:2rem;
+	    @include media($desktop) {
+	    	margin-bottom:4rem;
+	    }
 	  }
 	}
 	h1 {
