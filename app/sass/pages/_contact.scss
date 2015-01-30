@@ -6,10 +6,14 @@
 section.contact {
 	padding:2rem;
 	height:auto;
-	@include outer-container(1000px);
+	@include outer-container(700px);
 	@include media($desktop) {
 		padding:4rem;
 	}
+}
+.contact-container {
+	@include card;
+	@include row();
 	h2 {
 		@include subhead-text;
 		font-weight:500;
@@ -29,38 +33,43 @@ section.contact {
 		color:$base-text-color;
 		margin-right:0.5em;
 	}
-	.contact-intro {
-		a {
-			@include text-link;
-		}
+}
+.contact-intro {
+	padding:2rem;
+	border-bottom:1px solid $border-grey;
+	a {
+		@include text-link;
 	}
-	.contact-mail {
-		a {
-			@include text-link;
+}
+.contact-mail {
+	padding:1rem;
+	a {
+		@include text-link;
+		line-height:35px;
+	}
+	@include media($desktop) {
+		padding-right:4rem;
+	}
+}
+.contact-links {
+	padding:1rem;
+	border-top:1px solid $border-grey;
+	@include media($desktop) {
+		border-top:0;
+		border-left:1px solid $border-grey;
+	}
+	ul {
+		li {
 			line-height:35px;
-		}
-		@include media($desktop) {
-			padding-right:4rem;
-		}
-	}
-	.contact-links {
-		@include media($desktop) {
-			padding-left:4rem;
-			border-left:1px solid $border-grey;
-		}
-		ul {
-			li {
-				line-height:35px;
-				a {
-					@include text-link;
-				}
+			a {
+				@include text-link;
 			}
 		}
 	}
-	.contact-links, .contact-mail {
-		@include media($desktop) {
-		    @include span-columns(6);
-		    @include omega();
-		  }
-	}
+}
+.contact-links, .contact-mail {
+	@include media($desktop) {
+	    @include span-columns(6);
+	    @include omega();
+	  }
 }
