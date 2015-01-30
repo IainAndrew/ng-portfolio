@@ -1222,6 +1222,13 @@ logo {
   background: #f5f5f5; }
 
 section.about {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding: 2rem;
   height: auto;
   max-width: 1000px;
@@ -1286,40 +1293,57 @@ section.about {
     @media screen and (min-width: 768px) {
       section.about hr {
         display: none; } }
-  section.about .about-links {
-    padding-top: 1rem;
-    border-top: 1px solid #e0e0e0; }
-    section.about .about-links a {
-      display: inline-block;
-      color: #e91e63;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-      text-transform: uppercase; }
-      .no-touch section.about .about-links a:hover {
-        color: #f06292; }
-      section.about .about-links a:first-child {
-        margin-right: 2rem; }
 
 .about-intro, .about-tech {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background: #fff;
   border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  padding: 1rem; }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   @media screen and (min-width: 768px) {
     .about-intro, .about-tech {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .about-intro:last-child, .about-tech:last-child {
-        margin-right: 0; } }
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      box-flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; } }
 
-.about-tech ul li {
-  display: inline-block;
-  margin: 0.3em;
-  margin-left: 0.2em;
-  padding: 0.2em 0.7em; }
+@media screen and (min-width: 768px) {
+  .about-intro {
+    margin-right: 1rem; } }
+
+.about-intro-main {
+  padding: 1rem; }
+
+.about-links {
+  padding: 1rem;
+  border-top: 1px solid #e0e0e0; }
+  .about-links a {
+    display: inline-block;
+    color: #e91e63;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase; }
+    .no-touch .about-links a:hover {
+      color: #f06292; }
+    .about-links a:first-child {
+      margin-right: 2rem; }
+
+.about-tech {
+  padding: 1rem; }
+  .about-tech ul li {
+    display: inline-block;
+    margin: 0.3em;
+    margin-left: 0.2em;
+    padding: 0.2em 0.7em; }
 
 .container.about-more .view-container {
   background: #fff;

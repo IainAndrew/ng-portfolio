@@ -4,6 +4,7 @@
 	}
 }
 section.about {
+	@include display(flex);
 	padding:2rem;
 	//@include calc(height, '100% - 6rem');
 	height:auto;
@@ -52,33 +53,38 @@ section.about {
 			display:none;
 		}
 	}
-	.about-links {
-		padding-top:1rem;
-		border-top:1px solid $border-grey;
-		a {
-			@include text-link;
-			text-transform:uppercase;
-			&:first-child {
-				margin-right:2rem;
-			}
-		}
-	}
 }
 .about-intro, .about-tech {
+	@include flex(1);
+	@include card;
   @include media($desktop) {
-    @include span-columns(6);
-    //@include omega();
+    //@include span-columns(6);
+    @include flex(1);
   }
-  @include card;
-  padding:1rem;
 }
 .about-intro {
 	@include media($desktop) {
+		margin-right:1rem;
 		//border-right:1px solid $border-grey;
 		//padding-right:4rem;
 	}
 }
+.about-intro-main {
+	padding:1rem;
+}
+.about-links {
+	padding:1rem;
+	border-top:1px solid $border-grey;
+	a {
+		@include text-link;
+		text-transform:uppercase;
+		&:first-child {
+			margin-right:2rem;
+		}
+	}
+}
 .about-tech {
+	padding:1rem;
 	@include media($desktop) {
 		//padding-left:4rem;
 	}
