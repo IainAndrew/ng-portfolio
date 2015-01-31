@@ -100,6 +100,10 @@ sidebar {
 	}
 	.sidebar-menu {
 		background:#fff;
+		border-bottom:1px solid $border-grey;
+		@include media($desktop) {
+			border-bottom:0;
+		}
 		a.menu-toggle {
 			display:block;
 			padding:0.2rem;
@@ -120,7 +124,7 @@ sidebar {
 		}
 		ul {
 			max-height:0;
-			border-bottom:1px solid $grey-500;
+			//border-bottom:1px solid $grey-500;
 			margin-bottom:-1px;
 			@include transition(all 0.3s ease);
 			@include box-shadow-z3;
