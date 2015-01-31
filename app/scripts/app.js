@@ -184,7 +184,15 @@ angular
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
     $rootScope.$on('$stateChangeSuccess', function() {
-      document.body.scrollTop = document.documentElement.scrollTop = 0;
+      function scrollToTop() {
+        if(window.scrollY!=0) {
+          setTimeout(function() {
+             window.scrollTo(0,window.scrollY-200);
+              scrollToTop();
+          }, 100);
+        }
+      }
+      scrollToTop();
     });
   }])
 
