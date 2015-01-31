@@ -107,6 +107,18 @@ nav {
       }
       a {
         display:inline-block;
+        &:before {
+          content:"";
+          width:2rem;
+          height:2rem;
+          position:absolute;
+          z-index:-1;
+          left:50%;
+          top:50%;
+          @include transform(translate(-50%, -50%));
+          border-radius:50%;
+          background:rgba(#fff, 0.2);
+        }
         i {
           position:relative;
           display:inline-block;
@@ -117,8 +129,8 @@ nav {
           @include transition(all 0.2s ease);
         }
         &.active {
-          i {
-            
+          &:before {
+            @include animation(nav-pulse 1s ease forwards);
           }
         }
       }
@@ -142,8 +154,21 @@ nav {
     opacity:1;
   }
 }
-@include keyframes (nav-active) {
-  //something cool here
+@include keyframes (nav-pulse) {
+  from {
+    opacity:1;
+  }
+  50% {
+    width:40rem;
+    height:40rem;
+    opacity:0;
+  }
+  100% {
+    width:2rem;
+    height:2rem;
+    opacity:0;
+  }
+
 }
 /* ROUNDED
 nav {
