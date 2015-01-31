@@ -751,17 +751,26 @@ footer {
   footer section {
     padding: 2rem;
     border-radius: 9px; }
-    footer section a {
-      display: inline-block;
-      color: #e91e63;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-      .no-touch footer section a:hover {
-        color: #f06292; }
-      footer section a i {
-        color: #444;
-        font-size: 1.3em; }
+    footer section .about-this-site {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      float: right;
+      text-align: right; }
+      footer section .about-this-site:last-child {
+        margin-right: 0; }
+      footer section .about-this-site a {
+        display: inline-block;
+        color: #e91e63;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .no-touch footer section .about-this-site a:hover {
+          color: #f06292; }
+        footer section .about-this-site a i {
+          color: #444;
+          font-size: 1.3em; }
 
 /*@include keyframes(project-sidebar-load) {
 	from {

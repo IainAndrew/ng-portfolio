@@ -5,12 +5,17 @@ footer {
   section {
   	padding:2rem;
     border-radius:9px;
-    a {
-    	@include text-link;
-    	i {
-    		color:#444;
-    		font-size:1.3em;
-    	}
+    .about-this-site {
+      @include span-columns(6);
+      float:right;
+      text-align:right;
+      a {
+        @include text-link;
+        i {
+          color:#444;
+          font-size:1.3em;
+        }
+      }
     }
   }
 }
