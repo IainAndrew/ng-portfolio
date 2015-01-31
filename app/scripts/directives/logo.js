@@ -86,6 +86,7 @@ angular.module('app.directives.logo', [])
 					$(window).on('scroll load', function() {
 						if ( $(window).scrollTop() <= 30 ) {
 							navShow();
+							$ovl.removeClass('show');
 							//$nav.removeClass('dark-labels');
 						} else {
 							navHide();

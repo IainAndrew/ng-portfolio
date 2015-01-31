@@ -471,9 +471,8 @@ nav {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         transition: all 0.2s ease; }
-        @media screen and (min-width: 768px) {
-          nav ul li a span {
-            opacity: 0; } }
+        .no-touch nav ul li a span {
+          opacity: 0; }
       nav ul li a.active:before {
         -webkit-animation: nav-pulse 1s ease forwards;
         -moz-animation: nav-pulse 1s ease forwards;

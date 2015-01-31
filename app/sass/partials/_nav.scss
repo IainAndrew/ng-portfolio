@@ -141,7 +141,7 @@ nav {
           display:none;
           @include transition(all 0.2s ease);
           //cursor:default;
-          @include media($desktop) {
+          .no-touch & {
             opacity:0;
           }
         }
