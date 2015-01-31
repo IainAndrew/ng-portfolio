@@ -130,23 +130,26 @@ nav {
           @include box-shadow-z1;
           @include transition(all 0.2s ease);
         }
+        span {
+          position: absolute;
+          top: 50%;
+          @include transform(translateY(-40%));
+          left: 100%;
+          margin-left:1rem;
+          @include nav-text;
+          opacity:1;
+          display:none;
+          @include transition(all 0.2s ease);
+          //cursor:default;
+          @include media($desktop) {
+            opacity:0;
+          }
+        }
         &.active {
           &:before {
             @include animation(nav-pulse 1s ease forwards);
           }
         }
-      }
-      span {
-        position: absolute;
-        top: 50%;
-        @include transform(translateY(-40%));
-        left: 100%;
-        margin-left:1rem;
-        @include nav-text;
-        opacity:0;
-        display:none;
-        @include transition(all 0.2s ease);
-        cursor:default;
       }
     }
   }

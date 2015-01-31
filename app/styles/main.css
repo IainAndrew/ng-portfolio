@@ -454,28 +454,30 @@ nav {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         transition: all 0.2s ease; }
+      nav ul li a span {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-40%);
+        -moz-transform: translateY(-40%);
+        -ms-transform: translateY(-40%);
+        -o-transform: translateY(-40%);
+        transform: translateY(-40%);
+        left: 100%;
+        margin-left: 1rem;
+        font-size: 14px;
+        font-weight: 500;
+        opacity: 1;
+        display: none;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        @media screen and (min-width: 768px) {
+          nav ul li a span {
+            opacity: 0; } }
       nav ul li a.active:before {
         -webkit-animation: nav-pulse 1s ease forwards;
         -moz-animation: nav-pulse 1s ease forwards;
         animation: nav-pulse 1s ease forwards; }
-    nav ul li span {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-40%);
-      -moz-transform: translateY(-40%);
-      -ms-transform: translateY(-40%);
-      -o-transform: translateY(-40%);
-      transform: translateY(-40%);
-      left: 100%;
-      margin-left: 1rem;
-      font-size: 14px;
-      font-weight: 500;
-      opacity: 0;
-      display: none;
-      -webkit-transition: all 0.2s ease;
-      -moz-transition: all 0.2s ease;
-      transition: all 0.2s ease;
-      cursor: default; }
 
 @-webkit-keyframes nav-show {
   to {
@@ -2240,6 +2242,9 @@ i {
 
 noscript {
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
   height: 100%;
   width: 100%;
   background: #fff; }
