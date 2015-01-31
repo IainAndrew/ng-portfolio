@@ -31,7 +31,8 @@ angular.module('app.directives.logo', [])
 				}
 				function nav() {
 					var $nav = $('nav'),
-						touch = Modernizr.touch;
+						touch = Modernizr.touch,
+						$ovl = $('.overlay');
 
 					$nav.css({'opacity': 1}).addClass('nav-show');
 					console.log('nav-show');
@@ -42,10 +43,14 @@ angular.module('app.directives.logo', [])
 					function navShow() {
 						$nav.addClass('nav-show');
 						$logo.removeClass('logo-scroll');
+						if ( $(window).scrollTop() > 30 ) {
+							$ovl.addClass('show');
+						}
 					}
 					function navHide() {
 						$nav.removeClass('nav-show');
 						$logo.addClass('logo-scroll');
+						$ovl.removeClass('show');
 					}
 					
 					if (!touch) { // if not a touch screen
@@ -66,6 +71,9 @@ angular.module('app.directives.logo', [])
 						$logo.click(function(event) {
 							$nav.toggleClass('nav-show');
 							$logo.toggleClass('logo-scroll');
+							if ( $(window).scrollTop() > 30 ) {
+								$ovl.toggleClass('show');
+							}
 							event.stopPropagation();
 						});
 						$('body').click(function() {
@@ -78,10 +86,10 @@ angular.module('app.directives.logo', [])
 					$(window).on('scroll load', function() {
 						if ( $(window).scrollTop() <= 30 ) {
 							navShow();
-							$nav.removeClass('dark-labels');
+							//$nav.removeClass('dark-labels');
 						} else {
 							navHide();
-							$nav.addClass('dark-labels');
+							//$nav.addClass('dark-labels');
 						}
 					});
 				}

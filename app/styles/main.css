@@ -2131,6 +2131,34 @@ body {
     body {
       background-image: url("../images/background-widescreen.jpg"); } }
 
+.overlay {
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #000;
+  opacity: 0.6;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .overlay.show {
+    width: 150vh;
+    height: 150vh;
+    left: 50%;
+    top: 50%; }
+    @media (orientation: landscape) {
+      .overlay.show {
+        width: 150vw;
+        height: 150vw; } }
+
 .row {
   display: block; }
   .row:after {
