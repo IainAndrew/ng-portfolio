@@ -380,6 +380,8 @@ nav {
   nav.nav-show ul li:nth-child(3) {
     top: 6rem;
     right: 4.3rem; }
+  nav.nav-show ul li span {
+    display: block; }
   nav.dark-labels ul li span {
     color: #444; }
   nav ul li {
@@ -449,6 +451,7 @@ nav {
       font-size: 14px;
       font-weight: 500;
       opacity: 0;
+      display: none;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       transition: all 0.2s ease;

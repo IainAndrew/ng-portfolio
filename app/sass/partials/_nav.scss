@@ -38,6 +38,9 @@ nav {
         top:6rem;
         right:4.3rem;
       }
+      span {
+        display:block;
+      }
     }
   }
   &.dark-labels {
@@ -127,6 +130,7 @@ nav {
         margin-left:1rem;
         @include nav-text;
         opacity:0;
+        display:none;
         @include transition(all 0.2s ease);
         cursor:default;
       }
