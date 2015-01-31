@@ -47,9 +47,6 @@ section.contact {
 		@include text-link;
 		line-height:35px;
 	}
-	@include media($desktop) {
-		padding-right:4rem;
-	}
 }
 .contact-links {
 	padding:1rem;
@@ -69,7 +66,7 @@ section.contact {
 }
 .contact-links, .contact-mail {
 	@include media($desktop) {
-	    @include span-columns(6);
-	    @include omega();
-	  }
+		@include span-columns(6);
+		@include omega();
+	}
 }

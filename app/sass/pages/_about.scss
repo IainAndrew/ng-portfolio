@@ -57,10 +57,10 @@ section.about {
 .about-intro, .about-tech {
 	@include flex(1);
 	@include card;
-  @include media($desktop) {
-    //@include span-columns(6);
-    @include flex(1);
-  }
+	@include media($desktop) {
+		//@include span-columns(6);
+		@include flex(1);
+	}
 }
 .about-intro {
 	@include media($desktop) {

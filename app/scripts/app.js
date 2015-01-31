@@ -43,6 +43,11 @@ angular
         templateUrl: 'views/contact.html',
         title: 'Contact'
       })
+      .state('about-this-site', {
+        url: '/about-this-site',
+        templateUrl: 'views/about-this-site.html',
+        title: 'About This Site'
+      })
 
       // Plugmedia
 
