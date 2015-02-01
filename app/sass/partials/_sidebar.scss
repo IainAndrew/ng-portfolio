@@ -118,9 +118,15 @@ sidebar {
 				font-size:2.5em;
 				@include transition(all 0.2s ease);
 			}
+			span {
+				display:inline-block;
+				position:relative;
+				top:-0.3rem;
+				margin-left:0.5rem;
+			}
 			@include media($desktop) {
-		    	display:none;
-		    }
+	    	display:none;
+	    }
 		}
 		ul {
 			max-height:0;
