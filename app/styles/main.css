@@ -577,6 +577,8 @@ footer {
       font-size: 1.3em; }
     .touch .footer-links a .tooltip {
       display: none; }
+    .footer-links a .tooltip .tooltip-text {
+      color: #e91e63; }
 
 .footer-about {
   float: left;

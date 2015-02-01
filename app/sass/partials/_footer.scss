@@ -28,6 +28,9 @@ footer {
       .touch & {
         display:none;
       }
+      .tooltip-text {
+        color:$pink-500;
+      }
     }
   }
 }
