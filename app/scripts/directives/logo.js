@@ -10,23 +10,23 @@ angular.module('app.directives.logo', [])
 
 				function lineDraw() {
 					$logo.addClass('line-animate');
-					console.log('line-animate');
+					//console.log('line-animate');
 				}
 				function lineHide() {
-					console.log('line-hide');
+					//console.log('line-hide');
 					$logo.find('svg').hide();
 				}
 				function wobble() {
-					console.log('logo-wobble');
+					//console.log('logo-wobble');
 					$logo.find('img').css({'opacity': 1});
 					$logo.addClass('logo-wobble');
 				}
 				function scale() {
-					console.log('logo-scale');
+					//console.log('logo-scale');
 					$logo.addClass('logo-scale');
 				}
 				function toTop() {
-					console.log('logo-to-top');
+					//console.log('logo-to-top');
 					$logo.addClass('logo-to-top');
 				}
 				function nav() {
@@ -35,7 +35,7 @@ angular.module('app.directives.logo', [])
 						$ovl = $('.overlay');
 
 					$nav.css({'opacity': 1}).addClass('nav-show');
-					console.log('nav-show');
+					//console.log('nav-show');
 
 					$logo.addClass('hoverable');
 					$('.view-container').addClass('on-load');
