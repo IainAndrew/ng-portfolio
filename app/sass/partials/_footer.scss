@@ -1,7 +1,11 @@
 footer {
   width:100%;
-  margin-top:2rem;
+  margin-top:1rem;
+  border-radius:9px;
   @include box-shadow-z3;
+  @include media($desktop) {
+    margin-top:2rem;
+  }
   section {
   	padding:2rem;
     border-radius:9px;

@@ -26,29 +26,6 @@ body {
     background-image:url('../images/background-widescreen.jpg');
   }
 }
-.overlay {
-  position:fixed;
-  top:-100%;
-  left:-100%;
-  @include transform(translate(-50%,-50%));
-  background:#000;
-  opacity:0.6;
-  width:0;
-  height:0;
-  z-index:1;
-  border-radius:50%;
-  @include transition(all 0.3s ease);
-  &.show {
-    width:150vh;
-    height:150vh;
-    @media (orientation: landscape) {
-      width:150vw;
-      height:150vw;
-    }
-    left:50%;
-    top:50%;
-  }
-}
 .row {
   @include row();
 }
@@ -66,7 +43,10 @@ body {
   //position:relative;
   width:95%;
   @include outer-container(1600px);
-  padding:2rem 0;
+  padding:2rem 0 1rem 0;
+  @include media($desktop) {
+    padding:2rem 0;
+  }
 }
 
 section {
