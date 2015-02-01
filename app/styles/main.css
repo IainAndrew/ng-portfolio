@@ -571,8 +571,10 @@ footer {
     display: inline-block; }
     .footer-links li:not(:last-child) {
       margin-right: 0.5em; }
-  .footer-links a i {
-    font-size: 1.3em; }
+  .footer-links a {
+    display: inline-block; }
+    .footer-links a i {
+      font-size: 1.3em; }
 
 .footer-about {
   float: left;
@@ -848,6 +850,7 @@ sidebar {
   left: 50%;
   opacity: 0;
   width: 0;
+  font-size: 13px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
