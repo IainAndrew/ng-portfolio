@@ -575,6 +575,8 @@ footer {
     display: inline-block; }
     .footer-links a i {
       font-size: 1.3em; }
+    .touch .footer-links a .tooltip {
+      display: none; }
 
 .footer-about {
   float: left;

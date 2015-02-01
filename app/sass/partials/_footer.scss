@@ -24,6 +24,11 @@ footer {
     i {
       font-size:1.3em;
     }
+    .tooltip {
+      .touch & {
+        display:none;
+      }
+    }
   }
 }
 .footer-about {
