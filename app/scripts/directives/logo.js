@@ -98,8 +98,8 @@ angular.module('app.directives.logo', [])
 				setTimeout (function() { lineHide(); }, 2500);
 				setTimeout (function() { wobble(); }, 2500);
 				setTimeout (function() { scale(); }, 3500);
-				setTimeout (function() { toTop(); }, 4500);
-				setTimeout (function() { nav(); }, 5000);
+				setTimeout (function() { toTop(); }, 4200);
+				setTimeout (function() { nav(); }, 4800);
 			}
 		};
 	});
