@@ -16,7 +16,10 @@ footer {
   li {
     display:inline-block;
     &:not(:last-child) {
-      margin-right:0.5em;
+      margin-right:0.3em;
+      @include media($mobile) {
+        margin-right:0.5em;
+      }
     }
   }
   a {

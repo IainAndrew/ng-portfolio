@@ -569,7 +569,10 @@ footer {
   .footer-links li {
     display: inline-block; }
     .footer-links li:not(:last-child) {
-      margin-right: 0.5em; }
+      margin-right: 0.3em; }
+      @media screen and (min-width: 350px) {
+        .footer-links li:not(:last-child) {
+          margin-right: 0.5em; } }
   .footer-links a {
     display: inline-block; }
     .footer-links a i {
