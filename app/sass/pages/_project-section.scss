@@ -104,17 +104,6 @@ section.project-main {
   }
 }
 
-@include keyframes(image-popup) {
-  from {
-    margin-top:5rem;
-    opacity:0;
-  }
-  to {
-    margin-top:0;
-    opacity:1;
-  }
-}
-
 /*@include keyframes(project-main-load) {
 	from {
 		border-top-left-radius:0;
