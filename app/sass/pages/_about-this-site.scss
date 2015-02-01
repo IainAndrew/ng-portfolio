@@ -34,12 +34,13 @@ section.about-this-site {
 		@include span-columns(8);
 	}
 	p {
-		&:not(:last-child) {
-			margin-bottom:1rem;
-		}
+		margin-bottom:1rem;
 	}
 	a {
 		@include text-link;
+		&.about-this-site-link {
+			@include btn($indigo-500);
+		}
 	}
 }
 .about-this-site-technologies {

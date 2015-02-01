@@ -83,6 +83,12 @@
 	text-transform:uppercase;
 	position:relative;
 	@include box-shadow-z1;
+	@include transition(all 0.2s ease);
+	.no-touch & {
+		&:hover {
+			color:$color + 100;
+		}
+	}
 }
 @mixin ul {
 	border-left:5px solid $indigo-200;

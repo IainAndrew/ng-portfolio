@@ -2088,7 +2088,12 @@ section.project-main .project-overview-intro .project-overview-links a {
   display: inline-block;
   text-transform: uppercase;
   position: relative;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .no-touch section.project-main .project-overview-intro .project-overview-links a:hover {
+    color: #a3b5ff; }
   section.project-main .project-overview-intro .project-overview-links a:first-of-type {
     margin-right: 2rem; }
 section.project-main .project-overview-image {
@@ -2348,7 +2353,7 @@ section.about-this-site {
     width: 65.88078%; }
     .about-this-site-desc:last-child {
       margin-right: 0; } }
-.about-this-site-desc p:not(:last-child) {
+.about-this-site-desc p {
   margin-bottom: 1rem; }
 .about-this-site-desc a {
   display: inline-block;
@@ -2358,6 +2363,20 @@ section.about-this-site {
   transition: all 0.3s ease; }
   .no-touch .about-this-site-desc a:hover {
     color: #f06292; }
+  .about-this-site-desc a.about-this-site-link {
+    background: #3f51b5;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .no-touch .about-this-site-desc a.about-this-site-link:hover {
+      color: #a3b5ff; }
 
 @media screen and (min-width: 768px) {
   .about-this-site-technologies {
