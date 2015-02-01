@@ -19,6 +19,11 @@ angular.module('app.directives.tooltip', [])
 						element.find('.tooltip').toggleClass('tooltip-show');
 					});
 				}
+				if ( element.css('position') !== 'relative' || 'fixed' || 'absolute' ) {
+					element.css({
+						position: 'relative'
+					});
+				}
 			}
 		};
 	});
