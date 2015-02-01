@@ -24,29 +24,29 @@ angular
         url: '/',
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
-        title: 'About'
+        title: 'About | '
       })
       .state('about-more', {
         url: '/about-more',
         templateUrl: 'views/about-more.html',
         controller: 'AboutCtrl',
-        title: 'More About Me'
+        title: 'More About Me | '
       })
       .state('portfolio', {
         url: '/portfolio',
         templateUrl: 'views/portfolio.html',
         controller: 'PortfolioCtrl',
-        title: 'Portfolio'
+        title: 'Portfolio | '
       })
       .state('contact', {
         url: '/contact',
         templateUrl: 'views/contact.html',
-        title: 'Contact'
+        title: 'Contact | '
       })
       .state('about-this-site', {
         url: '/about-this-site',
         templateUrl: 'views/about-this-site.html',
-        title: 'About This Site'
+        title: 'About This Site | '
       })
 
       // Plugmedia
@@ -60,25 +60,25 @@ angular
         url: '/',
         templateUrl: 'views/plugmedia/overview.html',
         controller: 'ProjectCtrl',
-        title: 'Plugmedia'
+        title: 'Plugmedia | '
       })
       .state('plugmedia.web-design', {
         url: '/web-design',
         templateUrl: 'views/plugmedia/webdesign.html',
         controller: 'ProjectCtrl',
-        title: 'Plugmedia - Web Design'
+        title: 'Plugmedia - Web Design | '
       })
       .state('plugmedia.web-development', {
         url: '/web-development',
         templateUrl: 'views/plugmedia/webdev.html',
         controller: 'ProjectCtrl',
-        title: 'Plugmedia - Web Development'
+        title: 'Plugmedia - Web Development | '
       })
       .state('plugmedia.logo-design', {
         url: '/logo-design',
         templateUrl: 'views/plugmedia/logodesign.html',
         controller: 'ProjectCtrl',
-        title: 'Plugmedia - Logo Design'
+        title: 'Plugmedia - Logo Design | '
       })
 
       // Peter Ashmore
@@ -92,31 +92,31 @@ angular
         url: '/',
         templateUrl: 'views/peter-ashmore/overview.html',
         controller: 'ProjectCtrl',
-        title: 'Peter Ashmore'
+        title: 'Peter Ashmore | '
       })
       .state('peter-ashmore.web-design', {
         url: '/web-design',
         templateUrl: 'views/peter-ashmore/webdesign.html',
         controller: 'ProjectCtrl',
-        title: 'Peter Ashmore - Web Design'
+        title: 'Peter Ashmore - Web Design | '
       })
       .state('peter-ashmore.web-development', {
         url: '/web-development',
         templateUrl: 'views/peter-ashmore/webdev.html',
         controller: 'ProjectCtrl',
-        title: 'Peter Ashmore - Web Development'
+        title: 'Peter Ashmore - Web Development | '
       })
       .state('peter-ashmore.graphic-design', {
         url: '/graphic-design',
         templateUrl: 'views/peter-ashmore/graphicdesign.html',
         controller: 'ProjectCtrl',
-        title: 'Peter Ashmore - Graphic Design'
+        title: 'Peter Ashmore - Graphic Design | '
       })
       .state('peter-ashmore.logo-design', {
         url: '/logo-design',
         templateUrl: 'views/peter-ashmore/logodesign.html',
         controller: 'ProjectCtrl',
-        title: 'Peter Ashmore - Logo Design'
+        title: 'Peter Ashmore - Logo Design | '
       })
 
       // Trunkys
@@ -130,19 +130,19 @@ angular
         url: '/',
         templateUrl: 'views/trunkys/overview.html',
         controller: 'ProjectCtrl',
-        title: 'Trunkys'
+        title: 'Trunkys | '
       })
       .state('trunkys.graphic-design', {
         url: '/graphic-design',
         templateUrl: 'views/trunkys/graphicdesign.html',
         controller: 'ProjectCtrl',
-        title: 'Trunkys - Graphic Design'
+        title: 'Trunkys - Graphic Design | '
       })
       .state('trunkys.ui-design', {
         url: '/ui-design',
         templateUrl: 'views/trunkys/uidesign.html',
         controller: 'ProjectCtrl',
-        title: 'Trunkys - UI Design'
+        title: 'Trunkys - UI Design | '
       })
 
       // Footer-reveal.js
@@ -156,13 +156,13 @@ angular
         url: '/',
         templateUrl: 'views/footerreveal/overview.html',
         controller: 'ProjectCtrl',
-        title: 'Footer-reveal.js'
+        title: 'Footer-reveal.js | '
       })
       .state('footerreveal.web-development', {
         url: '/web-development',
         templateUrl: 'views/footerreveal/webdev.html',
         controller: 'ProjectCtrl',
-        title: 'Footer-reveal.js - Web Development'
+        title: 'Footer-reveal.js - Web Development | '
       })
 
       // Simplespin.css
@@ -176,13 +176,13 @@ angular
         url: '/',
         templateUrl: 'views/simplespin/overview.html',
         controller: 'ProjectCtrl',
-        title: 'Simplespin.css'
+        title: 'Simplespin.css | '
       })
       .state('simplespin.web-development', {
         url: '/web-development',
         templateUrl: 'views/simplespin/webdev.html',
         controller: 'ProjectCtrl',
-        title: 'Simplespin.css - Web Development'
+        title: 'Simplespin.css - Web Development | '
       });
   }])
   .run([ '$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {

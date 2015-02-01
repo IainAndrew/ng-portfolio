@@ -31,8 +31,8 @@ angular.module('app.directives.logo', [])
 				}
 				function nav() {
 					var $nav = $('nav'),
-						touch = Modernizr.touch,
-						$ovl = $('.overlay');
+							touch = Modernizr.touch,
+							$ovl = $('.overlay');
 
 					$nav.css({'opacity': 1}).addClass('nav-show');
 					//console.log('nav-show');
