@@ -59,8 +59,15 @@ section.project-main {
 	      //color:$pink-500;
 	      //text-transform:uppercase;
 	      @include btn($indigo-500);
+	      font-size:0.8em;
 	      &:first-of-type {
-	        margin-right:2rem;
+	        margin-right:1rem;
+	      }
+	      @include media($mobile) {
+	      	font-size:1em;
+	      	&:first-of-type {
+	      	  margin-right:2rem;
+	      	}
 	      }
 	    }
 	  }

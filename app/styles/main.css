@@ -428,22 +428,21 @@ nav {
         margin-right: -0.3rem; }
     nav ul li a {
       display: inline-block; }
-      @media screen and (min-width: 768px) {
-        nav ul li a:before {
-          content: "";
-          width: 2rem;
-          height: 2rem;
-          position: absolute;
-          z-index: -1;
-          left: 50%;
-          top: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          -o-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          border-radius: 50%;
-          background: rgba(255, 255, 255, 0.2); } }
+      nav ul li a:before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2); }
       nav ul li a i {
         position: relative;
         display: inline-block;
@@ -1723,7 +1722,10 @@ li.project {
         transition: all 0.1s ease; }
       li.project .portfolio-info-links a:first-child {
         color: #3f51b5;
-        margin-right: 2rem; }
+        margin-right: 1rem; }
+        @media screen and (min-width: 350px) {
+          li.project .portfolio-info-links a:first-child {
+            margin-right: 2rem; } }
       li.project .portfolio-info-links a:nth-child(2) {
         color: #e91e63; }
       .no-touch li.project .portfolio-info-links a:hover:first-child {
@@ -1901,11 +1903,17 @@ section.project-main .project-overview-intro .project-overview-links a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  font-size: 0.8em; }
   .no-touch section.project-main .project-overview-intro .project-overview-links a:hover {
     color: #a3b5ff; }
   section.project-main .project-overview-intro .project-overview-links a:first-of-type {
-    margin-right: 2rem; }
+    margin-right: 1rem; }
+  @media screen and (min-width: 350px) {
+    section.project-main .project-overview-intro .project-overview-links a {
+      font-size: 1em; }
+      section.project-main .project-overview-intro .project-overview-links a:first-of-type {
+        margin-right: 2rem; } }
 section.project-main .project-overview-image {
   margin-bottom: 2rem;
   opacity: 0;

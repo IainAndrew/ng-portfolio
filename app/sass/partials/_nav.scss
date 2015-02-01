@@ -107,19 +107,17 @@ nav {
       }
       a {
         display:inline-block;
-        @include media($desktop) {
-          &:before {
-            content:"";
-            width:2rem;
-            height:2rem;
-            position:absolute;
-            z-index:-1;
-            left:50%;
-            top:50%;
-            @include transform(translate(-50%, -50%));
-            border-radius:50%;
-            background:rgba(#fff, 0.2);
-          }
+        &:before {
+          content:"";
+          width:2rem;
+          height:2rem;
+          position:absolute;
+          z-index:-1;
+          left:50%;
+          top:50%;
+          @include transform(translate(-50%, -50%));
+          border-radius:50%;
+          background:rgba(#fff, 0.2);
         }
         i {
           position:relative;

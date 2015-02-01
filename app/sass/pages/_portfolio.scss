@@ -105,7 +105,10 @@ li.project {
 			}
 			&:first-child {
 				color:$indigo-500;
-				margin-right:2rem;
+				margin-right:1rem;
+				@include media($mobile) {
+					margin-right:2rem;
+				}
 			}
 			&:nth-child(2) {
 				color:$pink-500;
