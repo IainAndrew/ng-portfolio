@@ -60,7 +60,9 @@ section.about {
 }
 .about-intro, .about-tech {
 	@include card;
+	margin-bottom:1rem;
 	@include media($desktop) {
+		margin-bottom:0;
 		//@include span-columns(6);
 		@include flex(1);
 	}
