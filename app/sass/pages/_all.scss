@@ -71,65 +71,65 @@ section {
 }
 .container {
   &.plugmedia, 
-    &.plugmedia-overview, 
-    &.plugmedia-web-design, 
-    &.plugmedia-web-development,
-    &.plugmedia-logo-design,
+  &.plugmedia-overview, 
+  &.plugmedia-web-design, 
+  &.plugmedia-web-development,
+  &.plugmedia-logo-design,
 
-    &.peter-ashmore, 
-    &.peter-ashmore-overview,
-    &.peter-ashmore-web-design,
-    &.peter-ashmore-web-development,
-    &.peter-ashmore-graphic-design,
-    &.peter-ashmore-logo-design,
+  &.peter-ashmore, 
+  &.peter-ashmore-overview,
+  &.peter-ashmore-web-design,
+  &.peter-ashmore-web-development,
+  &.peter-ashmore-graphic-design,
+  &.peter-ashmore-logo-design,
 
-    &.trunkys,
-    &.trunkys-overview,
-    &.trunkys-graphic-design,
-    &.trunkys-ui-design,
+  &.trunkys,
+  &.trunkys-overview,
+  &.trunkys-graphic-design,
+  &.trunkys-ui-design,
 
-    &.footerreveal,
-    &.footerreveal-overview,
-    &.footerreveal-web-development,
+  &.footerreveal,
+  &.footerreveal-overview,
+  &.footerreveal-web-development,
 
-    &.simplespin,
-    &.simplespin-overview,
-    &.simplespin-web-development {
-      padding:0;
-      max-width:1000rem;
-      width:100%;
-      logo.logo-to-top {
+  &.simplespin,
+  &.simplespin-overview,
+  &.simplespin-web-development {
+    padding:0;
+    max-width:1000rem;
+    width:100%;
+    logo.logo-to-top {
+      top:-20rem;
+      &+ nav {
         top:-20rem;
-        &+ nav {
-          top:-20rem;
-        }
       }
-      footer {
-        display:none;
-      }
-      .view-container {
-        width:100%;
+    }
+    footer {
+      display:none;
+    }
+    .view-container {
+      width:100%;
+      height:auto;
+      background-color:transparent;
+      box-shadow:none;
+      main {
         height:auto;
+      }
+      margin-top:0;
+      @include media($desktop) {
+        position:absolute;
+        width:99%;
+        height:98vh;
+        top:50%;
+        @include transform(translate(-50%, -50%));
         background-color:transparent;
         box-shadow:none;
         main {
-          height:auto;
-        }
-        margin-top:0;
-        @include media($desktop) {
-          position:absolute;
-          width:99%;
-          height:98vh;
-          top:50%;
-          @include transform(translate(-50%, -50%));
-          background-color:transparent;
-          box-shadow:none;
-          main {
-            height:100%;
-          }
+          height:100%;
         }
       }
     }
+  }
 }
 
 section {

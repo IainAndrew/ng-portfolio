@@ -190,7 +190,7 @@ angular
     $rootScope.$stateParams = $stateParams;
     $rootScope.$on('$stateChangeSuccess', function() {
       function scrollToTop() {
-        if(window.scrollY!=0) {
+        if(window.scrollY > 0) {
           setTimeout(function() {
              window.scrollTo(0,window.scrollY-200);
               scrollToTop();
