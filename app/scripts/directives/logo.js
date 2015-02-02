@@ -39,6 +39,7 @@ angular.module('app.directives.logo', [])
 
 					$logo.addClass('hoverable');
 					$('.view-container').addClass('on-load');
+					$('body').animate({scrollTop: 0}, 'slow');
 
 					function navShow() {
 						$nav.addClass('nav-show');

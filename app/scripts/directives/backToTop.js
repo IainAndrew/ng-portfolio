@@ -12,7 +12,7 @@ angular.module('app.directives.backToTop', [])
 				var $win = $('body').add($('.project-main'));
 
 				function toTop() {
-					$win.animate({scrollTop: $win.offset().top + scope.offset}, 'slow');
+					$win.animate({scrollTop: 0 + scope.offset}, 'slow');
 				}
 				element.on('click', function(event) {
 					toTop();
