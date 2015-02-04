@@ -40,6 +40,8 @@ section.about-this-site {
 		@include text-link;
 		&.about-this-site-link {
 			@include btn($indigo-500);
+			margin-top:1rem;
+			margin-bottom:1rem;
 		}
 	}
 }
