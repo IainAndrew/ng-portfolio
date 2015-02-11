@@ -423,7 +423,7 @@ module.exports = function (grunt) {
     // reference in your app
     modernizr: {
         dist: {
-            devFile: '<%= yeoman %>/bower_components/modernizr/modernizr.js',
+            devFile: 'bower_components/modernizr/modernizr.js',
             outputFile: '<%= yeoman.dist %>/scripts/vendor/modernizr.js',
             files: {
                 src: [
@@ -493,6 +493,7 @@ module.exports = function (grunt) {
     'ngAnnotate',
     'copy:dist',
     'cdnify',
+    'modernizr',
     'cssmin',
     'uglify',
     'filerev',
