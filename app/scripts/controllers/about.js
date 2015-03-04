@@ -7,6 +7,7 @@ angular.module('app')
 			'CSS3',
 			'Javascript',
 			'jQuery',
+			'AJAX',
 			'AngularJS',
 			'Sass',
 			'Bourbon',

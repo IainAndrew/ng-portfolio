@@ -1428,42 +1428,52 @@ section.about {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex; } }
-  .about-full .about-full-image {
-    width: 100%;
-    height: 14rem;
-    background-image: url("../../images/profile.jpg");
-    background-size: cover;
-    background-position: 50% 10%; }
-    @media screen and (min-width: 600px) {
-      .about-full .about-full-image {
-        height: auto;
-        min-height: 14rem;
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
-        box-flex: 1;
-        -webkit-flex: 1;
-        -moz-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        float: left;
-        display: block;
-        width: 34.11922%; }
-        .about-full .about-full-image:last-child {
-          width: 31.76157%; } }
-  .about-full .about-full-main {
-    padding: 1rem; }
-    @media screen and (min-width: 600px) {
-      .about-full .about-full-main {
-        float: right;
-        height: 100%;
-        float: left;
-        display: block;
-        width: 68.23843%; }
-        .about-full .about-full-main:last-child {
-          width: 65.88078%; } }
-    .about-full .about-full-main .tooltip-text {
-      padding: 0.2rem 0.2rem 0 0.2rem;
-      margin-bottom: -0.3rem; }
+
+.about-full-image {
+  width: 100%;
+  height: 14rem;
+  background-image: url("../../images/profile.jpg");
+  background-size: cover;
+  background-position: 50% 10%; }
+  @media screen and (min-width: 600px) {
+    .about-full-image {
+      height: auto;
+      min-height: 14rem;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      box-flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      float: left;
+      display: block;
+      width: 34.11922%; }
+      .about-full-image:last-child {
+        width: 31.76157%; } }
+
+.about-full-main {
+  padding: 1rem; }
+  @media screen and (min-width: 600px) {
+    .about-full-main {
+      float: right;
+      height: 100%;
+      float: left;
+      display: block;
+      width: 68.23843%; }
+      .about-full-main:last-child {
+        width: 65.88078%; } }
+  .about-full-main .tooltip-text {
+    padding: 0.2rem 0.2rem 0 0.2rem;
+    margin-bottom: -0.3rem; }
+  .about-full-main p a {
+    display: inline-block;
+    color: #e91e63;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .no-touch .about-full-main p a:hover {
+      color: #f06292; }
 
 .about-featured {
   width: 100%;

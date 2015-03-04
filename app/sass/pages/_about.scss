@@ -109,31 +109,34 @@ section.about {
 		@include display(flex);
 	}
 	margin-top:1rem;
-	.about-full-image {
-		width:100%;
-		height:14rem;
-		background-image:url('../../images/profile.jpg');
-		background-size:cover;
-		background-position:50% 10%;
-		@include media(new-breakpoint(min-width 600px)) {
-			height:auto;
-			min-height:14rem;
-			@include flex(1);
-			@include span-columns(4, block-collapse);
-		}
-	}
-	.about-full-main {
-		padding:1rem;
-		@include media(new-breakpoint(min-width 600px)) {
-			float:right;
-			height:100%;
-			@include span-columns(8, block-collapse);
-		}
-		.tooltip-text {
-			padding:0.2rem 0.2rem 0 0.2rem;
-			margin-bottom:-0.3rem;
-		}
-	}
+}
+.about-full-image {
+  width:100%;
+  height:14rem;
+  background-image:url('../../images/profile.jpg');
+  background-size:cover;
+  background-position:50% 10%;
+  @include media(new-breakpoint(min-width 600px)) {
+    height:auto;
+    min-height:14rem;
+    @include flex(1);
+    @include span-columns(4, block-collapse);
+  }
+}
+.about-full-main {
+  padding:1rem;
+  @include media(new-breakpoint(min-width 600px)) {
+    float:right;
+    height:100%;
+    @include span-columns(8, block-collapse);
+  }
+  .tooltip-text {
+    padding:0.2rem 0.2rem 0 0.2rem;
+    margin-bottom:-0.3rem;
+  }
+  p a {
+    @include text-link;
+  }
 }
 .about-featured {
   width:100%;
